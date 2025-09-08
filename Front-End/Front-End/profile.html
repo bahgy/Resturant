@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Profile - The Diner's Club</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* Profile Page Specific Styles */
+        .profile-container {
+            min-height: calc(100vh - 200px);
+            padding: 30px 0;
+        }
+        
+        .profile-sidebar {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .sidebar-item {
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .sidebar-item:hover {
+            background: rgba(220, 53, 69, 0.1);
+        }
+        
+        .sidebar-item.active {
+            background: var(--bs-primary);
+            color: white;
+        }
+        
+        .sidebar-item i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .profile-content {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+        
+        .profile-section {
+            display: none;
+        }
+        
+        .profile-section.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--bs-primary);
+        }
+        
+        .order-card, .booking-card {
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+        
+        .order-card:hover, .booking-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .action-btn {
+            padding: 5px 10px;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+        
+        .password-form {
+            max-width: 500px;
+        }
+        
+        .order-details-modal .modal-content {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .order-items {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Toast notification styles */
+        .toast-notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            min-width: 300px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .toast-notification.show {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0">The Diner's<span class="text-dark">Club</span> </h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="event.html" class="nav-item nav-link">Events</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="book.html" class="dropdown-item">Booking</a>
+                                <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="chat.html" class="dropdown-item">Chat Service</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="search-container me-4 d-none d-lg-inline-flex">
+                        <button class="btn-search btn btn-primary btn-md-square rounded-circle" id="searchToggleBtn"><i class="fas fa-search"></i></button>
+                        <div class="search-panel" id="searchPanel">
+                            <div class="search-content">
+                                <div class="search-input-group">
+                                    <input type="text" class="form-control" id="searchInput" placeholder="Search by item name...">
+                                    <button class="btn btn-primary" id="searchBtn"><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="search-options mt-2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label small text-muted">Sort by:</label>
+                                            <select class="form-select form-select-sm" id="sortSelect">
+                                                <option value="name">Name (A-Z)</option>
+                                                <option value="min">Price (Low to High)</option>
+                                                <option value="max">Price (High to Low)</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-outline-secondary btn-sm w-100 mt-4" id="closeSearchBtn">
+                                                <i class="fas fa-times"></i> Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="signin.html" class="btn btn-outline-primary py-2 px-4 d-none d-xl-inline-block rounded-pill me-2">Sign In</a>
+                    <a href="profile.html" class="btn btn-outline-secondary py-2 px-4 d-none d-xl-inline-block rounded-pill me-2">
+                        <i class="fas fa-user"></i> Profile
+                    </a>
+                    <a href="cart.html" class="btn btn-outline-secondary py-2 px-4 d-none d-xl-inline-block rounded-pill me-2">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                        <span class="badge bg-primary ms-1" id="cartCount">0</span>
+                    </a>
+                    <a href="book.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Profile Content Start -->
+    <div class="container-fluid py-6">
+        <div class="container profile-container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-3 mb-4">
+                    <div class="profile-sidebar">
+                        <div class="text-center mb-4">
+                            <img src="img/user-avatar.jpg" class="profile-photo mb-3" alt="User Avatar">
+                            <h4 class="mb-1" id="userName">John Doe</h4>
+                            <p class="text-muted mb-0" id="userEmail">john.doe@example.com</p>
+                        </div>
+                        
+                        <div class="sidebar-menu">
+                            <div class="sidebar-item active" data-section="user-info">
+                                <i class="fas fa-user-circle"></i> Personal Information
+                            </div>
+                            <div class="sidebar-item" data-section="order-history">
+                                <i class="fas fa-history"></i> Order History
+                            </div>
+                            <div class="sidebar-item" data-section="current-bookings">
+                                <i class="fas fa-calendar-alt"></i> Current Bookings
+                            </div>
+                            <div class="sidebar-item mt-4" id="logoutBtn">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <div class="profile-content">
+                        <!-- User Info Section -->
+                        <div class="profile-section active" id="user-info-section">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h3 class="mb-0">Personal Information</h3>
+                                <button class="btn btn-outline-primary btn-sm" id="editProfileBtn">
+                                    <i class="fas fa-edit me-1"></i> Edit Profile
+                                </button>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="profileName" value="John Doe" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="profilePhone" value="+1 (555) 123-4567" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="profileEmail" value="john.doe@example.com" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Address</label>
+                                        <textarea class="form-control" id="profileAddress" rows="1" disabled>123 Main St, New York, NY 10001</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <h5 class="mb-3">Change Password</h5>
+                                <div class="password-form">
+                                    <div class="mb-3">
+                                        <label class="form-label">Current Password</label>
+                                        <input type="password" class="form-control" id="currentPassword">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">New Password</label>
+                                        <input type="password" class="form-control" id="newPassword">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Confirm New Password</label>
+                                        <input type="password" class="form-control" id="confirmPassword">
+                                    </div>
+                                    <button class="btn btn-primary" id="updatePasswordBtn">Update Password</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Order History Section -->
+                        <div class="profile-section" id="order-history-section">
+                            <h3 class="mb-4">Order History</h3>
+                            
+                            <div class="order-list">
+                                <div class="order-card">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-1">Order #12345</h5>
+                                            <p class="text-muted mb-0">Placed on: Jan 15, 2023</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="status-badge bg-success">Completed</span>
+                                            <p class="mb-0 mt-1 fw-bold">$89.50</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 d-flex justify-content-end">
+                                        <button class="btn btn-sm btn-outline-primary view-order-details" data-order-id="12345">
+                                            <i class="fas fa-eye me-1"></i> View Details
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-card">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-1">Order #12344</h5>
+                                            <p class="text-muted mb-0">Placed on: Jan 10, 2023</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="status-badge bg-success">Completed</span>
+                                            <p class="mb-0 mt-1 fw-bold">$125.75</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 d-flex justify-content-end">
+                                        <button class="btn btn-sm btn-outline-primary view-order-details" data-order-id="12344">
+                                            <i class="fas fa-eye me-1"></i> View Details
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-card">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-1">Order #12343</h5>
+                                            <p class="text-muted mb-0">Placed on: Jan 5, 2023</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="status-badge bg-success">Completed</span>
+                                            <p class="mb-0 mt-1 fw-bold">$67.25</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 d-flex justify-content-end">
+                                        <button class="btn btn-sm btn-outline-primary view-order-details" data-order-id="12343">
+                                            <i class="fas fa-eye me-1"></i> View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Current Bookings Section -->
+                        <div class="profile-section" id="current-bookings-section">
+                            <h3 class="mb-4">Current Bookings</h3>
+                            
+                            <div class="booking-list">
+                                <div class="booking-card">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-1">Booking #B78901</h5>
+                                            <p class="text-muted mb-0">Date: Feb 14, 2023 at 7:00 PM</p>
+                                            <p class="text-muted mb-0">Party of 4 - Valentine's Dinner</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="status-badge bg-info">Confirmed</span>
+                                            <p class="mb-0 mt-1">Table #12</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 d-flex justify-content-end">
+                                        <button class="btn btn-sm btn-outline-secondary me-2 edit-booking" data-booking-id="B78901">
+                                            <i class="fas fa-edit me-1"></i> Edit
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger cancel-booking" data-booking-id="B78901">
+                                            <i class="fas fa-times me-1"></i> Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="booking-card">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h5 class="mb-1">Booking #B78902</h5>
+                                            <p class="text-muted mb-0">Date: Feb 20, 2023 at 6:30 PM</p>
+                                            <p class="text-muted mb-0">Party of 6 - Birthday Celebration</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="status-badge bg-info">Confirmed</span>
+                                            <p class="mb-0 mt-1">Private Room #2</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 d-flex justify-content-end">
+                                        <button class="btn btn-sm btn-outline-secondary me-2 edit-booking" data-booking-id="B78902">
+                                            <i class="fas fa-edit me-1"></i> Edit
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger cancel-booking" data-booking-id="B78902">
+                                            <i class="fas fa-times me-1"></i> Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Profile Content End -->
+
+    <!-- Order Details Modal -->
+    <div class="modal fade order-details-modal" id="orderDetailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Order Details - #<span id="modalOrderId"></span></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h6>Order Information</h6>
+                            <p class="mb-1"><strong>Order Date:</strong> <span id="modalOrderDate"></span></p>
+                            <p class="mb-1"><strong>Status:</strong> <span id="modalOrderStatus"></span></p>
+                            <p class="mb-0"><strong>Payment Method:</strong> <span id="modalPaymentMethod"></span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Delivery Information</h6>
+                            <p class="mb-1" id="modalDeliveryAddress"></p>
+                            <p class="mb-0"><strong>Contact:</strong> <span id="modalContactPhone"></span></p>
+                        </div>
+                    </div>
+                    
+                    <h6>Order Items</h6>
+                    <div class="order-items">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                    <th class="text-end">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modalOrderItems">
+                                <!-- Will be populated by JavaScript -->
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class="fw-bold">Subtotal</td>
+                                    <td class="text-end" id="modalSubtotal"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="fw-bold">Tax</td>
+                                    <td class="text-end" id="modalTax"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="fw-bold">Delivery Fee</td>
+                                    <td class="text-end" id="modalDeliveryFee"></td>
+                                </tr>
+                                <tr class="fw-bold fs-5">
+                                    <td colspan="2">Total</td>
+                                    <td class="text-end" id="modalTotal"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+        <div class="alert alert-dismissible fade show mb-0" role="alert">
+            <span id="toastMessage"></span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h1 class="text-primary">The Diner's<span class="text-dark">Club</span></h1>
+                        <p class="lh-lg mb-4">There cursus massa at urnaaculis estieSed aliquamellus vitae ultrs condmentum leo massamollis its estiegittis miristum.</p>
+                        <div class="footer-icon d-flex">
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Special Facilities</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>Cheese Burger</a>
+                            <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>Sandwich</a>
+                            <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>Panner Burger</a>
+                            <a class="text-body mb-3" href="#"><i class="fa fa-check text-primary me-2"></i>Special Sweets</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Contact Us</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
+                            <p><i class="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
+                            <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                            <p><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Social Gallery</h4>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                 <img src="img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                            <div class="col-4">
+                                 <img src="img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>The Diner's Club</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Profile Page Script -->
+    <script>
+        $(document).ready(function() {
+            // Initialize profile page functionality
+            initProfilePage();
+            
+            // Load user data from localStorage if available
+            loadUserData();
+        });
+        
+        function initProfilePage() {
+            // Sidebar navigation
+            $('.sidebar-item').on('click', function() {
+                if ($(this).attr('id') === 'logoutBtn') {
+                    showToast('Successfully logged out', 'success');
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 1500);
+                    return;
+                }
+                
+                $('.sidebar-item').removeClass('active');
+                $(this).addClass('active');
+                
+                const sectionId = $(this).data('section') + '-section';
+                $('.profile-section').removeClass('active');
+                $('#' + sectionId).addClass('active');
+            });
+            
+            // Edit profile toggle
+            let isEditing = false;
+            $('#editProfileBtn').on('click', function() {
+                isEditing = !isEditing;
+                
+                if (isEditing) {
+                    $('#profileName, #profilePhone, #profileEmail, #profileAddress').prop('disabled', false);
+                    $(this).html('<i class="fas fa-save me-1"></i> Save Changes');
+                    $(this).removeClass('btn-outline-primary').addClass('btn-primary');
+                } else {
+                    // Save changes
+                    $('#profileName, #profilePhone, #profileEmail, #profileAddress').prop('disabled', true);
+                    $(this).html('<i class="fas fa-edit me-1"></i> Edit Profile');
+                    $(this).removeClass('btn-primary').addClass('btn-outline-primary');
+                    
+                    // Save to localStorage
+                    saveUserData();
+                    showToast('Profile updated successfully', 'success');
+                }
+            });
+            
+            // Update password
+            $('#updatePasswordBtn').on('click', function() {
+                const currentPassword = $('#currentPassword').val();
+                const newPassword = $('#newPassword').val();
+                const confirmPassword = $('#confirmPassword').val();
+                
+                if (!currentPassword || !newPassword || !confirmPassword) {
+                    showToast('Please fill in all password fields', 'danger');
+                    return;
+                }
+                
+                if (newPassword !== confirmPassword) {
+                    showToast('New passwords do not match', 'danger');
+                    return;
+                }
+                
+                if (newPassword.length < 6) {
+                    showToast('Password must be at least 6 characters', 'danger');
+                    return;
+                }
+                
+                // In a real app, you would verify the current password with the server
+                // For this demo, we'll just simulate success
+                $('#currentPassword, #newPassword, #confirmPassword').val('');
+                showToast('Password updated successfully', 'success');
+            });
+            
+            // View order details
+            $('.view-order-details').on('click', function() {
+                const orderId = $(this).data('order-id');
+                showOrderDetails(orderId);
+            });
+            
+            // Edit booking
+            $('.edit-booking').on('click', function() {
+                const bookingId = $(this).data('booking-id');
+                showToast('Edit booking functionality would open for ID: ' + bookingId, 'info');
+            });
+            
+            // Cancel booking
+            $('.cancel-booking').on('click', function() {
+                const bookingId = $(this).data('booking-id');
+                if (confirm('Are you sure you want to cancel this booking?')) {
+                    $(this).closest('.booking-card').fadeOut(300, function() {
+                        $(this).remove();
+                        showToast('Booking cancelled successfully', 'success');
+                    });
+                }
+            });
+        }
+        
+        function loadUserData() {
+            // In a real app, you would load this from your backend or localStorage
+            const userData = JSON.parse(localStorage.getItem('userData')) || {
+                name: 'John Doe',
+                email: 'john.doe@example.com',
+                phone: '+1 (555) 123-4567',
+                address: '123 Main St, New York, NY 10001'
+            };
+            
+            $('#userName').text(userData.name);
+            $('#userEmail').text(userData.email);
+            $('#profileName').val(userData.name);
+            $('#profileEmail').val(userData.email);
+            $('#profilePhone').val(userData.phone);
+            $('#profileAddress').val(userData.address);
+        }
+        
+        function saveUserData() {
+            const userData = {
+                name: $('#profileName').val(),
+                email: $('#profileEmail').val(),
+                phone: $('#profilePhone').val(),
+                address: $('#profileAddress').val()
+            };
+            
+            localStorage.setItem('userData', JSON.stringify(userData));
+            
+            // Update the sidebar display
+            $('#userName').text(userData.name);
+            $('#userEmail').text(userData.email);
+        }
+        
+        function showOrderDetails(orderId) {
+            // Sample order data - in a real app, this would come from your backend
+            const orderData = {
+                '12345': {
+                    date: 'Jan 15, 2023 at 2:30 PM',
+                    status: 'Completed',
+                    paymentMethod: 'Credit Card',
+                    deliveryAddress: '123 Main St, New York, NY 10001',
+                    contactPhone: '+1 (555) 123-4567',
+                    items: [
+                        { name: 'Grilled Chicken', quantity: 1, price: 25.99 },
+                        { name: 'Caesar Salad', quantity: 2, price: 12.99 },
+                        { name: 'Chocolate Cake', quantity: 1, price: 8.99 }
+                    ],
+                    subtotal: 60.96,
+                    tax: 5.49,
+                    deliveryFee: 4.99,
+                    total: 71.44
+                },
+                '12344': {
+                    date: 'Jan 10, 2023 at 6:45 PM',
+                    status: 'Completed',
+                    paymentMethod: 'PayPal',
+                    deliveryAddress: '123 Main St, New York, NY 10001',
+                    contactPhone: '+1 (555) 123-4567',
+                    items: [
+                        { name: 'Beef Steak', quantity: 2, price: 35.99 },
+                        { name: 'Pasta Carbonara', quantity: 1, price: 18.99 },
+                        { name: 'Tiramisu', quantity: 1, price: 9.99 }
+                    ],
+                    subtotal: 100.96,
+                    tax: 9.09,
+                    deliveryFee: 0,
+                    total: 110.05
+                },
+                '12343': {
+                    date: 'Jan 5, 2023 at 12:15 PM',
+                    status: 'Completed',
+                    paymentMethod: 'Credit Card',
+                    deliveryAddress: '123 Main St, New York, NY 10001',
+                    contactPhone: '+1 (555) 123-4567',
+                    items: [
+                        { name: 'Fish & Chips', quantity: 1, price: 22.99 },
+                        { name: 'Bruschetta', quantity: 1, price: 7.99 },
+                        { name: 'Iced Tea', quantity: 2, price: 3.99 }
+                    ],
+                    subtotal: 38.96,
+                    tax: 3.51,
+                    deliveryFee: 4.99,
+                    total: 47.46
+                }
+            };
+            
+            const order = orderData[orderId];
+            if (!order) return;
+            
+            // Populate modal with order details
+            $('#modalOrderId').text(orderId);
+            $('#modalOrderDate').text(order.date);
+            $('#modalOrderStatus').text(order.status);
+            $('#modalPaymentMethod').text(order.paymentMethod);
+            $('#modalDeliveryAddress').text(order.deliveryAddress);
+            $('#modalContactPhone').text(order.contactPhone);
+            
+            // Clear and populate order items
+            $('#modalOrderItems').empty();
+            order.items.forEach(item => {
+                $('#modalOrderItems').append(`
+                    <tr>
+                        <td>${item.name}</td>
+                        <td>${item.quantity}</td>
+                        <td class="text-end">$${item.price.toFixed(2)}</td>
+                    </tr>
+                `);
+            });
+            
+            // Set totals
+            $('#modalSubtotal').text('$' + order.subtotal.toFixed(2));
+            $('#modalTax').text('$' + order.tax.toFixed(2));
+            $('#modalDeliveryFee').text('$' + order.deliveryFee.toFixed(2));
+            $('#modalTotal').text('$' + order.total.toFixed(2));
+            
+            // Show the modal
+            $('#orderDetailsModal').modal('show');
+        }
+        
+        function showToast(message, type) {
+            const toast = $('#toastNotification');
+            const toastMessage = $('#toastMessage');
+            
+            // Set message and alert type
+            toastMessage.text(message);
+            toast.find('.alert')
+                .removeClass('alert-success alert-danger alert-info alert-warning')
+                .addClass('alert-' + type);
+            
+            // Show toast
+            toast.addClass('show');
+            
+            // Auto hide after 3 seconds
+            setTimeout(() => {
+                toast.removeClass('show');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

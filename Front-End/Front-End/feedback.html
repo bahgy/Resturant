@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Diner's Club - Feedback</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Feedback" name="keywords">
+    <meta content="Share and read feedback like a chat thread" name="description">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .feedback-wrapper { max-width: 900px; margin: 0 auto; }
+        .feedback-card { background: #fff; border: 1px solid #e9ecef; border-radius: 12px; overflow: hidden; }
+        .feedback-header { background: linear-gradient(90deg, #0d6efd, #5a9cfb); color: #fff; padding: 16px; display: flex; align-items: center; justify-content: space-between; }
+        .feedback-body { display: grid; grid-template-columns: 1fr 320px; gap: 20px; padding: 16px; }
+        .thread { height: 520px; overflow-y: auto; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 10px; padding: 12px; }
+        .bubble { max-width: 80%; padding: 10px 12px; border-radius: 12px; margin: 8px 0; font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+        .bubble .meta { font-size: 11px; opacity: .6; margin-top: 6px; }
+        .bubble.user { margin-left: auto; background: #0d6efd; color: #fff; border-bottom-right-radius: 4px; }
+        .bubble.other { margin-right: auto; background: #ffffff; color: #212529; border: 1px solid #e9ecef; border-bottom-left-radius: 4px; }
+        .composer { background: #fff; border: 1px solid #e9ecef; border-radius: 10px; padding: 12px; }
+        .rating i { color: #ffc107; cursor: pointer; }
+    </style>
+</head>
+
+<body>
+
+    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0">The Diner's<span class="text-dark">Club</span> </h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="event.html" class="nav-item nav-link">Events</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="book.html" class="dropdown-item">Booking</a>
+                                <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="signin.html" class="btn btn-outline-primary py-2 px-4 d-none d-xl-inline-block rounded-pill me-2">Sign In</a>
+                    <a href="cart.html" class="btn btn-outline-secondary py-2 px-4 d-none d-xl-inline-block rounded-pill me-2">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                        <span class="badge bg-primary ms-1" id="cartCount">0</span>
+                    </a>
+                    <a href="book.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container py-6 feedback-wrapper">
+        <div class="feedback-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="feedback-header" style="background: var(--bs-primary);">
+                <div><i class="fas fa-comments me-2"></i><strong>Community Feedback</strong></div>
+                <a href="menu.html" class="btn btn-light btn-sm"><i class="fas fa-utensils me-1"></i>Browse Menu</a>
+            </div>
+            <div class="feedback-body">
+                <div>
+                    <div id="thread" class="thread"></div>
+                    <div class="composer mt-3">
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <input id="fbName" type="text" class="form-control" placeholder="Your name (optional)">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="rating" id="fbRating" aria-label="Rate from 1 to 5">
+                                    <i data-v="1" class="fas fa-star"></i>
+                                    <i data-v="2" class="fas fa-star"></i>
+                                    <i data-v="3" class="fas fa-star"></i>
+                                    <i data-v="4" class="fas fa-star"></i>
+                                    <i data-v="5" class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <textarea id="fbText" class="form-control" rows="3" placeholder="Share your experience..." required></textarea>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button id="fbSend" class="btn btn-primary"><i class="fas fa-paper-plane me-2"></i>Post Feedback</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="p-3 border rounded h-100 bg-white">
+                        <h6 class="mb-3">Guidelines</h6>
+                        <ul class="mb-0 small text-muted">
+                            <li>Be respectful and constructive.</li>
+                            <li>No personal information in posts.</li>
+                            <li>Share your dish, service, or ambiance tips.</li>
+                        </ul>
+                        <hr>
+                        <h6 class="mb-2">Latest Highlights</h6>
+                        <div id="highlights" class="small text-muted"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="#" onclick="return false;"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="#" onclick="return false;"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="#" onclick="return false;"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href="#" onclick="return false;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                    <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                    <p>09AM - 09PM</p>
+                    <h5 class="text-light fw-normal">Sunday</h5>
+                    <p>10AM - 08PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-primary w-100 ps-4 pe-5 py-3" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-1 me-2">SignUp</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-primary w-100 ps-4 pe-5 py-3" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-1 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">The Diner's Club</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function loadFeedback() {
+            const data = JSON.parse(localStorage.getItem('feedbackThread') || '[]');
+            return Array.isArray(data) ? data : [];
+        }
+        function saveFeedback(list) {
+            localStorage.setItem('feedbackThread', JSON.stringify(list));
+        }
+        function timeFmt(ts){ return new Date(ts).toLocaleString(); }
+        function renderThread() {
+            const thread = document.getElementById('thread');
+            const list = loadFeedback();
+            if (list.length === 0) {
+                thread.innerHTML = '<div class="text-muted small">No feedback yet. Be the first to post!</div>';
+                return;
+            }
+            thread.innerHTML = list.map(msg => `
+                <div class="bubble ${msg.role === 'user' ? 'user' : 'other'}">
+                    <div><strong>${msg.name || 'Guest'}</strong> ${msg.rating ? '· ' + '★'.repeat(msg.rating) : ''}</div>
+                    <div>${msg.text}</div>
+                    <div class="meta">${timeFmt(msg.ts)}</div>
+                </div>
+            `).join('');
+            thread.scrollTop = thread.scrollHeight;
+            // highlights
+            const top3 = list.slice(-3).reverse();
+            document.getElementById('highlights').innerHTML = top3.map(m => `
+                <div class="mb-2"><i class="fas fa-quote-left me-2"></i>${m.text}</div>
+            `).join('');
+        }
+        function currentRating() {
+            const active = document.querySelectorAll('#fbRating i.active').length;
+            return active || 0;
+        }
+        function bindRating(){
+            document.querySelectorAll('#fbRating i').forEach(star => {
+                star.addEventListener('mouseenter', function(){
+                    const v = parseInt(this.getAttribute('data-v'));
+                    document.querySelectorAll('#fbRating i').forEach(s => s.classList.toggle('active', parseInt(s.getAttribute('data-v')) <= v));
+                });
+                star.addEventListener('click', function(){
+                    const v = parseInt(this.getAttribute('data-v'));
+                    document.querySelectorAll('#fbRating i').forEach(s => s.classList.toggle('active', parseInt(s.getAttribute('data-v')) <= v));
+                });
+            });
+            document.getElementById('fbRating').addEventListener('mouseleave', function(){
+                const v = currentRating();
+                document.querySelectorAll('#fbRating i').forEach(s => s.classList.toggle('active', parseInt(s.getAttribute('data-v')) <= v));
+            });
+        }
+        function postFeedback() {
+            const name = document.getElementById('fbName').value.trim();
+            const text = document.getElementById('fbText').value.trim();
+            const rating = currentRating();
+            if (!text) { alert('Please write your feedback.'); return; }
+            const list = loadFeedback();
+            list.push({ role: 'other', name: name || 'Guest', text: text, rating: rating, ts: Date.now() });
+            saveFeedback(list);
+            document.getElementById('fbText').value = '';
+            renderThread();
+        }
+        document.addEventListener('DOMContentLoaded', function(){
+            const spinner = document.getElementById('spinner');
+            if (spinner) spinner.classList.remove('show');
+            bindRating();
+            renderThread();
+            document.getElementById('fbSend').addEventListener('click', function(e){ e.preventDefault(); postFeedback(); });
+            document.getElementById('fbText').addEventListener('keypress', function(e){ if (e.which === 13 && !e.shiftKey) { e.preventDefault(); postFeedback(); } });
+        });
+    </script>
+
+</body>
+
+</html>
+
+
