@@ -1,0 +1,32 @@
+# Visual Studio temporary files, build results, and
+# user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# EF Core Migrations folder
+Migrations/
+
+# Rider IDE
+.idea/
+
+# npm packages (if any)
+node_modules/
+
+# Publish output
+publish/
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+packages/
