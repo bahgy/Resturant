@@ -1,0 +1,85 @@
+﻿@using BIL.Model_VM.Booking
+
+@model EditBookingVM
+
+<div class="card">
+    <div class="card-header" style="background-color:darkcyan; color:white">
+        Edit Booking
+    </div>
+    <div class="card-body">
+
+        @if (ViewBag.error != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.error
+            </div>
+        }
+
+        <form enctype="multipart/form-data"
+              asp-action="Edit" asp-controller="Booking">
+
+
+            <!-- Booking Date -->
+            <div class="mb-3">
+                <label asp-for="BookingDate" class="form-label"></label>
+                <input type="date" asp-for="BookingDate" class="form-control" />
+                <span class="text-danger" asp-validation-for="BookingDate"></span>
+            </div>
+
+            <!-- Start Time -->
+            <div class="mb-3">
+                <label asp-for="StartTime" class="form-label"></label>
+                <input type="time" asp-for="StartTime" class="form-control" />
+                <span class="text-danger" asp-validation-for="StartTime"></span>
+            </div>
+
+            <!-- End Time -->
+            <div class="mb-3">
+                <label asp-for="EndTime" class="form-label"></label>
+                <input type="time" asp-for="EndTime" class="form-control" />
+                <span class="text-danger" asp-validation-for="EndTime"></span>
+            </div>
+
+            <!-- Number Of Guests -->
+            <div class="mb-3">
+                <label asp-for="NumberOfGuests" class="form-label"></label>
+                <input type="number" asp-for="NumberOfGuests" class="form-control" />
+                <span class="text-danger" asp-validation-for="NumberOfGuests"></span>
+            </div>
+
+            <!-- Status -->
+            <div class="mb-3">
+                <label asp-for="Status" class="form-label"></label>
+                <input type="text" asp-for="Status" class="form-control" />
+                <span class="text-danger" asp-validation-for="Status"></span>
+            </div>
+
+            <!-- Special Requests -->
+            <div class="mb-3">
+                <label asp-for="SpecialRequests" class="form-label"></label>
+                <textarea asp-for="SpecialRequests" class="form-control"></textarea>
+                <span class="text-danger" asp-validation-for="SpecialRequests"></span>
+            </div>
+
+            <!-- Customer Id -->
+            <div class="mb-3">
+                <label asp-for="CustomerId" class="form-label"></label>
+                <input type="number" asp-for="CustomerId" class="form-control" />
+                <span class="text-danger" asp-validation-for="CustomerId"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Table Number</label>
+                <select asp-for="TableId" asp-items="ViewBag.Tables" class="form-control">
+                    <option value="">-- Select Table --</option>
+                </select>
+                <span class="text-danger" asp-validation-for="TableId"></span>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-success">Update</button>
+        </form>
+
+    </div>
+</div>

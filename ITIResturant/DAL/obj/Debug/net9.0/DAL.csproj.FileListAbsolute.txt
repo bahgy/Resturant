@@ -13,3 +13,18 @@ C:\Users\ziad\Desktop\itiMvcProject\Resturant\ITIResturant\DAL\obj\Debug\net9.0\
 C:\Users\ziad\Desktop\itiMvcProject\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.pdb
 C:\Users\ziad\Desktop\itiMvcProject\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
 C:\Users\ziad\Desktop\itiMvcProject\Resturant\ITIResturant\DAL\obj\Debug\net9.0\ref\DAL.dll
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.deps.json
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.dll
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.pdb
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.dll
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\refint\DAL.dll
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.pdb
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\ref\DAL.dll

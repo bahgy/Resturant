@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BIL.Model_VM.Booking
+{
+    public class EditBookingVM
+    {
+        [Required(ErrorMessage = "Booking Date is required")]
+        public DateTime BookingDate { get; set; }
+
+        [Required(ErrorMessage = "Start Time is required")]
+        public DateTime StartTime { get; set; }
+
+        [Required(ErrorMessage = "End Time is required")]
+        public DateTime EndTime { get; set; }
+
+        public int NumberOfGuests { get; set; }
+        public string Status { get; set; }
+        public string SpecialRequests { get; set; }
+        public int CustomerId { get; set; }
+
+        [Required(ErrorMessage = "Please select a table")]
+        public int? TableId { get; set; }
+    }
+}
