@@ -11,3 +11,4 @@ namespace DAL.Entities
         public string Role {  get; set; }
     }
 }
+

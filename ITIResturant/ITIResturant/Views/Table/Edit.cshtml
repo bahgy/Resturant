@@ -1,0 +1,34 @@
+﻿@using BIL.Model_VM.Table
+
+@model EditTableVM
+
+<div class="card">
+    <div class="card-header" style="background-color:chocolate; color:white">
+        Edit Table
+    </div>
+    <div class="card-body">
+        <form asp-action="Edit" asp-controller="Table">
+            <!-- Table Number -->
+            <div class="mb-3">
+                <label asp-for="TableNumber" class="form-label"></label>
+                <input type="number" asp-for="TableNumber" class="form-control" />
+                <span class="text-danger" asp-validation-for="TableNumber"></span>
+            </div>
+
+            <!-- Capacity -->
+            <div class="mb-3">
+                <label asp-for="Capacity" class="form-label"></label>
+                <input type="number" asp-for="Capacity" class="form-control" />
+                <span class="text-danger" asp-validation-for="Capacity"></span>
+            </div>
+
+            <!-- IsActive -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" asp-for="IsActive" class="form-check-input" />
+                <label asp-for="IsActive" class="form-check-label"></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

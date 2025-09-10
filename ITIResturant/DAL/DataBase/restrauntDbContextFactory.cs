@@ -8,7 +8,7 @@ namespace DAL.DataBase
         public ResturantDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ResturantDbContext>();
-            optionsBuilder.UseSqlServer("Server=.;Database=ResturantDb;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-VCK5CED;Database=ResturantDb;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;");
 
             return new ResturantDbContext(optionsBuilder.Options);
         }

@@ -7,10 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Repos\**" />
+    <Compile Remove="StoredProcedure\**" />
+    <EmbeddedResource Remove="Repos\**" />
+    <EmbeddedResource Remove="StoredProcedure\**" />
+    <None Remove="Repos\**" />
+    <None Remove="StoredProcedure\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Enum\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Repos\" />
-    <Folder Include="StoredProcedure\" />
   </ItemGroup>
 
   <ItemGroup>
