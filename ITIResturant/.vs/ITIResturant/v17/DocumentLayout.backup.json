@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\ITIResturant.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\resturant\\itiresturant\\itiresturant\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\ITIResturant.csproj|solutionrelative:itiresturant\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\ITIResturant.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\resturant\\itiresturant\\itiresturant\\views\\shared\\newlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\ITIResturant.csproj|solutionrelative:itiresturant\\views\\shared\\newlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\ITIResturant.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\resturant\\itiresturant\\itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\ITIResturant.csproj|solutionrelative:itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -157,7 +165,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -173,7 +181,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\_ViewStart.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\_ViewStart.cshtml*",
+              "RelativeToolTip": "ITIResturant\\Views\\_ViewStart.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-11T18:26:01.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "NewLayout.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\NewLayout.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Shared\\NewLayout.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\NewLayout.cshtml*",
+              "RelativeToolTip": "ITIResturant\\Views\\Shared\\NewLayout.cshtml*",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-11T17:39:38.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GetAll.cshtml",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\Table\\GetAll.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Table\\GetAll.cshtml",
@@ -186,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\Table\\Edit.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Table\\Edit.cshtml",
@@ -199,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\Table\\Create.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Table\\Create.cshtml",
@@ -212,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GetAll.cshtml",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\GetAll.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\GetAll.cshtml",
@@ -225,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Edit.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\Edit.cshtml",
@@ -238,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Create.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\Create.cshtml",
@@ -251,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TableController.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\TableController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\TableController.cs",
@@ -264,20 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "ITIResturant\\Controllers\\BookingController.cs",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "ITIResturant\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T09:21:24.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
               "RelativeDocumentMoniker": "ITIResturant\\appsettings.json",
@@ -290,7 +311,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "ITIResturant\\Controllers\\BookingController.cs",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "ITIResturant\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T09:21:24.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "CreateBookingVM.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\BIL\\Model VM\\Booking\\CreateBookingVM.cs",
               "RelativeDocumentMoniker": "BIL\\Model VM\\Booking\\CreateBookingVM.cs",
@@ -303,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "TableService.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\BIL\\Service\\Impelementation\\TableService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Impelementation\\TableService.cs",
@@ -316,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "BookingService.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\BIL\\Service\\Impelementation\\BookingService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Impelementation\\BookingService.cs",
@@ -329,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ITableService.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\ITableService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\ITableService.cs",
@@ -342,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "BookingRepo.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Repo\\Impelementation\\BookingRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Impelementation\\BookingRepo.cs",
@@ -355,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "TableRepo.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Repo\\Impelementation\\TableRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Impelementation\\TableRepo.cs",
@@ -368,7 +402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Program.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Program.cs",
@@ -381,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "IBookingService.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IBookingService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IBookingService.cs",
@@ -394,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "GetAllBookingVM.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\BIL\\Model VM\\Booking\\GetAllBookingVM.cs",
               "RelativeDocumentMoniker": "BIL\\Model VM\\Booking\\GetAllBookingVM.cs",
@@ -407,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "EditBookingVM.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\BIL\\Model VM\\Booking\\EditBookingVM.cs",
               "RelativeDocumentMoniker": "BIL\\Model VM\\Booking\\EditBookingVM.cs",
@@ -420,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "TableVM.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\BIL\\Model VM\\Table\\TableVM.cs",
               "RelativeDocumentMoniker": "BIL\\Model VM\\Table\\TableVM.cs",
@@ -433,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Table.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Table.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Table.cs",
@@ -446,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "restrauntDbContextFactory.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\DataBase\\restrauntDbContextFactory.cs",
               "RelativeDocumentMoniker": "DAL\\DataBase\\restrauntDbContextFactory.cs",
@@ -459,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Global.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\ITIResturant\\Common\\Global.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Common\\Global.cs",
@@ -472,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Booking.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Booking.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Booking.cs",
@@ -485,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "20250908080059_V5fixed.cs",
               "DocumentMoniker": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\DAL\\Migrations\\20250908080059_V5fixed.cs",
               "ToolTip": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\DAL\\Migrations\\20250908080059_V5fixed.cs",
@@ -495,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "ShopingCartItem.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\ShopingCartItem.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\ShopingCartItem.cs",
@@ -507,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\OrderItem.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\OrderItem.cs",
@@ -519,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Cart.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Cart.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Cart.cs",
@@ -531,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Category.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Category.cs",
@@ -543,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Product.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Product.cs",
@@ -555,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "PromoCode.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\PromoCode.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\PromoCode.cs",
@@ -567,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Order.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Order.cs",
@@ -579,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "EmailNotification.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\EmailNotification.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\EmailNotification.cs",
@@ -591,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Feedback.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Feedback.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Feedback.cs",
@@ -603,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "Admin.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Admin.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Admin.cs",
@@ -615,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Customer.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\Customer.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Customer.cs",
@@ -627,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "User.cs",
               "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\Resturant\\ITIResturant\\DAL\\Entities\\User.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\User.cs",
