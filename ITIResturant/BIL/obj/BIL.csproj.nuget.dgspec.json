@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\BIL\\BIL.csproj": {}
+    "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\BIL\\BIL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\BIL\\BIL.csproj": {
+    "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\BIL\\BIL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\BIL\\BIL.csproj",
+        "projectUniqueName": "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\BIL\\BIL.csproj",
         "projectName": "BIL",
-        "projectPath": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\BIL\\BIL.csproj",
-        "packagesPath": "C:\\Users\\ziad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\BIL\\obj\\",
+        "projectPath": "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\BIL\\BIL.csproj",
+        "packagesPath": "C:\\Users\\M lapan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\BIL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ziad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\M lapan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\DAL\\DAL.csproj"
+              "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\DAL\\DAL.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -89,24 +93,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\DAL\\DAL.csproj": {
+    "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\ziad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ziad\\Desktop\\itiMvcProject\\Resturant\\ITIResturant\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\M lapan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M lapan\\OneDrive\\Desktop\\ProjectResturantForITI\\Resturant\\ITIResturant\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ziad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\M lapan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -139,6 +143,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -174,7 +182,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

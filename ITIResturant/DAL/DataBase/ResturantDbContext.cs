@@ -15,12 +15,13 @@ namespace DAL.DataBase
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<Customer>Customers { get; set; }
         public DbSet<Cart>Carts { get; set; }
         public   DbSet<Category> Categories { get; set; }
         public DbSet<EmailNotification> EmailNotifications { get; set; }
         public DbSet<ShopingCartItem> ShopingCartItems { get; set; }
-       // public DbSet<PromoCode>promoCodes { get; set; }
+        public DbSet<PromoCode> promoCodes { get; set; }
         public ResturantDbContext(DbContextOptions<ResturantDbContext> options) : base(options) { }
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

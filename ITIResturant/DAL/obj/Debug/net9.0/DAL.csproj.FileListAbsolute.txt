@@ -13,3 +13,18 @@ C:\Users\ziad\Desktop\itiMvcProject\Resturant\ITIResturant\DAL\obj\Debug\net9.0\
 C:\Users\ziad\Desktop\itiMvcProject\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.pdb
 C:\Users\ziad\Desktop\itiMvcProject\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
 C:\Users\ziad\Desktop\itiMvcProject\Resturant\ITIResturant\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\M lapan\OneDrive\Desktop\ProjectResturantForITI\Resturant\ITIResturant\DAL\obj\Debug\net9.0\ref\DAL.dll

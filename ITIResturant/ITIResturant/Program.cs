@@ -1,4 +1,10 @@
 
+using BIL.Mapper;
+using BIL.Service.Abstraction;
+using BIL.Service.Implementation;
+using DAL.Repos.Abstraction;
+using DAL.Repos.Implementation;
+
 namespace ITIResturant
 {
     public class Program
@@ -11,6 +17,20 @@ namespace ITIResturant
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<ResturantDbContext>
                 (options => options.UseSqlServer(builder.Configuration.GetConnectionString("Connect1")));
+            builder.Services.AddAutoMapper(x => x.AddProfile(new OrderItemProfile()));
+            builder.Services.AddAutoMapper(x => x.AddProfile(new OrderProfile()));
+            builder.Services.AddAutoMapper(x => x.AddProfile(new PromoCodeProfile()));
+            builder.Services.AddScoped<IOrderItemRepo, OrderItemRepo>();
+            builder.Services.AddScoped<IOrderRepo, OrderRepo>();
+            builder.Services.AddScoped<IPromoCodeRepo, PromoCodeRepo>();
+            builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
+            builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+            builder.Services.AddScoped<IProductRepo, ProductRepo>();
+            builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+            builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
+
             var app = builder.Build();
 
 
