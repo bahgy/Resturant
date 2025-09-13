@@ -1,8 +1,12 @@
 
+using BIL.Mapper;
 using BIL.Service.Abstraction;
 using BIL.Service.Impelementation;
+using BIL.Service.Implementation;
 using DAL.Repo.Abstraction;
 using DAL.Repo.Impelementation;
+using DAL.Repos.Abstraction;
+using DAL.Repos.Implementation;
 
 namespace ITIResturant
 {
@@ -22,6 +26,19 @@ namespace ITIResturant
             builder.Services.AddScoped<IBookingService, BookingService>();
             builder.Services.AddScoped<ITableRepo, TableRepo>();
             builder.Services.AddScoped<ITableService, TableService>();
+            builder.Services.AddAutoMapper(x => x.AddProfile(new OrderItemProfile()));
+            builder.Services.AddAutoMapper(x => x.AddProfile(new OrderProfile()));
+            builder.Services.AddAutoMapper(x => x.AddProfile(new PromoCodeProfile()));
+            builder.Services.AddScoped<IOrderItemRepo, OrderItemRepo>();
+            builder.Services.AddScoped<IOrderRepo, OrderRepo>();
+            builder.Services.AddScoped<IPromoCodeRepo, PromoCodeRepo>();
+            builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
+            builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+            builder.Services.AddScoped<IProductRepo, ProductRepo>();
+            builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+            builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
             var app = builder.Build();
 
 

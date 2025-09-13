@@ -30,3 +30,9 @@ publish/
 # NuGet
 *.nupkg
 packages/
+
+# Visual Studio settings
+.vs/
+*.user
+*.suo
+
