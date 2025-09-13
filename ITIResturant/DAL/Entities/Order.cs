@@ -8,11 +8,11 @@ namespace DAL.Entities
 {
     public class Order
     {
-       public int Id { get; set; }
+        public int Id { get; set; }
         public DateTime TimeRequst { get; set; }
         public decimal TotalAmount { get; set; }
-
-        public string status {  get; set; }
+        public decimal DiscountAmount { get; set; }
+        public string status { get; set; }
         public DateTime EstimatDelivryTime { get; set; }
         public string PaymentMethod { get; set; }
         public string paymentSTate { get; set; }
@@ -20,8 +20,9 @@ namespace DAL.Entities
         public Customer Customer { get; set; }
 
         public string DelivryAddress { get; set; }
-        // public int promocode { get; set; }
+        public int? PromoCodeId { get; set; }
+        public PromoCode PromoCode { get; set; }
         public List<OrderItem> OrderItems { get; set; }
-        public List< Feedback> Feedback { get; set; }
+        public List<Feedback> Feedback { get; set; }
     }
 }
