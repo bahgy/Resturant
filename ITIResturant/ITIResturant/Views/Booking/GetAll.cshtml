@@ -2,6 +2,34 @@
 
 @model List<GetAllBookingVM>
 
+
+@{
+    Layout = "NewLayout";
+    ViewData["ActivePage"] = "GetAll"; // عشان يظبط الزرار Active
+}
+
+@section Sidebar {
+    <!-- هنا بيتكرر نفس الـ Sidebar -->
+    <div class="sidebar bg-light border-end p-3">
+        <h5 class="text-dark mb-4 fw-bold"> Bookings</h5>
+        <ul class="nav flex-column gap-2">
+            <li class="nav-item">
+                <a asp-controller="Booking" asp-action="Create"
+                   class="btn w-100 text-start d-flex align-items-center gap-2 sidebar-btn">
+                    <i class="bi bi-plus-circle"></i> Create Booking
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Booking" asp-action="GetAll"
+                   class="btn w-100 text-start d-flex align-items-center gap-2 active-btn">
+                    <i class="bi bi-list-ul"></i> Get All Bookings
+                </a>
+            </li>
+        </ul>
+    </div>
+}
+
+
 <div class="container mt-4">
     <h2 class="mb-4">All Bookings</h2>
 
