@@ -28,6 +28,10 @@ namespace DAL.DataBase
 =======
         public DbSet<PromoCode> promoCodes { get; set; }
         public DbSet<Product> Products { get; set; }
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
+>>>>>>> main
 >>>>>>> origin/main
         public ResturantDbContext(DbContextOptions<ResturantDbContext> options) : base(options) { }
         //protected override void OnModelCreating(ModelBuilder modelBuilder)

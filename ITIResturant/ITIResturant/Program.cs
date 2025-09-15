@@ -45,6 +45,10 @@ namespace ITIResturant
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IOrderItemService, OrderItemService>();
             builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
+>>>>>>> main
 >>>>>>> origin/main
             var app = builder.Build();
 
