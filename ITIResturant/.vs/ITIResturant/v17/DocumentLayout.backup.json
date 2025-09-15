@@ -1,12 +1,155 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\ITIResturant.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\ITIResturant.csproj|solutionrelative:itiresturant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\BIL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\bil\\service\\impelementation\\promocodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\BIL.csproj|solutionrelative:bil\\service\\impelementation\\promocodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\BIL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\bil\\service\\impelementation\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\BIL.csproj|solutionrelative:bil\\service\\impelementation\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\BIL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\bil\\service\\impelementation\\orderitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\BIL.csproj|solutionrelative:bil\\service\\impelementation\\orderitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\BIL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\bil\\mapper\\promocodeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\BIL.csproj|solutionrelative:bil\\mapper\\promocodeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\DAL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\dal\\database\\resturantdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\DAL.csproj|solutionrelative:dal\\database\\resturantdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\DAL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\dal\\repo\\abstraction\\iemailnotificationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\abstraction\\iemailnotificationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\DAL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\dal\\repo\\abstraction\\ifeedbackrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\DAL.csproj|solutionrelative:dal\\repo\\abstraction\\ifeedbackrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Program.cs",
+              "RelativeDocumentMoniker": "ITIResturant\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Program.cs",
+              "RelativeToolTip": "ITIResturant\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:10:59.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PromoCodeService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Impelementation\\PromoCodeService.cs",
+              "RelativeDocumentMoniker": "BIL\\Service\\Impelementation\\PromoCodeService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Impelementation\\PromoCodeService.cs",
+              "RelativeToolTip": "BIL\\Service\\Impelementation\\PromoCodeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:10:57.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Impelementation\\OrderService.cs",
+              "RelativeDocumentMoniker": "BIL\\Service\\Impelementation\\OrderService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Impelementation\\OrderService.cs",
+              "RelativeToolTip": "BIL\\Service\\Impelementation\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:10:55.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderItemService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Impelementation\\OrderItemService.cs",
+              "RelativeDocumentMoniker": "BIL\\Service\\Impelementation\\OrderItemService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Impelementation\\OrderItemService.cs",
+              "RelativeToolTip": "BIL\\Service\\Impelementation\\OrderItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:10:54.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PromoCodeProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\PromoCodeProfile.cs",
+              "RelativeDocumentMoniker": "BIL\\Mapper\\PromoCodeProfile.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\PromoCodeProfile.cs",
+              "RelativeToolTip": "BIL\\Mapper\\PromoCodeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:10:51.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResturantDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\DataBase\\ResturantDbContext.cs",
+              "RelativeDocumentMoniker": "DAL\\DataBase\\ResturantDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\DataBase\\ResturantDbContext.cs",
+              "RelativeToolTip": "DAL\\DataBase\\ResturantDbContext.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA1wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:10:22.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IFeedbackRepo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IFeedbackRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IFeedbackRepo.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IFeedbackRepo.cs",
+              "RelativeToolTip": "DAL\\Repo\\Abstraction\\IFeedbackRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:01:53.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEmailNotificationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IEmailNotificationRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IEmailNotificationRepo.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IEmailNotificationRepo.cs",
+              "RelativeToolTip": "DAL\\Repo\\Abstraction\\IEmailNotificationRepo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:01:48.19Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

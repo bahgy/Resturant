@@ -26,12 +26,12 @@ namespace ITIResturant
             builder.Services.AddScoped<IBookingService, BookingService>();
             builder.Services.AddScoped<ITableRepo, TableRepo>();
             builder.Services.AddScoped<ITableService, TableService>();
-<<<<<<< HEAD
+
             builder.Services.AddScoped<IEmailNotificationService, EmailNotificationService>();
             builder.Services.AddScoped<IEmailNotificationRepo, EmailNotificationRepo>();
             builder.Services.AddScoped<IFeedbackRepo, FeedbackRepo>();
             builder.Services.AddScoped<IFeedbackService, FeedbackService>();
-=======
+
             builder.Services.AddAutoMapper(x => x.AddProfile(new OrderItemProfile()));
             builder.Services.AddAutoMapper(x => x.AddProfile(new OrderProfile()));
             builder.Services.AddAutoMapper(x => x.AddProfile(new PromoCodeProfile()));
@@ -45,10 +45,10 @@ namespace ITIResturant
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<IOrderItemService, OrderItemService>();
             builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
->>>>>>> main
+
             var app = builder.Build();
 
-
+            /*comment added*/
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
 
