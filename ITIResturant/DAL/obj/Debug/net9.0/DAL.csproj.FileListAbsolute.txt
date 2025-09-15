@@ -28,3 +28,18 @@ F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\refint\
 F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.pdb
 F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
 F:\c plus\iti new\مشروع\Resturant\ITIResturant\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\bin\Debug\net9.0\DAL.pdb
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.pdb
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\iti_VS_C#\Resturant\ITIResturant\DAL\obj\Debug\net9.0\ref\DAL.dll

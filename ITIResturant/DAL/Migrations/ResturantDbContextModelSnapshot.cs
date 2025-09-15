@@ -33,28 +33,46 @@ namespace DAL.Migrations
                     b.Property<DateTime>("BookingDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
-                    b.Property<int>("TableNumber")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("endtime")
+                    b.Property<DateTime?>("DeletedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("numberOfGuests")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("starttime")
+                    b.Property<DateTime>("EndTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("status")
+                    b.Property<bool?>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NumberOfGuests")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SpecialRequests")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("StartTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TableId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
+
+                    b.HasIndex("TableId");
 
                     b.ToTable("Bookings");
                 });
@@ -307,6 +325,28 @@ namespace DAL.Migrations
                     b.ToTable("ShopingCartItems");
                 });
 
+            modelBuilder.Entity("DAL.Entities.Table", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Capacity")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("TableNumber")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tables");
+                });
+
             modelBuilder.Entity("DAL.Entities.User", b =>
                 {
                     b.Property<int>("Id")
@@ -379,13 +419,19 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DAL.Entities.Booking", b =>
                 {
-                    b.HasOne("DAL.Entities.Customer", "Customer")
+                    b.HasOne("DAL.Entities.Customer", null)
                         .WithMany("bookings")
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.HasOne("DAL.Entities.Table", "Table")
+                        .WithMany("Bookings")
+                        .HasForeignKey("TableId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Table");
                 });
 
             modelBuilder.Entity("DAL.Entities.Cart", b =>
@@ -511,6 +557,11 @@ namespace DAL.Migrations
                     b.Navigation("OrderItems");
 
                     b.Navigation("shopingCartItems");
+                });
+
+            modelBuilder.Entity("DAL.Entities.Table", b =>
+                {
+                    b.Navigation("Bookings");
                 });
 
             modelBuilder.Entity("DAL.Entities.Customer", b =>

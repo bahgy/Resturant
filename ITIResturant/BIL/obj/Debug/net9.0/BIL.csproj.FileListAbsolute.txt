@@ -34,3 +34,21 @@ F:\c plus\iti new\مشروع\Resturant\ITIResturant\BIL\obj\Debug\net9.0\refint\
 F:\c plus\iti new\مشروع\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.pdb
 F:\c plus\iti new\مشروع\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.genruntimeconfig.cache
 F:\c plus\iti new\مشروع\Resturant\ITIResturant\BIL\obj\Debug\net9.0\ref\BIL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\bin\Debug\net9.0\BIL.deps.json
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\bin\Debug\net9.0\BIL.runtimeconfig.json
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\bin\Debug\net9.0\BIL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\bin\Debug\net9.0\BIL.pdb
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\bin\Debug\net9.0\DAL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\bin\Debug\net9.0\DAL.pdb
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.csproj.AssemblyReference.cache
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.GeneratedMSBuildEditorConfig.editorconfig
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.AssemblyInfoInputs.cache
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.AssemblyInfo.cs
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.csproj.CoreCompileInputs.cache
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.sourcelink.json
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.csproj.Up2Date
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\refint\BIL.dll
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.pdb
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\BIL.genruntimeconfig.cache
+C:\iti_VS_C#\Resturant\ITIResturant\BIL\obj\Debug\net9.0\ref\BIL.dll
