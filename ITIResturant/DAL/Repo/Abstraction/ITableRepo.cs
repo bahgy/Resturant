@@ -14,5 +14,6 @@ namespace DAL.Repo.Abstraction
         bool Delete(int tableId);
         List<Table> GetAll();
         Table GetById(int tableId);
+        List<Table> GetAvailableTables(DateTime bookingDate, int duration, int numberOfGuests);
     }
 }

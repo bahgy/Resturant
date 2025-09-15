@@ -22,6 +22,7 @@ namespace DAL.Repo.Abstraction
           void Update(EmailNotification notification); */
 
 
+
         Task AddAsync(EmailNotification notification);
         Task UpdateAsync(EmailNotification notification);
         Task DeleteAsync(int id);
