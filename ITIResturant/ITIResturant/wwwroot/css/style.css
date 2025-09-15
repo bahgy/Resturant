@@ -1,4 +1,4 @@
-
+﻿
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
@@ -697,3 +697,27 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 
 
+.sidebar-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 10px 12px;
+}
+
+    .sidebar-btn:hover {
+        background-color: #f7c04a; /* دهبي فاتح */
+        color: #000;
+        border-color: #f7c04a;
+    }
+
+.active-btn {
+    background-color: #d19c1d; /* دهبي غامق */
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #d19c1d;
+    padding: 10px 12px;
+}
