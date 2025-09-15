@@ -21,9 +21,14 @@ namespace DAL.DataBase
         public DbSet<EmailNotification> EmailNotifications { get; set; }
         public DbSet<ShopingCartItem> ShopingCartItems { get; set; }
         public DbSet<Table> Tables { get; set; }
+<<<<<<< HEAD
 
         
         // public DbSet<PromoCode>promoCodes { get; set; }
+=======
+        public DbSet<PromoCode> promoCodes { get; set; }
+        public DbSet<Product> Products { get; set; }
+>>>>>>> origin/main
         public ResturantDbContext(DbContextOptions<ResturantDbContext> options) : base(options) { }
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

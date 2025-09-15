@@ -4,29 +4,25 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
-using DAL.Enum;
 
-namespace DAL.Entities
+namespace BIL.ModelVM.PromoCode
 {
-    public class PromoCode
+    public class CreatePromoCodeVM
     {
-        [Key]
-        public int Id { get; set; }
-
         [Required]
-        [StringLength(50)]
+        [StringLength(50, MinimumLength = 3)]
         public string Code { get; set; }
 
+        [Required]
         [StringLength(200)]
         public string Description { get; set; }
 
         [Required]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Discount value must be greater than 0")]
         public decimal DiscountValue { get; set; }
 
         [Required]
-        public DiscountType DiscountType { get; set; }
+        public string DiscountType { get; set; } // "Percentage" or "FixedAmount"
 
         [Required]
         public DateTime ValidFromTime { get; set; }
@@ -35,13 +31,11 @@ namespace DAL.Entities
         public DateTime ValidTo { get; set; }
 
         [Required]
-        public int MaxUsedtime { get; set; }
+        [Range(1, int.MaxValue, ErrorMessage = "Max uses must be at least 1")]
+        public int MaxUsedTime { get; set; }
 
-        public int UsedCount { get; set; }
-
-        public decimal MinimumOrderAmount { get; set; }
-
-
-        public List<Order> Orders { get; set; }
+        [Range(0, double.MaxValue)]
+        public decimal MinimumOrderAmount { get; set; } = 0;
     }
 }
+
