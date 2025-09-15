@@ -28,7 +28,15 @@ namespace DAL.DataBase
 
         public DbSet<PromoCode> promoCodes { get; set; }
         public DbSet<Product> Products { get; set; }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
+>>>>>>> main
+>>>>>>> origin/main
+>>>>>>> d048f6848dc704df499727eea13fe281930b9f30
         public ResturantDbContext(DbContextOptions<ResturantDbContext> options) : base(options) { }
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
