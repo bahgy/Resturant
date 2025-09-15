@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model DAL.Entities.Feedback
+
+<h2>Feedback Details</h2>
+<p><strong>Comment:</strong> @Model.Comment</p>
+<p><strong>Rating:</strong> @Model.Rating</p>
+<p><strong>Date:</strong> @Model.SubmittedDate</p>
+@* <p><strong>Customer:</strong> @Model.Customer?.Name</p> *@
+<p><strong>Order:</strong> @Model.Order?.Id</p>
+
+<a asp-action="Index" class="btn btn-secondary">Back</a>

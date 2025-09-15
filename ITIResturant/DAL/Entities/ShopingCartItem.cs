@@ -10,6 +10,8 @@ namespace DAL.Entities
 {
     public class ShopingCartItem
     {
+      
+
         [Key]
         public int Id { get; set; }
 
