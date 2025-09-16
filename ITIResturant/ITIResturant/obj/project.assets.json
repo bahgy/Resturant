@@ -4610,23 +4610,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\ahmed khaled\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\ITIResturant.csproj",
+      "projectUniqueName": "C:\\iti_VS_C#\\Resturant\\ITIResturant\\ITIResturant\\ITIResturant.csproj",
       "projectName": "ITIResturant",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\ITIResturant.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\obj\\",
+      "projectPath": "C:\\iti_VS_C#\\Resturant\\ITIResturant\\ITIResturant\\ITIResturant.csproj",
+      "packagesPath": "C:\\Users\\ahmed khaled\\.nuget\\packages\\",
+      "outputPath": "C:\\iti_VS_C#\\Resturant\\ITIResturant\\ITIResturant\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ahmed khaled\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4641,8 +4641,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\BIL.csproj": {
-              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\BIL.csproj"
+            "C:\\iti_VS_C#\\Resturant\\ITIResturant\\BIL\\BIL.csproj": {
+              "projectPath": "C:\\iti_VS_C#\\Resturant\\ITIResturant\\BIL\\BIL.csproj"
             }
           }
         }
@@ -4708,5 +4708,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\iti_VS_C#\\Resturant\\ITIResturant\\ITIResturant\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }

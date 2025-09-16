@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BIL.Model_VM.Feedback
 {
-    public class EditFeedbackVM
+    public class UpdateFeedbackVM
     {
 
         [Required(ErrorMessage = "Feedback Id is required")]

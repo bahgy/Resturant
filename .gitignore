@@ -1,17 +1,18 @@
-# Visual Studio temporary files, build results, and
-# user-specific files
+# Visual Studio
 .vs/
 *.user
 *.suo
-*.userosscache
-*.sln.docstates
 
-# Build results
-bin/
-obj/
-Debug/
-Release/
+# Build outputs
+[Bb]in/
+[Oo]bj/
 
+<<<<<<< HEAD
+# Others
+*.dll
+*.pdb
+*.cache
+=======
 # EF Core Migrations folder
 Migrations/
 
@@ -36,3 +37,4 @@ packages/
 *.user
 *.suo
 
+>>>>>>> origin/main
