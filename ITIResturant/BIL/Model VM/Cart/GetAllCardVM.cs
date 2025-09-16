@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repo.Abstraction
+namespace BIL.Model_VM.Cart
 {
-    public class Cart
+    internal class GetAllCardVM
     {
     }
 }

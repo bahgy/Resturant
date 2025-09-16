@@ -59,7 +59,7 @@ namespace ITIResturant.Controllers
             var feedback = await _service.GetByIdAsync(id);
             if (feedback == null) return NotFound();
 
-            var vm = new EditFeedbackVM
+            var vm = new UpdateFeedbackVM
             {
                 Id = feedback.Id,
                 Comment = feedback.Comment,
@@ -74,7 +74,7 @@ namespace ITIResturant.Controllers
         // POST: Feedback/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(EditFeedbackVM vm)
+        public async Task<IActionResult> Edit(UpdateFeedbackVM vm)
         {
             if (ModelState.IsValid)
             {

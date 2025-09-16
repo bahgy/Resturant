@@ -40,16 +40,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xHZXRBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/Cart/CreateCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDcmVhdGVDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/EmailNotification/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxOb3RpZmljYXRpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/EmailNotification/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxOb3RpZmljYXRpb25cRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/EmailNotification/GetAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxOb3RpZmljYXRpb25cR2V0QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/EmailNotification/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxOb3RpZmljYXRpb25cVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/Feedback/Create.cshtml]
@@ -60,12 +64,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/Feedback/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/Feedback/GetAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcR2V0QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/Feedback/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmVlZGJhY2tcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/iti_VS_C\#/Resturant/ITIResturant/ITIResturant/Views/Home/Index.cshtml]

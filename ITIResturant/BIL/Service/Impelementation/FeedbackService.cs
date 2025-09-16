@@ -103,7 +103,7 @@ namespace BIL.Service.Impelementation
             }
         }
 
-        public async Task UpdateAsync(EditFeedbackVM feedbackVM)
+        public async Task UpdateAsync(UpdateFeedbackVM feedbackVM)
         {
             try
             {

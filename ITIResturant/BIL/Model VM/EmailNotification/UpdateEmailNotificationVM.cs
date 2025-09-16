@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BIL.Model_VM.EmailNotification
 {
-    public class EditEmailNotificationVM
+    public class UpdateEmailNotificationVM
     {
         public int Id { get; set; } // لازم نعرف أي Notification نعدلها
         public string ToAddress { get; set; }
