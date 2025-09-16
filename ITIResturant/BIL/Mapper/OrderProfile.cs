@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using BIL.ModelVM.Order;
-using DAL.Entities;
+using Restaurant.BLL.ModelVM.Order;
+using Restaurant.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIL.Mapper
+namespace Restaurant.BLL.Mapper
 {
     public class OrderProfile:Profile
     {
@@ -19,11 +19,11 @@ namespace BIL.Mapper
                 .ForMember(dest => dest.PaymentState, opt => opt.MapFrom(src => src.paymentSTate))
                 .ForMember(dest => dest.CustomerName,
                            opt => opt.MapFrom(src => src.Customer != null ?
-                               $"{src.Customer.Fname} {src.Customer.Lname}" : "Unknown Customer"))
+                               $"{src.Customer.FirstName} {src.Customer.LastName}" : "Unknown Customer"))
                 .ForMember(dest => dest.CustomerEmail,
                            opt => opt.MapFrom(src => src.Customer != null ? src.Customer.Email : null))
                 .ForMember(dest => dest.CustomerPhone,
-                           opt => opt.MapFrom(src => src.Customer != null ? src.Customer.Phone : null))
+                           opt => opt.MapFrom(src => src.Customer != null ? src.Customer.PhoneNumber : null))
                 .ForMember(dest => dest.PromoCode,
                            opt => opt.MapFrom(src => src.PromoCode != null ? src.PromoCode.Code : null))
                 .ForMember(dest => dest.PromoCodeDescription,

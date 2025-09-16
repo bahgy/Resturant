@@ -1,6 +1,6 @@
-﻿using DAL.DataBase;
-using DAL.Entities;
-using DAL.Repo.Abstraction;
+﻿using Restaurant.DAL.Database;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repo.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,13 +8,13 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repo.Impelementation
+namespace Restaurant.DAL.Repo.Impelementation
 {
     public class BookingRepo : IBookingRepo
     {
-        private readonly ResturantDbContext Db;
+        private readonly RestaurantDbContext Db;
 
-        public BookingRepo(ResturantDbContext context)
+        public BookingRepo(RestaurantDbContext context)
         {
             Db = context;
         }

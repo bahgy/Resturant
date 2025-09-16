@@ -1,11 +1,11 @@
-﻿using BIL.Model_VM.Table;
-using BIL.Service.Abstraction;
-using DAL.Entities;
-using DAL.Repo.Abstraction;
-using DAL.Repo.Impelementation;
+﻿using Restaurant.BLL.Model_VM.Table;
+using Restaurant.BLL.Service.Abstraction;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repo.Abstraction;
+using Restaurant.DAL.Repo.Impelementation;
 
 
-namespace BIL.Service.Impelementation
+namespace Restaurant.BLL.Service.Impelementation
 {
     public class TableService : ITableService
     {

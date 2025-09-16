@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Entities
+namespace Restaurant.DAL.Entities
 {
     public class Order
     {
@@ -23,6 +23,6 @@ namespace DAL.Entities
         public int? PromoCodeId { get; set; }
         public PromoCode PromoCode { get; set; }
         public List<OrderItem> OrderItems { get; set; }
-        public List<Feedback> Feedback { get; set; }
+        public List<Feedback> Feedbacks { get; set; }
     }
 }

@@ -1,15 +1,15 @@
-﻿using BIL.Model_VM.Booking;
-using BIL.Service.Abstraction;
-using DAL.Entities;
-using DAL.Repo.Abstraction;
-using DAL.Repo.Impelementation;
+﻿using Restaurant.BLL.Model_VM.Booking;
+using Restaurant.BLL.Service.Abstraction;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repo.Abstraction;
+using Restaurant.DAL.Repo.Impelementation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIL.Service.Impelementation
+namespace Restaurant.BLL.Service.Impelementation
 {
     public class BookingService : IBookingService
     {

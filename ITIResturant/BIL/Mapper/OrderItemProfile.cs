@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using BIL.ModelVM.OrderItem;
-using DAL.Entities;
+using Restaurant.BLL.ModelVM.OrderItem;
+using Restaurant.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIL.Mapper
+namespace Restaurant.BLL.Mapper
 {
     public class OrderItemProfile : Profile
     {

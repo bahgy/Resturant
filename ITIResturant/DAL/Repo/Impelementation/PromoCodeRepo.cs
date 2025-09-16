@@ -1,6 +1,6 @@
-﻿using DAL.DataBase;
-using DAL.Entities;
-using DAL.Repos.Abstraction;
+﻿using Restaurant.DAL.Database;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repos.Abstraction;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,37 +8,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repos.Implementation
+namespace Restaurant.DAL.Repos.Implementation
 {
     public class PromoCodeRepo:IPromoCodeRepo
     {
-        private readonly ResturantDbContext _context;
+        private readonly RestaurantDbContext _context;
 
-        public PromoCodeRepo(ResturantDbContext context)
+        public PromoCodeRepo(RestaurantDbContext context)
         {
             _context = context;
         }
 
         public async Task<PromoCode> GetByIdAsync(int id)
         {
-            return await _context.promoCodes.FindAsync(id);
+            return await _context.PromoCodes.FindAsync(id);
         }
 
         public async Task<PromoCode> GetByCodeAsync(string code)
         {
-            return await _context.promoCodes
+            return await _context.PromoCodes
                 .FirstOrDefaultAsync(pc => pc.Code == code);
         }
 
         public async Task<IEnumerable<PromoCode>> GetAllAsync()
         {
-            return await _context.promoCodes.ToListAsync();
+            return await _context.PromoCodes.ToListAsync();
         }
 
         public async Task<IEnumerable<PromoCode>> GetValidPromoCodesAsync()
         {
             var now = DateTime.UtcNow;
-            return await _context.promoCodes
+            return await _context.PromoCodes
                 .Where(pc => pc.ValidFromTime <= now && pc.ValidTo >= now && pc.UsedCount < pc.MaxUsedtime)
                 .ToListAsync();
         }
@@ -47,7 +47,7 @@ namespace DAL.Repos.Implementation
         {
             try
             {
-                await _context.promoCodes.AddAsync(promoCode);
+                await _context.PromoCodes.AddAsync(promoCode);
                 var result = await _context.SaveChangesAsync();
                 return result > 0;
             }
@@ -61,7 +61,7 @@ namespace DAL.Repos.Implementation
         {
             try
             {
-                _context.promoCodes.Update(promoCode);
+                _context.PromoCodes.Update(promoCode);
                 var result = await _context.SaveChangesAsync();
                 return result > 0;
             }
@@ -79,7 +79,7 @@ namespace DAL.Repos.Implementation
                 if (promoCode == null)
                     return false;
 
-                _context.promoCodes.Remove(promoCode);
+                _context.PromoCodes.Remove(promoCode);
                 var result = await _context.SaveChangesAsync();
                 return result > 0;
             }
@@ -91,13 +91,13 @@ namespace DAL.Repos.Implementation
 
         public async Task<bool> ExistsAsync(int id)
         {
-            return await _context.promoCodes.AnyAsync(pc => pc.Id == id);
+            return await _context.PromoCodes.AnyAsync(pc => pc.Id == id);
         }
 
         public async Task<bool> IsCodeValidAsync(string code)
         {
             var now = DateTime.UtcNow;
-            return await _context.promoCodes
+            return await _context.PromoCodes
                 .AnyAsync(pc => pc.Code == code &&
                                pc.ValidFromTime <= now &&
                                pc.ValidTo >= now &&
@@ -113,7 +113,7 @@ namespace DAL.Repos.Implementation
                     return false;
 
                 promoCode.UsedCount++;
-                _context.promoCodes.Update(promoCode);
+                _context.PromoCodes.Update(promoCode);
                 var result = await _context.SaveChangesAsync();
                 return result > 0;
             }

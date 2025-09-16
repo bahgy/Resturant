@@ -1,0 +1,23 @@
+﻿@model Restaurant.BLL.ModelVM.UserVM.UserVM
+
+@{
+    ViewData["Title"] = "Edit User";
+    Layout = "_AdminSharedLayout";
+}
+
+<h2>Edit User</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <!-- Repeat the same fields as Create.cshtml -->
+
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,18 +1,18 @@
-﻿using DAL.DataBase;
-using DAL.Entities;
-using DAL.Repo.Abstraction;
+﻿using Restaurant.DAL.Database;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repo.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repo.Impelementation
+namespace Restaurant.DAL.Repo.Impelementation
 {
     public class TableRepo : ITableRepo
     {
-        private readonly ResturantDbContext Db;
-        public TableRepo(ResturantDbContext context)
+        private readonly RestaurantDbContext Db;
+        public TableRepo(RestaurantDbContext context)
         {
             Db = context;  
         }

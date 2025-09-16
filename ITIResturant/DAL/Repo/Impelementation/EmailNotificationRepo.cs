@@ -1,6 +1,6 @@
-﻿using DAL.DataBase;
-using DAL.Entities;
-using DAL.Repo.Abstraction;
+﻿using Restaurant.DAL.Database;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repo.Abstraction;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,15 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repo.Impelementation
+namespace Restaurant.DAL.Repo.Impelementation
 {
     public class EmailNotificationRepo : IEmailNotificationRepo
     {
-        private readonly ResturantDbContext _context;
+        private readonly RestaurantDbContext _context;
 
 
 
-        public EmailNotificationRepo(ResturantDbContext context)
+        public EmailNotificationRepo(RestaurantDbContext context)
         {
             _context = context;
         }
