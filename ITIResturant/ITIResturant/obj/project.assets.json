@@ -6136,15 +6136,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Restaurant.PL.csproj",
       "projectName": "Restaurant.PL",
       "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Restaurant.PL.csproj",
-=======
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\ITIResturant.csproj",
-      "projectName": "ITIResturant",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\ITIResturant.csproj",
->>>>>>> main
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\obj\\",
       "projectStyle": "PackageReference",
@@ -6167,13 +6161,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj": {
               "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj"
-=======
-            "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\BIL.csproj": {
-              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\BIL.csproj"
->>>>>>> main
             }
           }
         }
@@ -6267,5 +6256,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }
