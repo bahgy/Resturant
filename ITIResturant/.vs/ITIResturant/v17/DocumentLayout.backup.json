@@ -170,8 +170,7 @@
               "RelativeToolTip": "BIL\\Model VM\\Feedback\\UpdateFeedbackVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:52:20.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:52:20.122Z"
             },
             {
               "$type": "Document",
@@ -183,8 +182,7 @@
               "RelativeToolTip": "BIL\\Model VM\\Cart\\CreateCartVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:35:43.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:35:43.738Z"
             },
             {
               "$type": "Document",
@@ -196,8 +194,7 @@
               "RelativeToolTip": "BIL\\Service\\Abstraction\\ICartService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAqwBAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:24:58.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:24:58.294Z"
             },
             {
               "$type": "Document",
@@ -209,8 +206,7 @@
               "RelativeToolTip": "BIL\\Service\\Impelementation\\CartService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:25:38.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:25:38.131Z"
             },
             {
               "$type": "Document",
@@ -222,8 +218,7 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\ICartRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:22:21.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:22:21.922Z"
             },
             {
               "$type": "Document",
@@ -235,8 +230,7 @@
               "RelativeToolTip": "ITIResturant\\Program.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:46:25.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:46:25.62Z"
             },
             {
               "$type": "Document",
@@ -248,8 +242,7 @@
               "RelativeToolTip": "BIL\\Model VM\\Cart\\CartVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T23:04:03.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T23:04:03.816Z"
             },
             {
               "$type": "Document",
@@ -261,8 +254,7 @@
               "RelativeToolTip": "BIL\\Service\\Impelementation\\FeedbackService.cs",
               "ViewState": "AgIAABMAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:57:38.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:57:38.343Z"
             },
             {
               "$type": "Document",
@@ -274,8 +266,7 @@
               "RelativeToolTip": "BIL\\Model VM\\EmailNotification\\UpdateEmailNotificationVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:44:01.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:44:01.408Z"
             },
             {
               "$type": "Document",
@@ -287,8 +278,7 @@
               "RelativeToolTip": "BIL\\Service\\Abstraction\\IEmailNotificationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:53:09.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:53:09.164Z"
             },
             {
               "$type": "Document",
@@ -300,8 +290,7 @@
               "RelativeToolTip": "BIL\\Model VM\\Cart\\GetAllCardVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:52:14.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:52:14.337Z"
             },
             {
               "$type": "Document",
@@ -313,8 +302,7 @@
               "RelativeToolTip": "BIL\\Model VM\\Cart\\UpdateCartVMcs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:51:32.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:51:32.317Z"
             },
             {
               "$type": "Document",
@@ -326,8 +314,7 @@
               "RelativeToolTip": "ITIResturant\\Views\\Cart\\CreateCart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-15T22:49:48.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:49:48.868Z"
             },
             {
               "$type": "Document",
@@ -339,8 +326,7 @@
               "RelativeToolTip": "BIL\\Service\\Abstraction\\IFeedbackService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:40:06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:40:06Z"
             },
             {
               "$type": "Document",
@@ -365,8 +351,7 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IOrderRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:43:50.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:43:50.717Z"
             },
             {
               "$type": "Document",
@@ -391,8 +376,7 @@
               "RelativeToolTip": "BIL\\Model VM\\Order\\UpdateOrderVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:43:24.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:43:24.422Z"
             },
             {
               "$type": "Document",
@@ -404,8 +388,7 @@
               "RelativeToolTip": "BIL\\Model VM\\Table\\TableVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:42:17.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:42:17.587Z"
             },
             {
               "$type": "Document",
@@ -417,8 +400,7 @@
               "RelativeToolTip": "DAL\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:41:01.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:41:01.882Z"
             },
             {
               "$type": "Document",
@@ -430,8 +412,7 @@
               "RelativeToolTip": "DAL\\Entities\\Feedback.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:40:55.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:40:55.676Z"
             },
             {
               "$type": "Document",
@@ -443,8 +424,7 @@
               "RelativeToolTip": "BIL\\Service\\Abstraction\\ITableService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:40:24.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:40:24.432Z"
             },
             {
               "$type": "Document",
@@ -456,8 +436,7 @@
               "RelativeToolTip": "BIL\\Service\\Impelementation\\OrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:38:44.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:38:44.639Z"
             },
             {
               "$type": "Document",
@@ -469,8 +448,7 @@
               "RelativeToolTip": "DAL\\DataBase\\ResturantDbContext.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAzwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:38:12.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:38:12.144Z"
             },
             {
               "$type": "Document",
@@ -482,8 +460,7 @@
               "RelativeToolTip": "BIL\\Service\\Impelementation\\OrderItemService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:37:46.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:37:46.977Z"
             },
             {
               "$type": "Document",
@@ -495,8 +472,7 @@
               "RelativeToolTip": "DAL\\Entities\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:23:42.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:23:42.434Z"
             },
             {
               "$type": "Document",
@@ -508,8 +484,7 @@
               "RelativeToolTip": "BIL\\Model VM\\Order\\OrderVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:36:42.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:36:42.231Z"
             },
             {
               "$type": "Document",
@@ -521,8 +496,7 @@
               "RelativeToolTip": "DAL\\Repo\\Impelementation\\BookingRepo.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:30:25.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:30:25.034Z"
             },
             {
               "$type": "Document",
@@ -534,8 +508,7 @@
               "RelativeToolTip": "DAL\\Repo\\Impelementation\\CartRepo.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAIBQwFsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:26:52.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:26:52.356Z"
             },
             {
               "$type": "Document",
@@ -547,8 +520,7 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\ICustomerRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:21:59.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:21:59.049Z"
             },
             {
               "$type": "Document",
@@ -560,8 +532,7 @@
               "RelativeToolTip": "DAL\\Repo\\Impelementation\\ShoppingCartItemRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T22:21:52.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T22:21:52.716Z"
             },
             {
               "$type": "Document",
@@ -573,8 +544,7 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IFeedbackRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:01:53.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T20:01:53.819Z"
             },
             {
               "$type": "Document",
@@ -586,8 +556,7 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IEmailNotificationRepo.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwBUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:01:48.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T20:01:48.19Z"
             }
           ]
         }
