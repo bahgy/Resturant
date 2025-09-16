@@ -5072,9 +5072,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj",
       "projectName": "Restaurant.DAL",
       "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj",
+=======
+      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\DAL.csproj",
+      "projectName": "DAL",
+      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\DAL.csproj",
+>>>>>>> main
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\obj\\",
       "projectStyle": "PackageReference",
