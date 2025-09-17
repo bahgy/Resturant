@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-
+﻿
 public class UserService : IUserService
 {
     private readonly IMapper _mapper;

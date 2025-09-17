@@ -1,10 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Restaurant.BLL.Abstraction;
-using Restaurant.BLL.ModelVMAccountVM;
-using Restaurant.DAL.Entities;
-using Restaurant.DAL.Enum;
-using System.Security.Claims;
+﻿
+
+using ResetPasswordVM = Restaurant.BLL.ModelVMAccountVM.ResetPasswordVM;
 
 namespace Restaurant.PL.Controllers
 {

@@ -1,15 +1,3 @@
-using Microsoft.AspNetCore.Authentication.Facebook;
-using Microsoft.AspNetCore.Authentication.Google;
-using Microsoft.Extensions.DependencyInjection;
-using Restaurant.BLL.Abstraction;
-using Restaurant.BLL.Mapper;
-using Restaurant.BLL.Service.Impelementation;
-using Restaurant.BLL.Services.Interfaces;
-using Restaurant.DAL.Repo.Impelementation;
-using Restaurant.DAL.Repos.Abstraction;
-using Restaurant.DAL.Repos.Implementation;
-using Restaurant.PL.Helpers;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // MVC

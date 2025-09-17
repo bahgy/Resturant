@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿
 namespace Restaurant.PL.Controllers
 {
     public class ErrorController : Controller
