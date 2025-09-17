@@ -1,0 +1,62 @@
+@using Restaurant.BLL.ModelVMPromoCode
+@model UpdatePromoCodeVM
+@{
+    ViewData["Title"] = "Edit PromoCode";
+    Layout = "_AdminSharedLayout";
+}
+
+<h2>Edit PromoCode</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Code" class="form-label"></label>
+        <input asp-for="Code" class="form-control" />
+        <span asp-validation-for="Code" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DiscountValue" class="form-label"></label>
+        <input asp-for="DiscountValue" class="form-control" />
+        <span asp-validation-for="DiscountValue" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DiscountType" class="form-label"></label>
+        <select asp-for="DiscountType" class="form-select">
+            <option value="Percentage" selected="@("Percentage" == Model.DiscountType)">Percentage</option>
+            <option value="FixedAmount" selected="@("FixedAmount" == Model.DiscountType)">Fixed Amount</option>
+        </select>
+        <span asp-validation-for="DiscountType" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ValidFromTime" class="form-label"></label>
+        <input asp-for="ValidFromTime" type="date" class="form-control" />
+        <span asp-validation-for="ValidFromTime" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ValidTo" class="form-label"></label>
+        <input asp-for="ValidTo" type="date" class="form-control" />
+        <span asp-validation-for="ValidTo" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="MaxUsedTime" class="form-label"></label>
+        <input asp-for="MaxUsedTime" class="form-control" />
+        <span asp-validation-for="MaxUsedTime" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="MinimumOrderAmount" class="form-label"></label>
+        <input asp-for="MinimumOrderAmount" class="form-control" />
+        <span asp-validation-for="MinimumOrderAmount" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
