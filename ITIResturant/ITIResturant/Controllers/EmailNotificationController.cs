@@ -1,6 +1,4 @@
-﻿using Restaurant.BLL.Service.Abstraction;
-using Restaurant.DAL.Entities;
-using Microsoft.AspNetCore.Mvc;
+﻿
 
 namespace ITIResturant.Controllers
 {

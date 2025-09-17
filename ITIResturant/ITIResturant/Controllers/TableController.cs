@@ -1,7 +1,5 @@
 ﻿
-using Restaurant.BLL.Service.Abstraction;
-using Microsoft.AspNetCore.Mvc;
-using Restaurant.BLL.Model_VM.Table;
+
 
 namespace RestoPL.Controllers
 {

@@ -1,6 +1,4 @@
 ﻿
-using Microsoft.EntityFrameworkCore;
-using Restaurant.BLL.ModelVMUserVM;
 
 namespace Restaurant.PL.Areas.Admin.Controllers
 {

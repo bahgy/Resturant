@@ -1,8 +1,4 @@
 ﻿
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Restaurant.BLL.Model_VM.Booking;
-
-
 namespace RestoPL.Controllers
 {
     public class BookingController : Controller

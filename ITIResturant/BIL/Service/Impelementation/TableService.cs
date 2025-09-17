@@ -1,8 +1,4 @@
-﻿using Restaurant.BLL.Model_VM.Table;
-using Restaurant.BLL.Service.Abstraction;
-using Restaurant.DAL.Entities;
-using Restaurant.DAL.Repo.Abstraction;
-using Restaurant.DAL.Repo.Impelementation;
+﻿
 
 
 namespace Restaurant.BLL.Service.Impelementation

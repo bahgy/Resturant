@@ -1,14 +1,4 @@
-﻿using AutoMapper;
-using Restaurant.BLL.ModelVMPromoCode;
-using Restaurant.BLL.Service.Abstraction;
-using Restaurant.DAL.Entities;
-using Restaurant.DAL.Enum;
-using Restaurant.DAL.Repos.Abstraction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Restaurant.BLL.Service.Implementation
 {

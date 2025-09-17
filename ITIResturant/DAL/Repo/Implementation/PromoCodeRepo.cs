@@ -1,14 +1,6 @@
-﻿using Restaurant.DAL.Database;
-using Restaurant.DAL.Entities;
-using Restaurant.DAL.Repos.Abstraction;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace Restaurant.DAL.Repos.Implementation
+namespace Restaurant.DAL.Repo.Implementation
 {
     public class PromoCodeRepo:IPromoCodeRepo
     {

@@ -1,9 +1,4 @@
 ﻿
-using Restaurant.BLL.Service.Abstraction;
-using Restaurant.DAL.Entities;
-using Microsoft.AspNetCore.Mvc;
-using Restaurant.BLL.Model_VM.Feedback;
-
 namespace ITIResturant.Controllers
 {
     public class FeedbackController : Controller
