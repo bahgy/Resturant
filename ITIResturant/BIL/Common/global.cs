@@ -16,3 +16,13 @@ global using Restaurant.BLL.ModelVMUserVM;
 global using Restaurant.DAL.Database;
 global using Restaurant.BLL.Services.Interfaces;
 global using ResetPasswordVM = Restaurant.BLL.ModelVMProfileVM.ResetPasswordVM;
+global using Restaurant.BLL.ModelVMOrderItem;
+global using Restaurant.BLL.ModelVMOrder;
+global using Restaurant.BLL.ModelVMPromoCode;
+global using Restaurant.BLL.Model_VM.Booking;
+global using Restaurant.BLL.Model_VM.EmailNotification;
+global using Restaurant.BLL.Model_VM.Feedback;
+global using Restaurant.BLL.Model_VM.Table;
+global using Microsoft.EntityFrameworkCore;
+
+global using Restaurant.BLL.Model_VM.Cart;

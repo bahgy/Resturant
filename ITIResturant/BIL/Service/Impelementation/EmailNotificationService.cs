@@ -1,12 +1,4 @@
-﻿using Restaurant.BLL.Model_VM.EmailNotification;
-using Restaurant.BLL.Service.Abstraction;
-using Restaurant.DAL.Entities;
-using Restaurant.DAL.Repo.Abstraction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Restaurant.BLL.Service.Impelementation
 {

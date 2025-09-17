@@ -1,10 +1,4 @@
-﻿using AutoMapper;
-using Restaurant.BLL.ModelVMAccountVM;
-using Restaurant.BLL.ModelVMProfileVM;
-using Restaurant.BLL.ModelVMUserVM;
-using Restaurant.DAL.Entities;
-using Restaurant.DAL.Enum;
-
+﻿
 namespace Restaurant.PL.Mapper
 {
     public class DomainProfile : Profile

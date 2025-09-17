@@ -1,13 +1,5 @@
-﻿using Restaurant.DAL.Database;
-using Restaurant.DAL.Entities;
-using Restaurant.DAL.Repo.Abstraction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Restaurant.DAL.Repo.Impelementation
+﻿
+namespace Restaurant.DAL.Repo.Implementation
 {
     public class TableRepo : ITableRepo
     {

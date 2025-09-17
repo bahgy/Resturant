@@ -1,7 +1,4 @@
 ﻿
-using Microsoft.AspNetCore.Identity;
-using Restaurant.DAL.Enum;
-using System.ComponentModel.DataAnnotations;
 
 namespace Restaurant.DAL.Entities
 {

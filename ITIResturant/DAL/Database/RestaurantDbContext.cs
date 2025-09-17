@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using Restaurant.DAL.Entities;
+﻿
 
 namespace Restaurant.DAL.Database
 {
@@ -40,6 +37,37 @@ namespace Restaurant.DAL.Database
                 .WithMany(u => u.Feedbacks)
                 .HasForeignKey(f => f.CustomerId)
                 .OnDelete(DeleteBehavior.NoAction);  // also safe option
+            modelBuilder.Entity<Order>()
+        .Property(o => o.DiscountAmount)
+        .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Order>()
+                .Property(o => o.TotalAmount)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<OrderItem>()
+                .Property(oi => oi.Price)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<OrderItem>()
+                .Property(oi => oi.Quantity)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<PromoCode>()
+                .Property(pc => pc.DiscountValue)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<PromoCode>()
+                .Property(pc => pc.MinimumOrderAmount)
+                .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<ShopingCartItem>()
+                .Property(sci => sci.Quantity)
+                .HasColumnType("decimal(18,2)");
         }
 
     }
