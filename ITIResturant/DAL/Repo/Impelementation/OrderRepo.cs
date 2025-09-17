@@ -1,6 +1,6 @@
-﻿using DAL.DataBase;
-using DAL.Entities;
-using DAL.Repos.Abstraction;
+﻿using Restaurant.DAL.Database;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repos.Abstraction;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,13 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repos.Implementation
+namespace Restaurant.DAL.Repos.Implementation
 {
     public class OrderRepo:IOrderRepo
     {
-        private readonly ResturantDbContext _context;
+        private readonly RestaurantDbContext _context;
 
-        public OrderRepo(ResturantDbContext context)
+        public OrderRepo(RestaurantDbContext context)
         {
             _context = context;
         }
@@ -25,7 +25,7 @@ namespace DAL.Repos.Implementation
                 .Include(o => o.Customer)
                 .Include(o => o.OrderItems)
                 .ThenInclude(oi => oi.Product)
-                .Include(o => o.Feedback)
+                .Include(o => o.Feedbacks)
                 .FirstOrDefaultAsync(o => o.Id == id);
         }
 

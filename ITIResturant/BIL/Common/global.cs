@@ -1,0 +1,18 @@
+﻿global using System.ComponentModel.DataAnnotations;
+global using Restaurant.DAL.Entities;
+global using AutoMapper;
+global using Restaurant.BLL.Service.Abstraction;
+global using Restaurant.DAL.Repo.Abstraction;
+global using Restaurant.BLL.ModelVMAccountVM;
+global using Restaurant.DAL.Enum;
+global using Microsoft.Extensions.Configuration;
+global using System.Net;
+global using System.Net.Mail;
+global using Restaurant.BLL.ModelVMProfileVM;
+global using Microsoft.AspNetCore.Authentication;
+global using Microsoft.AspNetCore.Identity;
+global using Restaurant.BLL.Abstraction;
+global using Restaurant.BLL.ModelVMUserVM;
+global using Restaurant.DAL.Database;
+global using Restaurant.BLL.Services.Interfaces;
+global using ResetPasswordVM = Restaurant.BLL.ModelVMProfileVM.ResetPasswordVM;

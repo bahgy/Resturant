@@ -1,6 +1,7 @@
-﻿using BIL.Model_VM.Table;
-using BIL.Service.Abstraction;
+﻿
+using Restaurant.BLL.Service.Abstraction;
 using Microsoft.AspNetCore.Mvc;
+using Restaurant.BLL.Model_VM.Table;
 
 namespace RestoPL.Controllers
 {

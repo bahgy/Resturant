@@ -1,6 +1,6 @@
 using System.Diagnostics;
-using ITIResturant.Models;
 using Microsoft.AspNetCore.Mvc;
+using Restaurant.PL.Models;
 
 namespace ITIResturant.Controllers
 {

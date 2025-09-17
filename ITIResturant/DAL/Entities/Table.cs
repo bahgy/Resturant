@@ -1,5 +1,5 @@
 ﻿
-namespace DAL.Entities
+namespace Restaurant.DAL.Entities
 {
     public class Table
     {

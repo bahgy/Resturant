@@ -1,0 +1,53 @@
+﻿@model Restaurant.BLL.ModelVMAccountVM.LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<form asp-action="Login" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-2">
+        <input asp-for="Email" placeholder="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
+        <input asp-for="Password" placeholder="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-check mb-2">
+        <input asp-for="RememberMe" class="form-check-input" />
+        <label asp-for="RememberMe" class="form-check-label">Remember me</label>
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">Login</button>
+</form>
+
+<hr />
+
+<div class="text-center mt-3">
+    <a asp-controller="Account" asp-action="Register" class="btn btn-outline-primary w-100 mb-2">Register</a>
+    <a asp-controller="Account" asp-action="ForgotPassword" class="btn btn-outline-warning w-100 mb-2">Forgot Password?</a>
+</div>
+
+<hr />
+
+<div class="text-center">
+    <p>Or login with:</p>
+    <form asp-action="ExternalLogin" method="post">
+        <input type="hidden" name="provider" value="Google" />
+        <button type="submit" class="btn btn-danger w-100 mb-2">
+            <i class="fab fa-google"></i> Sign in with Google
+        </button>
+    </form>
+
+    <form asp-action="ExternalLogin" method="post">
+        <input type="hidden" name="provider" value="Facebook" />
+        <button type="submit" class="btn btn-primary w-100">
+            <i class="fab fa-facebook"></i> Sign in with Facebook
+        </button>
+    </form>
+</div>

@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
-using BIL.ModelVM.OrderItem;
-using BIL.Service.Abstraction;
-using DAL.Entities;
-using DAL.Repos.Abstraction;
+using Restaurant.BLL.ModelVMOrderItem;
+using Restaurant.BLL.Service.Abstraction;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repos.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIL.Service.Implementation
+namespace Restaurant.BLL.Service.Implementation
 {
     public class OrderItemService : IOrderItemService
     {

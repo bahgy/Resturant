@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DAL.Repos.Abstraction
+﻿
+namespace Restaurant.DAL.Repo.Abstraction
 {
     public interface ICustomerRepo
     {
-        Task<bool> ExistsAsync(int id);
+        Task<bool> ExistsAsync(int customerId);
     }
 }

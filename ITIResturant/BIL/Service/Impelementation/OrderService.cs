@@ -1,16 +1,16 @@
 ﻿using AutoMapper;
-using BIL.ModelVM.Order;
-using BIL.Service.Abstraction;
-using DAL.Entities;
-using DAL.Repo.Abstraction;
-using DAL.Repos.Abstraction;
+using Restaurant.BLL.ModelVMOrder;
+using Restaurant.BLL.Service.Abstraction;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repo.Abstraction;
+using Restaurant.DAL.Repos.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIL.Service.Implementation
+namespace Restaurant.BLL.Service.Implementation
 {
     public class OrderService:IOrderService
     {

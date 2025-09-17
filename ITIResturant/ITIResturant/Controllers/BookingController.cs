@@ -1,7 +1,6 @@
-﻿using BIL.Model_VM.Booking;
-using BIL.Service.Abstraction;
-using Microsoft.AspNetCore.Mvc;
+﻿
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Restaurant.BLL.Model_VM.Booking;
 
 
 namespace RestoPL.Controllers

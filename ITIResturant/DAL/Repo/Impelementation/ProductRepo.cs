@@ -1,22 +1,22 @@
-﻿using DAL.DataBase;
-using DAL.Entities;
-using DAL.Repos.Abstraction;
+﻿using Restaurant.DAL.Database;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repos.Abstraction;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static DAL.Repos.Implementation.ProductRepo;
+using static Restaurant.DAL.Repos.Implementation.ProductRepo;
 
-namespace DAL.Repos.Implementation
+namespace Restaurant.DAL.Repos.Implementation
 {
     public class ProductRepo:IProductRepo
     {
       
-            private readonly ResturantDbContext _context;
+            private readonly RestaurantDbContext _context;
 
-            public ProductRepo(ResturantDbContext context)
+            public ProductRepo(RestaurantDbContext context)
             {
                 _context = context;
             }

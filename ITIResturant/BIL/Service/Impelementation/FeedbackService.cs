@@ -1,7 +1,7 @@
-﻿using BIL.Model_VM.Feedback;
-using BIL.Service.Abstraction;
-using DAL.Entities;
-using DAL.Repo.Abstraction;
+﻿using Restaurant.BLL.Model_VM.Feedback;
+using Restaurant.BLL.Service.Abstraction;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Repo.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 
 
-namespace BIL.Service.Impelementation
+namespace Restaurant.BLL.Service.Impelementation
 {
     public class FeedbackService : IFeedbackService
     {

@@ -1,20 +1,20 @@
-﻿using BIL.Model_VM.Cart;
-using BIL.Service.Abstraction;
-using DAL.DataBase;
-using DAL.Entities;
+﻿using Restaurant.BLL.Model_VM.Cart;
+using Restaurant.BLL.Service.Abstraction;
+using Restaurant.DAL.Database;
+using Restaurant.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIL.Service.Impelementation
+namespace Restaurant.BLL.Service.Impelementation
 {
     public class CartService : ICartService
     {
-        private readonly ResturantDbContext _context;
+        private readonly RestaurantDbContext _context;
 
-        public CartRepo(ResturantDbContext context)
+        public CartService(RestaurantDbContext context)
         {
             _context = context;
         }

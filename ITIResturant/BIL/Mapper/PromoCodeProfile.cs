@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using BIL.ModelVM.PromoCode;
-using DAL.Entities;
-using DAL.Enum;
+using Restaurant.BLL.ModelVMPromoCode;
+using Restaurant.DAL.Entities;
+using Restaurant.DAL.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIL.Mapper
+namespace Restaurant.BLL.Mapper
 {
     public class PromoCodeProfile : Profile
     {

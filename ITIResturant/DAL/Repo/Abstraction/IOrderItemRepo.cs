@@ -1,11 +1,11 @@
-﻿using DAL.Entities;
+﻿using Restaurant.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repos.Abstraction
+namespace Restaurant.DAL.Repos.Abstraction
 {
     public interface IOrderItemRepo
     {

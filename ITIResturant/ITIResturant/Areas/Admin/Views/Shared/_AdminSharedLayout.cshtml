@@ -1,0 +1,73 @@
+﻿@* Shared layout for Admin Area *@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>@ViewData["Title"] - Admin Dashboard</title>
+
+    <!-- Styles -->
+    <link href="~/css/Adminstyle.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <!-- Header -->
+    <partial name="_AdminHeaderLayout" />
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Management</div>
+                        <a class="nav-link" asp-area="Admin" asp-controller="Admin" asp-action="Index">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+                        <a class="nav-link" asp-area="Admin" asp-controller="Users" asp-action="Index">
+    <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+    Users
+</a>
+
+                        <a class="nav-link" asp-area="Admin" asp-controller="Products" asp-action="Index">
+                            <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
+                            Products
+                        </a>
+                        <a class="nav-link" asp-area="Admin" asp-controller="Orders" asp-action="Index">
+                            <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
+                            Orders
+                        </a>
+                        <a class="nav-link" asp-area="Admin" asp-controller="Feedback" asp-action="Index">
+                            <div class="sb-nav-link-icon"><i class="fas fa-comment-dots"></i></div>
+                            Feedback
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small">Logged in as: Admin</div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="layoutSidenav_content">
+            <main class="container-fluid px-4">
+                @RenderBody()
+            </main>
+            @await RenderSectionAsync("Scripts", required: false)
+
+            <!-- Footer -->
+            <partial name="_AdminFooterLayout" />
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Adminscripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="~/assets/demo/chart-area-demo.js"></script>
+    <script src="~/assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"></script>
+    <script src="~/js/datatables-simple-demo.js"></script>
+</body>
+</html>

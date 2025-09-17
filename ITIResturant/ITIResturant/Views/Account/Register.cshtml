@@ -1,0 +1,45 @@
+﻿@model Restaurant.BLL.ModelVMAccountVM.RegisterVM
+
+<h2>Register</h2>
+
+<form asp-action="Register" method="post">
+    <!-- Only show global errors -->
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-2">
+        <input asp-for="FirstName" placeholder="First Name" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
+        <input asp-for="LastName" placeholder="Last Name" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
+        <input asp-for="Email" placeholder="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
+        <input asp-for="PhoneNumber" placeholder="Phone Number" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
+        <input asp-for="Address" placeholder="Address (Optional)" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
+        <input asp-for="Password" placeholder="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
+        <input asp-for="ConfirmPassword" placeholder="Confirm Password" type="password" class="form-control" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Register</button>
+</form>

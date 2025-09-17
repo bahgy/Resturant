@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-using DAL.Enum;
+using Restaurant.DAL.Enum;
 
-namespace DAL.Entities
+namespace Restaurant.DAL.Entities
 {
     public class PromoCode
     {

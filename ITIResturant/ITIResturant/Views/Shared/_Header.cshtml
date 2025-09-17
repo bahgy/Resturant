@@ -1,0 +1,80 @@
+﻿<header>
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a asp-controller="Home" asp-action="Index" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0">The Diner's<span class="text-dark">Club</span></h1>
+                </a>
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- Nav links -->
+                    <div class="navbar-nav mx-auto">
+                        <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a>
+                        <a asp-controller="Home" asp-action="About" class="nav-item nav-link">About</a>
+                        <a asp-controller="Home" asp-action="Services" class="nav-item nav-link">Services</a>
+                        <a asp-controller="Home" asp-action="Events" class="nav-item nav-link">Events</a>
+                        <a asp-controller="Menu" asp-action="Index" class="nav-item nav-link">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light">
+                                <a asp-controller="Booking" asp-action="Index" class="dropdown-item">Booking</a>
+                                <a asp-controller="Team" asp-action="Index" class="dropdown-item">Our Team</a>
+                                <a asp-controller="Testimonial" asp-action="Index" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contact</a>
+                    </div>
+
+                    <!-- Buttons (collapse into mobile menu) -->
+                    <div class="header-buttons-container">
+                        <!-- Search -->
+                        <div class="search-container">
+                            <button class="btn btn-primary btn-md-square rounded-circle" id="searchToggleBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div class="search-panel" id="searchPanel">
+                                <div class="search-content">
+                                    <div class="search-input-group">
+                                        <input type="text" class="form-control" placeholder="Search...">
+                                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Auth buttons -->
+                        <div class="auth-buttons">
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <a asp-controller="Account" asp-action="Login" class="btn btn-outline-primary">Login</a>
+                            }
+                            else
+                            {
+                                <a asp-controller="Profile" asp-action="Index" class="btn btn-outline-secondary">
+                                    <i class="fas fa-user"></i> Profile
+                                </a>
+                                <form asp-controller="Account" asp-action="Logout" method="post">
+                                    <button type="submit" class="btn btn-logout">Logout</button>
+                                </form>
+                            }
+                        </div>
+
+                        <!-- Extra buttons -->
+                        <div class="extra-buttons">
+                            <a asp-controller="Cart" asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="fas fa-shopping-cart"></i> Cart
+                                <span class="badge bg-primary ms-1" id="cartCount">0</span>
+                            </a>
+                            <a asp-controller="Booking" asp-action="Create" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

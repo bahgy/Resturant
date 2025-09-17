@@ -1,11 +1,11 @@
-﻿using BIL.ModelVM.PromoCode;
+﻿using Restaurant.BLL.ModelVMPromoCode;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BIL.Service.Abstraction
+namespace Restaurant.BLL.Service.Abstraction
 {
     public interface IPromoCodeService
     {

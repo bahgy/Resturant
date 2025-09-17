@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+    namespace Restaurant.DAL.Entities
+    {
+        public class Customer : AppUser
+        {
+            public bool EmailVerified { get; set; }
+            public string? DefaultDeliveryAddress { get; set; }
 
-namespace DAL.Entities
-{
-    public class Customer:User
-    { public bool EmialVerified { get;set;}
-        public string defaultDelivryAddress { get;set;}
-        public  Cart Cart { get;set;}
-        public List<Order> orders { get;set;}
-        public List<Booking> bookings { get; set; }
-        public List<Feedback> Feedbacks { get; set; }
+        public ICollection<Feedback> Feedbacks { get; set; }
+        public ICollection<Booking> Bookings { get; set; }
+        public ICollection<Order> Orders { get; set; }
 
+        public ICollection<EmailNotification> EmailNotifications { get; set; }
+
+        public string? ConfirmationToken { get; set; }  // temporary token
     }
-}
+    }
