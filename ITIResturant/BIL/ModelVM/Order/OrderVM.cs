@@ -1,11 +1,11 @@
-﻿using Restaurant.BLL.ModelVM.OrderItem;
+﻿using Restaurant.BLL.ModelVMOrderItem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.BLL.ModelVM.Order
+namespace Restaurant.BLL.ModelVMOrder
 {
     public class OrderVM
     {

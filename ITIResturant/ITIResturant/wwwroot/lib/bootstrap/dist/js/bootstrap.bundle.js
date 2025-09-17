@@ -4493,7 +4493,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.0): modal.js
+   * Bootstrap (v5.1.0): moRestaurant.DAL.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4858,7 +4858,7 @@
 
     static jQueryInterface(config, relatedTarget) {
       return this.each(function () {
-        const data = Modal.getOrCreateInstance(this, config);
+        const data = MoRestaurant.DAL.getOrCreateInstance(this, config);
 
         if (typeof config !== 'string') {
           return;
@@ -4899,7 +4899,7 @@
         }
       });
     });
-    const data = Modal.getOrCreateInstance(target);
+    const data = MoRestaurant.DAL.getOrCreateInstance(target);
     data.toggle(this);
   });
   enableDismissTrigger(Modal);

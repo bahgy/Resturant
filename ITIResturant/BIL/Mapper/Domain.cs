@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using Restaurant.BLL.ModelVM.AccountVM;
-using Restaurant.BLL.ModelVM.ProfileVM;
-using Restaurant.BLL.ModelVM.UserVM;
+using Restaurant.BLL.ModelVMAccountVM;
+using Restaurant.BLL.ModelVMProfileVM;
+using Restaurant.BLL.ModelVMUserVM;
 using Restaurant.DAL.Entities;
 using Restaurant.DAL.Enum;
 

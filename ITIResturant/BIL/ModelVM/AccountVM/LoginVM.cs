@@ -1,5 +1,5 @@
 ﻿
-namespace Restaurant.BLL.ModelVM.AccountVM
+namespace Restaurant.BLL.ModelVMAccountVM
 {
     public class LoginVM
     {

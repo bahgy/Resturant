@@ -1,4 +1,4 @@
-﻿    namespace Restaurant.BLL.ModelVM.UserVM
+﻿    namespace Restaurant.BLL.ModelVMUserVM
     {
         public class UserVM
         {

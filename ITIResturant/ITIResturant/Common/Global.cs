@@ -10,4 +10,4 @@ global using Restaurant.DAL.Repo.Implementation;
 global using Restaurant.PL.Mapper;
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Mvc;
-global using Restaurant.BLL.ModelVM.AdminVM;
+global using Restaurant.BLL.ModelVMAdminVM;

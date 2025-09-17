@@ -1,0 +1,45 @@
+﻿@using Restaurant.BLL
+@using Restaurant.BLL.Model_VM.Table
+
+@model List<GetAllTableVM>
+
+<div class="card">
+    <div class="card-header" style="background-color:chocolate; color:white">
+        Tables List
+    </div>
+    <div class="card-body">
+        @if (TempData["error"] != null)
+        {
+            <div class="alert alert-danger">@TempData["error"]</div>
+        }
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Table Number</th>
+                    <th>Capacity</th>
+                    <th>Is Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var table in Model)
+                {
+                    <tr>
+                        <td>@table.Id</td>
+                        <td>@table.TableNumber</td>
+                        <td>@table.Capacity</td>
+                        <td>@(table.IsActive ? "Yes" : "No")</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@table.Id" class="btn btn-warning btn-sm">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@table.Id" method="post" style="display:inline">
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

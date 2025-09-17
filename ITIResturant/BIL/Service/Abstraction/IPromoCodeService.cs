@@ -1,4 +1,4 @@
-﻿using Restaurant.BLL.ModelVM.PromoCode;
+﻿using Restaurant.BLL.ModelVMPromoCode;
 using System;
 using System.Collections.Generic;
 using System.Linq;

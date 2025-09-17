@@ -2713,7 +2713,7 @@ class FocusTrap {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v5.1.0): modal.js
+ * Bootstrap (v5.1.0): moRestaurant.DAL.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -3078,7 +3078,7 @@ class Modal extends BaseComponent {
 
   static jQueryInterface(config, relatedTarget) {
     return this.each(function () {
-      const data = Modal.getOrCreateInstance(this, config);
+      const data = MoRestaurant.DAL.getOrCreateInstance(this, config);
 
       if (typeof config !== 'string') {
         return;
@@ -3119,7 +3119,7 @@ EventHandler.on(document, EVENT_CLICK_DATA_API$2, SELECTOR_DATA_TOGGLE$2, functi
       }
     });
   });
-  const data = Modal.getOrCreateInstance(target);
+  const data = MoRestaurant.DAL.getOrCreateInstance(target);
   data.toggle(this);
 });
 enableDismissTrigger(Modal);

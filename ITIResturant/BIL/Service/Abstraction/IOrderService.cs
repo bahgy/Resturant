@@ -1,4 +1,4 @@
-﻿using Restaurant.BLL.ModelVM.Order;
+﻿using Restaurant.BLL.ModelVMOrder;
 using System;
 using System.Collections.Generic;
 using System.Linq;

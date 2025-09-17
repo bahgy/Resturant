@@ -1,5 +1,5 @@
 ﻿
-namespace Restaurant.BLL.ModelVM.AdminVM
+namespace Restaurant.BLL.ModelVMAdminVM
 {
     public class AdminDashboardVM
     {

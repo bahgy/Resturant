@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Restaurant.BLL.ModelVM.PromoCode;
+using Restaurant.BLL.ModelVMPromoCode;
 using Restaurant.BLL.Service.Abstraction;
 using Restaurant.DAL.Entities;
 using Restaurant.DAL.Enum;

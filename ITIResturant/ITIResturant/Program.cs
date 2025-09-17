@@ -1,10 +1,14 @@
+using Microsoft.AspNetCore.Authentication.Facebook;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.Extensions.DependencyInjection;
 using Restaurant.BLL.Abstraction;
+using Restaurant.BLL.Mapper;
 using Restaurant.BLL.Service.Impelementation;
 using Restaurant.BLL.Services.Interfaces;
+using Restaurant.DAL.Repo.Impelementation;
+using Restaurant.DAL.Repos.Abstraction;
+using Restaurant.DAL.Repos.Implementation;
 using Restaurant.PL.Helpers;
-using Microsoft.AspNetCore.Authentication.Google;
-using Microsoft.AspNetCore.Authentication.Facebook;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,14 +18,14 @@ builder.Services.AddControllersWithViews();
 // Add Razor Pages services (required if call app.MapRazorPages())
 builder.Services.AddRazorPages();
 
-// Connection string
+#region Connection string
 var connectionString = builder.Configuration.GetConnectionString("Hamza");
 builder.Services.AddDbContext<RestaurantDbContext>(options =>
     options.UseSqlServer(connectionString));
+#endregion
 
 //////////////////////////////////////////////////////////////
-
-// identity and authentication
+#region identity and authentication
 
 builder.Services.AddIdentity<AppUser, IdentityRole<int>>(options =>
 {
@@ -58,9 +62,10 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.IsEssential = true;
     options.Cookie.HttpOnly = true;
 });
+#endregion
 
 //////////////////////////////////////////////////////////////
-// auto mapper
+#region automMapper
 builder.Services.AddAutoMapper(typeof(DomainProfile));
 ///
 //// dependecy injection  ///////////////////////////////////
@@ -74,17 +79,47 @@ builder.Services.AddScoped<IUserService, UserService>();
 /// repos
 builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
 builder.Services.AddScoped<IAdminRepo, AdminRepo>();
+// team
+builder.Services.AddScoped<IBookingRepo, BookingRepo>();
+builder.Services.AddScoped<IBookingService, BookingService>();
+builder.Services.AddScoped<ITableRepo, TableRepo>();
+builder.Services.AddScoped<ITableService, TableService>();
+
+builder.Services.AddScoped<IEmailNotificationService, EmailNotificationService>();
+builder.Services.AddScoped<IEmailNotificationRepo, EmailNotificationRepo>();
+builder.Services.AddScoped<IFeedbackRepo, FeedbackRepo>();
+builder.Services.AddScoped<IFeedbackService, FeedbackService>();
+
+builder.Services.AddAutoMapper(x => x.AddProfile(new OrderItemProfile()));
+builder.Services.AddAutoMapper(x => x.AddProfile(new OrderProfile()));
+builder.Services.AddAutoMapper(x => x.AddProfile(new PromoCodeProfile()));
+builder.Services.AddScoped<IOrderItemRepo, OrderItemRepo>();
+builder.Services.AddScoped<IOrderRepo, OrderRepo>();
+builder.Services.AddScoped<IPromoCodeRepo, PromoCodeRepo>();
+builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
+builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+builder.Services.AddScoped<IProductRepo, ProductRepo>();
+builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
+
+builder.Services.AddScoped<ICartRepo, CartRepo>();
+builder.Services.AddScoped<ICartService, CartService>();
+#endregion
+
 //////////////////////////////////////////////////////
+#region Email Sender
 // email sender service
 builder.Services.AddTransient<EmailSender>();
-
+#endregion
 
 ///////////////////////////////////////////////////////
 
 var app = builder.Build();
 
-    // Middleware
-    if (!app.Environment.IsDevelopment())
+#region Middleware
+if (!app.Environment.IsDevelopment())
     {
         app.UseExceptionHandler("/Error");
         app.UseStatusCodePagesWithReExecute("/Error/{0}");
@@ -95,7 +130,7 @@ var app = builder.Build();
         // default error page
         app.UseStatusCodePagesWithReExecute("/Error/{0}");
     }
-
+#endregion
 // Seed default data like admin user and roles if not exists in the database 
 using (var scope = app.Services.CreateScope())
 {

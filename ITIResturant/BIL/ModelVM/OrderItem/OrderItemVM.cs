@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.BLL.ModelVM.OrderItem
+namespace Restaurant.BLL.ModelVMOrderItem
 {
     public class OrderItemVM
     {

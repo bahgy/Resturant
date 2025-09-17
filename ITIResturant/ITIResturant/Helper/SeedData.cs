@@ -29,7 +29,7 @@
                     FirstName = "System",
                     LastName = "Admin",
                     EmailConfirmed = true,
-                    UserType = DAL.Enum.UserTypeEnum.Admin,
+                    UserType = Restaurant.DAL.Enum.UserTypeEnum.Admin,
                     PhoneNumber = "0000000000"
                 };
 

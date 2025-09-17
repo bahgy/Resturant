@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Restaurant.BLL.ModelVM.Order;
+using Restaurant.BLL.ModelVMOrder;
 using Restaurant.DAL.Entities;
 using System;
 using System.Collections.Generic;

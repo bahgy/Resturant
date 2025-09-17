@@ -41,16 +41,16 @@
   pointer-events: none;
 
   // When fading in the modal, animate it to slide down
-  .modal.fade & {
+  .moRestaurant.DAL.fade & {
     @include transition($modal-transition);
     transform: $modal-fade-transform;
   }
-  .modal.show & {
+  .moRestaurant.DAL.show & {
     transform: $modal-show-transform;
   }
 
   // When trying to close, animate focus to scale
-  .modal.modal-static & {
+  .moRestaurant.DAL.modal-static & {
     transform: $modal-scale-transform;
   }
 }

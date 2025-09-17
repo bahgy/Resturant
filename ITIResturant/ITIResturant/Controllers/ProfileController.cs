@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Restaurant.BLL.ModelVM.ProfileVM;
+using Restaurant.BLL.ModelVMProfileVM;
 using Restaurant.BLL.Services.Interfaces;
-using ResetPasswordVM = Restaurant.BLL.ModelVM.ProfileVM.ResetPasswordVM;
+using ResetPasswordVM = Restaurant.BLL.ModelVMProfileVM.ResetPasswordVM;
 
 namespace Restaurant.PL.Controllers
 {

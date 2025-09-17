@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.BLL.ModelVM.PromoCode
+namespace Restaurant.BLL.ModelVMPromoCode
 {
     public class PromoCodeVM
     {
