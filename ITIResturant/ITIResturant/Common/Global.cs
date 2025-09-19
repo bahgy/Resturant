@@ -12,7 +12,6 @@ global using Microsoft.AspNetCore.Mvc;
 global using Restaurant.BLL.ModelVMAdminVM;
 global using Restaurant.BLL.Abstraction;
 global using Restaurant.BLL.Mapper;
-global using Restaurant.BLL.Service.Impelementation;
 global using Restaurant.BLL.Services.Interfaces;
 global using Restaurant.PL.Helpers;
 global using Restaurant.BLL.Model_VM.Table;
@@ -24,4 +23,6 @@ global using Microsoft.AspNetCore.Mvc.Rendering;
 global using Restaurant.BLL.Model_VM.Booking;
 global using Restaurant.BLL.ModelVMAccountVM;
 global using System.Security.Claims;
-global using Restaurant.BLL.ModelVMUserVM;
+global using Restaurant.BLL.ModelVM.ProductVM;
+global using Restaurant.BLL.ModelVM.CategoryVM;
+

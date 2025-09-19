@@ -12,7 +12,6 @@ global using Restaurant.BLL.ModelVMProfileVM;
 global using Microsoft.AspNetCore.Authentication;
 global using Microsoft.AspNetCore.Identity;
 global using Restaurant.BLL.Abstraction;
-global using Restaurant.BLL.ModelVMUserVM;
 global using Restaurant.DAL.Database;
 global using Restaurant.BLL.Services.Interfaces;
 global using ResetPasswordVM = Restaurant.BLL.ModelVMProfileVM.ResetPasswordVM;
@@ -26,3 +25,4 @@ global using Restaurant.BLL.Model_VM.Table;
 global using Microsoft.EntityFrameworkCore;
 
 global using Restaurant.BLL.Model_VM.Cart;
+global using Restaurant.BLL.ModelVM.ProductVM;
