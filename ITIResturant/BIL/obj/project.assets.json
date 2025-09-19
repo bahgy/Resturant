@@ -6012,23 +6012,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\pc\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "projectUniqueName": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "projectName": "Restaurant.BLL",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\obj\\",
+      "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\BIL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6043,8 +6043,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj": {
-              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj"
+            "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj": {
+              "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj"
             }
           }
         }
