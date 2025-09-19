@@ -3,7 +3,7 @@
 
 
 
-namespace Restaurant.BLL.Service.Impelementation
+namespace Restaurant.BLL.Service.Implementation
 {
     public class FeedbackService : IFeedbackService
     {
