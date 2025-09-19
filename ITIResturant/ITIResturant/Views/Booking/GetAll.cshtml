@@ -9,6 +9,13 @@
     ViewData["ActivePage"] = "GetAll"; // عشان يظبط الزرار Active
 }
 
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
 @section Sidebar {
     <!-- هنا بيتكرر نفس الـ Sidebar -->
     <div class="sidebar bg-light border-end p-3">
@@ -49,8 +56,8 @@
                     <p><strong>Guests:</strong> @booking.NumberOfGuests</p>
                     <p><strong>Status:</strong> @booking.Status</p>
                     <p><strong>Special Requests:</strong> @booking.SpecialRequests</p>
-                    <p><strong>Customer Id:</strong> @booking.CustomerId</p>
-                    <p><strong>Table Id:</strong> @booking.TableId</p>
+                    <p><strong>Customer:</strong> @booking.CustomerId</p>
+                    <p><strong>Table:</strong> @booking.TableId</p>
                 </div>
                 <div class="card-footer text-end">
                     <a asp-action="Edit" asp-route-id="@booking.Id" class="btn btn-sm btn-warning">Edit</a>
