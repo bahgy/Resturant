@@ -1,0 +1,83 @@
+﻿@using Restaurant.BLL.ModelVMPromoCode
+@using Restaurant.DAL.Enum
+
+@model List<PromoCodeVM>
+@{
+    ViewData["Title"] = "PromoCodes";
+    Layout = "_AdminSharedLayout";
+}
+
+<h2 class="mt-4">PromoCodes</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fas fa-plus"></i> Create PromoCode
+    </a>
+</p>
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-info" role="alert">
+        No promo codes found.
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table id="promoCodesTable" class="table table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Discount</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var promoCode in Model)
+                {
+                    <tr>
+                        <td>@promoCode.Code</td>
+                        <td>@promoCode.Description</td>
+                        <td>
+                            @if (promoCode.IsActive)
+                            {
+                                <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Inactive</span>
+                            }
+                        </td>
+                        <td>@promoCode.DiscountDisplay</td>
+                        <td>@promoCode.ValidFromTime.ToString("yyyy-MM-dd")</td>
+                        <td>@promoCode.ValidTo.ToString("yyyy-MM-dd")</td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@promoCode.Id" class="btn btn-info btn-sm" title="Details">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@promoCode.Id" class="btn btn-warning btn-sm" title="Edit">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@promoCode.Id" class="btn btn-danger btn-sm" title="Delete"
+                               onclick="return confirm('Are you sure you want to delete this promo code?');">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        new simpleDatatables.DataTable("#promoCodesTable");
+    </script>
+}
+
+

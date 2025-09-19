@@ -1,3 +1,6 @@
+using Restaurant.BLL.Service.Abstraction;
+using Restaurant.BLL.Service.Implementation;
+using Restaurant.BLL.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // MVC
@@ -55,6 +58,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 //////////////////////////////////////////////////////////////
 #region automMapper
 builder.Services.AddAutoMapper(typeof(DomainProfile));
+
 ///
 //// dependecy injection  ///////////////////////////////////
 /// services
@@ -64,7 +68,10 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 /// repos
+builder.Services.AddScoped<IProductRepo, ProductRepo>();
 builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
 builder.Services.AddScoped<IAdminRepo, AdminRepo>();
 // team
