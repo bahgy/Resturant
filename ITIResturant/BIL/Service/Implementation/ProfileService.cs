@@ -1,4 +1,4 @@
-﻿namespace Restaurant.BLL.Service.Impelementation
+﻿namespace Restaurant.BLL.Service.Implementation
 {
     public class ProfileService : IProfileService
     {
@@ -47,6 +47,10 @@
                 user.Email = model.Email;
                 user.UserName = model.Email;
                 user.EmailConfirmed = false;
+                if (user is Customer customer)
+                {
+                    customer.EmailVerified = false;
+                }
             }
 
             var result = await _userManager.UpdateAsync(user);

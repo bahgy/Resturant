@@ -2,12 +2,12 @@
 
 namespace ITIResturant.Controllers
 {
-    public class EmailNotificationController : Controller
+    public class EmailNotificationsController : Controller
     {
 
         private readonly IEmailNotificationService _service;
 
-        public EmailNotificationController(IEmailNotificationService service)
+        public EmailNotificationsController(IEmailNotificationService service)
         {
             _service = service;
         }

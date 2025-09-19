@@ -34,4 +34,9 @@
     <ProjectReference Include="..\BIL\Restaurant.BLL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Files\" />
+    <Folder Include="wwwroot\img\ProductImgs\" />
+  </ItemGroup>
+
 </Project>

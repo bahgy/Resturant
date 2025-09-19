@@ -81,6 +81,12 @@ wwwroot\css\Profile.css
 wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\favicon.ico
+wwwroot\Files\3e00ec27-da65-423d-9d2a-1f9b51989e03@9santt.jpg
+wwwroot\Files\4203e0be-4f9b-4ea2-b2d9-1ad6f59f6c29download (1).jpg
+wwwroot\Files\4aadadb2-5061-483e-a884-c757fe558e82@9santt.jpg
+wwwroot\Files\5a067979-4350-4581-a358-9056285cc7ebdownload.jpg
+wwwroot\Files\91dd2d8f-20f5-4a58-94ac-4b41fb9c5118download (2).jpg
+wwwroot\Files\9e4c27a6-f953-47e8-9203-e4bc5bc3ab98download (1).jpg
 wwwroot\img\about.jpg
 wwwroot\img\background-site.jpg
 wwwroot\img\blog-1.jpg
