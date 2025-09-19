@@ -1,0 +1,55 @@
+﻿@using Restaurant.BLL.Model_VM.Table
+@model CreateTableVM
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminSharedLayout.cshtml";
+    ViewData["Title"] = "Tables Management";
+}
+
+
+<div class="card">
+    <div class="card-header" style="background-color:chocolate; color:white">
+        Create Table
+    </div>
+    <div class="card-body">
+
+        @if (ViewBag.error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.error</div>
+        }
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+
+        <form asp-action="Create">
+            <!-- Table Number -->
+            <div class="mb-3">
+                <label asp-for="TableNumber" class="form-label"></label>
+                <input type="number" asp-for="TableNumber" class="form-control" />
+                <span class="text-danger" asp-validation-for="TableNumber"></span>
+            </div>
+
+            <!-- Capacity -->
+            <div class="mb-3">
+                <label asp-for="Capacity" class="form-label"></label>
+                <input type="number" asp-for="Capacity" class="form-control" />
+                <span class="text-danger" asp-validation-for="Capacity"></span>
+            </div>
+
+            <!-- IsActive -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" asp-for="IsActive" class="form-check-input" />
+                <label asp-for="IsActive" class="form-check-label"></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,4 +1,5 @@
-﻿
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Restaurant.BLL.Model_VM.Booking
 {
@@ -16,10 +17,12 @@ namespace Restaurant.BLL.Model_VM.Booking
         public int NumberOfGuests { get; set; }
         public string Status { get; set; }
         public string SpecialRequests { get; set; }
+
+        // ✅ Hide from the form, auto set by controller
+        [HiddenInput(DisplayValue = false)]
         public int CustomerId { get; set; }
 
         [Required(ErrorMessage = "Please select a table")]
         public int? TableId { get; set; }
-
     }
 }

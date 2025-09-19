@@ -1,0 +1,73 @@
+﻿@using Restaurant.BLL.Model_VM.Table
+@model List<GetAllTableVM>
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminSharedLayout.cshtml";
+    ViewData["Title"] = "Tables Management";
+}
+
+
+<div class="card">
+    <div class="card-header" style="background-color:seagreen; color:white">
+        Tables List
+    </div>
+    <div class="card-body">
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+
+        @if (ViewBag.error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.error</div>
+        }
+
+        <a asp-action="Create" class="btn btn-primary mb-3">+ Create New Table</a>
+
+        <table class="table table-bordered table-striped">
+            <thead style="background-color:#f8f9fa">
+                <tr>
+                    <th>ID</th>
+                    <th>Table Number</th>
+                    <th>Capacity</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.TableNumber</td>
+                            <td>@item.Capacity</td>
+                            <td>
+                                @if (item.IsActive)
+                                {
+                                    <span class="badge bg-success">Active</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Inactive</span>
+                                }
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center text-muted">No tables found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
