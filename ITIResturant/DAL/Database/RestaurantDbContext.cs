@@ -22,6 +22,8 @@ namespace Restaurant.DAL.Database
         public DbSet<AppUser> AppUsers { get; set; } = null!;
         public DbSet<ShopingCartItem> ShopingCartItems { get; set; } = null!;
         public DbSet<Table> Table { get; set; } = null!;
+        public DbSet<Category> Categories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

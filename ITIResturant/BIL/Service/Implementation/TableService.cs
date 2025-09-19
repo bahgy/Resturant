@@ -1,7 +1,7 @@
 ﻿
 
 
-namespace Restaurant.BLL.Service.Impelementation
+namespace Restaurant.BLL.Service.Implementation
 {
     public class TableService : ITableService
     {
