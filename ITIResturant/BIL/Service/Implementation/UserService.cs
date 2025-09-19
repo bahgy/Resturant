@@ -35,13 +35,11 @@ public class UserService : IUserService
         if (userVm.UserType == "Admin")
             return (true, "Cannot create Admin user", null);
 
-        // Map to AppUser (or Customer if AutoMapper handles the inheritance)
         var user = _mapper.Map<Customer>(userVm);
         user.UserName = userVm.Email;
         user.CreatedDate = DateTime.Now;
 
-        // Here you should pass userVm.Password instead of hardcoded
-        var result = await _userManager.CreateAsync(user, "TestTest0");
+        var result = await _userManager.CreateAsync(user, userVm.Password);
         if (!result.Succeeded)
             return (true, string.Join(", ", result.Errors.Select(e => e.Description)), null);
 
@@ -49,12 +47,15 @@ public class UserService : IUserService
         return (false, null, newVm);
     }
 
+
     public async Task<(bool hasError, string? message, UserVM? user)> UpdateUserAsync(UserVM userVm)
     {
         var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == userVm.Id);
         if (user == null)
             return (true, "User not found", null);
-
+        // if any user exist with the same email added
+        if (await _userManager.FindByEmailAsync(userVm.Email) is AppUser existingUser && existingUser.Id != userVm.Id)
+            return (true, "Email already exists", null);
         _mapper.Map(userVm, user);
 
         var result = await _userManager.UpdateAsync(user);

@@ -1,0 +1,54 @@
+﻿@using Restaurant.BLL.ModelVMPromoCode
+@using Restaurant.DAL.Enum
+@model PromoCodeVM
+
+@{
+    ViewData["Title"] = "PromoCode Details";
+    Layout = "_AdminSharedLayout";
+}
+
+<h2>User Details</h2>
+
+<dl class="row">
+    <dt class="col-sm-2">Code</dt>
+    <dd class="col-sm-10">@Model.Code</dd>
+
+    <dt class="col-sm-2">Description</dt>
+    <dd class="col-sm-10">@Model.Description</dd>
+
+    <dt class="col-sm-2">Discount</dt>
+    <dd class="col-sm-10">@Model.DiscountDisplay</dd>
+
+    <dt class="col-sm-2">Valid From</dt>
+    <dd class="col-sm-10">@Model.ValidFromTime</dd>
+
+    <dt class="col-sm-2">Valid To</dt>
+    <dd class="col-sm-10">@Model.ValidTo</dd>
+
+    <dt class="col-sm-2">Status</dt>
+    <dd class="col-sm-10">
+    @if (Model.IsActive)
+    {
+        <span class="badge bg-success">Active</span>
+    }
+    else
+    {
+        <span class="badge bg-secondary">Inactive</span>
+    }
+    </dd>
+    <dt class="col-sm-2">Max Usage Times</dt>
+    <dd class="col-sm-10">@Model.MaxUsedTime</dd>
+
+    <dt class="col-sm-2">Used Times</dt>
+    <dd class="col-sm-10">@Model.UsedCount</dd>
+
+    <dt class="col-sm-2">Remaining Times</dt>
+    <dd class="col-sm-10">@Model.RemainingUses</dd>
+
+    
+</dl>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</p>

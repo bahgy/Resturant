@@ -1,4 +1,4 @@
-﻿@model Restaurant.BLL.ModelVMUserVM.UserVM
+﻿@model UserVM
 
 @{
     ViewData["Title"] = "Delete User";
@@ -20,7 +20,7 @@
     <dd class="col-sm-10">@Model.PhoneNumber</dd>
 </dl>
 
-<form asp-action="DeleteConfirmed" method="post">
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post">
     <input type="hidden" asp-for="Id" />
     <button type="submit" class="btn btn-danger">Delete</button>
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
