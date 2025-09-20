@@ -1,19 +1,36 @@
+<<<<<<< HEAD
 ﻿
 using Restaurant.PL.Filters;
+=======
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Restaurant.BLL.Model_VM.Booking;
+using Restaurant.BLL.Service.Abstraction;
+using Restaurant.DAL.Entities;
+>>>>>>> origin
 
 namespace RestoPL.Controllers
 {
     [Authorize]
+<<<<<<< HEAD
     [ServiceFilter(typeof(ValidateUserExistsFilter))]
+=======
+>>>>>>> origin
     public class BookingController : Controller
     {
         private readonly IBookingService _bookingService;
         private readonly ITableService _tableService;
+        private readonly UserManager<AppUser> _userManager;
 
-        public BookingController(IBookingService bookingService, ITableService tableService)
+        public BookingController(
+            IBookingService bookingService,
+            ITableService tableService,
+            UserManager<AppUser> userManager)
         {
             _bookingService = bookingService;
             _tableService = tableService;
+            _userManager = userManager;
         }
 
         //=========================================================
@@ -25,54 +42,73 @@ namespace RestoPL.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(CreateBookingVM bookingVM)
+        public async Task<IActionResult> Create(CreateBookingVM bookingVM)
         {
             if (ModelState.IsValid)
             {
+                var user = await _userManager.GetUserAsync(User);
+                if (user == null)
+                {
+                    ViewBag.error = "You must be logged in to create a booking.";
+                    return View(bookingVM);
+                }
+
+                bookingVM.CustomerId = user.Id;
+
                 var result = _bookingService.Create(bookingVM);
-                if (!result.Item1)
+                if (result.Item1)
+                {
+                    // ✅ رسالة نجاح
+                    TempData["SuccessMessage"] = "Booking created successfully 🎉";
                     return RedirectToAction("GetAll");
+                }
 
                 ViewBag.error = result.Item2;
             }
 
-            // إعادة تحميل الطاولات في حالة الخطأ
             ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
             return View(bookingVM);
         }
+
 
         //=========================================================
         [HttpGet]
         public IActionResult Edit(int id)
         {
             var result = _bookingService.GetById(id);
-            if (result.Item1) // فيه مشكلة
+            if (!result.Item1) // لو حصل خطأ
             {
                 ViewBag.error = result.Item2;
                 return RedirectToAction("GetAll");
             }
 
-            // إعادة تحميل الطاولات للـ dropdown
             ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
-
-            return View(result.Item3); // EditBookingVM
+            return View(result.Item3);
         }
 
         [HttpPost]
-        public IActionResult Edit(int id, EditBookingVM editBookingVM)
+        public async Task<IActionResult> Edit(int id, EditBookingVM editBookingVM)
         {
             if (ModelState.IsValid)
             {
+                var user = await _userManager.GetUserAsync(User);
+                if (user == null)
+                {
+                    ViewBag.error = "You must be logged in to edit a booking.";
+                    return View(editBookingVM);
+                }
+
+                // ✅ اربط الـ CustomerId تلقائي
+                editBookingVM.CustomerId = user.Id;
+
                 var result = _bookingService.Edit(id, editBookingVM);
-                if (!result.Item1)
+                if (result.Item1)  // النجاح
                     return RedirectToAction("GetAll");
 
                 ViewBag.error = result.Item2;
             }
 
-            // إعادة تحميل الطاولات في حالة الخطأ
             ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
-
             return View(editBookingVM);
         }
 
@@ -81,12 +117,10 @@ namespace RestoPL.Controllers
         public IActionResult GetAll()
         {
             var result = _bookingService.GetAll();
-            if (result.Item1) // فيه مشكلة
-            {
+            if (!result.Item1)
                 ViewBag.error = result.Item2;
-            }
 
-            return View(result.Item3); // الليست
+            return View(result.Item3);
         }
 
         //=========================================================
