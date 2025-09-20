@@ -1,9 +1,12 @@
 ﻿
 
+using Restaurant.PL.Filters;
+
 namespace Restaurant.PL.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")] // Restrict to Admins
+    [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class UsersController : Controller
     {
         private readonly IUserService _userService;
