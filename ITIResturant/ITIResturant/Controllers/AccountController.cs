@@ -236,7 +236,7 @@ namespace Restaurant.PL.Controllers
             }
 
             var (hasError, user, errorMessage) = await _authService.FindUserByEmailAsync(model.Email);
-
+            
             if (hasError)
             {
                 ModelState.AddModelError("", "Invalid login attempt.");

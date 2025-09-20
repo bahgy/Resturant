@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Restaurant.BLL.ModelVMPromoCode;
-
+﻿
 namespace Restaurant.PL.Areas.Admin.Controllers
 {
     [Area("Admin")]

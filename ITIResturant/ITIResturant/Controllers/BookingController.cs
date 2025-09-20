@@ -1,6 +1,10 @@
 ﻿
+using Restaurant.PL.Filters;
+
 namespace RestoPL.Controllers
 {
+    [Authorize]
+    [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class BookingController : Controller
     {
         private readonly IBookingService _bookingService;

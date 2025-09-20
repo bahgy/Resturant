@@ -26,10 +26,11 @@ namespace Restaurant.BLL.Service.Implementation
                         FirstName = model.FirstName,
                         LastName = model.LastName,
                         Email = model.Email,
-                        UserName = model.Email,
+                        UserName = model.UserName,
                         PhoneNumber = model.PhoneNumber,
                         Address = model.Address,
-                        UserType = UserTypeEnum.Admin
+                        UserType = UserTypeEnum.Admin,
+                        EmailConfirmed = true // Admin email is confirmed by default
                     };
                 }
                 else
@@ -39,10 +40,10 @@ namespace Restaurant.BLL.Service.Implementation
                         FirstName = model.FirstName,
                         LastName = model.LastName,
                         Email = model.Email,
-                        UserName = model.Email,
+                        UserName = model.UserName,
                         PhoneNumber = model.PhoneNumber,
                         Address = model.Address,
-                        UserType = UserTypeEnum.Customer
+                        UserType = UserTypeEnum.Customer,
                     };
                 }
 
