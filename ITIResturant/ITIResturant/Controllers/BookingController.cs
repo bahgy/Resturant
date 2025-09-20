@@ -1,3 +1,6 @@
+
+﻿
+using Restaurant.PL.Filters;
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -8,6 +11,7 @@ using Restaurant.DAL.Entities;
 namespace RestoPL.Controllers
 {
     [Authorize]
+    [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class BookingController : Controller
     {
         private readonly IBookingService _bookingService;

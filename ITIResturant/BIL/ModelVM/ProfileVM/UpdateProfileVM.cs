@@ -14,6 +14,7 @@ namespace Restaurant.BLL.ModelVMProfileVM
         [Required(ErrorMessage = "Email is required.")]
         [EmailAddress(ErrorMessage = "Please enter a valid email address.")]
         public string Email { get; set; }
+        public string UserName { get; set; }
 
         [Required(ErrorMessage = "Phone number is required.")]
         [Phone(ErrorMessage = "Please enter a valid phone number.")]

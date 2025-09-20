@@ -1,13 +1,12 @@
 ﻿
 
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.WebUtilities;
-using System.Text;
+using Restaurant.PL.Filters;
 
 namespace Restaurant.PL.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")] // Restrict to Admins
+    [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class UsersController : Controller
     {
         private readonly IUserService _userService;
@@ -58,14 +57,14 @@ namespace Restaurant.PL.Areas.Admin.Controllers
                 return View(UserVM);
             }
 
-            // ✅ Send confirmation email
+            //  Send confirmation email
             var appUser = await _userManager.FindByEmailAsync(createdUser.Email);
             // After user is created in CreateUserAsync (UserService)
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(appUser);
             token = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
 
             var confirmationLink = Url.Action("ConfirmEmail", "Users",
-                new {  userId = appUser.Id, token = token , area = ""},
+                new { area = "Admin",  userId = appUser.Id, token = token },
                 protocol: HttpContext.Request.Scheme);
             // Send email
             await _emailSender.SendEmailAsync(appUser.Email, "Confirm your email",
@@ -171,7 +170,6 @@ namespace Restaurant.PL.Areas.Admin.Controllers
                 await _emailSender.SendEmailAsync(identityUser.Email, "Confirm your email",
                     $"<p>Your email was updated. Please confirm it by clicking the link below:</p>" +
                     $"<a href='{confirmationLink}'>Confirm Email</a>");
-
                 TempData["SuccessMessage"] = "User updated successfully. Verification email sent to the new address.";
             }
             else
