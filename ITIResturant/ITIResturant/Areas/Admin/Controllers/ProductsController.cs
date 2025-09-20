@@ -4,6 +4,7 @@ namespace Restaurant.PL.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")] // restrict only admins
+
     public class ProductsController : Controller
     {
         private readonly IProductService _productService;
