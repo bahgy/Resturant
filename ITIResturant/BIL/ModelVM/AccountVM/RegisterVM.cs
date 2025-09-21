@@ -14,6 +14,7 @@ namespace Restaurant.BLL.ModelVMAccountVM
         [Required(ErrorMessage = "Email Address Required")]
         [EmailAddress(ErrorMessage = "Invalid email address.")]
         public string Email { get; set; }
+        public string UserName { get; set; }
 
         [MaxLength(200, ErrorMessage = "Address cannot exceed 200 characters.")]
         public string? Address { get; set; }
