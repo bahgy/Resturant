@@ -1,6 +1,4 @@
-﻿
-
-namespace Restaurant.BLL.Service.Abstraction
+﻿namespace Restaurant.BLL.Service.Abstraction
 {
     public interface IBookingService
     {
@@ -9,6 +7,6 @@ namespace Restaurant.BLL.Service.Abstraction
         (bool, string, List<GetAllBookingVM>) GetAll();
         (bool, string, EditBookingVM) GetById(int bookingId);
         bool Delete(int bookingId);
-
+        (bool, string, List<GetAllBookingVM>) GetByCustomerId(int customerId);
     }
 }
