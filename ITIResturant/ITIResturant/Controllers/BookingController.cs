@@ -1,12 +1,4 @@
 
-﻿
-using Restaurant.PL.Filters;
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Restaurant.BLL.Model_VM.Booking;
-using Restaurant.BLL.Service.Abstraction;
-using Restaurant.DAL.Entities;
 
 namespace RestoPL.Controllers
 {

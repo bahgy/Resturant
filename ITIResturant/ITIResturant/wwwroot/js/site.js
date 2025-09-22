@@ -2,3 +2,4 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+// Function to automatically add "Add to Cart" buttons to menu items

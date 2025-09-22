@@ -1,4 +1,6 @@
 ﻿
+using System.Security.Claims;
+
 public class UserService : IUserService
 {
     private readonly IMapper _mapper;
@@ -74,5 +76,18 @@ public class UserService : IUserService
             return (true, string.Join(", ", result.Errors.Select(e => e.Description)), false);
 
         return (false, null, true);
+    }
+
+    public int? GetCurrentCustomerId(ClaimsPrincipal user)
+    {
+        if (user == null) return null;
+
+        var customerIdClaim = user.FindFirst(ClaimTypes.NameIdentifier);
+        if (customerIdClaim != null && int.TryParse(customerIdClaim.Value, out int customerId))
+        {
+            return customerId;
+        }
+
+        return null;
     }
 }

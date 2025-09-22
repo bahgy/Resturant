@@ -4,18 +4,24 @@ namespace ITIResturant.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IMenuService _menuService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IMenuService _MenuService)
         {
-            _logger = logger;
+            _menuService = _MenuService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var menu = await _menuService.GetMenuAsync();
+            return View(menu); 
         }
 
+        public async Task<IActionResult> Menu()
+        {
+            var menu = await _menuService.GetMenuAsync();
+            return View(menu);
+        }
         public IActionResult About()
         {
             return View();
@@ -27,10 +33,6 @@ namespace ITIResturant.Controllers
 
            
         public IActionResult Events()
-        {
-            return View();
-        }
-        public IActionResult Menu()
         {
             return View();
         }
@@ -50,6 +52,7 @@ namespace ITIResturant.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿
 namespace ITIResturant.Controllers
 {
+    [Authorize]
+    [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class FeedbackController : Controller
     {
         private readonly IFeedbackService _service;
