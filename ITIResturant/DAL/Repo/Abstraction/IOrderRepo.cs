@@ -13,6 +13,6 @@ namespace Restaurant.DAL.Repo.Abstraction
         Task<bool> DeleteAsync(int id);
         Task<bool> ExistsAsync(int id);
         Task<bool> UpdateOrderStatusAsync(int orderId, string status);
-        Task<bool> UpdatePaymentStateAsync(int orderId, string paymentState);
+        Task<bool> UpdatePaymentStateAsync(int orderId, PaymentStatus paymentState);
     }
 }

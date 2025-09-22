@@ -120,7 +120,7 @@ namespace Restaurant.DAL.Repo.Implementation
             }
         }
 
-        public async Task<bool> UpdatePaymentStateAsync(int orderId, string paymentState)
+        public async Task<bool> UpdatePaymentStateAsync(int orderId, PaymentStatus paymentState)
         {
             try
             {

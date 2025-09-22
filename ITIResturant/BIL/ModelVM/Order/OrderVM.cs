@@ -10,8 +10,8 @@ namespace Restaurant.BLL.ModelVMOrder
         public decimal FinalAmount => TotalAmount - DiscountAmount;
         public string Status { get; set; }
         public DateTime EstimatDelivryTime { get; set; }
-        public string PaymentMethod { get; set; }
-        public string PaymentState { get; set; }
+        public PaymentMethod PaymentMethod { get; set; }
+        public PaymentStatus PaymentState { get; set; }
         public int CustomerId { get; set; }
 
         // Updated customer properties

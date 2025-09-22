@@ -1,5 +1,7 @@
 ﻿
 
+using Microsoft.EntityFrameworkCore;
+
 namespace Restaurant.DAL.Database
 {
     public class RestaurantDbContext : IdentityDbContext<AppUser, IdentityRole<int>, int>
@@ -23,6 +25,7 @@ namespace Restaurant.DAL.Database
         public DbSet<ShopingCartItem> ShopingCartItems { get; set; } = null!;
         public DbSet<Table> Table { get; set; } = null!;
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Payment> Payments  { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -70,6 +73,15 @@ namespace Restaurant.DAL.Database
             modelBuilder.Entity<ShopingCartItem>()
                 .Property(sci => sci.Quantity)
                 .HasColumnType("decimal(18,2)");
+           modelBuilder
+                .Entity<Payment>()
+                .Property(p => p.Status)
+                .HasConversion<string>();
+
+                    modelBuilder
+                        .Entity<Payment>()
+                        .Property(p => p.Method)
+                .HasConversion<string>();
         }
 
     }

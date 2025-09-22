@@ -1,7 +1,4 @@
-﻿
-
-
-namespace RestoPL.Controllers
+﻿namespace RestoPL.Controllers
 {
     public class TableController : Controller
     {
