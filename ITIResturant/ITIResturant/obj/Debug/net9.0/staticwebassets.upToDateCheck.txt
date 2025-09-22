@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\ahmed khaled\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 C:\Users\ahmed khaled\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\js\Profile.js
 C:\Users\ahmed khaled\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
@@ -76,85 +75,6 @@ C:\Users\ahmed khaled\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwro
 C:\Users\ahmed khaled\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 C:\Users\ahmed khaled\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\easing\easing.min.js
 C:\Users\ahmed khaled\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-=======
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\js\Profile.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\owlcarousel\owl.carousel.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.min.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\additional-methods.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\js\site.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\css\bootstrap.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\easing\easing.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\LICENSE.txt
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\css\Adminstyle.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\counterup\counterup.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\wow\wow.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\waypoints\waypoints.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\css\site.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\favicon.ico
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\animate\animate.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\LICENSE.md
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\wow\wow.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\lightbox\js\lightbox.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\owlcarousel\owl.carousel.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\js\main.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\animate\animate.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\lightbox\css\lightbox.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\css\Profile.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\css\style.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\easing\easing.min.js
-F:\c plus\iti new\مشروع\جديد 22\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
->>>>>>> cc9d136cacb929010acbfd43e0652cee47cf9e42
 wwwroot\css\Adminstyle.css
 wwwroot\css\bootstrap.min.css
 wwwroot\css\Profile.css

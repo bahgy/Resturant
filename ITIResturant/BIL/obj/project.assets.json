@@ -6425,39 +6425,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
->>>>>>> cc9d136cacb929010acbfd43e0652cee47cf9e42
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "projectName": "Restaurant.BLL",
       "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "packagesPath": "C:\\Users\\ahmed khaled\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\obj\\",
-=======
-      "projectUniqueName": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
-      "projectName": "Restaurant.BLL",
-      "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\BIL\\obj\\",
->>>>>>> cc9d136cacb929010acbfd43e0652cee47cf9e42
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\ahmed khaled\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> cc9d136cacb929010acbfd43e0652cee47cf9e42
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6472,13 +6456,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj": {
               "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj"
-=======
-            "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj": {
-              "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj"
->>>>>>> cc9d136cacb929010acbfd43e0652cee47cf9e42
             }
           }
         }
@@ -6553,13 +6532,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\BIL\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
-    }
-  ]
+  }
 }

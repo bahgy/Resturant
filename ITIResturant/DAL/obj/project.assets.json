@@ -5066,39 +5066,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
->>>>>>> cc9d136cacb929010acbfd43e0652cee47cf9e42
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj",
       "projectName": "Restaurant.DAL",
       "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj",
       "packagesPath": "C:\\Users\\ahmed khaled\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\obj\\",
-=======
-      "projectUniqueName": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj",
-      "projectName": "Restaurant.DAL",
-      "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "F:\\c plus\\iti new\\مشروع\\جديد 22\\Resturant\\ITIResturant\\DAL\\obj\\",
->>>>>>> cc9d136cacb929010acbfd43e0652cee47cf9e42
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\ahmed khaled\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> cc9d136cacb929010acbfd43e0652cee47cf9e42
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

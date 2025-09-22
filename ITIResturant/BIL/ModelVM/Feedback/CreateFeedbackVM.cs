@@ -25,5 +25,6 @@ namespace Restaurant.BLL.Model_VM.Feedback
 
         [Required(ErrorMessage = "Customer is required")]
         public int CustomerId { get; set; }
+        public object SubmittedDate { get; internal set; }
     }
 }
