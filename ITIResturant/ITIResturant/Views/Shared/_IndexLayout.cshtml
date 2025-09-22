@@ -50,7 +50,12 @@
     @Html.Partial("_Header.cshtml")
 
     <div class="container">
-        @RenderBody()
+        <div class="d-flex">
+            @RenderSection("Sidebar", required: false)
+            <div class="flex-grow-1 p-4">
+                @RenderBody()
+            </div>
+        </div>
     </div>
 
 
