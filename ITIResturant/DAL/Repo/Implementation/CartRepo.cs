@@ -1,6 +1,4 @@
-﻿
-
-namespace Restaurant.DAL.Repo.Implementation
+﻿namespace Restaurant.DAL.Repo.Implementation
 {
     public class CartRepo : ICartRepo
     {
@@ -11,90 +9,30 @@ namespace Restaurant.DAL.Repo.Implementation
         {
             _context = context;
         }
-        //======================================================
-        public void Add(Cart cart)
+
+        public async Task<Cart> GetCartByCustomerIdAsync(int customerId)
         {
-            try
-            {
-                _context.Carts.Add(cart);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error adding new cart.", ex);
-            }
+            return await _context.Carts
+                .Include(c => c.ShopingCartItem)
+                .ThenInclude(i => i.Product)
+                .FirstOrDefaultAsync(c => c.CustomerId == customerId);
         }
 
-        public void Delete(int id)
+        public async Task AddCartAsync(Cart cart)
         {
-            try
-            {
-                var cart = _context.Carts.Find(id);
-                if (cart != null)
-                    _context.Carts.Remove(cart);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error deleting cart with Id = {id}.", ex);
-            }
+            await _context.Carts.AddAsync(cart);
         }
 
-        public IEnumerable<Cart> GetAll()
+        public async Task UpdateCartAsync(Cart cart)
         {
-            try
-            {
-                return _context.Carts
-                    .Include(c => c.Customer)
-                    .Include(c => c.ShopingCartItem)
-                    .ToList();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error fetching carts.", ex);
-            }
+            _context.Carts.Update(cart);
         }
 
-        public Cart GetById(int id)
+        public async Task SaveChangesAsync()
         {
-            try
-            {
-                return _context.Carts
-                    .Include(c => c.Customer)
-                    .Include(c => c.ShopingCartItem)
-                    .FirstOrDefault(c => c.Id == id);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error fetching cart with Id = {id}.", ex);
-            }
+            await _context.SaveChangesAsync();
         }
 
-
-
-        public void Update(Cart cart)
-        {
-            try
-            {
-                _context.Carts.Update(cart);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error updating cart with Id = {cart.Id}.", ex);
-            }
-
-        }
-
-              public void Save()
-              {
-            try
-            {
-                _context.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error saving changes in CartRepository.", ex);
-            }
-
-        }
     }
-    }
+}
 

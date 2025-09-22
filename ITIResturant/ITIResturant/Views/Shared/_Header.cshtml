@@ -18,11 +18,11 @@
                         <a asp-controller="Home" asp-action="About" class="nav-item nav-link">About</a>
                         <a asp-controller="Home" asp-action="Services" class="nav-item nav-link">Services</a>
                         <a asp-controller="Home" asp-action="Events" class="nav-item nav-link">Events</a>
-                        <a asp-controller="Menu" asp-action="Index" class="nav-item nav-link">Menu</a>
+                        <a asp-controller="Home" asp-action="Menu" class="nav-item nav-link">Menu</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light">
-                                <a asp-controller="Booking" asp-action="Index" class="dropdown-item">Booking</a>
+                                <a asp-controller="Booking" asp-action="GetAll" class="dropdown-item">Booking</a>
                                 <a asp-controller="Team" asp-action="Index" class="dropdown-item">Our Team</a>
                                 <a asp-controller="Testimonial" asp-action="Index" class="dropdown-item">Testimonial</a>
                             </div>
@@ -32,20 +32,30 @@
 
                     <!-- Buttons (collapse into mobile menu) -->
                     <div class="header-buttons-container">
-                        <!-- Search -->
+                        <!-- Search toggle button -->
                         <div class="search-container">
-                            <button class="btn btn-primary btn-md-square rounded-circle" id="searchToggleBtn">
+                            <button id="searchToggleBtn" class="btn btn-outline-secondary">
                                 <i class="fas fa-search"></i>
                             </button>
+
+                            <!-- Search Panel -->
                             <div class="search-panel" id="searchPanel">
                                 <div class="search-content">
                                     <div class="search-input-group">
-                                        <input type="text" class="form-control" placeholder="Search...">
+                                        <input type="text" id="searchInput" class="form-control" placeholder="Search...">
                                         <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                                     </div>
+                                    <select id="sortSelect" class="form-select mt-2">
+                                        <option value="name">Sort by Name</option>
+                                        <option value="min">Price: Low to High</option>
+                                        <option value="max">Price: High to Low</option>
+                                    </select>
+                                    <div class="search-results mt-3" id="searchResults"></div>
                                 </div>
                             </div>
                         </div>
+
+
 
                         <!-- Auth buttons -->
                         <div class="auth-buttons">

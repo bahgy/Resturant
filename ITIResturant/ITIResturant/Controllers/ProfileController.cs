@@ -1,6 +1,4 @@
 ﻿
-
-using Restaurant.PL.Filters;
 using ResetPasswordVM = Restaurant.BLL.ModelVMProfileVM.ResetPasswordVM;
 
 namespace Restaurant.PL.Controllers

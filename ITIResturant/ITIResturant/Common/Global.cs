@@ -27,3 +27,5 @@ global using Restaurant.BLL.ModelVM.CategoryVM;
 global using Restaurant.BLL.ModelVMPromoCode;
 global using Microsoft.AspNetCore.WebUtilities;
 global using System.Text;
+global using Restaurant.PL.Filters;
+global using Microsoft.AspNetCore.Mvc.Filters;

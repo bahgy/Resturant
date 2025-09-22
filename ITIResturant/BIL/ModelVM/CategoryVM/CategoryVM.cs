@@ -10,6 +10,6 @@ namespace Restaurant.BLL.ModelVM.CategoryVM
         public string Name { get; set; }
 
         [MaxLength(200, ErrorMessage = "Description cannot exceed 200 characters")]
-        public string Description { get; set; }
+        public string Description { get; set; } 
     }
 }

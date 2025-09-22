@@ -1,0 +1,31 @@
+﻿@model Restaurant.BLL.ModelVM.MenuVM.ProductVM
+
+
+<div class="col-lg-6 wow bounceInUp product-item"
+     data-id="@Model.Id"
+     data-name="@Model.Name"
+     data-description="@Model.Description"
+     data-price="@Model.Price"
+     data-image="~/Files/@Model.ImageUrl"
+     data-url="/Product/Details/@Model.Id">
+
+    <div class="menu-item d-flex align-items-center">
+        <img class="flex-shrink-0 img-fluid rounded-circle"
+             src="~/Files/@Model.ImageUrl" alt="@Model.Name"
+             style="width: 80px; height: 80px; object-fit: cover;">
+
+        <div class="w-100 d-flex flex-column text-start ps-4">
+            <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                <h4>@Model.Name</h4>
+                <h4 class="text-primary">$@Model.Price</h4>
+            </div>
+            <p class="mb-0">@Model.Description</p>
+
+            <button class="btn btn-primary add-to-cart"
+                    data-product-id="@Model.Id"
+                    data-quantity="1">
+                <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+            </button>
+        </div>
+    </div>
+</div>
