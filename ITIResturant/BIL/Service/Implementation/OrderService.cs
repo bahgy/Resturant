@@ -1,5 +1,9 @@
 ﻿
 
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Restaurant.DAL.Enum;
+using System.Web.Mvc;
+
 namespace Restaurant.BLL.Service.Implementation
 {
     public class OrderService:IOrderService
@@ -59,7 +63,7 @@ namespace Restaurant.BLL.Service.Implementation
                 DelivryAddress = viewModel.DelivryAddress,
                 PaymentMethod = viewModel.PaymentMethod,
                 status = "Pending",
-                paymentSTate = "Pending",
+                paymentSTate = PaymentStatus.Pending,
                 TimeRequst = DateTime.UtcNow,
                 DiscountAmount = 0, 
                 OrderItems = new List<OrderItem>()
@@ -117,11 +121,38 @@ namespace Restaurant.BLL.Service.Implementation
             if (!string.IsNullOrEmpty(viewModel.Status))
                 existingOrder.status = viewModel.Status;
 
+            //if (!string.IsNullOrEmpty(viewModel.PaymentState))
+            //    existingOrder.paymentSTate = viewModel.PaymentState;
             if (!string.IsNullOrEmpty(viewModel.PaymentState))
-                existingOrder.paymentSTate = viewModel.PaymentState;
+            {
+                if (Enum.TryParse<PaymentStatus>(viewModel.PaymentState, true, out var state))
+                {
+                    existingOrder.paymentSTate = state;
+                }
+                else
+                {
+                    // القيمة مش صحيحة
+                    //ModelState.AddModelError("PaymentState", "Invalid payment state");
+                }
+            }
 
+
+            //if (!string.IsNullOrEmpty(viewModel.PaymentMethod))
+            //    existingOrder.PaymentMethod = viewModel.PaymentMethod;
             if (!string.IsNullOrEmpty(viewModel.PaymentMethod))
-                existingOrder.PaymentMethod = viewModel.PaymentMethod;
+            {
+                if (Enum.TryParse<PaymentMethod>(viewModel.PaymentMethod, true, out var method))
+                {
+                    existingOrder.PaymentMethod = method;
+                }
+                else
+                {
+                    //// القيمة مش صحيحة
+                    //ModelState.AddModelError("PaymentMethod", "Invalid payment method");
+                    //return View(viewModel);
+                }
+            }
+
 
             return await _orderRepository.UpdateAsync(existingOrder);
         }
@@ -156,7 +187,7 @@ namespace Restaurant.BLL.Service.Implementation
             return result;
         }
 
-        public async Task<bool> UpdatePaymentStateAsync(int orderId, string paymentState)
+        public async Task<bool> UpdatePaymentStateAsync(int orderId, PaymentStatus paymentState)
         {
             return await _orderRepository.UpdatePaymentStateAsync(orderId, paymentState);
         }

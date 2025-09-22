@@ -15,7 +15,7 @@ builder.Services.AddScoped<ValidateUserExistsFilter>();
 builder.Services.AddRazorPages();
 
 #region Connection string
-var connectionString = builder.Configuration.GetConnectionString("Hamza");
+var connectionString = builder.Configuration.GetConnectionString("connection");
 builder.Services.AddDbContext<RestaurantDbContext>(options =>
     options.UseSqlServer(connectionString));
 #endregion

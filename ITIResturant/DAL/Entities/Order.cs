@@ -9,8 +9,8 @@ namespace Restaurant.DAL.Entities
         public decimal DiscountAmount { get; set; }
         public string status { get; set; }
         public DateTime EstimatDelivryTime { get; set; }
-        public string PaymentMethod { get; set; }
-        public string paymentSTate { get; set; }
+        public PaymentMethod PaymentMethod { get; set; }
+        public PaymentStatus paymentSTate { get; set; }
         public int customerId { get; set; }
         public Customer Customer { get; set; }
 
