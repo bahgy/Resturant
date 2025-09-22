@@ -17,12 +17,11 @@ namespace ITIResturant.Controllers
             return View(menu); 
         }
 
-<<<<<<< HEAD
         public async Task<IActionResult> Menu()
         {
             var menu = await _menuService.GetMenuAsync();
-            return View(menu); 
-=======
+            return View(menu);
+        }
         public IActionResult About()
         {
             return View();
@@ -34,10 +33,6 @@ namespace ITIResturant.Controllers
 
            
         public IActionResult Events()
-        {
-            return View();
-        }
-        public IActionResult Menu()
         {
             return View();
         }
@@ -57,7 +52,7 @@ namespace ITIResturant.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
->>>>>>> origin
+
         }
     }
 }

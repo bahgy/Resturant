@@ -2,6 +2,10 @@ using Restaurant.BLL.Service.Abstraction;
 using Restaurant.BLL.Service.Implementation;
 using Restaurant.BLL.Services;
 using Restaurant.PL.Filters;
+using Resturant.BLL.Service.Abstraction;
+using Resturant.BLL.Service.Impelementation;
+using Rsturant.DAL.Repo.Abstraction;
+using Rsturant.DAL.Repo.Impelementation;
 var builder = WebApplication.CreateBuilder(args);
 
 // MVC
@@ -104,6 +108,9 @@ builder.Services.AddScoped<IOrderItemService, OrderItemService>();
 builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
 builder.Services.AddScoped<ICartRepo, CartRepo>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IPaymentRepo, PaymentRepo>();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
+
 
 
 builder.Services.AddAutoMapper(x => x.AddProfile(new OrderItemProfile()));
