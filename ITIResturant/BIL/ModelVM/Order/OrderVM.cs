@@ -7,8 +7,17 @@ namespace Restaurant.BLL.ModelVMOrder
         public DateTime TimeRequst { get; set; }
         public decimal TotalAmount { get; set; }
         public decimal DiscountAmount { get; set; }
-        public decimal FinalAmount => TotalAmount - DiscountAmount;
-        public string Status { get; set; }
+        public decimal FinalAmount
+        {
+            get
+            {
+                var subtotal = TotalAmount - DiscountAmount;
+                var tax = subtotal * 0.085m;
+                const decimal deliveryFee = 5m;
+                return subtotal + tax + deliveryFee;
+            }
+        }
+        public OrderStatus Status { get; set; }
         public DateTime EstimatDelivryTime { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
         public PaymentStatus PaymentState { get; set; }

@@ -6,5 +6,6 @@
         Task AddCartAsync(Cart cart);
         Task UpdateCartAsync(Cart cart);
         Task SaveChangesAsync();
+        Task ClearCartAsync(int customerId);
     }
 }

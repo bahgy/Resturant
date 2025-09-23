@@ -3,21 +3,26 @@ using Microsoft.AspNetCore.Mvc;
 using Restaurant.BLL.ModelVMOrder;
 using Restaurant.BLL.ModelVMOrderItem;
 using Restaurant.BLL.Service.Abstraction;
-using Restaurant.BLL.Service.Implementation;
 using Restaurant.DAL.Enum;
-using Resturant.BLL.ModelVm.PaymentVm;
+using Resturant.BLL.ModelVM.PaymentVM;
 using Resturant.BLL.Service.Abstraction;
 
 namespace ResturantProject.Controllers
 {
     [Authorize]
+    [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class PaymentController : Controller
     {
         private readonly IOrderService _orderService;
         private readonly IPaymentService _paymentService;
         private readonly IUserService _userService;
         private readonly ICartService _cartService;
-        public PaymentController(IOrderService orderService, IPaymentService paymentService, IUserService userService, ICartService cartService)
+
+        public PaymentController(
+            IOrderService orderService,
+            IPaymentService paymentService,
+            IUserService userService,
+            ICartService cartService)
         {
             _orderService = orderService;
             _paymentService = paymentService;
@@ -25,23 +30,61 @@ namespace ResturantProject.Controllers
             _cartService = cartService;
         }
 
-        // GET: /Payment/Checkout/5
+        // GET: /Payment/Checkout
         [HttpGet]
         public async Task<IActionResult> Checkout()
         {
             var customerId = _userService.GetCurrentCustomerId(User);
-            if (customerId == null) return RedirectToAction("Login", "Account");
+            if (customerId == null)
+                return RedirectToAction("Login", "Account");
 
             var cart = await _cartService.GetCartAsync(customerId.Value);
             if (cart == null || !cart.Items.Any())
                 return RedirectToAction("Index", "Cart");
 
-            // Create order from cart
-            var orderVm = await _orderService.CreateAsync(new CreateOrderVM
+            var total = cart.Items.Sum(i => i.Price * i.Quantity);
+
+            var vm = new CreatePaymentVM
+            {
+                Amount = total * 0.085m + total + 5m, // total with tax + fee
+                PaymentMethod = PaymentMethod.CashOnDelivery // default
+            };
+
+            return View("Checkout", vm);
+        }
+
+        // POST: /Payment/ProcessPayment
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ProcessPayment(CreatePaymentVM model)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState
+                    .Where(ms => ms.Value.Errors.Any())
+                    .Select(ms => new
+                    {
+                        field = ms.Key,
+                        errors = ms.Value.Errors.Select(e => e.ErrorMessage).ToArray()
+                    });
+
+                return Json(new { success = false, message = "Invalid data", details = errors });
+            }
+
+            var customerId = _userService.GetCurrentCustomerId(User);
+            if (customerId == null)
+                return Json(new { success = false, message = "User not logged in" });
+
+            var cart = await _cartService.GetCartAsync(customerId.Value);
+            if (cart == null || !cart.Items.Any())
+                return Json(new { success = false, message = "Cart is empty" });
+
+            // Create order via order service
+            var (orderError, orderMessage, orderVM) = await _orderService.CreateAsync(new CreateOrderVM
             {
                 CustomerId = customerId.Value,
-                DelivryAddress = "Set from checkout form later", // placeholder
-                PaymentMethod = PaymentMethod.CashOnDelivery, // default, can change on form
+                DelivryAddress = model.Address,
+                PaymentMethod = model.PaymentMethod,
                 OrderItems = cart.Items.Select(i => new CreateOrderItemVM
                 {
                     ProductId = i.ProductId,
@@ -50,52 +93,34 @@ namespace ResturantProject.Controllers
                 }).ToList()
             });
 
-            // Now prepare payment form
-            var vm = new CreatePaymentVm
+            if (orderError || orderVM == null || orderVM.Id <= 0)
             {
-                OrderId = orderVm.Id,
-                PaymentMethod = orderVm.PaymentMethod,
-                Amount = orderVm.FinalAmount
-            };
-
-            return View("PaymentFormWithOrderDetails", vm);
-        }
-
-
-        // POST: /Payment/ProcessPayment
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ProcessPayment(CreatePaymentVm model)
-        {
-            if (!ModelState.IsValid)
-                return View("PaymentFormWithOrderDetails", model);
-
-            var order = await _orderService.GetByIdAsync(model.OrderId);
-            if (order == null) return NotFound();
-
-            var paymentOrder = new Order
-            {
-                Id = order.Id,
-                customerId = order.CustomerId
-            };
-
-            var payment = await _paymentService.ProcessPaymentAsync(paymentOrder, model.Amount, model.PaymentMethod);
-
-            if (payment.IsSuccsessful)
-            {
-                return RedirectToAction(nameof(Success), new { id = payment.PaymentID });
+                return Json(new { success = false, message = string.IsNullOrEmpty(orderMessage) ? "Order creation failed." : orderMessage });
             }
 
-            ModelState.AddModelError(string.Empty, "Payment failed. Please try again.");
-            return View("PaymentFormWithOrderDetails", model);
+            // Process payment after order is created
+            var (paymentError, paymentMessage, paymentVM) = await _paymentService.ProcessPaymentAsync(orderVM, model);
+
+            if (!paymentError && paymentVM != null && paymentVM.Status == PaymentStatus.Paid)
+            {
+                await _cartService.ClearCartAsync(orderVM.CustomerId);
+                return Json(new { success = true, paymentId = paymentVM.Id });
+            }
+
+            return Json(new { success = false, message = paymentMessage });
         }
 
-        // GET: /Payment/Success/10
+        // GET: /Payment/Success/{id}
         [HttpGet]
-        public IActionResult Success(int id)
+        public async Task<IActionResult> Success(int id)
         {
-            ViewBag.PaymentId = id;
-            return View();
+            var (error, message, payment) = await _paymentService.GetPaymentByIdAsync(id);
+
+            if (error || payment == null)
+                return RedirectToAction("Checkout");
+
+            ViewBag.PaymentId = payment.Id;
+            return View(payment);
         }
     }
 }

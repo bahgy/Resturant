@@ -1,144 +1,264 @@
-﻿@model Resturant.BLL.ModelVm.PaymentVm.CreatePaymentVm
-
+﻿@model Resturant.BLL.ModelVM.PaymentVM.CreatePaymentVM
+@using Restaurant.DAL.Enum
 @{
-    ViewData["Title"] = "Checkout";
+    ViewBag.Title = "Checkout Payment";
 }
 
-<!-- Checkout Section Start -->
-<div class="container py-6">
+<div class="container py-5">
     <div class="row g-4">
+        <!-- Checkout Form -->
         <div class="col-lg-8">
-            <form asp-action="ProcessPayment" asp-controller="Payment" method="post">
-                @Html.AntiForgeryToken()
-                <input type="hidden" asp-for="OrderId" />
-                <input type="hidden" asp-for="Amount" />
+            <div class="card shadow-sm p-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class="mb-4 section-title"><i class="fas fa-map-marker-alt me-2"></i>Billing Information</h4>
+                <form id="paymentForm" asp-action="ProcessPayment" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="OrderId" />
+                    <input type="hidden" asp-for="Amount" />
 
-                <div class="checkout-card shadow-sm p-4 rounded">
-                    <h4 class="section-title mb-3">Shipping Address</h4>
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <label class="form-label">First Name</label>
-                            <input type="text" name="FirstName" class="form-control" placeholder="John" required>
+                            <label asp-for="FirstName" class="form-label"></label>
+                            <input asp-for="FirstName" class="form-control" placeholder="John" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" name="LastName" class="form-control" placeholder="Doe" required>
+                            <label asp-for="LastName" class="form-label"></label>
+                            <input asp-for="LastName" class="form-control" placeholder="Doe" />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
                         </div>
-                        <div class="col-md-8">
-                            <label class="form-label">Address</label>
-                            <input type="text" name="Address" class="form-control" placeholder="123 Main St" required>
+                        <div class="col-md-6">
+                            <label asp-for="Email" class="form-label"></label>
+                            <input asp-for="Email" class="form-control" placeholder="name@example.com" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
-                        <div class="col-md-4 d-flex align-items-end">
-                            <button type="button" id="useLocation" class="btn btn-outline-primary w-100">
-                                <i class="fas fa-map-marker-alt me-2"></i>Use My Location
+                        <div class="col-md-6">
+                            <label asp-for="Phone" class="form-label"></label>
+                            <input asp-for="Phone" class="form-control" placeholder="01XXXXXXXXX" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="flex-grow-1">
+                                <label asp-for="Address" class="form-label"></label>
+                                <input asp-for="Address" class="form-control" placeholder="123 Main St" />
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+                            <button type="button" id="getLocationBtn" class="btn btn-outline-secondary ms-2 mt-4">
+                                <i class="fas fa-location-dot me-2"></i> Get Location
                             </button>
                         </div>
+                        <div class="col-md-6">
+                            <label asp-for="City" class="form-label"></label>
+                            <input asp-for="City" class="form-control" placeholder="City" />
+                            <span asp-validation-for="City" class="text-danger"></span>
+                        </div>
                         <div class="col-md-4">
-                            <label class="form-label">City</label>
-                            <input type="text" name="City" class="form-control" placeholder="City" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label">Phone</label>
-                            <input type="tel" name="Phone" class="form-control" placeholder="01XXXXXXXXX" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label">Email</label>
-                            <input type="email" name="Email" class="form-control" placeholder="name@example.com" required>
+                            <label asp-for="Country" class="form-label"></label>
+                            <input asp-for="Country" class="form-control" placeholder="Country" />
+                            <span asp-validation-for="Country" class="text-danger"></span>
                         </div>
                     </div>
 
-                    <hr class="my-4" />
+                    <div class="divider my-4"></div>
 
-                    <h4 class="section-title mb-3">Payment</h4>
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <div class="form-check form-check-inline">
-                                <input asp-for="PaymentMethod" class="form-check-input" type="radio" id="pmCard" value="Card" />
-                                <label class="form-check-label" for="pmCard">
-                                    <i class="far fa-credit-card me-1"></i> Credit/Debit Card
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input asp-for="PaymentMethod" class="form-check-input" type="radio" id="pmCash" value="CashOnDelivery" />
-                                <label class="form-check-label" for="pmCash">
-                                    <i class="fas fa-money-bill-wave me-1"></i> Cash on Delivery
-                                </label>
-                            </div>
+                    <!-- Payment Info -->
+                    <h4 class="mb-3 section-title"><i class="fas fa-credit-card me-2"></i>Payment Details</h4>
+                    <div class="mb-3">
+                        <label asp-for="PaymentMethod" class="form-label"></label>
+                        <select asp-for="PaymentMethod" class="form-select" id="paymentMethod">
+                            <option value="">-- Select Payment Method --</option>
+                            <option value="@PaymentMethod.CashOnDelivery">Cash on Delivery</option>
+                            <option value="@PaymentMethod.CreditCard">Credit Card</option>
+                            <option value="@PaymentMethod.Paypal">PayPal</option>
+                        </select>
+                        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+                    </div>
 
+                    <!-- Credit Card Fields -->
+                    <div id="creditFields" class="payment-extra d-none mt-3">
+                        <h5 class="mb-3">Credit Card Information</h5>
+                        <div class="mb-3">
+                            <label asp-for="CardHolderName" class="form-label"></label>
+                            <input asp-for="CardHolderName" class="form-control" placeholder="John Doe" />
+                            <span asp-validation-for="CardHolderName" class="text-danger"></span>
                         </div>
-
-                        <!-- Card fields only visible if "Card" selected -->
-                        <div id="cardFields" class="col-12">
-                            <div class="row g-3">
-                                <div class="col-12 d-flex align-items-center justify-content-between card-icons">
-                                    <span class="help-text">We accept</span>
-                                    <div>
-                                        <i class="fab fa-cc-visa"></i>
-                                        <i class="fab fa-cc-mastercard"></i>
-                                        <i class="fab fa-cc-amex"></i>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label">Cardholder Name</label>
-                                    <input type="text" class="form-control" placeholder="John Doe">
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label">Card Number</label>
-                                    <input type="text" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Expiry (MM/YY)</label>
-                                    <input type="text" class="form-control" placeholder="MM/YY" maxlength="5">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">CVV</label>
-                                    <input type="password" class="form-control" placeholder="123" maxlength="4">
-                                </div>
+                        <div class="mb-3">
+                            <label asp-for="CardNumber" class="form-label"></label>
+                            <input asp-for="CardNumber" class="form-control" placeholder="1234 5678 9012 3456" maxlength="16" />
+                            <span asp-validation-for="CardNumber" class="text-danger"></span>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="ExpiryDate" class="form-label"></label>
+                                <input asp-for="ExpiryDate" class="form-control" placeholder="MM/YY" />
+                                <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label asp-for="CVV" class="form-label"></label>
+                                <input asp-for="CVV" class="form-control" placeholder="123" maxlength="4" />
+                                <span asp-validation-for="CVV" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
 
-                    <hr class="my-4" />
-
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
-                            <label class="form-check-label" for="termsCheck">
-                                I agree to the terms and conditions
-                            </label>
+                    <!-- PayPal Fields -->
+                    <div id="paypalFields" class="payment-extra d-none mt-3">
+                        <h5 class="mb-3">PayPal Account</h5>
+                        <div class="mb-3">
+                            <label asp-for="PaypalEmail" class="form-label"></label>
+                            <input asp-for="PaypalEmail" class="form-control" placeholder="paypal@example.com" />
+                            <span asp-validation-for="PaypalEmail" class="text-danger"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary px-4">
-                            <i class="fas fa-lock me-2"></i>Place Order - @Model.Amount.ToString("C")
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between mt-4">
+                        
+                        <button type="button" id="payNowBtn" class="btn btn-primary px-4">
+                            <i class="fas fa-lock me-2"></i>Pay Now
                         </button>
-                    </div>
-                </div>
-            </form>
+                    </div><div id="paymentResult" class="mt-3"></div>
+                </form>
+            </div>
         </div>
 
         <!-- Order Summary -->
         <div class="col-lg-4">
-            <div class="summary shadow-sm p-4 rounded">
+            <div class="card shadow-sm p-4 wow fadeInUp" data-wow-delay="0.2s">
                 <h4 class="mb-3">Order Summary</h4>
-                <div class="d-flex justify-content-between mb-2"><span>Subtotal</span><span>@Model.Amount.ToString("C")</span></div>
-                <div class="d-flex justify-content-between mb-2"><span>Tax (8.5%)</span><span>Included</span></div>
-                <div class="d-flex justify-content-between mb-2"><span>Delivery</span><span>$5.00</span></div>
-                <div class="d-flex justify-content-between total"><span>Total</span><span>@Model.Amount.ToString("C")</span></div>
+                <div id="summaryItems"></div>
+                <div class="divider"></div>
+                <div class="d-flex justify-content-between total fw-bold">
+                    <span>Total</span>
+                    <span id="sumTotal">@Model.Amount.ToString("C")</span>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="@Url.Action("Menu", "Home")" class="btn btn-outline-primary">
+                        <i class="fas fa-arrow-left me-2"></i>Continue Shopping
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Checkout Section End -->
+
 @section Scripts {
+    <partial name="_ValidationScriptsPartial" />
     <script>
-        function toggleCardFields() {
-            const isCard = document.getElementById("pmCard").checked;
-            document.getElementById("cardFields").style.display = isCard ? "block" : "none";
-        }
+        $(function () {
+                    $("#getLocationBtn").on("click", function () {
+            if (!navigator.geolocation) {
+                alert("Geolocation is not supported by your browser.");
+                return;
+            }
 
-        document.getElementById("pmCard").addEventListener("change", toggleCardFields);
-        document.getElementById("pmCash").addEventListener("change", toggleCardFields);
+            $("#getLocationBtn").prop("disabled", true).text("Locating...");
 
-        // تشغيل عند التحميل
-        toggleCardFields();
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    console.log("Latitude:", lat, "Longitude:", lon);
+
+                    // Store coords in hidden fields (if you want to save them in DB)
+                    if ($("#Latitude").length === 0) {
+                        $("#paymentForm").append(`<input type="hidden" name="Latitude" id="Latitude" value="${lat}" />`);
+                        $("#paymentForm").append(`<input type="hidden" name="Longitude" id="Longitude" value="${lon}" />`);
+                    } else {
+                        $("#Latitude").val(lat);
+                        $("#Longitude").val(lon);
+                    }
+
+                    // 🔹 Reverse geocoding (OpenStreetMap Nominatim)
+                    const geocodeUrl = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&addressdetails=1`;
+
+                    $.getJSON(geocodeUrl, function (data) {
+                        if (data && data.display_name) {
+                            $("#Address").val(data.display_name); // Fill in street + city + country
+                        } else {
+                            $("#Address").val(`Lat: ${lat}, Lon: ${lon}`);
+                        }
+
+                        $("#getLocationBtn")
+                            .prop("disabled", false)
+                            .html('<i class="fas fa-location-dot me-2"></i> Get Location');
+                    });
+                },
+                function (error) {
+                    alert("Unable to retrieve location: " + error.message);
+                    $("#getLocationBtn")
+                        .prop("disabled", false)
+                        .html('<i class="fas fa-location-dot me-2"></i> Get Location');
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 0
+                }
+            );
+        });
+            // Handle payment method change
+            $("#paymentMethod").on("change", function () {
+                var method = $(this).val();
+
+                // Hide all extra sections first
+                $(".payment-extra").addClass("d-none");
+
+                // Remove required attributes from all optional fields
+                $("#creditFields input, #paypalFields input").removeAttr("required");
+
+                if (method == "CreditCard") {
+                    $("#creditFields").removeClass("d-none");
+                    $("#creditFields input").attr("required", "required");
+                } else if (method == "Paypal") {
+                    $("#paypalFields").removeClass("d-none");
+                    $("#paypalFields input").attr("required", "required");
+                }
+                // CashOnDelivery = no extra fields
+            });
+
+            // Trigger once on page load to set initial state
+            $("#paymentMethod").trigger("change");
+
+            // Handle Pay Now click
+            $("#payNowBtn").on("click", function () {
+                var form = $("#paymentForm");
+
+                // clear old validation messages
+                form.find(".text-danger").text("");
+
+                $.ajax({
+                    url: form.attr("action"),
+                    type: "POST",
+                    data: form.serialize(),
+                    success: function (response) {
+                        if (response.success) {
+                            // redirect on success
+                            window.location.href = "/Payment/Success/" + response.paymentId;
+                        } else {
+                            if (response.details) {
+                                response.details.forEach(function (err) {
+                                    var fieldName = err.field;
+                                    var validationSpan = $('[data-valmsg-for="' + fieldName + '"]');
+                                    if (validationSpan.length) {
+                                        validationSpan.text(err.errors.join(", "));
+                                    }
+                                });
+                            } else {
+                                $("#paymentResult").html(
+                                    `<div class="alert alert-danger">${response.message}</div>`
+                                );
+                            }
+                        }
+                    },
+                    error: function () {
+                        $("#paymentResult").html(
+                            `<div class="alert alert-danger">Something went wrong.</div>`
+                        );
+                    }
+                });
+            });
+        });
     </script>
+
 }
+

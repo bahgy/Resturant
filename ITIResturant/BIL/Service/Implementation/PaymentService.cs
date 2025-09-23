@@ -1,7 +1,5 @@
-﻿using AutoMapper;
-using Restaurant.BLL.ModelVM.Payment;
+﻿using Resturant.BLL.ModelVM.PaymentVM;
 using Resturant.BLL.Service.Abstraction;
-
 using Rsturant.DAL.Repo.Abstraction;
 
 namespace Resturant.BLL.Service.Impelementation
@@ -17,31 +15,70 @@ namespace Resturant.BLL.Service.Impelementation
             _mapper = mapper;
         }
 
-       
-        public async Task<Payment> ProcessPaymentAsync(Order order, decimal amount, PaymentMethod method)
+        // Process new payment for a given order.
+        public async Task<(bool error, string message, PaymentVM? payment)> ProcessPaymentAsync(
+    OrderVM order,
+    CreatePaymentVM createPaymentVM)
         {
-            var transactionId = Guid.NewGuid().ToString();
-
-            var payment = new Payment
+            try
             {
-                OrderID = order.Id,
-                Amount = amount,
-                Method = method,
-                TransactionReference = transactionId,
-                IsSuccsessful = true,
-                PaymentDate = DateTime.UtcNow
-            };
+                var transactionId = Guid.NewGuid().ToString();
 
-            await _paymentRepo.AddAsync(payment);
-            await _paymentRepo.SaveAsync();
+                var payment = new Payment
+                {
+                    OrderID = order.Id, // ✅ use correct property naming
+                    Amount = createPaymentVM.Amount,
+                    PayMethod = createPaymentVM.PaymentMethod, // ✅ matches entity
+                    TransactionReference = transactionId,
+                    IsSuccessful = true,
+                    Status = PaymentStatus.Paid
+                };
 
-            return payment;
+                await _paymentRepo.AddAsync(payment);
+                await _paymentRepo.SaveAsync(); // ✅ Id will now be generated
+
+                // Now payment.Id is set by the DB
+                var vm = _mapper.Map<PaymentVM>(payment);
+
+                return (false, "Payment processed successfully.", vm);
+            }
+            catch (Exception ex)
+            {
+                // you may also log this exception
+                return (true, $"Payment processing failed: {ex.Message}", null);
+            }
         }
 
-       
-        public PaymentVm MapPayment(Payment payment)
+
+        // Update payment status (Admin side).
+        public async Task<(bool error, string message)> UpdatePaymentStatusAsync(EditPaymentVM editPaymentVM)
         {
-            return _mapper.Map<PaymentVm>(payment);
+            var payment = await _paymentRepo.GetByIdAsync(editPaymentVM.Id);
+            if (payment == null)
+                return (true, "Payment not found.");
+
+            payment.Status = editPaymentVM.Status;
+
+            await _paymentRepo.UpdateAsync(payment);
+            await _paymentRepo.SaveAsync();
+
+            return (false, "Payment status updated successfully.");
+        }
+
+        // Get payment by Id and map to VM.
+        public async Task<(bool error, string message, PaymentVM? payment)> GetPaymentByIdAsync(int id)
+        {
+            var payment = await _paymentRepo.GetByIdAsync(id);
+            if (payment == null)
+                return (true, "Payment not found.", null);
+
+            return (false, "Payment retrieved successfully.", _mapper.Map<PaymentVM>(payment));
+        }
+
+        // Map payment entity to VM.
+        public PaymentVM MapPayment(Payment payment)
+        {
+            return _mapper.Map<PaymentVM>(payment);
         }
     }
 }

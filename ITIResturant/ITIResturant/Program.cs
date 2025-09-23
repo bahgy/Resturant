@@ -6,6 +6,9 @@ using Resturant.BLL.Service.Abstraction;
 using Resturant.BLL.Service.Impelementation;
 using Rsturant.DAL.Repo.Abstraction;
 using Rsturant.DAL.Repo.Impelementation;
+using Hangfire;
+using Hangfire.SqlServer;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // MVC
@@ -13,7 +16,6 @@ builder.Services.AddControllersWithViews();
 
 // service filtering
 builder.Services.AddScoped<ValidateUserExistsFilter>();
-
 
 // Add Razor Pages services (required if call app.MapRazorPages())
 builder.Services.AddRazorPages();
@@ -26,21 +28,19 @@ builder.Services.AddDbContext<RestaurantDbContext>(options =>
 
 //////////////////////////////////////////////////////////////
 #region identity and authentication
-
 builder.Services.AddIdentity<AppUser, IdentityRole<int>>(options =>
 {
     options.Password.RequiredLength = 8;
     options.Password.RequireDigit = true;
     options.Password.RequireUppercase = false;
     options.Password.RequireNonAlphanumeric = false;
-    // allow login without confirmed email
     options.SignIn.RequireConfirmedEmail = true;
 })
 .AddEntityFrameworkStores<RestaurantDbContext>()
 .AddDefaultTokenProviders();
+
 builder.Services.AddAuthentication()
     .AddGoogle(options =>
-
     {
         options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
         options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
@@ -51,7 +51,6 @@ builder.Services.AddAuthentication()
         options.AppSecret = builder.Configuration["Authentication:Facebook:AppSecret"];
     });
 
-// remember me cookie settings
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Account/Login";
@@ -68,26 +67,19 @@ builder.Services.ConfigureApplicationCookie(options =>
 #region automMapper
 builder.Services.AddAutoMapper(typeof(DomainProfile));
 
-///
-//// dependecy injection  ///////////////////////////////////
-/// services
+// services + repos registrations here...
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
-builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IMenuService, MenuService>();
-
-/// repos
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
 builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
 builder.Services.AddScoped<IAdminRepo, AdminRepo>();
 builder.Services.AddScoped<IMenuRepo, MenuRepo>();
-
-// team
 builder.Services.AddScoped<IBookingRepo, BookingRepo>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<ITableRepo, TableRepo>();
@@ -101,7 +93,6 @@ builder.Services.AddScoped<IOrderRepo, OrderRepo>();
 builder.Services.AddScoped<IPromoCodeRepo, PromoCodeRepo>();
 builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
 builder.Services.AddScoped<IOrderItemService, OrderItemService>();
-builder.Services.AddScoped<IProductRepo, ProductRepo>();
 builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IOrderItemService, OrderItemService>();
@@ -111,39 +102,39 @@ builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IPaymentRepo, PaymentRepo>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 
-
-
-builder.Services.AddAutoMapper(x => x.AddProfile(new OrderItemProfile()));
-builder.Services.AddAutoMapper(x => x.AddProfile(new OrderProfile()));
-builder.Services.AddAutoMapper(x => x.AddProfile(new PromoCodeProfile()));
-builder.Services.AddAutoMapper(x => x.AddProfile(new UserProfile()));
-
+builder.Services.AddAutoMapper(x => x.AddProfile(new DomainProfile()));
 #endregion
 
 //////////////////////////////////////////////////////
 #region Email Sender
-// email sender service
 builder.Services.AddTransient<EmailSender>();
 #endregion
 
 ///////////////////////////////////////////////////////
-
+#region Hangfire setup
+builder.Services.AddHangfire(config =>
+    config.UseSqlServerStorage(connectionString));
+builder.Services.AddHangfireServer(options =>
+{
+    options.WorkerCount = 1; // Only 1 background thread for dev
+});
+#endregion
+//////////////////////////////////////////////////////
 var app = builder.Build();
 
 #region Middleware
 if (!app.Environment.IsDevelopment())
-    {
-        app.UseExceptionHandler("/Error");
-        app.UseStatusCodePagesWithReExecute("/Error/{0}");
-    }
-    else
-    {
-        // In Development can still route status codes to your error controller
-        // default error page
-        app.UseStatusCodePagesWithReExecute("/Error/{0}");
-    }
+{
+    app.UseExceptionHandler("/Error");
+    app.UseStatusCodePagesWithReExecute("/Error/{0}");
+}
+else
+{
+    app.UseStatusCodePagesWithReExecute("/Error/{0}");
+}
 #endregion
-// Seed default data like admin user and roles if not exists in the database 
+
+// Seed default data
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -151,14 +142,23 @@ using (var scope = app.Services.CreateScope())
     await SeedData.InitializeAsync(services, config);
 }
 
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication(); 
+app.UseAuthentication();
 app.UseAuthorization();
+
+//  Enable Hangfire Dashboard (visit /hangfire)
+app.UseHangfireDashboard("/hangfire", new DashboardOptions
+{
+    Authorization = new[] { new HangfireAuthorizationFilter() },
+    StatsPollingInterval = 10000 // refresh every 10s instead of 2s
+
+});
+
+
 app.MapControllerRoute(
     name: "areas",
     pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");

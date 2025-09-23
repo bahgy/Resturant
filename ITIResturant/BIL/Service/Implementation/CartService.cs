@@ -97,5 +97,19 @@ namespace Restaurant.BLL.Service.Implementation
             return (true, "Item removed from cart");
         }
 
+        public async Task<(bool success, string? message)> ClearCartAsync(int customerId)
+        {
+            try
+            {
+                await _cartRepo.ClearCartAsync(customerId);
+                return (true, "Cart cleared successfully");
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error clearing cart: {ex.Message}");
+            }
+        }
+
+
     }
 }
