@@ -1,0 +1,47 @@
+﻿@using System.Linq
+
+<ul class="nav nav-pills mb-4 justify-content-center" id="homeMenuTabs" role="tablist">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        var category = Model[i];
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(i == 0 ? "active" : "")"
+                    id="home-tab-@category.CategoryId"
+                    data-bs-toggle="pill"
+                    data-bs-target="#home-content-@category.CategoryId"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-content-@category.CategoryId"
+                    aria-selected="@(i == 0 ? "true" : "false")">
+                @category.CategoryName
+            </button>
+        </li>
+    }
+</ul>
+
+<div class="tab-content" id="homeMenuTabsContent">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        var category = Model[i];
+        <div class="tab-pane fade @(i == 0 ? "show active" : "")"
+             id="home-content-@category.CategoryId"
+             role="tabpanel"
+             aria-labelledby="home-tab-@category.CategoryId">
+            <div class="row g-4" id="productList">
+                @for (int j = 0; j < category.Products.Count && j < 6; j++)
+                {
+                    var product = category.Products[j];
+                    <partial name="~/Views/Product/_ProductBox.cshtml" model="product" />
+                }
+
+            </div>
+
+            <div class="text-center mt-4">
+                <a class="btn btn-outline-primary"
+                   href="@Url.Action("Menu", "Home", new { categoryId = category.CategoryId })">
+                    View All
+                </a>
+            </div>
+        </div>
+    }
+</div>
