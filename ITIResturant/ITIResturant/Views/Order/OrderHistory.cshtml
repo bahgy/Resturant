@@ -18,7 +18,7 @@
                     </span>
                 </div>
                 <div>
-                    <span class="fw-bold">Total:</span> $@order.TotalAmount
+                    <span class="fw-bold">Total:</span>  @order.TotalAmount.ToString("C")
                 </div>
             </div>
             <div class="card-body">
@@ -31,17 +31,21 @@
                             <th>Product</th>
                             <th>Quantity</th>
                             <th>Price</th>
+                            <th>Tax</th>
                             <th>Subtotal</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var item in order.OrderItems)
                         {
+                            var tax = item.Quantity * item.Price * 0.085m;
+                            var subtotal = item.Quantity * item.Price;
                             <tr>
                                 <td>@item.ProductName</td>
-                                <td>@item.Quantity</td>
-                                <td>$@item.Price</td>
-                                <td>$@(item.Quantity* item.Price)</td>
+                                <td>@item.Quantity.ToString("C")</td>
+                                <td> @item.Price.ToString("C")</td>
+                                <td> @tax.ToString("C") </td>
+                                <td> @subtotal.ToString("C")</td>
                             </tr>
                         }
                     </tbody>
@@ -62,7 +66,7 @@
     <script>
         $(document).on("click", ".cancel-order-btn", function () {
             var orderId = $(this).data("id");
-            var $card = $(this).closest(".card");
+            var card = $(this).closest(".card");
 
             $.ajax({
                 url: '/Order/Cancel/' + orderId,
@@ -74,13 +78,13 @@
                 success: function (response) {
                     if (response.success) {
                         // update badge text + color
-                        $card.find(".badge")
+                        card.find(".badge")
                             .removeClass("bg-warning bg-success")
                             .addClass("bg-secondary")
                             .text("Cancelled");
 
                         // remove cancel button
-                        $card.find(".cancel-order-btn").remove();
+                        card.find(".cancel-order-btn").remove();
                     } else {
                         alert(response.message);
                     }
@@ -91,4 +95,5 @@
             });
         });
     </script>
+
 }

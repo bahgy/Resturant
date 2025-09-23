@@ -154,7 +154,7 @@ app.UseAuthorization();
 app.UseHangfireDashboard("/hangfire", new DashboardOptions
 {
     Authorization = new[] { new HangfireAuthorizationFilter() },
-    StatsPollingInterval = 10000 // refresh every 10s instead of 2s
+    StatsPollingInterval = 10000 // refresh every 10s 
 
 });
 
