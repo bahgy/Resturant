@@ -1,6 +1,11 @@
 ﻿@using Restaurant.BLL.Model_VM.Booking
 @model EditBookingVM
 
+@{
+    Layout = "NewLayout";
+    ViewData["Title"] = "Edit Booking";
+}
+
 <div class="card">
     <div class="card-header" style="background-color:darkcyan; color:white">
         Edit Booking
@@ -14,8 +19,9 @@
             </div>
         }
 
-        <form enctype="multipart/form-data"
-              asp-action="Edit" asp-controller="Booking">
+        <form asp-action="Edit" asp-controller="Booking" method="post">
+            <!-- لازم تبعت الـ Id -->
+            <input type="hidden" asp-for="Id" />
 
             <!-- Booking Date -->
             <div class="mb-3">
@@ -69,6 +75,7 @@
             </div>
 
             <button type="submit" class="btn btn-success">Update</button>
+            <a asp-action="GetAll" class="btn btn-secondary">Cancel</a>
         </form>
 
     </div>
