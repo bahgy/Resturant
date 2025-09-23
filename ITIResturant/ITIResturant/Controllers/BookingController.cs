@@ -43,15 +43,16 @@ namespace RestoPL.Controllers
                 bookingVM.CustomerId = user.Id;
 
                 var result = _bookingService.Create(bookingVM);
-                if (result.Item1)
+                if (!result.Item1) // false معناها العملية نجحت
                 {
-                    // ✅ رسالة نجاح
                     TempData["SuccessMessage"] = "Booking created successfully 🎉";
                     return RedirectToAction("GetAll");
                 }
 
-                ViewBag.error = result.Item2;
+                ViewBag.error = result.Item2; // في مشكلة
+
             }
+
 
             ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
             return View(bookingVM);
@@ -63,13 +64,13 @@ namespace RestoPL.Controllers
         public IActionResult Edit(int id)
         {
             var result = _bookingService.GetById(id);
-            if (!result.Item1) // لو حصل خطأ
+            if (result.Item1) // لو حصل خطأ
             {
                 ViewBag.error = result.Item2;
                 return RedirectToAction("GetAll");
             }
 
-            ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
+            ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber", result.Item3.TableId);
             return View(result.Item3);
         }
 
@@ -89,7 +90,7 @@ namespace RestoPL.Controllers
                 editBookingVM.CustomerId = user.Id;
 
                 var result = _bookingService.Edit(id, editBookingVM);
-                if (result.Item1)  // النجاح
+                if (!result.Item1) // false = success
                     return RedirectToAction("GetAll");
 
                 ViewBag.error = result.Item2;
