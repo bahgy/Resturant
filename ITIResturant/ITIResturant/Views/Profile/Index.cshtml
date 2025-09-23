@@ -18,7 +18,7 @@
                            class="list-group-item list-group-item-action @(ViewData["ActiveTab"]?.ToString() == "Index" ? "active" : "")">
                             <i class="fas fa-user-circle me-2"></i> Personal Information
                         </a>
-                        <a asp-controller="Profile" asp-action="OrderHistory"
+                        <a asp-controller="Order" asp-action="OrderHistory"
                            class="list-group-item list-group-item-action @(ViewData["ActiveTab"]?.ToString() == "OrderHistory" ? "active" : "")">
                             <i class="fas fa-history me-2"></i> Order History
                         </a>

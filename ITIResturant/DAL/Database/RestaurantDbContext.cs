@@ -80,8 +80,11 @@ namespace Restaurant.DAL.Database
 
                     modelBuilder
                         .Entity<Payment>()
-                        .Property(p => p.Method)
+                        .Property(p => p.PayMethod)
                 .HasConversion<string>();
+            modelBuilder.Entity<Order>()
+    .Property(o => o.Status)
+    .HasConversion<string>();
         }
 
     }

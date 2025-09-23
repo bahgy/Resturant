@@ -8,8 +8,13 @@
         <h2>Payment Successful!</h2>
         <p>Your payment ID is <strong>@ViewBag.PaymentId</strong>.</p>
         <p>Thank you for your order. We’ll process it shortly.</p>
-        <a href="@Url.Action("Index", "Home")" class="btn btn-primary mt-3">
+
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary mt-3 me-2">
             <i class="fas fa-home me-2"></i>Back to Home
+        </a>
+
+        <a href="@Url.Action("OrderHistory", "Order")" class="btn btn-outline-secondary mt-3">
+            <i class="fas fa-list me-2"></i>View My Orders
         </a>
     </div>
 </div>

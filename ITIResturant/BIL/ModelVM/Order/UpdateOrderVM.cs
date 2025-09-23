@@ -10,8 +10,8 @@ namespace Restaurant.BLL.ModelVMOrder
         [StringLength(500)]
         public string DelivryAddress { get; set; }
 
-        public string Status { get; set; }
-        public string PaymentState { get; set; }
-        public string PaymentMethod { get; set; }
+        public OrderStatus Status { get; set; }
+        public PaymentStatus? PaymentState { get; set; }   // enum instead of string
+        public PaymentMethod? PaymentMethod { get; set; }  // enum instead of string
     }
 }

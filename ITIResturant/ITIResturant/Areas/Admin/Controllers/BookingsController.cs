@@ -13,6 +13,7 @@ namespace Restaurant.PL.Areas.Admin.Controllers
             _bookingService = bookingService;
         }
 
+        // GET: /Admin/Bookings
         public IActionResult Index()
         {
             var (success, message, bookings) = _bookingService.GetAll();
@@ -24,6 +25,25 @@ namespace Restaurant.PL.Areas.Admin.Controllers
             }
 
             return View(bookings);
+        }
+
+        // POST: /Admin/Bookings/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            var deleted = _bookingService.Delete(id);
+
+            if (!deleted)
+            {
+                TempData["Error"] = "❌ Failed to delete booking.";
+            }
+            else
+            {
+                TempData["Success"] = "✅ Booking deleted successfully.";
+            }
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
