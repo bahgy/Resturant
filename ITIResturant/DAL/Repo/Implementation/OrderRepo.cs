@@ -36,17 +36,17 @@ namespace Restaurant.DAL.Repo.Implementation
             return await _context.Orders
                 .Include(o => o.OrderItems)
                 .ThenInclude(oi => oi.Product)
-                .Where(o => o.customerId == customerId)
+                .Where(o => o.CustomerId == customerId)
                 .ToListAsync();
         }
 
-        public async Task<IEnumerable<Order>> GetByStatusAsync(string status)
+        public async Task<IEnumerable<Order>> GetByStatusAsync(OrderStatus status)
         {
             return await _context.Orders
                 .Include(o => o.Customer)
                 .Include(o => o.OrderItems)
                 .ThenInclude(oi => oi.Product)
-                .Where(o => o.status == status)
+                .Where(o => o.Status == status)
                 .ToListAsync();
         }
 
@@ -101,15 +101,15 @@ namespace Restaurant.DAL.Repo.Implementation
             return await _context.Orders.AnyAsync(o => o.Id == id);
         }
 
-        public async Task<bool> UpdateOrderStatusAsync(int orderId, string status)
+        public async Task<bool> UpdateOrderStatusAsync(int orderId, OrderStatus status)
         {
             try
             {
                 var order = await _context.Orders.FindAsync(orderId);
                 if (order == null)
                     return false;
-
-                order.status = status;
+                    
+                order.Status = status;
                 _context.Orders.Update(order);
                 var result = await _context.SaveChangesAsync();
                 return result > 0;
@@ -128,7 +128,7 @@ namespace Restaurant.DAL.Repo.Implementation
                 if (order == null)
                     return false;
 
-                order.paymentSTate = paymentState;
+                order.PaymentState = paymentState;
                 _context.Orders.Update(order);
                 var result = await _context.SaveChangesAsync();
                 return result > 0;
