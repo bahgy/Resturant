@@ -31,15 +31,19 @@ namespace Restaurant.BLL.Service.Implementation
                 if (bookingVM.NumberOfGuests > table.Capacity)
                     return (true, $"Number of guests exceeds table capacity ({table.Capacity}).");
 
-                // التحقق من عدم وجود حجز متداخل
-                var overlappingBooking = _bookingRepo.GetAll(b => b.TableId == table.Id &&
-                    ((bookingVM.StartTime >= b.StartTime && bookingVM.StartTime < b.EndTime) ||
-                     (bookingVM.EndTime > b.StartTime && bookingVM.EndTime <= b.EndTime) ||
-                     (bookingVM.StartTime <= b.StartTime && bookingVM.EndTime >= b.EndTime))
+                // ✅ التحقق من عدم وجود حجز متداخل في نفس اليوم
+                var overlappingBooking = _bookingRepo.GetAll(b =>
+                    b.TableId == table.Id &&
+                    b.BookingDate.Date == bookingVM.BookingDate.Date && // 👈 لازم نفس اليوم
+                    (
+                        (bookingVM.StartTime >= b.StartTime && bookingVM.StartTime < b.EndTime) ||
+                        (bookingVM.EndTime > b.StartTime && bookingVM.EndTime <= b.EndTime) ||
+                        (bookingVM.StartTime <= b.StartTime && bookingVM.EndTime >= b.EndTime)
+                    )
                 ).Any();
 
                 if (overlappingBooking)
-                    return (true, "This table is already booked for the selected time.");
+                    return (true, "This table is already booked for the selected date and time.");
 
                 // إنشاء الحجز
                 var newBooking = new Booking(
@@ -62,6 +66,7 @@ namespace Restaurant.BLL.Service.Implementation
                 return (true, ex.Message);
             }
         }
+
 
         //============================================================
         public bool Delete(int bookingId)
@@ -102,16 +107,20 @@ namespace Restaurant.BLL.Service.Implementation
                 if (editBookingVM.NumberOfGuests > table.Capacity)
                     return (true, $"Number of guests exceeds table capacity ({table.Capacity}).");
 
-                // التحقق من عدم وجود حجز متداخل باستثناء الحجز الحالي
-                var overlappingBooking = _bookingRepo.GetAll(b => b.TableId == table.Id &&
+                // ✅ التحقق من عدم وجود حجز متداخل في نفس اليوم باستثناء الحجز الحالي
+                var overlappingBooking = _bookingRepo.GetAll(b =>
+                    b.TableId == table.Id &&
                     b.Id != bookingId && // استثناء الحجز الحالي
-                    ((editBookingVM.StartTime >= b.StartTime && editBookingVM.StartTime < b.EndTime) ||
-                     (editBookingVM.EndTime > b.StartTime && editBookingVM.EndTime <= b.EndTime) ||
-                     (editBookingVM.StartTime <= b.StartTime && editBookingVM.EndTime >= b.EndTime))
+                    b.BookingDate.Date == editBookingVM.BookingDate.Date && // 👈 لازم نفس اليوم
+                    (
+                        (editBookingVM.StartTime >= b.StartTime && editBookingVM.StartTime < b.EndTime) ||
+                        (editBookingVM.EndTime > b.StartTime && editBookingVM.EndTime <= b.EndTime) ||
+                        (editBookingVM.StartTime <= b.StartTime && editBookingVM.EndTime >= b.EndTime)
+                    )
                 ).Any();
 
                 if (overlappingBooking)
-                    return (true, "This table is already booked for the selected time.");
+                    return (true, "This table is already booked for the selected date and time.");
 
                 // إنشاء الحجز الجديد للتعديل
                 var newBook = new Booking(
@@ -136,6 +145,7 @@ namespace Restaurant.BLL.Service.Implementation
                 return (true, ex.Message);
             }
         }
+
 
         //============================================================
         public (bool, string, List<GetAllBookingVM>) GetAll()
