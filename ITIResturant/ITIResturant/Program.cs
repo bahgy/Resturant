@@ -16,6 +16,7 @@ builder.Services.AddControllersWithViews();
 
 // service filtering
 builder.Services.AddScoped<ValidateUserExistsFilter>();
+builder.Services.AddHttpContextAccessor();
 
 // Add Razor Pages services (required if call app.MapRazorPages())
 builder.Services.AddRazorPages();
@@ -68,6 +69,8 @@ builder.Services.ConfigureApplicationCookie(options =>
 builder.Services.AddAutoMapper(typeof(DomainProfile));
 
 // services + repos registrations here...
+builder.Services.AddScoped<IReviewRepo, ReviewRepo>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
@@ -154,7 +157,7 @@ app.UseAuthorization();
 app.UseHangfireDashboard("/hangfire", new DashboardOptions
 {
     Authorization = new[] { new HangfireAuthorizationFilter() },
-    StatsPollingInterval = 10000 // refresh every 10s instead of 2s
+    StatsPollingInterval = 10000 // refresh every 10s 
 
 });
 

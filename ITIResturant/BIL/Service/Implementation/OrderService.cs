@@ -106,7 +106,7 @@ namespace Restaurant.BLL.Service.Implementation
                 {
                     OrderId = createdOrder.Id,
                     Status = OrderStatus.Delivered
-                }), TimeSpan.FromSeconds(10));
+                }), TimeSpan.FromSeconds(30));
 
             return (false, string.Empty, _mapper.Map<OrderVM>(createdOrder));
         }

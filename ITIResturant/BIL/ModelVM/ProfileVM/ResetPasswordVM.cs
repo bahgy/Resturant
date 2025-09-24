@@ -1,11 +1,13 @@
 ﻿
+using Restaurant.BLL.Validation;
+
 namespace Restaurant.BLL.ModelVMProfileVM
 {
     public class ResetPasswordVM
     {
-        [Required(ErrorMessage = "Current password is required.")]
+        [RequiredIfHasPassword]
         [DataType(DataType.Password)]
-        public string CurrentPassword { get; set; }
+        public string? CurrentPassword { get; set; }
 
         [Required(ErrorMessage = "New password is required.")]
         [DataType(DataType.Password)]

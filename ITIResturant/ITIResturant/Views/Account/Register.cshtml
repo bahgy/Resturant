@@ -1,50 +1,138 @@
 ﻿@model Restaurant.BLL.ModelVMAccountVM.RegisterVM
 
-<h2>Register</h2>
+<div class="d-flex justify-content-center align-items-center register-wrapper">
+    <div class="register-card shadow-lg">
+        <h2 class="text-center mb-4 text-primary">Create Account</h2>
 
-<form asp-action="Register" method="post">
-    <!-- Only show global errors -->
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form asp-action="Register" method="post">
+            <!-- Global errors -->
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-    <div class="mb-2">
-        <input asp-for="FirstName" placeholder="First Name" class="form-control" />
-        <span asp-validation-for="FirstName" class="text-danger"></span>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        <input asp-for="FirstName" placeholder="First Name" class="form-control" />
+                    </div>
+                    <span asp-validation-for="FirstName" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        <input asp-for="LastName" placeholder="Last Name" class="form-control" />
+                    </div>
+                    <span asp-validation-for="LastName" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                        <input asp-for="Email" placeholder="Email" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Email" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-id-card"></i></span>
+                        <input asp-for="UserName" placeholder="Username" class="form-control" />
+                    </div>
+                    <span asp-validation-for="UserName" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                        <input asp-for="PhoneNumber" placeholder="Phone Number" class="form-control" />
+                    </div>
+                    <span asp-validation-for="PhoneNumber" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-map-marker-alt"></i></span>
+                        <input asp-for="Address" placeholder="Address (Optional)" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Address" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        <input asp-for="Password" placeholder="Password" type="password" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger small"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        <input asp-for="ConfirmPassword" placeholder="Confirm Password" type="password" class="form-control" />
+                    </div>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mt-4">Register</button>
+        </form>
+
+        <hr />
+
+        <div class="text-center">
+            <p>Already have an account?</p>
+            <a asp-controller="Account" asp-action="Login" class="btn btn-outline-secondary w-100">
+                <i class="fa fa-sign-in-alt"></i> Login
+            </a>
+        </div>
     </div>
+</div>
 
-    <div class="mb-2">
-        <input asp-for="LastName" placeholder="Last Name" class="form-control" />
-        <span asp-validation-for="LastName" class="text-danger"></span>
-    </div>
+<style>
+    .register-wrapper {
+        height: 100vh;
+        padding: 20px;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    }
 
-    <div class="mb-2">
-        <input asp-for="Email" placeholder="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
+    .register-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px 50px;
+        max-width: 750px;
+        width: 100%;
+    }
 
-    <div class="mb-2">
-        <input asp-for="UserName" placeholder="UserName" class="form-control" />
-        <span asp-validation-for="UserName" class="text-danger"></span>
-    </div>
+        .register-card h2 {
+            font-family: 'Playball', cursive;
+            font-size: 2.4rem;
+        }
 
-    <div class="mb-2">
-        <input asp-for="PhoneNumber" placeholder="Phone Number" class="form-control" />
-        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-    </div>
+    .input-group-text {
+        background: #f1f3f5;
+        border-radius: 12px 0 0 12px;
+        font-size: 1.1rem;
+    }
 
-    <div class="mb-2">
-        <input asp-for="Address" placeholder="Address (Optional)" class="form-control" />
-        <span asp-validation-for="Address" class="text-danger"></span>
-    </div>
+    .form-control {
+        border-radius: 0 12px 12px 0;
+        font-size: 1.05rem;
+        padding: 12px;
+    }
 
-    <div class="mb-2">
-        <input asp-for="Password" placeholder="Password" type="password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
+    .btn {
+        transition: all 0.3s ease;
+        font-weight: 600;
+        padding: 12px;
+        font-size: 1.05rem;
+    }
 
-    <div class="mb-2">
-        <input asp-for="ConfirmPassword" placeholder="Confirm Password" type="password" class="form-control" />
-        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-    </div>
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
 
-    <button type="submit" class="btn btn-primary w-100">Register</button>
-</form>
+    hr {
+        margin: 2rem 0;
+    }
+</style>
