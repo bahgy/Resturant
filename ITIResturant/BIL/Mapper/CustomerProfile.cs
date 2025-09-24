@@ -16,7 +16,7 @@ namespace Restaurant.BLL.Mapper
                                 .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.UserName))
 
                 .ForMember(dest => dest.DefaultDeliveryAddress, opt => opt.MapFrom(src => src.Address))
-                .ForMember(dest => dest.EmailVerified, opt => opt.Ignore())
+                
                 .ForMember(dest => dest.Id, opt => opt.Ignore());
 
             // Customer → UserVM

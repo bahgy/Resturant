@@ -1,0 +1,76 @@
+﻿@using Restaurant.BLL.ModelVM.Review
+@model ReviewCreateVm
+
+<h2>Leave Your Feedback</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+<form asp-action="Index" method="post">
+    <div class="form-group">
+        <label asp-for="Rating">Rating</label>
+        <div id="starRating" class="mb-2">
+            <input type="hidden" asp-for="Rating" id="ratingInput" />
+            @for (int i = 1; i <= 5; i++)
+            {
+                <i class="fas fa-star star" data-value="@i"></i>
+            }
+        </div>
+        <span asp-validation-for="Rating" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <label asp-for="Comment">Your Comment</label>
+        <textarea asp-for="Comment" class="form-control"></textarea>
+        <span asp-validation-for="Comment" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit Review</button>
+</form>
+
+@section Styles {
+    <style>
+        .star {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .star.selected {
+            color: #ffc107;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelectorAll('#starRating .star');
+            const ratingInput = document.getElementById('ratingInput');
+
+            function setStars(rating) {
+                stars.forEach((star, idx) => {
+                    star.classList.toggle('selected', idx < rating);
+                });
+            }
+
+            stars.forEach((star, idx) => {
+                star.addEventListener('mouseenter', function () {
+                    setStars(idx + 1);
+                });
+                star.addEventListener('mouseleave', function () {
+                    setStars(parseInt(ratingInput.value) || 0);
+                });
+                star.addEventListener('click', function () {
+                    ratingInput.value = idx + 1;
+                    setStars(idx + 1);
+                });
+            });
+
+            // Initialize stars if model has value
+            setStars(parseInt(ratingInput.value) || 0);
+        });
+    </script>
+}

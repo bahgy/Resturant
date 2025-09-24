@@ -32,7 +32,18 @@
         {
             await _context.SaveChangesAsync();
         }
+        public async Task ClearCartAsync(int customerId)
+        {
+            var cart = await _context.Carts
+                .Include(c => c.ShopingCartItem)
+                .FirstOrDefaultAsync(c => c.CustomerId == customerId);
 
+            if (cart != null && cart.ShopingCartItem.Any())
+            {
+                _context.ShopingCartItems.RemoveRange(cart.ShopingCartItem);
+                await _context.SaveChangesAsync();
+            }
+        }
     }
 }
 

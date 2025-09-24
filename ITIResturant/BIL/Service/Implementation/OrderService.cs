@@ -1,22 +1,26 @@
 ﻿
 
+using Hangfire;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Restaurant.DAL.Enum;
 using System.Web.Mvc;
 
 namespace Restaurant.BLL.Service.Implementation
 {
-    public class OrderService:IOrderService
+    public class OrderService : IOrderService
     {
-
         private readonly IOrderRepo _orderRepository;
         private readonly IOrderItemRepo _orderItemRepository;
         private readonly ICustomerRepo _customerRepository;
         private readonly IPromoCodeService _promoCodeService;
         private readonly IMapper _mapper;
 
-        public OrderService( IOrderRepo orderRepository,IOrderItemRepo orderItemRepository
-            ,ICustomerRepo customerRepository,IPromoCodeService promoCodeService,IMapper mapper)
+        public OrderService(
+            IOrderRepo orderRepository,
+            IOrderItemRepo orderItemRepository,
+            ICustomerRepo customerRepository,
+            IPromoCodeService promoCodeService,
+            IMapper mapper)
         {
             _orderRepository = orderRepository;
             _orderItemRepository = orderItemRepository;
@@ -25,63 +29,60 @@ namespace Restaurant.BLL.Service.Implementation
             _mapper = mapper;
         }
 
-        public async Task<OrderVM> GetByIdAsync(int id)
+        public async Task<(bool IsError, string ErrorMessage, OrderVM Data)> GetByIdAsync(int id)
         {
             var order = await _orderRepository.GetByIdAsync(id);
-            if (order == null) return null;
+            if (order == null)
+                return (true, "Order not found", null);
 
-            return _mapper.Map<OrderVM>(order);
+            return (false, string.Empty, _mapper.Map<OrderVM>(order));
         }
 
-        public async Task<IEnumerable<OrderVM>> GetAllAsync()
+        public async Task<(bool IsError, string ErrorMessage, IEnumerable<OrderVM> Data)> GetAllAsync()
         {
             var orders = await _orderRepository.GetAllAsync();
-            return _mapper.Map<IEnumerable<OrderVM>>(orders);
+            return (false, string.Empty, _mapper.Map<IEnumerable<OrderVM>>(orders));
         }
 
-        public async Task<IEnumerable<OrderVM>> GetByCustomerIdAsync(int customerId)
+        public async Task<(bool IsError, string ErrorMessage, IEnumerable<OrderVM> Data)> GetByCustomerIdAsync(int customerId)
         {
             var orders = await _orderRepository.GetByCustomerIdAsync(customerId);
-            return _mapper.Map<IEnumerable<OrderVM>>(orders);
+            return (false, string.Empty, _mapper.Map<IEnumerable<OrderVM>>(orders));
         }
 
-        public async Task<IEnumerable<OrderVM>> GetByStatusAsync(string status)
+        public async Task<(bool IsError, string ErrorMessage, IEnumerable<OrderVM> Data)> GetByStatusAsync(OrderStatus status)
         {
             var orders = await _orderRepository.GetByStatusAsync(status);
-            return _mapper.Map<IEnumerable<OrderVM>>(orders);
+            return (false, string.Empty, _mapper.Map<IEnumerable<OrderVM>>(orders));
         }
 
-        public async Task<OrderVM> CreateAsync(CreateOrderVM viewModel)
+        public async Task<(bool IsError, string ErrorMessage, OrderVM Data)> CreateAsync(CreateOrderVM viewModel)
         {
-           
             if (!await _customerRepository.ExistsAsync(viewModel.CustomerId))
-                return null;
+                return (true, "Customer not found", null);
 
             var order = new Order
             {
-                customerId = viewModel.CustomerId,
+                CustomerId = viewModel.CustomerId,
                 DelivryAddress = viewModel.DelivryAddress,
                 PaymentMethod = viewModel.PaymentMethod,
-                status = "Pending",
-                paymentSTate = PaymentStatus.Pending,
+                Status = OrderStatus.Pending,
+                PaymentState = PaymentStatus.Pending,
                 TimeRequst = DateTime.UtcNow,
-                DiscountAmount = 0, 
+                DiscountAmount = 0,
                 OrderItems = new List<OrderItem>()
             };
 
-            
             decimal totalAmount = 0;
             foreach (var itemViewModel in viewModel.OrderItems)
             {
                 var orderItem = _mapper.Map<OrderItem>(itemViewModel);
-                orderItem.OrderId = order.Id; 
                 order.OrderItems.Add(orderItem);
                 totalAmount += orderItem.Price * orderItem.Quantity;
             }
 
-            order.TotalAmount = totalAmount;
+            order.TotalAmount = (totalAmount * 0.085m + 5m + totalAmount);
 
-            
             if (!string.IsNullOrEmpty(viewModel.PromoCode))
             {
                 var promoResult = await _promoCodeService.ValidatePromoCodeAsync(viewModel.PromoCode, totalAmount);
@@ -89,149 +90,157 @@ namespace Restaurant.BLL.Service.Implementation
                 {
                     order.PromoCodeId = promoResult.PromoCode.Id;
                     order.DiscountAmount = promoResult.DiscountAmount;
-                    order.TotalAmount -= order.DiscountAmount;
-
-                    
-                    await _promoCodeService.IncrementUsageAsync(viewModel.PromoCode);
                 }
             }
 
             var created = await _orderRepository.AddAsync(order);
-            if (!created) return null;
+            if (!created)
+                return (true, "Failed to create order", null);
 
-            
-            foreach (var orderItem in order.OrderItems)
-            {
-                orderItem.OrderId = order.Id;
-                await _orderItemRepository.AddAsync(orderItem);
-            }
 
-            return await GetByIdAsync(order.Id);
+            var createdOrder = await _orderRepository.GetByIdAsync(order.Id);
+
+            // Schedule background job: after 3 min -> mark as Delivered
+            BackgroundJob.Schedule<IOrderService>(
+                service => service.UpdateStatusAsync(new OrderStatusUpdateVM
+                {
+                    OrderId = createdOrder.Id,
+                    Status = OrderStatus.Delivered
+                }), TimeSpan.FromSeconds(30));
+
+            return (false, string.Empty, _mapper.Map<OrderVM>(createdOrder));
         }
 
-        public async Task<bool> UpdateAsync(UpdateOrderVM viewModel)
+        public async Task<(bool IsError, string ErrorMessage, bool Data)> UpdateAsync(UpdateOrderVM viewModel)
         {
             var existingOrder = await _orderRepository.GetByIdAsync(viewModel.Id);
-            if (existingOrder == null) return false;
+            if (existingOrder == null)
+                return (true, "Order not found", false);
 
-            
             if (!string.IsNullOrEmpty(viewModel.DelivryAddress))
                 existingOrder.DelivryAddress = viewModel.DelivryAddress;
 
-            if (!string.IsNullOrEmpty(viewModel.Status))
-                existingOrder.status = viewModel.Status;
+            if (!string.IsNullOrEmpty(viewModel.Status.ToString()))
+                existingOrder.Status = viewModel.Status;
 
-            //if (!string.IsNullOrEmpty(viewModel.PaymentState))
-            //    existingOrder.paymentSTate = viewModel.PaymentState;
-            if (!string.IsNullOrEmpty(viewModel.PaymentState))
-            {
-                if (Enum.TryParse<PaymentStatus>(viewModel.PaymentState, true, out var state))
-                {
-                    existingOrder.paymentSTate = state;
-                }
-                else
-                {
-                    // القيمة مش صحيحة
-                    //ModelState.AddModelError("PaymentState", "Invalid payment state");
-                }
-            }
+            if (viewModel.PaymentState.HasValue)
+                existingOrder.PaymentState = viewModel.PaymentState.Value;
 
+            if (viewModel.PaymentMethod.HasValue)
+                existingOrder.PaymentMethod = viewModel.PaymentMethod.Value;
 
-            //if (!string.IsNullOrEmpty(viewModel.PaymentMethod))
-            //    existingOrder.PaymentMethod = viewModel.PaymentMethod;
-            if (!string.IsNullOrEmpty(viewModel.PaymentMethod))
-            {
-                if (Enum.TryParse<PaymentMethod>(viewModel.PaymentMethod, true, out var method))
-                {
-                    existingOrder.PaymentMethod = method;
-                }
-                else
-                {
-                    //// القيمة مش صحيحة
-                    //ModelState.AddModelError("PaymentMethod", "Invalid payment method");
-                    //return View(viewModel);
-                }
-            }
+            var updated = await _orderRepository.UpdateAsync(existingOrder);
+            if (!updated)
+                return (true, "Failed to update order", false);
 
-
-            return await _orderRepository.UpdateAsync(existingOrder);
+            return (false, string.Empty, true);
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<(bool IsError, string ErrorMessage, bool Data)> DeleteAsync(int id)
         {
-          
+            var order = await _orderRepository.GetByIdAsync(id);
+            if (order == null)
+                return (true, "Order not found", false);
+
             var orderItems = await _orderItemRepository.GetByOrderIdAsync(id);
             foreach (var item in orderItems)
             {
                 await _orderItemRepository.DeleteAsync(item.Id);
             }
 
-           
-            return await _orderRepository.DeleteAsync(id);
+            var deleted = await _orderRepository.DeleteAsync(id);
+            if (!deleted)
+                return (true, "Failed to delete order", false);
+
+            return (false, string.Empty, true);
         }
 
-        public async Task<bool> UpdateStatusAsync(OrderStatusUpdateVM viewModel)
+        public async Task<(bool IsError, string ErrorMessage, bool Data)> UpdateStatusAsync(OrderStatusUpdateVM viewModel)
         {
+            var order = await _orderRepository.GetByIdAsync(viewModel.OrderId);
+            if (order == null)
+                return (true, "Order not found", false);
+
+            if (order.Status != OrderStatus.Pending)
+                return (true, $"Cannot change status because order is already {order.Status}", false);
+
+            // Proceed with update
             var result = await _orderRepository.UpdateOrderStatusAsync(viewModel.OrderId, viewModel.Status);
 
-            if (result && viewModel.EstimatDelivryTime.HasValue)
+            if (!result)
+                return (true, "Failed to update status", false);
+
+            if (viewModel.EstimatDelivryTime.HasValue)
             {
-                var order = await _orderRepository.GetByIdAsync(viewModel.OrderId);
-                if (order != null)
-                {
-                    order.EstimatDelivryTime = viewModel.EstimatDelivryTime.Value;
-                    await _orderRepository.UpdateAsync(order);
-                }
+                order.EstimatDelivryTime = viewModel.EstimatDelivryTime.Value;
+                await _orderRepository.UpdateAsync(order);
             }
 
-            return result;
+            return (false, string.Empty, true);
         }
 
-        public async Task<bool> UpdatePaymentStateAsync(int orderId, PaymentStatus paymentState)
+
+        public async Task<(bool IsError, string ErrorMessage, bool Data)> UpdatePaymentStateAsync(int orderId, PaymentStatus paymentState)
         {
-            return await _orderRepository.UpdatePaymentStateAsync(orderId, paymentState);
+            var result = await _orderRepository.UpdatePaymentStateAsync(orderId, paymentState);
+            if (!result)
+                return (true, "Failed to update payment state", false);
+
+            return (false, string.Empty, true);
         }
 
-        public async Task<bool> ApplyPromoCodeAsync(int orderId, string promoCode)
+        public async Task<(bool IsError, string ErrorMessage, bool Data)> ApplyPromoCodeAsync(int orderId, string promoCode)
         {
             var order = await _orderRepository.GetByIdAsync(orderId);
-            if (order == null) return false;
+            if (order == null)
+                return (true, "Order not found", false);
 
-            
             decimal orderAmountWithoutDiscount = order.TotalAmount + order.DiscountAmount;
 
             var promoResult = await _promoCodeService.ValidatePromoCodeAsync(promoCode, orderAmountWithoutDiscount);
-            if (!promoResult.IsValid) return false;
+            if (!promoResult.IsValid)
+                return (true, "Invalid promo code", false);
 
             order.PromoCodeId = promoResult.PromoCode.Id;
             order.DiscountAmount = promoResult.DiscountAmount;
             order.TotalAmount = orderAmountWithoutDiscount - order.DiscountAmount;
 
-            
             await _promoCodeService.IncrementUsageAsync(promoCode);
 
-            return await _orderRepository.UpdateAsync(order);
+            var updated = await _orderRepository.UpdateAsync(order);
+            if (!updated)
+                return (true, "Failed to apply promo code", false);
+
+            return (false, string.Empty, true);
         }
 
-        public async Task<bool> RemovePromoCodeAsync(int orderId)
+        public async Task<(bool IsError, string ErrorMessage, bool Data)> RemovePromoCodeAsync(int orderId)
         {
             var order = await _orderRepository.GetByIdAsync(orderId);
-            if (order == null || order.PromoCodeId == null) return false;
+            if (order == null)
+                return (true, "Order not found", false);
 
-            
+            if (order.PromoCodeId == null)
+                return (true, "No promo code applied", false);
+
             order.TotalAmount += order.DiscountAmount;
             order.PromoCodeId = null;
             order.DiscountAmount = 0;
 
-            return await _orderRepository.UpdateAsync(order);
+            var updated = await _orderRepository.UpdateAsync(order);
+            if (!updated)
+                return (true, "Failed to remove promo code", false);
+
+            return (false, string.Empty, true);
         }
 
-        public async Task<decimal> CalculateOrderTotalWithDiscountAsync(int orderId)
+        public async Task<(bool IsError, string ErrorMessage, decimal Data)> CalculateOrderTotalWithDiscountAsync(int orderId)
         {
             var order = await _orderRepository.GetByIdAsync(orderId);
-            if (order == null) return 0;
+            if (order == null)
+                return (true, "Order not found", 0);
 
-            return order.TotalAmount - order.DiscountAmount;
+            return (false, string.Empty, order.TotalAmount - order.DiscountAmount);
         }
     }
 }

@@ -1,75 +1,91 @@
 ﻿@using Restaurant.BLL.Model_VM.Booking
 @model EditBookingVM
 
-<div class="card">
-    <div class="card-header" style="background-color:darkcyan; color:white">
-        Edit Booking
-    </div>
-    <div class="card-body">
+@{
+    ViewData["Title"] = "Edit Booking";
+}
 
-        @if (ViewBag.error != null)
-        {
-            <div class="alert alert-danger">
-                @ViewBag.error
-            </div>
-        }
+<div class="d-flex justify-content-center mt-4">
+    <div class="card shadow-lg rounded-3" style="width: 700px; border:none;">
+        <div class="card-header text-center" style="background-color:#D4A762; color:white; font-size:22px; font-weight:bold;">
+            Edit Booking
+        </div>
+        <div class="card-body p-4" style="background-color:#f9f9f9;">
 
-        <form enctype="multipart/form-data"
-              asp-action="Edit" asp-controller="Booking">
+            @if (ViewBag.error != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.error
+                </div>
+            }
 
-            <!-- Booking Date -->
-            <div class="mb-3">
-                <label asp-for="BookingDate" class="form-label"></label>
-                <input type="date" asp-for="BookingDate" class="form-control" />
-                <span class="text-danger" asp-validation-for="BookingDate"></span>
-            </div>
+            <form asp-action="Edit" asp-controller="Booking" method="post" class="row g-3">
+                <!-- لازم تبعت الـ Id -->
+                <input type="hidden" asp-for="Id" />
 
-            <!-- Start Time -->
-            <div class="mb-3">
-                <label asp-for="StartTime" class="form-label"></label>
-                <input type="time" asp-for="StartTime" class="form-control" />
-                <span class="text-danger" asp-validation-for="StartTime"></span>
-            </div>
+                <!-- Booking Date -->
+                <div class="col-md-6">
+                    <label asp-for="BookingDate" class="form-label fw-semibold">Reservation Date</label>
+                    <input type="date" asp-for="BookingDate" class="form-control border-2" />
+                    <span class="text-danger" asp-validation-for="BookingDate"></span>
+                </div>
 
-            <!-- End Time -->
-            <div class="mb-3">
-                <label asp-for="EndTime" class="form-label"></label>
-                <input type="time" asp-for="EndTime" class="form-control" />
-                <span class="text-danger" asp-validation-for="EndTime"></span>
-            </div>
+                <!-- Start Time -->
+                <div class="col-md-6">
+                    <label asp-for="StartTime" class="form-label fw-semibold">Reservation Time</label>
+                    <input type="time" asp-for="StartTime" class="form-control border-2" />
+                    <span class="text-danger" asp-validation-for="StartTime"></span>
+                </div>
 
-            <!-- Number Of Guests -->
-            <div class="mb-3">
-                <label asp-for="NumberOfGuests" class="form-label"></label>
-                <input type="number" asp-for="NumberOfGuests" class="form-control" />
-                <span class="text-danger" asp-validation-for="NumberOfGuests"></span>
-            </div>
+                <!-- End Time -->
+                <div class="col-md-6">
+                    <label asp-for="EndTime" class="form-label fw-semibold">End Time</label>
+                    <input type="time" asp-for="EndTime" class="form-control border-2" />
+                    <span class="text-danger" asp-validation-for="EndTime"></span>
+                </div>
 
-            <!-- Status -->
-            <div class="mb-3">
-                <label asp-for="Status" class="form-label"></label>
-                <input type="text" asp-for="Status" class="form-control" />
-                <span class="text-danger" asp-validation-for="Status"></span>
-            </div>
+                <!-- Number Of Guests -->
+                <div class="col-md-6">
+                    <label asp-for="NumberOfGuests" class="form-label fw-semibold">How many persons?</label>
+                    <input type="number" asp-for="NumberOfGuests" class="form-control border-2" />
+                    <span class="text-danger" asp-validation-for="NumberOfGuests"></span>
+                </div>
 
-            <!-- Special Requests -->
-            <div class="mb-3">
-                <label asp-for="SpecialRequests" class="form-label"></label>
-                <textarea asp-for="SpecialRequests" class="form-control"></textarea>
-                <span class="text-danger" asp-validation-for="SpecialRequests"></span>
-            </div>
+                <!-- Status -->
+                <div class="col-md-6">
+                    <label asp-for="Status" class="form-label fw-semibold">Status</label>
+                    <input type="text" asp-for="Status" class="form-control border-2" />
+                    <span class="text-danger" asp-validation-for="Status"></span>
+                </div>
 
-            <!-- Table Number -->
-            <div class="mb-3">
-                <label class="form-label">Table Number</label>
-                <select asp-for="TableId" asp-items="ViewBag.Tables" class="form-control">
-                    <option value="">-- Select Table --</option>
-                </select>
-                <span class="text-danger" asp-validation-for="TableId"></span>
-            </div>
+                <!-- Table Number -->
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">Table Number</label>
+                    <select asp-for="TableId" asp-items="ViewBag.Tables" class="form-control border-2">
+                        <option value="">-- Select Table --</option>
+                    </select>
+                    <span class="text-danger" asp-validation-for="TableId"></span>
+                </div>
 
-            <button type="submit" class="btn btn-success">Update</button>
-        </form>
+                <!-- Special Requests -->
+                <div class="col-12">
+                    <label asp-for="SpecialRequests" class="form-label fw-semibold">Special Requests / Notes</label>
+                    <textarea asp-for="SpecialRequests" class="form-control border-2"></textarea>
+                    <span class="text-danger" asp-validation-for="SpecialRequests"></span>
+                </div>
 
+                <!-- Submit + Cancel -->
+                <div class="col-12 text-center mt-3">
+                    <button type="submit" class="btn px-5 py-2"
+                            style="background-color:#D4A762; color:white; font-weight:bold; border-radius:8px;">
+                        Update
+                    </button>
+                    <a asp-action="GetAll" class="btn px-4 py-2 ms-2"
+                       style="background-color:#6c757d; color:white; font-weight:bold; border-radius:8px;">
+                        Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

@@ -1,0 +1,99 @@
+﻿@using Restaurant.BLL.ModelVMOrder
+@using Restaurant.DAL.Enum
+@model IEnumerable<OrderVM>
+
+<div class="container mt-4">
+    <h2 class="mb-4">My Orders</h2>
+    <form id="antiForgeryForm" asp-controller="Order" asp-action="Cancel" method="post">
+        @Html.AntiForgeryToken()
+    </form>
+    @foreach (var order in Model)
+    {
+        <div class="card shadow-sm mb-3">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <div>
+                    <strong>Order #@order.Id</strong>
+                    <span class="badge bg-@(order.Status == OrderStatus.Pending ? "warning" : order.Status == OrderStatus.Delivered ? "success" : "secondary")">
+                        @order.Status
+                    </span>
+                </div>
+                <div>
+                    <span class="fw-bold">Total:</span>  @order.TotalAmount.ToString("C")
+                </div>
+            </div>
+            <div class="card-body">
+                <p><strong>Payment:</strong> @order.PaymentMethod</p>
+
+                <h6 class="mt-3">Items:</h6>
+                <table class="table table-sm table-bordered align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Tax</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in order.OrderItems)
+                        {
+                            var tax = item.Quantity * item.Price * 0.085m;
+                            var subtotal = item.Quantity * item.Price;
+                            <tr>
+                                <td>@item.ProductName</td>
+                                <td>@item.Quantity.ToString("C")</td>
+                                <td> @item.Price.ToString("C")</td>
+                                <td> @tax.ToString("C") </td>
+                                <td> @subtotal.ToString("C")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                @if (order.Status == OrderStatus.Pending)
+                {
+                    <button type="button" class="btn btn-danger btn-sm cancel-order-btn" data-id="@order.Id">
+                        Cancel Order
+                    </button>
+                }
+            </div>
+        </div>
+    }
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).on("click", ".cancel-order-btn", function () {
+            var orderId = $(this).data("id");
+            var card = $(this).closest(".card");
+
+            $.ajax({
+                url: '/Order/Cancel/' + orderId,
+                type: 'POST',
+                data: {
+                    id: orderId,
+                    __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                },
+                success: function (response) {
+                    if (response.success) {
+                        // update badge text + color
+                        card.find(".badge")
+                            .removeClass("bg-warning bg-success")
+                            .addClass("bg-secondary")
+                            .text("Cancelled");
+
+                        // remove cancel button
+                        card.find(".cancel-order-btn").remove();
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert("Something went wrong. Try again.");
+                }
+            });
+        });
+    </script>
+
+}

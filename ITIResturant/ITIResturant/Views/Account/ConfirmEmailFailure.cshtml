@@ -2,8 +2,52 @@
     ViewData["Title"] = "Email Confirmation Failed";
 }
 
-<div class="container mt-5 text-center">
-    <h2 class="text-danger">⚠️ Email Confirmation Failed</h2>
-    <p>The confirmation link may have expired or already been used.</p>
-    <a asp-controller="Account" asp-action="Register" class="btn btn-secondary">Register Again</a>
+<div class="d-flex justify-content-center align-items-center confirm-wrapper">
+    <div class="confirm-card shadow-lg text-center">
+        <h2 class="text-danger mb-3">⚠️ Email Confirmation Failed</h2>
+        <p class="text-muted mb-4">
+            The confirmation link may have expired or already been used.
+        </p>
+
+        <a asp-controller="Account" asp-action="Register" class="btn btn-primary w-100 mb-2">
+            <i class="fa fa-user-plus"></i> Register Again
+        </a>
+
+        <a asp-controller="Account" asp-action="Login" class="btn btn-outline-secondary w-100">
+            <i class="fa fa-sign-in-alt"></i> Back to Login
+        </a>
+    </div>
 </div>
+
+<style>
+    .confirm-wrapper {
+        height: 100vh;
+        padding: 20px;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    }
+
+    .confirm-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px 50px;
+        max-width: 550px;
+        width: 100%;
+    }
+
+        .confirm-card h2 {
+            font-family: 'Playball', cursive;
+            font-size: 2.2rem;
+        }
+
+    .btn {
+        transition: all 0.3s ease;
+        font-weight: 600;
+        padding: 12px;
+        font-size: 1.05rem;
+    }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+</style>

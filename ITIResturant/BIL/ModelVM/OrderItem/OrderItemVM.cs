@@ -14,6 +14,6 @@ namespace Restaurant.BLL.ModelVMOrderItem
         public string ProductDescription { get; set; }
 
         public int OrderId { get; set; }
-        public string OrderStatus { get; set; }
+        public OrderStatus Status { get; set; }
     }
 }

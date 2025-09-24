@@ -16,25 +16,31 @@
 }
 
 @section Sidebar {
-    <!-- هنا بيتكرر نفس الـ Sidebar -->
-    <div class="sidebar bg-light border-end p-3">
-        <h5 class="text-dark mb-4 fw-bold"> Bookings</h5>
-        <ul class="nav flex-column gap-2">
-            <li class="nav-item">
-                <a asp-controller="Booking" asp-action="Create"
-                   class="btn w-100 text-start d-flex align-items-center gap-2 sidebar-btn">
-                    <i class="bi bi-plus-circle"></i> Create Booking
+    <div class="card shadow-sm border-0" style="width: 250px;">
+        <div class="card-header text-center fw-bold" style="background-color:white; border:none; font-size:16px;">
+            Booking
+        </div>
+        <ul class="list-group list-group-flush">
+            <!-- Active Item -->
+            <li class="list-group-item @(ViewData["ActivePage"]?.ToString() == "Create" ? "active" : "")"
+                style="@(ViewData["ActivePage"]?.ToString() == "Create" ? "background-color:#D4A762; color:white; font-weight:600;" : "")">
+                <a asp-action="Create" asp-controller="Booking" class="text-decoration-none @(ViewData["ActivePage"]?.ToString() == "Create" ? "text-white" : "text-dark") d-flex align-items-center">
+                    <i class="bi bi-plus-circle me-2"></i> Create Booking
                 </a>
             </li>
-            <li class="nav-item">
-                <a asp-controller="Booking" asp-action="GetAll"
-                   class="btn w-100 text-start d-flex align-items-center gap-2 active-btn">
-                    <i class="bi bi-list-ul"></i> Get All Bookings
+
+            <li class="list-group-item @(ViewData["ActivePage"]?.ToString() == "All" ? "active" : "")"
+                style="@(ViewData["ActivePage"]?.ToString() == "GetAll" ? "background-color:#D4A762; color:white; font-weight:600;" : "")">
+                <a asp-action="GetAll" asp-controller="Booking" class="text-decoration-none @(ViewData["ActivePage"]?.ToString() == "GetAll" ? "text-white" : "text-dark") d-flex align-items-center">
+                    <i class="bi bi-list-ul me-2"></i> My Bookings
                 </a>
             </li>
+
         </ul>
+
     </div>
 }
+
 
 
 <div class="container mt-4">
