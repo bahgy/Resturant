@@ -82,7 +82,6 @@ namespace Restaurant.BLL.Service.Implementation
                 if (result.Succeeded)
                 {
                     if (user is Customer customer){
-                        customer.EmailVerified = true;
                         await _userManager.UpdateAsync(customer);
                     }
                 }

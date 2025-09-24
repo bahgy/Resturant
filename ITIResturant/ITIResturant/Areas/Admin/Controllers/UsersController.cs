@@ -93,7 +93,6 @@ namespace Restaurant.PL.Areas.Admin.Controllers
             {
                 if (user is Customer customer)
                 {
-                    customer.EmailVerified = true;
                     await _userManager.UpdateAsync(customer);
                 }
                 await _signInManager.SignOutAsync();
@@ -155,10 +154,7 @@ namespace Restaurant.PL.Areas.Admin.Controllers
             if (!string.Equals(oldEmail, updatedUserVM.Email, StringComparison.OrdinalIgnoreCase))
             {
                 identityUser.EmailConfirmed = false; // force re-confirmation
-                if (identityUser is Customer customer)
-                {
-                    customer.EmailVerified = false; // custom field
-                }
+                
                 await _userManager.UpdateAsync(identityUser);
 
                 var token = await _userManager.GenerateEmailConfirmationTokenAsync(identityUser);

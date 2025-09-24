@@ -16,8 +16,7 @@ namespace Restaurant.BLL.Mapper
                 .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address))
                 .ForMember(dest => dest.UserType,
                            opt => opt.MapFrom(src => src.IsAdmin ? UserTypeEnum.Admin : UserTypeEnum.Customer))
-                .ForMember(dest => dest.EmailConfirmed, opt => opt.Ignore())
-                .ForMember(dest => dest.EmailVerified, opt => opt.Ignore());
+                .ForMember(dest => dest.EmailConfirmed, opt => opt.Ignore());
 
             // Customer → RegisterVM
             CreateMap<Customer, RegisterVM>().ReverseMap();

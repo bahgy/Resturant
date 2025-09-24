@@ -2,8 +2,48 @@
     ViewData["Title"] = "Email Confirmed";
 }
 
-<div class="container mt-5 text-center">
-    <h2 class="text-success">🎉 Email Confirmed Successfully!</h2>
-    <p>You can now log in to your account.</p>
-    <a asp-controller="Account" asp-action="Login" class="btn btn-primary">Go to Login</a>
+<div class="d-flex justify-content-center align-items-center confirm-wrapper">
+    <div class="confirm-card shadow-lg text-center">
+        <h2 class="text-success mb-3">🎉 Email Confirmed Successfully!</h2>
+        <p class="text-muted mb-4">
+            You can now log in to your account.
+        </p>
+
+        <a asp-controller="Account" asp-action="Login" class="btn btn-primary w-100">
+            <i class="fa fa-sign-in-alt"></i> Go to Login
+        </a>
+    </div>
 </div>
+
+<style>
+    .confirm-wrapper {
+        height: 100vh;
+        padding: 20px;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    }
+
+    .confirm-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px 50px;
+        max-width: 500px;
+        width: 100%;
+    }
+
+        .confirm-card h2 {
+            font-family: 'Playball', cursive;
+            font-size: 2.2rem;
+        }
+
+    .btn {
+        transition: all 0.3s ease;
+        font-weight: 600;
+        padding: 12px;
+        font-size: 1.05rem;
+    }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+</style>

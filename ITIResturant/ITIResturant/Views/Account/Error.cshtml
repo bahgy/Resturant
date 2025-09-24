@@ -1,2 +1,49 @@
-﻿<h2>Error</h2>
-<p>Something went wrong. Please try again.</p>
+﻿@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="d-flex justify-content-center align-items-center error-wrapper">
+    <div class="error-card shadow-lg text-center">
+        <h2 class="text-danger mb-3">⚠️ Error</h2>
+        <p class="text-muted mb-4">
+            Something went wrong. Please try again.
+        </p>
+
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary w-100">
+            <i class="fa fa-home"></i> Back to Home
+        </a>
+    </div>
+</div>
+
+<style>
+    .error-wrapper {
+        height: 100vh;
+        padding: 20px;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    }
+
+    .error-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px 50px;
+        max-width: 500px;
+        width: 100%;
+    }
+
+        .error-card h2 {
+            font-family: 'Playball', cursive;
+            font-size: 2.2rem;
+        }
+
+    .btn {
+        transition: all 0.3s ease;
+        font-weight: 600;
+        padding: 12px;
+        font-size: 1.05rem;
+    }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+</style>
