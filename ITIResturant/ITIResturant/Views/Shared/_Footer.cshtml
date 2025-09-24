@@ -33,18 +33,19 @@
                     <div class="footer-item">
                         <h4 class="mb-4">Special Facilities</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <a class="text-body mb-3" asp-controller="Menu" asp-action="Details" asp-route-id="1">
-                                <i class="fa fa-check text-primary me-2"></i>Cheese Burger
-                            </a>
-                            <a class="text-body mb-3" asp-controller="Menu" asp-action="Details" asp-route-id="2">
+                            <div class="text-body mb-3">
+                                <i class="fa fa-check text-primary me-2 "></i>Cheese Burger
+                            </div>
+                            <div class="text-body mb-3">
                                 <i class="fa fa-check text-primary me-2"></i>Sandwich
-                            </a>
-                            <a class="text-body mb-3" asp-controller="Menu" asp-action="Details" asp-route-id="3">
+                            </div>
+                            <div class="text-body mb-3">
                                 <i class="fa fa-check text-primary me-2"></i>Panner Burger
-                            </a>
-                            <a class="text-body mb-3" asp-controller="Menu" asp-action="Details" asp-route-id="4">
+                            </div>
+                            <div class="text-body mb-3">
                                 <i class="fa fa-check text-primary me-2"></i>Special Sweets
-                            </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -59,7 +60,7 @@
                             <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
                             <p><i class="fa fa-clock text-primary me-2"></i> 24/7 Hours Service</p>
                         </div>
-                        <a class="btn btn-primary btn-sm mt-2" asp-controller="Contact" asp-action="Index">
+                        <a class="btn btn-primary btn-sm mt-2" asp-controller="Home" asp-action="Contact">
                             Contact Page
                         </a>
                     </div>
@@ -71,34 +72,29 @@
                         <h4 class="mb-4">Social Gallery</h4>
                         <div class="row g-2">
                             <div class="col-4">
-                                <a asp-controller="Gallery" asp-action="Details" asp-route-id="1">
                                     <img src="~/img/menu-01.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                                </a>
+                                
                             </div>
                             <div class="col-4">
-                                <a asp-controller="Gallery" asp-action="Details" asp-route-id="2">
                                     <img src="~/img/menu-02.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                                </a>
+                                
                             </div>
                             <div class="col-4">
-                                <a asp-controller="Gallery" asp-action="Details" asp-route-id="3">
+                                
                                     <img src="~/img/menu-03.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                                </a>
+                                
                             </div>
                             <div class="col-4">
-                                <a asp-controller="Gallery" asp-action="Details" asp-route-id="4">
                                     <img src="~/img/menu-04.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                                </a>
+                                
                             </div>
                             <div class="col-4">
-                                <a asp-controller="Gallery" asp-action="Details" asp-route-id="5">
                                     <img src="~/img/menu-05.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                                </a>
+                                
                             </div>
                             <div class="col-4">
-                                <a asp-controller="Gallery" asp-action="Details" asp-route-id="6">
                                     <img src="~/img/menu-06.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="">
-                                </a>
+                                
                             </div>
                         </div>
                     </div>

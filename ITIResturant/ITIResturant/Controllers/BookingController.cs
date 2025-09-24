@@ -1,13 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Restaurant.BLL.Model_VM.Booking;
-using Restaurant.BLL.Service.Abstraction;
-using Restaurant.DAL.Entities;
+
 
 namespace RestoPL.Controllers
 {
     [Authorize]
+    [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class BookingController : Controller
     {
         private readonly IBookingService _bookingService;
@@ -105,9 +101,15 @@ namespace RestoPL.Controllers
 
         //=========================================================
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var result = _bookingService.GetAll();
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+                return Unauthorized();
+
+            // رجع الحجوزات الخاصة باليوزر فقط
+            var result = _bookingService.GetByCustomerId(user.Id);
+
             if (!result.Item1)
                 ViewBag.error = result.Item2;
 

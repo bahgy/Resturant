@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Payment Success";
+}
+
+<div class="container text-center py-6">
+    <div class="alert alert-success p-5 rounded shadow">
+        <i class="fas fa-check-circle fa-4x mb-3 text-success"></i>
+        <h2>Payment Successful!</h2>
+        <p>Your payment ID is <strong>@ViewBag.PaymentId</strong>.</p>
+        <p>Thank you for your order. We’ll process it shortly.</p>
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary mt-3">
+            <i class="fas fa-home me-2"></i>Back to Home
+        </a>
+    </div>
+</div>

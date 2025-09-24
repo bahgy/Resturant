@@ -23,6 +23,9 @@ global using Restaurant.BLL.Model_VM.EmailNotification;
 global using Restaurant.BLL.Model_VM.Feedback;
 global using Restaurant.BLL.Model_VM.Table;
 global using Microsoft.EntityFrameworkCore;
-
-global using Restaurant.BLL.Model_VM.Cart;
+global using Microsoft.AspNetCore.Http;
 global using Restaurant.BLL.ModelVM.ProductVM;
+global using Restaurant.BLL.ModelVM.CategoryVM;
+global using Restaurant.BLL.ModelVM.CategoryVM;
+//global 
+global using Restaurant.BLL.ModelVM.CategoryVM;

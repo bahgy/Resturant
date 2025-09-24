@@ -1,16 +1,25 @@
 using Restaurant.BLL.Service.Abstraction;
 using Restaurant.BLL.Service.Implementation;
 using Restaurant.BLL.Services;
+using Restaurant.PL.Filters;
+using Resturant.BLL.Service.Abstraction;
+using Resturant.BLL.Service.Impelementation;
+using Rsturant.DAL.Repo.Abstraction;
+using Rsturant.DAL.Repo.Impelementation;
 var builder = WebApplication.CreateBuilder(args);
 
 // MVC
 builder.Services.AddControllersWithViews();
 
+// service filtering
+builder.Services.AddScoped<ValidateUserExistsFilter>();
+
+
 // Add Razor Pages services (required if call app.MapRazorPages())
 builder.Services.AddRazorPages();
 
 #region Connection string
-var connectionString = builder.Configuration.GetConnectionString("Hamza");
+var connectionString = builder.Configuration.GetConnectionString("connection");
 builder.Services.AddDbContext<RestaurantDbContext>(options =>
     options.UseSqlServer(connectionString));
 #endregion
@@ -70,24 +79,23 @@ builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IMenuService, MenuService>();
+
 /// repos
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
 builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
 builder.Services.AddScoped<IAdminRepo, AdminRepo>();
+builder.Services.AddScoped<IMenuRepo, MenuRepo>();
+
 // team
 builder.Services.AddScoped<IBookingRepo, BookingRepo>();
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<ITableRepo, TableRepo>();
 builder.Services.AddScoped<ITableService, TableService>();
-
 builder.Services.AddScoped<IEmailNotificationService, EmailNotificationService>();
 builder.Services.AddScoped<IEmailNotificationRepo, EmailNotificationRepo>();
 builder.Services.AddScoped<IFeedbackRepo, FeedbackRepo>();
 builder.Services.AddScoped<IFeedbackService, FeedbackService>();
-
-builder.Services.AddAutoMapper(x => x.AddProfile(new OrderItemProfile()));
-builder.Services.AddAutoMapper(x => x.AddProfile(new OrderProfile()));
-builder.Services.AddAutoMapper(x => x.AddProfile(new PromoCodeProfile()));
 builder.Services.AddScoped<IOrderItemRepo, OrderItemRepo>();
 builder.Services.AddScoped<IOrderRepo, OrderRepo>();
 builder.Services.AddScoped<IPromoCodeRepo, PromoCodeRepo>();
@@ -98,9 +106,18 @@ builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IOrderItemService, OrderItemService>();
 builder.Services.AddScoped<IPromoCodeService, PromoCodeService>();
-
 builder.Services.AddScoped<ICartRepo, CartRepo>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IPaymentRepo, PaymentRepo>();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
+
+
+
+builder.Services.AddAutoMapper(x => x.AddProfile(new OrderItemProfile()));
+builder.Services.AddAutoMapper(x => x.AddProfile(new OrderProfile()));
+builder.Services.AddAutoMapper(x => x.AddProfile(new PromoCodeProfile()));
+builder.Services.AddAutoMapper(x => x.AddProfile(new UserProfile()));
+
 #endregion
 
 //////////////////////////////////////////////////////

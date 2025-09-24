@@ -1,0 +1,65 @@
+﻿@model List<Restaurant.BLL.Model_VM.Booking.GetAllBookingVM>
+
+@{
+    ViewData["Title"] = "Bookings Management";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminSharedLayout.cshtml";
+
+}
+
+<h1 class="mt-4">Bookings</h1>
+
+<div class="card mb-4 shadow">
+    <div class="card-header bg-primary text-white">
+        <i class="fas fa-calendar-check me-1"></i>
+        All Bookings
+    </div>
+    <div class="card-body">
+        <table id="datatablesSimple" class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Booking ID</th>
+                    <th>Customer ID</th>
+                    <th>Table ID</th>
+                    <th>Date</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Guests</th>
+                    <th>Status</th>
+                    <th>Special Requests</th>
+                    <th style="width: 150px;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var booking in Model)
+                    {
+                        <tr>
+                            <td>@booking.Id</td>
+                            <td>@booking.CustomerId</td>
+                            <td>@booking.TableId</td>
+                            <td>@booking.BookingDate.ToString("yyyy-MM-dd")</td>
+                            <td>@booking.StartTime.ToString("HH:mm")</td>
+                            <td>@booking.EndTime.ToString("HH:mm")</td>
+                            <td>@booking.NumberOfGuests</td>
+                            <td>@booking.Status</td>
+                            <td>@booking.SpecialRequests</td>
+                            <td>
+                              
+                                <a asp-area="Admin" asp-controller="Bookings" asp-action="Delete" asp-route-id="@booking.Id" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this booking?');">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="10" class="text-center text-muted">No bookings found</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

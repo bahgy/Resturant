@@ -1,0 +1,6 @@
+@using Restaurant.BLL.ModelVM.MenuVM
+@model List<MenuVM>
+@{
+    ViewData["Title"] = "Menu";
+}
+@Html.Partial("~/Views/Shared/Home/_Menu.cshtml", Model)

@@ -4,6 +4,7 @@ namespace Restaurant.PL.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")] // Admin only
+
     public class CategoriesController : Controller
     {
         private readonly ICategoryService _categoryService;

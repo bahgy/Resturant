@@ -1,14 +1,10 @@
-﻿
-
-namespace Restaurant.DAL.Repo.Abstraction
+﻿namespace Restaurant.DAL.Repo.Abstraction
 {
     public interface ICartRepo
     {
-        IEnumerable<Cart> GetAll();
-        Cart GetById(int id);
-        void Add(Cart cart);
-        void Update(Cart cart);
-        void Delete(int id);
-        void Save();
+        Task<Cart> GetCartByCustomerIdAsync(int customerId);
+        Task AddCartAsync(Cart cart);
+        Task UpdateCartAsync(Cart cart);
+        Task SaveChangesAsync();
     }
 }

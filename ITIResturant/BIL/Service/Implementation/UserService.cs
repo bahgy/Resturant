@@ -1,4 +1,6 @@
 ﻿
+using System.Security.Claims;
+
 public class UserService : IUserService
 {
     private readonly IMapper _mapper;
@@ -36,8 +38,6 @@ public class UserService : IUserService
             return (true, "Cannot create Admin user", null);
 
         var user = _mapper.Map<Customer>(userVm);
-        user.UserName = userVm.Email;
-        user.CreatedDate = DateTime.Now;
 
         var result = await _userManager.CreateAsync(user, userVm.Password);
         if (!result.Succeeded)
@@ -57,7 +57,6 @@ public class UserService : IUserService
         if (await _userManager.FindByEmailAsync(userVm.Email) is AppUser existingUser && existingUser.Id != userVm.Id)
             return (true, "Email already exists", null);
         _mapper.Map(userVm, user);
-
         var result = await _userManager.UpdateAsync(user);
         if (!result.Succeeded)
             return (true, string.Join(", ", result.Errors.Select(e => e.Description)), null);
@@ -77,5 +76,18 @@ public class UserService : IUserService
             return (true, string.Join(", ", result.Errors.Select(e => e.Description)), false);
 
         return (false, null, true);
+    }
+
+    public int? GetCurrentCustomerId(ClaimsPrincipal user)
+    {
+        if (user == null) return null;
+
+        var customerIdClaim = user.FindFirst(ClaimTypes.NameIdentifier);
+        if (customerIdClaim != null && int.TryParse(customerIdClaim.Value, out int customerId))
+        {
+            return customerId;
+        }
+
+        return null;
     }
 }

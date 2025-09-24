@@ -22,6 +22,11 @@
     </div>
 
     <div class="mb-2">
+        <input asp-for="UserName" placeholder="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-2">
         <input asp-for="PhoneNumber" placeholder="Phone Number" class="form-control" />
         <span asp-validation-for="PhoneNumber" class="text-danger"></span>
     </div>

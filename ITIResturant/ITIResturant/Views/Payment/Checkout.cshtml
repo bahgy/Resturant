@@ -1,0 +1,144 @@
+﻿@model Resturant.BLL.ModelVm.PaymentVm.CreatePaymentVm
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<!-- Checkout Section Start -->
+<div class="container py-6">
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <form asp-action="ProcessPayment" asp-controller="Payment" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="OrderId" />
+                <input type="hidden" asp-for="Amount" />
+
+                <div class="checkout-card shadow-sm p-4 rounded">
+                    <h4 class="section-title mb-3">Shipping Address</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">First Name</label>
+                            <input type="text" name="FirstName" class="form-control" placeholder="John" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" name="LastName" class="form-control" placeholder="Doe" required>
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label">Address</label>
+                            <input type="text" name="Address" class="form-control" placeholder="123 Main St" required>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-end">
+                            <button type="button" id="useLocation" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-map-marker-alt me-2"></i>Use My Location
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">City</label>
+                            <input type="text" name="City" class="form-control" placeholder="City" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" name="Phone" class="form-control" placeholder="01XXXXXXXXX" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="Email" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <h4 class="section-title mb-3">Payment</h4>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="form-check form-check-inline">
+                                <input asp-for="PaymentMethod" class="form-check-input" type="radio" id="pmCard" value="Card" />
+                                <label class="form-check-label" for="pmCard">
+                                    <i class="far fa-credit-card me-1"></i> Credit/Debit Card
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input asp-for="PaymentMethod" class="form-check-input" type="radio" id="pmCash" value="CashOnDelivery" />
+                                <label class="form-check-label" for="pmCash">
+                                    <i class="fas fa-money-bill-wave me-1"></i> Cash on Delivery
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <!-- Card fields only visible if "Card" selected -->
+                        <div id="cardFields" class="col-12">
+                            <div class="row g-3">
+                                <div class="col-12 d-flex align-items-center justify-content-between card-icons">
+                                    <span class="help-text">We accept</span>
+                                    <div>
+                                        <i class="fab fa-cc-visa"></i>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-amex"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Cardholder Name</label>
+                                    <input type="text" class="form-control" placeholder="John Doe">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Card Number</label>
+                                    <input type="text" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Expiry (MM/YY)</label>
+                                    <input type="text" class="form-control" placeholder="MM/YY" maxlength="5">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">CVV</label>
+                                    <input type="password" class="form-control" placeholder="123" maxlength="4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">
+                                I agree to the terms and conditions
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary px-4">
+                            <i class="fas fa-lock me-2"></i>Place Order - @Model.Amount.ToString("C")
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-lg-4">
+            <div class="summary shadow-sm p-4 rounded">
+                <h4 class="mb-3">Order Summary</h4>
+                <div class="d-flex justify-content-between mb-2"><span>Subtotal</span><span>@Model.Amount.ToString("C")</span></div>
+                <div class="d-flex justify-content-between mb-2"><span>Tax (8.5%)</span><span>Included</span></div>
+                <div class="d-flex justify-content-between mb-2"><span>Delivery</span><span>$5.00</span></div>
+                <div class="d-flex justify-content-between total"><span>Total</span><span>@Model.Amount.ToString("C")</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Checkout Section End -->
+@section Scripts {
+    <script>
+        function toggleCardFields() {
+            const isCard = document.getElementById("pmCard").checked;
+            document.getElementById("cardFields").style.display = isCard ? "block" : "none";
+        }
+
+        document.getElementById("pmCard").addEventListener("change", toggleCardFields);
+        document.getElementById("pmCash").addEventListener("change", toggleCardFields);
+
+        // تشغيل عند التحميل
+        toggleCardFields();
+    </script>
+}

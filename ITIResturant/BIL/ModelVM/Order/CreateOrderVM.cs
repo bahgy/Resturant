@@ -12,7 +12,7 @@ namespace Restaurant.BLL.ModelVMOrder
         public string DelivryAddress { get; set; }
 
         [Required]
-        public string PaymentMethod { get; set; }
+        public PaymentMethod PaymentMethod { get; set; }
 
         public string PromoCode { get; set; }
 

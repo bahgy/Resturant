@@ -1,10 +1,10 @@
 ﻿
-
 using ResetPasswordVM = Restaurant.BLL.ModelVMProfileVM.ResetPasswordVM;
 
 namespace Restaurant.PL.Controllers
 {
-    [Authorize] // Only logged-in users
+    [Authorize]
+    [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class ProfileController : Controller
     {
         private readonly IProfileService _profileService;
@@ -32,7 +32,8 @@ namespace Restaurant.PL.Controllers
                 LastName = user.LastName,
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
-                Address = user.Address
+                Address = user.Address,
+                UserName = user.UserName
             };
 
             return View(model);
@@ -56,7 +57,8 @@ namespace Restaurant.PL.Controllers
                 LastName = user.LastName,
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
-                Address = user.Address
+                Address = user.Address,
+                UserName = user.UserName
             };
 
             return View(model);

@@ -10,9 +10,9 @@ namespace Restaurant.DAL.Repo.Implementation
             DataBase = context;
         }
 
-        public Task<bool> ExistsAsync(int customerId)
+        public async Task<bool> ExistsAsync(int customerId)
         {
-            throw new NotImplementedException();
+            return await DataBase.Customers.AnyAsync(c => c.Id == customerId);
         }
     }
 }

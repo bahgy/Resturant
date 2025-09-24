@@ -1,5 +1,7 @@
 ﻿
 
+using Microsoft.EntityFrameworkCore;
+
 namespace Restaurant.BLL.Service.Implementation
 {
     public class BookingService : IBookingService
@@ -140,7 +142,7 @@ namespace Restaurant.BLL.Service.Implementation
         {
             try
             {
-                var bookings = _bookingRepo.GetAll();
+                var bookings = _bookingRepo.GetAll(b => b.IsDeleted == null || b.IsDeleted == false);
 
                 var result = bookings.Select(item => new GetAllBookingVM
                 {
@@ -155,11 +157,11 @@ namespace Restaurant.BLL.Service.Implementation
                     TableId = item.TableId
                 }).ToList();
 
-                return (false, "Success", result);
+                return (true, "Success", result);
             }
             catch (Exception ex)
             {
-                return (true, ex.Message, null);
+                return (false, ex.Message, null);
             }
         }
 
@@ -192,6 +194,34 @@ namespace Restaurant.BLL.Service.Implementation
                 return (true, ex.Message, null);
             }
         }
+
+        public (bool, string, List<GetAllBookingVM>) GetByCustomerId(int customerId)
+        {
+            try
+            {
+                var bookings = _bookingRepo.GetAll(b => b.CustomerId == customerId && (b.IsDeleted == null || b.IsDeleted == false));
+
+                var result = bookings.Select(b => new GetAllBookingVM
+                {
+                    Id = b.Id,
+                    BookingDate = b.BookingDate,
+                    StartTime = b.StartTime,
+                    EndTime = b.EndTime,
+                    NumberOfGuests = b.NumberOfGuests,
+                    Status = b.Status,
+                    SpecialRequests = b.SpecialRequests,
+                    TableId = b.TableId,
+                    CustomerId = b.CustomerId
+                }).ToList();
+
+                return (true, "", result);
+            }
+            catch (Exception ex)
+            {
+                return (false, ex.Message, new List<GetAllBookingVM>());
+            }
+        }
+
 
         //============================================================
     }

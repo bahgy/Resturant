@@ -6,7 +6,6 @@ global using Restaurant.DAL.Database;
 global using Restaurant.DAL.Entities;
 global using Restaurant.DAL.Repo.Abstraction;
 global using Restaurant.DAL.Repo.Implementation;
-global using Restaurant.PL.Mapper;
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Mvc;
 global using Restaurant.BLL.ModelVMAdminVM;
@@ -25,4 +24,8 @@ global using Restaurant.BLL.ModelVMAccountVM;
 global using System.Security.Claims;
 global using Restaurant.BLL.ModelVM.ProductVM;
 global using Restaurant.BLL.ModelVM.CategoryVM;
-
+global using Restaurant.BLL.ModelVMPromoCode;
+global using Microsoft.AspNetCore.WebUtilities;
+global using System.Text;
+global using Restaurant.PL.Filters;
+global using Microsoft.AspNetCore.Mvc.Filters;
