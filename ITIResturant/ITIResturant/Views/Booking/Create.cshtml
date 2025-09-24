@@ -4,11 +4,10 @@
 @{
     ViewData["ActivePage"] = "Create";
 }
-
 @section Sidebar {
     <div class="card shadow-sm border-0" style="width: 250px;">
         <div class="card-header text-center fw-bold" style="background-color:white; border:none; font-size:16px;">
-            Booking 
+            Booking
         </div>
         <ul class="list-group list-group-flush">
             <!-- Active Item -->
@@ -20,16 +19,25 @@
             </li>
 
             <li class="list-group-item @(ViewData["ActivePage"]?.ToString() == "All" ? "active" : "")"
-                style="@(ViewData["ActivePage"]?.ToString() == "GetAll" ? "background-color:#D4A762; color:white; font-weight:600;" : "")">
-                <a asp-action="GetAll" asp-controller="Booking" class="text-decoration-none @(ViewData["ActivePage"]?.ToString() == "GetAll" ? "text-white" : "text-dark") d-flex align-items-center">
-                    <i class="bi bi-list-ul me-2"></i> My Bookings
+                style="@(ViewData["ActivePage"]?.ToString() == "All" ? "background-color:#D4A762; color:white; font-weight:600;" : "")">
+                <a asp-action="GetAll" asp-controller="Booking" class="text-decoration-none @(ViewData["ActivePage"]?.ToString() == "All" ? "text-white" : "text-dark") d-flex align-items-center">
+                    <i class="bi bi-list-ul me-2"></i> All Bookings
                 </a>
             </li>
-
         </ul>
-       
+
+        <!-- Lottie Animation -->
+        <div class="text-center p-3">
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_m9czl2.json"
+                           background="transparent"
+                           speed="1"
+                           style="width: 150px; height: 150px; margin: auto;"
+                           loop autoplay>
+            </lottie-player>
+        </div>
     </div>
 }
+
 
 
 <div class="d-flex justify-content-center mt-4">
