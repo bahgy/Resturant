@@ -1,5 +1,7 @@
 
 
+using Restaurant.DAL.Entities;
+
 namespace RestoPL.Controllers
 {
     [Authorize]
@@ -40,7 +42,12 @@ namespace RestoPL.Controllers
                     return View(bookingVM);
                 }
 
+                // ✅ اربط اليوزر الحالي
                 bookingVM.CustomerId = user.Id;
+
+                // ✅ احسب EndTime أوتوماتيك (بعد ساعتين من StartTime)
+                bookingVM.EndTime = bookingVM.StartTime.Add(TimeSpan.FromHours(2));
+
 
                 var result = _bookingService.Create(bookingVM);
                 if (!result.Item1) // false معناها العملية نجحت
@@ -50,13 +57,12 @@ namespace RestoPL.Controllers
                 }
 
                 ViewBag.error = result.Item2; // في مشكلة
-
             }
-
 
             ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
             return View(bookingVM);
         }
+
 
 
         //=========================================================
@@ -74,31 +80,36 @@ namespace RestoPL.Controllers
             return View(result.Item3);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Edit(int id, EditBookingVM editBookingVM)
+      [HttpPost]
+public async Task<IActionResult> Edit(int id, EditBookingVM editBookingVM)
+{
+    if (ModelState.IsValid)
+    {
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
         {
-            if (ModelState.IsValid)
-            {
-                var user = await _userManager.GetUserAsync(User);
-                if (user == null)
-                {
-                    ViewBag.error = "You must be logged in to edit a booking.";
-                    return View(editBookingVM);
-                }
-
-                // ✅ اربط الـ CustomerId تلقائي
-                editBookingVM.CustomerId = user.Id;
-
-                var result = _bookingService.Edit(id, editBookingVM);
-                if (!result.Item1) // false = success
-                    return RedirectToAction("GetAll");
-
-                ViewBag.error = result.Item2;
-            }
-
-            ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
+            ViewBag.error = "You must be logged in to edit a booking.";
             return View(editBookingVM);
         }
+
+        // ✅ اربط الـ CustomerId تلقائي
+        editBookingVM.CustomerId = user.Id;
+
+        // ✅ احسب EndTime أوتوماتيك بعد ساعتين من StartTime
+        editBookingVM.EndTime = editBookingVM.StartTime.Add(TimeSpan.FromHours(2));
+
+
+                var result = _bookingService.Edit(id, editBookingVM);
+        if (!result.Item1) // false = success
+            return RedirectToAction("GetAll");
+
+        ViewBag.error = result.Item2;
+    }
+
+    ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
+    return View(editBookingVM);
+}
+
 
         //=========================================================
         [HttpGet]
