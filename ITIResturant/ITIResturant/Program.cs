@@ -69,6 +69,8 @@ builder.Services.ConfigureApplicationCookie(options =>
 builder.Services.AddAutoMapper(typeof(DomainProfile));
 
 // services + repos registrations here...
+builder.Services.AddScoped<IReviewRepo, ReviewRepo>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
