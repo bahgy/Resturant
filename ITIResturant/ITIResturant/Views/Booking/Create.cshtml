@@ -4,98 +4,113 @@
 @{
     ViewData["ActivePage"] = "Create";
 }
-
 @section Sidebar {
-    <!-- هنا بيتكرر نفس الـ Sidebar -->
-    <div class="sidebar bg-light border-end p-3">
-        <h5 class="text-dark mb-4 fw-bold"> Bookings</h5>
-        <ul class="nav flex-column gap-2">
-            <li class="nav-item">
-                <a asp-controller="Booking" asp-action="Create"
-                   class="btn w-100 text-start d-flex align-items-center gap-2 sidebar-btn">
-                    <i class="bi bi-plus-circle"></i> Create Booking
+    <div class="card shadow-sm border-0" style="width: 250px;">
+        <div class="card-header text-center fw-bold" style="background-color:white; border:none; font-size:16px;">
+            Booking
+        </div>
+        <ul class="list-group list-group-flush">
+            <!-- Active Item -->
+            <li class="list-group-item @(ViewData["ActivePage"]?.ToString() == "Create" ? "active" : "")"
+                style="@(ViewData["ActivePage"]?.ToString() == "Create" ? "background-color:#D4A762; color:white; font-weight:600;" : "")">
+                <a asp-action="Create" asp-controller="Booking" class="text-decoration-none @(ViewData["ActivePage"]?.ToString() == "Create" ? "text-white" : "text-dark") d-flex align-items-center">
+                    <i class="bi bi-plus-circle me-2"></i> Create Booking
                 </a>
             </li>
-            <li class="nav-item">
-                <a asp-controller="Booking" asp-action="GetAll"
-                   class="btn w-100 text-start d-flex align-items-center gap-2 active-btn">
-                    <i class="bi bi-list-ul"></i> Get All Bookings
+
+            <li class="list-group-item @(ViewData["ActivePage"]?.ToString() == "All" ? "active" : "")"
+                style="@(ViewData["ActivePage"]?.ToString() == "All" ? "background-color:#D4A762; color:white; font-weight:600;" : "")">
+                <a asp-action="GetAll" asp-controller="Booking" class="text-decoration-none @(ViewData["ActivePage"]?.ToString() == "All" ? "text-white" : "text-dark") d-flex align-items-center">
+                    <i class="bi bi-list-ul me-2"></i> All Bookings
                 </a>
             </li>
         </ul>
+
+        <!-- Lottie Animation -->
+        <div class="text-center p-3">
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_m9czl2.json"
+                           background="transparent"
+                           speed="1"
+                           style="width: 150px; height: 150px; margin: auto;"
+                           loop autoplay>
+            </lottie-player>
+        </div>
     </div>
 }
 
-<h2>Create Booking</h2>
 
-<div class="card">
-    <div class="card-header" style="background-color:#D4A762; color:white">
-        Create Booking
-    </div>
-    <div class="card-body">
 
-        @if (ViewBag.error != null)
-        {
-            <div class="alert alert-danger">
-                @ViewBag.error
-            </div>
-        }
+<div class="d-flex justify-content-center mt-4">
+    <div class="card shadow-lg rounded-3" style="width: 650px; border:none;">
+        <div class="card-header text-center" style="background-color:#D4A762; color:white; font-size:20px; font-weight:bold;">
+            Restaurant Reservation Form
+        </div>
+        <div class="card-body p-4">
 
-        <form enctype="multipart/form-data"
-              asp-action="Create" asp-controller="Booking">
+            @if (ViewBag.error != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.error
+                </div>
+            }
 
-            <!-- Booking Date -->
-            <div class="mb-3">
-                <label asp-for="BookingDate" class="form-label"></label>
-                <input type="date" asp-for="BookingDate" class="form-control" />
-                <span class="text-danger" asp-validation-for="BookingDate"></span>
-            </div>
+            <form enctype="multipart/form-data" asp-action="Create" asp-controller="Booking" class="row g-3">
 
-            <!-- Start Time -->
-            <div class="mb-3">
-                <label asp-for="StartTime" class="form-label"></label>
-                <input type="time" asp-for="StartTime" class="form-control" />
-                <span class="text-danger" asp-validation-for="StartTime"></span>
-            </div>
+                <!-- Date & Time -->
+                <div class="col-md-6">
+                    <label asp-for="BookingDate" class="form-label">Reservation Date</label>
+                    <input type="date" asp-for="BookingDate" class="form-control" />
+                    <span class="text-danger" asp-validation-for="BookingDate"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="StartTime" class="form-label">Reservation Time</label>
+                    <input type="time" asp-for="StartTime" class="form-control" />
+                    <span class="text-danger" asp-validation-for="StartTime"></span>
+                </div>
 
-            <!-- End Time -->
-            <div class="mb-3">
-                <label asp-for="EndTime" class="form-label"></label>
-                <input type="time" asp-for="EndTime" class="form-control" />
-                <span class="text-danger" asp-validation-for="EndTime"></span>
-            </div>
+                <!-- End Time -->
+                <div class="col-md-6">
+                    <label asp-for="EndTime" class="form-label">End Time</label>
+                    <input type="time" asp-for="EndTime" class="form-control" />
+                    <span class="text-danger" asp-validation-for="EndTime"></span>
+                </div>
 
-            <!-- Number Of Guests -->
-            <div class="mb-3">
-                <label asp-for="NumberOfGuests" class="form-label"></label>
-                <input type="number" asp-for="NumberOfGuests" class="form-control" />
-                <span class="text-danger" asp-validation-for="NumberOfGuests"></span>
-            </div>
+                <!-- Guests -->
+                <div class="col-md-6">
+                    <label asp-for="NumberOfGuests" class="form-label">How many persons?</label>
+                    <input type="number" asp-for="NumberOfGuests" class="form-control" />
+                    <span class="text-danger" asp-validation-for="NumberOfGuests"></span>
+                </div>
 
-            <!-- Status -->
-            <div class="mb-3">
-                <label asp-for="Status" class="form-label"></label>
-                <input type="text" asp-for="Status" class="form-control" />
-                <span class="text-danger" asp-validation-for="Status"></span>
-            </div>
+                <!-- Status -->
+                <div class="col-md-6">
+                    <label asp-for="Status" class="form-label">Status</label>
+                    <input type="text" asp-for="Status" class="form-control" />
+                    <span class="text-danger" asp-validation-for="Status"></span>
+                </div>
 
-            <!-- Special Requests -->
-            <div class="mb-3">
-                <label asp-for="SpecialRequests" class="form-label"></label>
-                <textarea asp-for="SpecialRequests" class="form-control"></textarea>
-                <span class="text-danger" asp-validation-for="SpecialRequests"></span>
-            </div>
+                <!-- Table -->
+                <div class="col-md-6">
+                    <label class="form-label">Table Number</label>
+                    <select asp-for="TableId" asp-items="ViewBag.Tables" class="form-control">
+                        <option value="">-- Select Table --</option>
+                    </select>
+                    <span class="text-danger" asp-validation-for="TableId"></span>
+                </div>
 
-            <!-- Table Number -->
-            <div class="mb-3">
-                <label class="form-label">Table Number</label>
-                <select asp-for="TableId" asp-items="ViewBag.Tables" class="form-control">
-                    <option value="">-- Select Table --</option>
-                </select>
-                <span class="text-danger" asp-validation-for="TableId"></span>
-            </div>
+                <!-- Special Requests -->
+                <div class="col-12">
+                    <label asp-for="SpecialRequests" class="form-label">Special Requests / Notes</label>
+                    <textarea asp-for="SpecialRequests" class="form-control"></textarea>
+                    <span class="text-danger" asp-validation-for="SpecialRequests"></span>
+                </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <div class="col-12 text-center mt-3">
+                    <button type="submit" class="btn px-5" style="background-color:#D4A762; color:white; font-weight:bold;">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
