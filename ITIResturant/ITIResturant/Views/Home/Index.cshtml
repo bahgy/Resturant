@@ -1,5 +1,7 @@
-﻿@using Restaurant.BLL.ModelVM.MenuVM
-@model List<MenuVM>
+﻿
+@using Restaurant.BLL.ModelVM.HomeIndexVm
+
+@model HomeIndexVm
 
 @{
     ViewData["Title"] = "Home Page";
@@ -18,7 +20,7 @@
 @Html.Partial("~/Views/Shared/Home/_Events.cshtml")
 <!-- Events End -->
 <!-- Menu Start -->
-@Html.Partial("~/Views/Shared/Home/_MenuHome.cshtml", Model)
+@Html.Partial("~/Views/Shared/Home/_MenuHome.cshtml", Model.Menu)
 <!-- Menu End -->
 <!-- Book Us Start -->
 <!-- Book Us End --> 
@@ -26,5 +28,6 @@
 @Html.Partial("~/Views/Shared/Home/_Team.cshtml")
 <!-- Team End --> 
 <!-- Testimonial Start -->
-@* @Html.Partial("~/Views/Home/_Testimonial.cshtml")  *@
+@Html.Partial("~/Views/Shared/Home/_Testimonial.cshtml") 
+
 <!-- Testimonial End --> 

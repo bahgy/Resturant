@@ -1,20 +1,32 @@
 
 
+using Restaurant.BLL.ModelVM.HomeIndexVm;
+
 namespace ITIResturant.Controllers
 {
     public class HomeController : Controller
     {
         private readonly IMenuService _menuService;
+        private readonly IReviewService _reviewService;
 
-        public HomeController(IMenuService _MenuService)
+        public HomeController(IMenuService menuService, IReviewService reviewService)
         {
-            _menuService = _MenuService;
+            _menuService = menuService;
+            _reviewService = reviewService;
         }
 
         public async Task<IActionResult> Index()
         {
             var menu = await _menuService.GetMenuAsync();
-            return View(menu); 
+            var reviews = await _reviewService.GetAllAsync();
+
+            var vm = new HomeIndexVm
+            {
+                Menu = menu,
+                Reviews = reviews
+            };
+
+            return View(vm);
         }
 
         public async Task<IActionResult> Menu()
