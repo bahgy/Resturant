@@ -16,10 +16,6 @@ namespace Restaurant.DAL.Entities
         [EmailAddress]
         public override string Email { get; set; }
 
-        [Required]
-        [Phone]
-        public override string PhoneNumber { get; set; }
-
         public DateTime CreatedDate { get; set; } = DateTime.Now;
 
         [Required]
