@@ -3,51 +3,120 @@
     ViewData["Title"] = "Login";
 }
 
-<h2>Login</h2>
+<div class="login-wrapper d-flex justify-content-center align-items-center">
+    <div class="login-card shadow-lg animate__animated animate__fadeIn">
+        <h2 class="text-center mb-4 fw-bold text-primary">Welcome Back</h2>
 
-<form asp-action="Login" method="post">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form asp-action="Login" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-    <div class="mb-2">
-        <input asp-for="Email" placeholder="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input asp-for="Email" placeholder="Email" class="form-control" />
+                </div>
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input asp-for="Password" placeholder="Password" type="password" class="form-control" />
+                </div>
+                <span asp-validation-for="Password" class="text-danger small"></span>
+            </div>
+
+            <div class="form-check mb-3">
+                <input asp-for="RememberMe" class="form-check-input" />
+                <label asp-for="RememberMe" class="form-check-label">Remember me</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill">Login</button>
+        </form>
+
+        <hr />
+
+        <div class="text-center mt-3">
+            <a asp-controller="Account" asp-action="Register" class="btn btn-outline-success w-100 mb-2 rounded-pill">
+                <i class="fas fa-user-plus"></i> Register
+            </a>
+            <a asp-controller="Account" asp-action="ForgotPassword" class="btn btn-outline-warning w-100 mb-2 rounded-pill">
+                <i class="fas fa-key"></i> Forgot Password?
+            </a>
+        </div>
+
+        <hr />
+
+        <div class="text-center">
+            <p class="fw-semibold text-muted">Or login with</p>
+            <form asp-action="ExternalLogin" method="post" class="mb-2">
+                <input type="hidden" name="provider" value="Google" />
+                <button type="submit" class="btn btn-danger w-100 py-2 rounded-pill">
+                    <i class="fab fa-google"></i> Sign in with Google
+                </button>
+            </form>
+
+            <form asp-action="ExternalLogin" method="post">
+                <input type="hidden" name="provider" value="Facebook" />
+                <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill">
+                    <i class="fab fa-facebook-f"></i> Sign in with Facebook
+                </button>
+            </form>
+        </div>
     </div>
-
-    <div class="mb-2">
-        <input asp-for="Password" placeholder="Password" type="password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-
-    <div class="form-check mb-2">
-        <input asp-for="RememberMe" class="form-check-input" />
-        <label asp-for="RememberMe" class="form-check-label">Remember me</label>
-    </div>
-
-    <button type="submit" class="btn btn-success w-100">Login</button>
-</form>
-
-<hr />
-
-<div class="text-center mt-3">
-    <a asp-controller="Account" asp-action="Register" class="btn btn-outline-primary w-100 mb-2">Register</a>
-    <a asp-controller="Account" asp-action="ForgotPassword" class="btn btn-outline-warning w-100 mb-2">Forgot Password?</a>
 </div>
 
-<hr />
+<!-- Custom CSS -->
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        min-height: 100vh;
+    }
 
-<div class="text-center">
-    <p>Or login with:</p>
-    <form asp-action="ExternalLogin" method="post">
-        <input type="hidden" name="provider" value="Google" />
-        <button type="submit" class="btn btn-danger w-100 mb-2">
-            <i class="fab fa-google"></i> Sign in with Google
-        </button>
-    </form>
+    .login-wrapper {
+        height: 100vh;
+        padding: 20px;
+    }
 
-    <form asp-action="ExternalLogin" method="post">
-        <input type="hidden" name="provider" value="Facebook" />
-        <button type="submit" class="btn btn-primary w-100">
-            <i class="fab fa-facebook"></i> Sign in with Facebook
-        </button>
-    </form>
-</div>
+    .login-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 50px 60px;
+        max-width: 700px; /* Bigger card */
+        width: 100%;
+    }
+
+        .login-card h2 {
+            font-family: 'Playball', cursive;
+            font-size: 2.5rem; /* Bigger heading */
+        }
+
+    .input-group-text {
+        background: #f1f3f5;
+        border-radius: 12px 0 0 12px;
+        font-size: 1.1rem;
+    }
+
+    .form-control {
+        border-radius: 0 12px 12px 0;
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+        font-weight: 600;
+        padding: 12px;
+        font-size: 1.05rem;
+    }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+    hr {
+        margin: 2rem 0;
+    }
+</style>

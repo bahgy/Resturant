@@ -16,6 +16,7 @@ builder.Services.AddControllersWithViews();
 
 // service filtering
 builder.Services.AddScoped<ValidateUserExistsFilter>();
+builder.Services.AddHttpContextAccessor();
 
 // Add Razor Pages services (required if call app.MapRazorPages())
 builder.Services.AddRazorPages();

@@ -52,10 +52,6 @@ namespace Restaurant.BLL.Service.Implementation
                 user.UserName = model.UserName;
                 user.EmailConfirmed = false;
 
-                if (user is Customer customer)
-                {
-                    customer.EmailVerified = false;
-                }
             }
 
             var result = await _userManager.UpdateAsync(user);
@@ -84,24 +80,36 @@ namespace Restaurant.BLL.Service.Implementation
         }
 
         public async Task<(bool Success, string? ErrorMessage)> ResetPasswordAsync(
-            string userId,
-            ResetPasswordVM model)
+    string userId,
+    ResetPasswordVM model)
         {
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
                 return (false, "User not found.");
 
-            // Check current password
-            var passwordCheck = await _userManager.CheckPasswordAsync(user, model.CurrentPassword);
-            if (!passwordCheck)
-                return (false, "Current password is incorrect.");
+            var hasPassword = await _userManager.HasPasswordAsync(user);
 
-            // Change password
-            var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
-            if (result.Succeeded)
-                return (true, null);
+            if (hasPassword)
+            {
+                // Normal flow (requires current password)
+                var passwordCheck = await _userManager.CheckPasswordAsync(user, model.CurrentPassword);
+                if (!passwordCheck)
+                    return (false, "Current password is incorrect.");
 
-            return (false, string.Join(", ", result.Errors.Select(e => e.Description)));
+                var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+                return result.Succeeded
+                    ? (true, null)
+                    : (false, string.Join(", ", result.Errors.Select(e => e.Description)));
+            }
+            else
+            {
+                // External user → just add a password (no current password check)
+                var result = await _userManager.AddPasswordAsync(user, model.NewPassword);
+                return result.Succeeded
+                    ? (true, null)
+                    : (false, string.Join(", ", result.Errors.Select(e => e.Description)));
+            }
         }
+
     }
 }

@@ -3,7 +3,6 @@ namespace Restaurant.DAL.Entities
 {
     public class Customer : AppUser
     {
-        public bool EmailVerified { get; set; }
         public string? DefaultDeliveryAddress { get; set; }
 
         public ICollection<Feedback> Feedbacks { get; set; }
