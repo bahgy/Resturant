@@ -33,7 +33,8 @@ namespace Restaurant.PL.Controllers
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
                 Address = user.Address,
-                UserName = user.UserName
+                UserName = user.UserName,
+                SendEmailNotification = user.SendEmailNotification,
             };
 
             return View(model);
@@ -58,7 +59,8 @@ namespace Restaurant.PL.Controllers
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
                 Address = user.Address,
-                UserName = user.UserName
+                UserName = user.UserName,
+                SendEmailNotification = user.SendEmailNotification,
             };
 
             return View(model);

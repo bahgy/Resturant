@@ -5,6 +5,8 @@ namespace ITIResturant.Controllers
     public class EmailNotificationsController : Controller
     {
 
+      
+
         private readonly IEmailNotificationService _service;
 
         public EmailNotificationsController(IEmailNotificationService service)
@@ -85,7 +87,21 @@ namespace ITIResturant.Controllers
         {
             await _service.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
+
+
         }
 
+
+
+
+
+
+
+
+
+      
+        }
+
+
     }
-}
+

@@ -12,6 +12,9 @@ using Resturant.BLL.Service.Impelementation;
 using Rsturant.DAL.Repo.Abstraction;
 using Rsturant.DAL.Repo.Impelementation;
 using System.Globalization;
+using Hangfire;
+using Hangfire.SqlServer;
+using Castle.Core.Smtp;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -124,7 +127,14 @@ builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IPaymentRepo, PaymentRepo>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 
+
+
 builder.Services.AddAutoMapper(x => x.AddProfile(new DomainProfile()));
+
+
+
+
+builder.Services.AddAutoMapper(typeof(AccountProfile));
 #endregion
 
 //////////////////////////////////////////////////////
