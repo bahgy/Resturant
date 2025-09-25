@@ -44,8 +44,17 @@
             EnableSsl = true
         };
 
-        var mailMessage = new MailMessage(fromEmail, toEmail, subject, message);
-        mailMessage.IsBodyHtml = true;
+        var fromAddress = new MailAddress(fromEmail, "Restaurant App");
+
+        var mailMessage = new MailMessage
+        {
+            From = fromAddress,
+            Subject = subject,
+            Body = message,
+            IsBodyHtml = true
+        };
+
+        mailMessage.To.Add(toEmail);
 
         await client.SendMailAsync(mailMessage);
     }

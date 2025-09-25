@@ -4,12 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Restaurant.PL.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class EmailNotificationsController : Controller
     {
         private readonly RestaurantDbContext _db;
-        private readonly IEmailSender _emailSender;
+        private readonly EmailSender _emailSender;
 
-        public EmailNotificationsController(RestaurantDbContext db, IEmailSender emailSender)
+        public EmailNotificationsController(RestaurantDbContext db, EmailSender emailSender)
         {
             _db = db;
             _emailSender = emailSender;

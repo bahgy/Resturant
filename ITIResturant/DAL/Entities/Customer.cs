@@ -13,7 +13,5 @@ namespace Restaurant.DAL.Entities
 
         public string? ConfirmationToken { get; set; }  // temporary token
 
-
-        public bool? SendEmailNotification { get; set; } 
     }
 }

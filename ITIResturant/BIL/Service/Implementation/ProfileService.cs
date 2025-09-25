@@ -1,5 +1,7 @@
 ﻿
 
+using Microsoft.AspNetCore.Identity;
+
 namespace Restaurant.BLL.Service.Implementation
 {
     public class ProfileService : IProfileService
@@ -114,21 +116,6 @@ namespace Restaurant.BLL.Service.Implementation
 
 
 
-
-
-
-        public async Task UpdateProfileAsync(UpdateProfileVM model)
-        {
-            var customer = await _db.Customers.FindAsync(model.Id);
-            if (customer == null) return;
-
-            customer.FirstName = model.FirstName;
-            customer.LastName = model.LastName;
-            customer.Email = model.Email;
-            customer.SendEmailNotification = model.SendEmailNotification; // ✅
-
-            await _db.SaveChangesAsync();
-        }
 
 
 

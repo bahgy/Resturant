@@ -23,7 +23,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddRazorPages();
 
 #region Connection string
-var connectionString = builder.Configuration.GetConnectionString("Hamza");
+var connectionString = builder.Configuration.GetConnectionString("connection");
 builder.Services.AddDbContext<RestaurantDbContext>(options =>
     options.UseSqlServer(connectionString));
 #endregion
@@ -105,10 +105,6 @@ builder.Services.AddScoped<ICartRepo, CartRepo>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IPaymentRepo, PaymentRepo>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
-
-
-builder.Services.AddScoped<IEmailSender, EmailSender>();
-
 
 
 

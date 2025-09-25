@@ -28,7 +28,7 @@ namespace Restaurant.BLL.ModelVMProfileVM
 
 
         
-        public bool? SendEmailNotification { get; set; }
+        public bool SendEmailNotification { get; set; }
 
 
     }
