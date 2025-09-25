@@ -1,7 +1,7 @@
 ﻿@using Restaurant.BLL.ModelVM.Review
 @model ReviewCreateVm
 
-<h2>Leave Your Feedback</h2>
+<h2>@SharedLocalizer["Leave Your Feedback"]</h2>
 
 @if (TempData["SuccessMessage"] != null)
 {
@@ -10,7 +10,7 @@
 
 <form asp-action="Index" method="post">
     <div class="form-group">
-        <label asp-for="Rating">Rating</label>
+        <label asp-for="Rating">@SharedLocalizer["Rating"]</label>
         <div id="starRating" class="mb-2">
             <input type="hidden" asp-for="Rating" id="ratingInput" />
             @for (int i = 1; i <= 5; i++)
@@ -22,12 +22,12 @@
     </div>
 
     <div class="form-group mt-3">
-        <label asp-for="Comment">Your Comment</label>
+        <label asp-for="Comment">@SharedLocalizer["Your Comment"]</label>
         <textarea asp-for="Comment" class="form-control"></textarea>
         <span asp-validation-for="Comment" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary mt-3">Submit Review</button>
+    <button type="submit" class="btn btn-primary mt-3">@SharedLocalizer["Submit Review"]</button>
 </form>
 
 @section Styles {
@@ -38,9 +38,9 @@
             cursor: pointer;
             transition: color 0.2s;
         }
-        .star.selected {
-            color: #ffc107;
-        }
+            .star.selected {
+                color: #ffc107;
+            }
     </style>
 }
 

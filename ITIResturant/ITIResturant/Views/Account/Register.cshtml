@@ -2,7 +2,7 @@
 
 <div class="d-flex justify-content-center align-items-center register-wrapper">
     <div class="register-card shadow-lg">
-        <h2 class="text-center mb-4 text-primary">Create Account</h2>
+        <h2 class="text-center mb-4 text-primary">@SharedLocalizer["Create Account"]</h2>
 
         <form asp-action="Register" method="post">
             <!-- Global errors -->
@@ -12,7 +12,7 @@
                 <div class="col-md-6">
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-user"></i></span>
-                        <input asp-for="FirstName" placeholder="First Name" class="form-control" />
+                        <input asp-for="FirstName" placeholder="@SharedLocalizer["First Name"]" class="form-control" />
                     </div>
                     <span asp-validation-for="FirstName" class="text-danger small"></span>
                 </div>
@@ -20,7 +20,7 @@
                 <div class="col-md-6">
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-user"></i></span>
-                        <input asp-for="LastName" placeholder="Last Name" class="form-control" />
+                        <input asp-for="LastName" placeholder="@SharedLocalizer["Last Name"]" class="form-control" />
                     </div>
                     <span asp-validation-for="LastName" class="text-danger small"></span>
                 </div>
@@ -28,7 +28,7 @@
                 <div class="col-md-12">
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                        <input asp-for="Email" placeholder="Email" class="form-control" />
+                        <input asp-for="Email" placeholder="@SharedLocalizer["Email"]" class="form-control" />
                     </div>
                     <span asp-validation-for="Email" class="text-danger small"></span>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="col-md-12">
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-id-card"></i></span>
-                        <input asp-for="UserName" placeholder="Username" class="form-control" />
+                        <input asp-for="UserName" placeholder="@SharedLocalizer["Username"]" class="form-control" />
                     </div>
                     <span asp-validation-for="UserName" class="text-danger small"></span>
                 </div>
@@ -44,7 +44,7 @@
                 <div class="col-md-12">
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                        <input asp-for="PhoneNumber" placeholder="Phone Number" class="form-control" />
+                        <input asp-for="PhoneNumber" placeholder="@SharedLocalizer["Phone Number"]" class="form-control" />
                     </div>
                     <span asp-validation-for="PhoneNumber" class="text-danger small"></span>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="col-md-12">
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-map-marker-alt"></i></span>
-                        <input asp-for="Address" placeholder="Address (Optional)" class="form-control" />
+                        <input asp-for="Address" placeholder="@SharedLocalizer["Address (Optional)"]" class="form-control" />
                     </div>
                     <span asp-validation-for="Address" class="text-danger small"></span>
                 </div>
@@ -60,7 +60,7 @@
                 <div class="col-md-6">
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                        <input asp-for="Password" placeholder="Password" type="password" class="form-control" />
+                        <input asp-for="Password" placeholder="@SharedLocalizer["Password"]" type="password" class="form-control" />
                     </div>
                     <span asp-validation-for="Password" class="text-danger small"></span>
                 </div>
@@ -68,21 +68,21 @@
                 <div class="col-md-6">
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                        <input asp-for="ConfirmPassword" placeholder="Confirm Password" type="password" class="form-control" />
+                        <input asp-for="ConfirmPassword" placeholder="@SharedLocalizer["Confirm Password"]" type="password" class="form-control" />
                     </div>
                     <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100 mt-4">Register</button>
+            <button type="submit" class="btn btn-primary w-100 mt-4">@SharedLocalizer["Register"]</button>
         </form>
 
         <hr />
 
         <div class="text-center">
-            <p>Already have an account?</p>
+            <p>@SharedLocalizer["Already have an account?"]</p>
             <a asp-controller="Account" asp-action="Login" class="btn btn-outline-secondary w-100">
-                <i class="fa fa-sign-in-alt"></i> Login
+                <i class="fa fa-sign-in-alt"></i> @SharedLocalizer["Login"]
             </a>
         </div>
     </div>

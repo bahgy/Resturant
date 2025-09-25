@@ -18,21 +18,21 @@
 @section Sidebar {
     <div class="card shadow-sm border-0" style="width: 250px;">
         <div class="card-header text-center fw-bold" style="background-color:white; border:none; font-size:16px;">
-            Booking
+            @SharedLocalizer["Booking"]
         </div>
         <ul class="list-group list-group-flush">
             <!-- Active Item -->
             <li class="list-group-item @(ViewData["ActivePage"]?.ToString() == "Create" ? "active" : "")"
                 style="@(ViewData["ActivePage"]?.ToString() == "Create" ? "background-color:#D4A762; color:white; font-weight:600;" : "")">
                 <a asp-action="Create" asp-controller="Booking" class="text-decoration-none @(ViewData["ActivePage"]?.ToString() == "Create" ? "text-white" : "text-dark") d-flex align-items-center">
-                    <i class="bi bi-plus-circle me-2"></i> Create Booking
+                    <i class="bi bi-plus-circle me-2"></i>  @SharedLocalizer["Booking"]
                 </a>
             </li>
 
             <li class="list-group-item @(ViewData["ActivePage"]?.ToString() == "All" ? "active" : "")"
                 style="@(ViewData["ActivePage"]?.ToString() == "GetAll" ? "background-color:#D4A762; color:white; font-weight:600;" : "")">
                 <a asp-action="GetAll" asp-controller="Booking" class="text-decoration-none @(ViewData["ActivePage"]?.ToString() == "GetAll" ? "text-white" : "text-dark") d-flex align-items-center">
-                    <i class="bi bi-list-ul me-2"></i> My Bookings
+                    <i class="bi bi-list-ul me-2"></i> @SharedLocalizer["All Bookings"]
                 </a>
             </li>
 
@@ -43,7 +43,7 @@
 
 
 <div class="container mt-4">
-    <h2 class="mb-4 text-center fw-bold"> All Bookings</h2>
+    <h2 class="mb-4 text-center fw-bold"> @SharedLocalizer["All Bookings"]</h2>
 
     @if (Model != null && Model.Any())
     {
@@ -55,7 +55,7 @@
                         <!-- Header -->
                         <div class="card-header text-white fw-bold text-center"
                              style="background: linear-gradient(135deg,#D4A762,#b3874a); font-size:18px;">
-                            Booking #@booking.Id
+                            @SharedLocalizer["Booking"]  # @booking.Id
                         </div>
 
                         <!-- Body -->
@@ -100,13 +100,13 @@
                         <!-- Footer -->
                         <div class="card-footer d-flex justify-content-between align-items-center" style="background-color:#fafafa;">
                             <a asp-action="Edit" asp-route-id="@booking.Id" class="btn btn-sm btn-outline-primary px-3">
-                                <i class="bi bi-pencil-square"></i> Edit
+                                <i class="bi bi-pencil-square"></i>  @SharedLocalizer["Edit"]
                             </a>
                             <form asp-action="Delete" asp-controller="Booking" method="post" style="display:inline;">
                                 <input type="hidden" name="id" value="@booking.Id" />
                                 <button type="submit" class="btn btn-sm btn-outline-danger px-3"
                                         onclick="return confirm('Are you sure you want to delete this booking?');">
-                                    <i class="bi bi-trash3"></i> Delete
+                                    <i class="bi bi-trash3"></i> @SharedLocalizer["Delete"]
                                 </button>
                             </form>
                         </div>
@@ -118,7 +118,7 @@
     else
     {
         <div class="alert alert-info text-center">
-            <i class="bi bi-info-circle"></i> No bookings found.
+            <i class="bi bi-info-circle"></i> @SharedLocalizer["No bookings found"]
         </div>
     }
 </div>

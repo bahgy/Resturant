@@ -1,6 +1,6 @@
 ﻿@model Restaurant.BLL.ModelVMProfileVM.UpdateProfileVM
 @{
-    ViewData["Title"] = "My Profile";
+    ViewData["Title"] = @SharedLocalizer["My Profile"];
 }
 
 <div class="container-fluid py-5">
@@ -10,31 +10,31 @@
             <div class="card shadow-sm border-0">
                 <div class="card-body p-3">
                     <div class="text-center mb-4">
-                        <h5 class="fw-bold">Welcome @Model.FirstName @Model.LastName</h5>
+                        <h5 class="fw-bold">@SharedLocalizer["Welcome"] @Model.FirstName @Model.LastName</h5>
                     </div>
 
                     <div class="list-group">
                         <a asp-controller="Profile" asp-action="Index"
                            class="list-group-item list-group-item-action @(ViewData["ActiveTab"]?.ToString() == "Index" ? "active" : "")">
-                            <i class="fas fa-user-circle me-2"></i> Personal Information
+                            <i class="fas fa-user-circle me-2"></i> @SharedLocalizer["Personal Information"]
                         </a>
                         <a asp-controller="Order" asp-action="OrderHistory"
                            class="list-group-item list-group-item-action @(ViewData["ActiveTab"]?.ToString() == "OrderHistory" ? "active" : "")">
-                            <i class="fas fa-history me-2"></i> Order History
+                            <i class="fas fa-history me-2"></i> @SharedLocalizer["Order History"]
                         </a>
 
                         <a asp-controller="Booking" asp-action="GetAll"
                            class="list-group-item list-group-item-action @(ViewData["ActiveTab"]?.ToString() == "GetAll" ? "active" : "")">
-                            <i class="fas fa-calendar-alt me-2"></i> My Bookings
+                            <i class="fas fa-calendar-alt me-2"></i> @SharedLocalizer["My Bookings"]
                         </a>
 
                         <a asp-controller="Profile" asp-action="ResetPassword"
                            class="list-group-item list-group-item-action @(ViewData["ActiveTab"]?.ToString() == "ResetPassword" ? "active" : "")">
-                            <i class="fas fa-key me-2"></i> Reset Password
+                            <i class="fas fa-key me-2"></i> @SharedLocalizer["Reset Password"]
                         </a>
                         <form asp-controller="Account" asp-action="Logout" method="post" class="mt-3">
                             <button type="submit" class="list-group-item list-group-item-action text-danger">
-                                <i class="fas fa-sign-out-alt me-2"></i> Logout
+                                <i class="fas fa-sign-out-alt me-2"></i> @SharedLocalizer["Logout"]
                             </button>
                         </form>
                     </div>
@@ -46,52 +46,52 @@
         <div class="col-lg-9">
             <div class="card shadow-sm border-0">
                 <div class="card-body">
-                    <h4 class="mb-4 fw-bold">Personal Information</h4>
+                    <h4 class="mb-4 fw-bold">@SharedLocalizer["Personal Information"]</h4>
 
                     @if (TempData["SuccessMessage"] != null)
                     {
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                             @TempData["SuccessMessage"]
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="@SharedLocalizer["Close"]"></button>
                         </div>
                     }
                     else if (TempData["ErrorMessage"] != null)
                     {
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
                             @TempData["ErrorMessage"]
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="@SharedLocalizer["Close"]"></button>
                         </div>
                     }
 
                     <form asp-action="Update" method="post">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label asp-for="FirstName" class="form-label"></label>
+                                <label asp-for="FirstName" class="form-label">@SharedLocalizer["First Name"]</label>
                                 <input asp-for="FirstName" class="form-control" />
                                 <span asp-validation-for="FirstName" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
-                                <label asp-for="LastName" class="form-label"></label>
+                                <label asp-for="LastName" class="form-label">@SharedLocalizer["Last Name"]</label>
                                 <input asp-for="LastName" class="form-control" />
                                 <span asp-validation-for="LastName" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
-                                <label asp-for="PhoneNumber" class="form-label"></label>
+                                <label asp-for="PhoneNumber" class="form-label">@SharedLocalizer["Phone Number"]</label>
                                 <input asp-for="PhoneNumber" class="form-control" />
                                 <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
-                                <label asp-for="Email" class="form-label"></label>
+                                <label asp-for="Email" class="form-label">@SharedLocalizer["Email"]</label>
                                 <input asp-for="Email" class="form-control" />
                                 <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
-                                <label asp-for="UserName" class="form-label"></label>
+                                <label asp-for="UserName" class="form-label">@SharedLocalizer["Username"]</label>
                                 <input asp-for="UserName" class="form-control" />
                                 <span asp-validation-for="UserName" class="text-danger"></span>
                             </div>
                             <div class="col-12">
-                                <label asp-for="Address" class="form-label"></label>
+                                <label asp-for="Address" class="form-label">@SharedLocalizer["Address"]</label>
                                 <textarea asp-for="Address" class="form-control" rows="2"></textarea>
                                 <span asp-validation-for="Address" class="text-danger"></span>
                             </div>
@@ -101,7 +101,7 @@
                             <label asp-for="SendEmailNotification" class="form-check-label"></label>
                         </div>
                         <div class="mt-4">
-                            <button type="submit" class="btn btn-primary px-4">Save Changes</button>
+                            <button type="submit" class="btn btn-primary px-4">@SharedLocalizer["Save Changes"]</button>
                         </div>
                     </form>
                 </div>
