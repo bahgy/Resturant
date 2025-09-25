@@ -1,22 +1,41 @@
+using Hangfire;
+using Hangfire.SqlServer;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Restaurant.BLL.Service.Abstraction;
 using Restaurant.BLL.Service.Implementation;
 using Restaurant.BLL.Services;
 using Restaurant.PL.Filters;
+using Restaurant.PL.Language;
 using Resturant.BLL.Service.Abstraction;
 using Resturant.BLL.Service.Impelementation;
 using Rsturant.DAL.Repo.Abstraction;
 using Rsturant.DAL.Repo.Impelementation;
-using Hangfire;
-using Hangfire.SqlServer;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // MVC
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+.AddDataAnnotationsLocalization(options =>
+{
+    options.DataAnnotationLocalizerProvider = (type, factory) =>
+        factory.Create(typeof(SharedResource));
+});
+
+;
+
 
 // service filtering
 builder.Services.AddScoped<ValidateUserExistsFilter>();
+
+// globilzation
 builder.Services.AddHttpContextAccessor();
+
+
+
+
+//////////////////////////////////////////////////////////////
 
 // Add Razor Pages services (required if call app.MapRazorPages())
 builder.Services.AddRazorPages();
@@ -159,6 +178,25 @@ app.UseHangfireDashboard("/hangfire", new DashboardOptions
     Authorization = new[] { new HangfireAuthorizationFilter() },
     StatsPollingInterval = 10000 // refresh every 10s 
 
+});
+
+
+var supportedCultures = new[] {
+                      new CultureInfo("ar-EG"),
+                      new CultureInfo("en-US"),
+                };
+
+
+app.UseRequestLocalization(new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("en-US"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures,
+    RequestCultureProviders = new List<IRequestCultureProvider>
+                {
+                new QueryStringRequestCultureProvider(),
+                new CookieRequestCultureProvider()
+                }
 });
 
 

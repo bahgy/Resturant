@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\booking\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\booking\\getall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\review\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\review\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\language\\sharedresource.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\language\\sharedresource.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\bil\\modelvm\\booking\\editbookingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\modelvm\\booking\\editbookingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\shared\\home\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\shared\\home\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\booking\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\booking\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\shared\\home\\_contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\shared\\home\\_contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\bil\\modelvm\\booking\\createbookingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\modelvm\\booking\\createbookingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\DAL\\Migrations\\20250924151144_start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DAL\\Migrations\\20250924151144_start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|f:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\resturant\\itiresturant\\itiresturant\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,105 +47,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GetAll.cshtml",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\GetAll.cshtml",
-              "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\GetAll.cshtml",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\GetAll.cshtml*",
-              "RelativeToolTip": "ITIResturant\\Views\\Booking\\GetAll.cshtml*",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAcwFkAAAAiAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Review\\Index.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Review\\Index.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Review\\Index.cshtml*",
+              "RelativeToolTip": "ITIResturant\\Views\\Review\\Index.cshtml*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T16:01:48.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Edit.cshtml",
-              "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\Edit.cshtml",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Edit.cshtml",
-              "RelativeToolTip": "ITIResturant\\Views\\Booking\\Edit.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T16:01:37.17Z",
+              "WhenOpened": "2025-09-25T22:46:16.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EditBookingVM.cs",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\BIL\\ModelVM\\Booking\\EditBookingVM.cs",
-              "RelativeDocumentMoniker": "BIL\\ModelVM\\Booking\\EditBookingVM.cs",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\BIL\\ModelVM\\Booking\\EditBookingVM.cs",
-              "RelativeToolTip": "BIL\\ModelVM\\Booking\\EditBookingVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T16:01:32.107Z",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Account\\Login.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "ITIResturant\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T22:43:19.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookingController.cs",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\BookingController.cs",
-              "RelativeDocumentMoniker": "ITIResturant\\Controllers\\BookingController.cs",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\BookingController.cs",
-              "RelativeToolTip": "ITIResturant\\Controllers\\BookingController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAiwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:18:58.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateBookingVM.cs",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\BIL\\ModelVM\\Booking\\CreateBookingVM.cs",
-              "RelativeDocumentMoniker": "BIL\\ModelVM\\Booking\\CreateBookingVM.cs",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\BIL\\ModelVM\\Booking\\CreateBookingVM.cs",
-              "RelativeToolTip": "BIL\\ModelVM\\Booking\\CreateBookingVM.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:17:12.911Z",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Account\\Register.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "ITIResturant\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T22:38:14.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Create.cshtml",
-              "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\Create.cshtml",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Create.cshtml",
-              "RelativeToolTip": "ITIResturant\\Views\\Booking\\Create.cshtml",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAowFQAAAAWAAAAAAAAAA==",
+              "Title": "_Menu.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\Home\\_Menu.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Shared\\Home\\_Menu.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\Home\\_Menu.cshtml",
+              "RelativeToolTip": "ITIResturant\\Views\\Shared\\Home\\_Menu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-24T15:14:23.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20250924151144_start.cs",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\DAL\\Migrations\\20250924151144_start.cs",
-              "RelativeDocumentMoniker": "DAL\\Migrations\\20250924151144_start.cs",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\DAL\\Migrations\\20250924151144_start.cs",
-              "RelativeToolTip": "DAL\\Migrations\\20250924151144_start.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:11:44.629Z",
+              "WhenOpened": "2025-09-25T22:35:37.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
-              "RelativeDocumentMoniker": "ITIResturant\\appsettings.json",
-              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
-              "RelativeToolTip": "ITIResturant\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-24T15:09:02.049Z",
+              "Title": "_Contact.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\Home\\_Contact.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Shared\\Home\\_Contact.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\Home\\_Contact.cshtml",
+              "RelativeToolTip": "ITIResturant\\Views\\Shared\\Home\\_Contact.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T22:31:14.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "ITIResturant\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T22:20:34.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\Edit.cshtml",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Edit.cshtml",
+              "RelativeToolTip": "ITIResturant\\Views\\Booking\\Edit.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowDcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T21:20:06.787Z",
               "EditorCaption": ""
             },
             {
@@ -159,6 +146,39 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "798ab458-e19b-48a8-8b35-eb08a4216da2",
+        "Display": 0,
+        "X": -95,
+        "Y": 100,
+        "Width": 1498,
+        "Height": 802,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SharedResource.resx",
+              "DocumentMoniker": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Language\\SharedResource.resx",
+              "RelativeDocumentMoniker": "ITIResturant\\Language\\SharedResource.resx",
+              "ToolTip": "F:\\c plus\\iti new\\\u0645\u0634\u0631\u0648\u0639\\\u062C\u062F\u064A\u062F 333\\Resturant\\ITIResturant\\ITIResturant\\Language\\SharedResource.resx",
+              "RelativeToolTip": "ITIResturant\\Language\\SharedResource.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-09-24T18:03:54.461Z",
+              "EditorCaption": ""
             }
           ]
         }
