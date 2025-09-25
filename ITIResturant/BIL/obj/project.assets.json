@@ -6760,11 +6760,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "projectName": "Restaurant.BLL",
       "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "packagesPath": "C:\\Users\\ahmed khaled\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\obj\\",
+=======
+      "projectUniqueName": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "projectName": "Restaurant.BLL",
+      "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\obj\\",
+>>>>>>> 60a7d6513aad1aecfffae84675e544747719d1f6
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6785,8 +6793,13 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj": {
               "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj"
+=======
+            "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj": {
+              "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj"
+>>>>>>> 60a7d6513aad1aecfffae84675e544747719d1f6
             }
           }
         }
@@ -6866,7 +6879,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

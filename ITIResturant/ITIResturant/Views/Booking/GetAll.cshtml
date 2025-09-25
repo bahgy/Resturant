@@ -42,46 +42,83 @@
 }
 
 
-
 <div class="container mt-4">
-    <h2 class="mb-4">All Bookings</h2>
+    <h2 class="mb-4 text-center fw-bold"> All Bookings</h2>
 
     @if (Model != null && Model.Any())
     {
-        foreach (var booking in Model)
-        {
-            <div class="card mb-3 shadow-sm">
-                <div class="card-header bg-primary text-white">
-                    Booking #@booking.Id
-                </div>
-                <div class="card-body">
-                    <p><strong>Date:</strong> @booking.BookingDate.ToShortDateString()</p>
-                    <p><strong>Start Time:</strong> @booking.StartTime</p>
-                    <p><strong>End Time:</strong> @booking.EndTime</p>
-                    <p><strong>Guests:</strong> @booking.NumberOfGuests</p>
-                    <p><strong>Status:</strong> @booking.Status</p>
-                    <p><strong>Special Requests:</strong> @booking.SpecialRequests</p>
-                    <p><strong>Customer:</strong> @booking.CustomerId</p>
-                    <p><strong>Table:</strong> @booking.TableId</p>
-                </div>
-                <div class="card-footer text-end">
-                    <a asp-action="Edit" asp-route-id="@booking.Id" class="btn btn-sm btn-warning">Edit</a>
+        <div class="row g-4">
+            @foreach (var booking in Model)
+            {
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-lg border-0 rounded-3 h-100">
+                        <!-- Header -->
+                        <div class="card-header text-white fw-bold text-center"
+                             style="background: linear-gradient(135deg,#D4A762,#b3874a); font-size:18px;">
+                            Booking #@booking.Id
+                        </div>
 
-                    <form asp-action="Delete" asp-controller="Booking" method="post" style="display:inline;">
-                        <input type="hidden" name="id" value="@booking.Id" />
-                        <button type="submit" class="btn btn-sm btn-danger"
-                                onclick="return confirm('Are you sure you want to delete this booking?');">
-                            Delete
-                        </button>
-                    </form>
+                        <!-- Body -->
+                        <div class="card-body p-4" style="background-color:#fdfdfd; font-size:15px;">
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-muted"><i class="bi bi-calendar-check me-2 text-primary"></i> Date</span>
+                                <span class="fw-semibold">@booking.BookingDate.ToShortDateString()</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-muted"><i class="bi bi-clock me-2 text-success"></i> Start</span>
+                                <span class="fw-semibold">@booking.StartTime.ToShortTimeString()</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-muted"><i class="bi bi-clock-history me-2 text-danger"></i> End</span>
+                                <span class="fw-semibold">@booking.EndTime.ToShortTimeString()</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-muted"><i class="bi bi-people me-2 text-info"></i> Guests</span>
+                                <span class="fw-semibold">@booking.NumberOfGuests</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-muted"><i class="bi bi-flag me-2 text-warning"></i> Status</span>
+                                <span class="fw-semibold
+                                            @(booking.Status == "Confirmed" ? "text-success" : booking.Status == "Pending" ? "text-warning" : "text-danger")">
+                                    @booking.Status
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-muted"><i class="bi bi-chat-left-dots me-2 text-secondary"></i> Requests</span>
+                                <span class="fw-semibold text-truncate" style="max-width:150px;">@booking.SpecialRequests</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <span class="text-muted"><i class="bi bi-person me-2 text-dark"></i> Customer</span>
+                                <span class="fw-semibold">@booking.CustomerId</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <span class="text-muted"><i class="bi bi-grid-1x2-fill me-2 text-primary"></i> Table</span>
+                                <span class="fw-semibold">@booking.TableId</span>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="card-footer d-flex justify-content-between align-items-center" style="background-color:#fafafa;">
+                            <a asp-action="Edit" asp-route-id="@booking.Id" class="btn btn-sm btn-outline-primary px-3">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </a>
+                            <form asp-action="Delete" asp-controller="Booking" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@booking.Id" />
+                                <button type="submit" class="btn btn-sm btn-outline-danger px-3"
+                                        onclick="return confirm('Are you sure you want to delete this booking?');">
+                                    <i class="bi bi-trash3"></i> Delete
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        }
+            }
+        </div>
     }
     else
     {
-        <div class="alert alert-info">
-            No bookings found.
+        <div class="alert alert-info text-center">
+            <i class="bi bi-info-circle"></i> No bookings found.
         </div>
     }
 </div>

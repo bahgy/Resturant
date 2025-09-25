@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Z+yQNv6sgGs=",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+=======
+  "dgSpecHash": "+H96oJ0bNNU=",
+  "success": true,
+  "projectFilePath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+>>>>>>> 60a7d6513aad1aecfffae84675e544747719d1f6
   "expectedPackageFiles": [
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -140,9 +146,15 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.AspNet.Mvc 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0'. This package may not be fully compatible with your project.",
+<<<<<<< HEAD
       "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+=======
+      "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "warningLevel": 1,
+      "filePath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+>>>>>>> 60a7d6513aad1aecfffae84675e544747719d1f6
       "libraryId": "Microsoft.AspNet.Mvc",
       "targetGraphs": [
         "net9.0"
@@ -152,9 +164,15 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.AspNet.Razor 3.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0'. This package may not be fully compatible with your project.",
+<<<<<<< HEAD
       "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+=======
+      "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "warningLevel": 1,
+      "filePath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+>>>>>>> 60a7d6513aad1aecfffae84675e544747719d1f6
       "libraryId": "Microsoft.AspNet.Razor",
       "targetGraphs": [
         "net9.0"
@@ -164,9 +182,15 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.AspNet.WebPages 3.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0'. This package may not be fully compatible with your project.",
+<<<<<<< HEAD
       "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+=======
+      "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "warningLevel": 1,
+      "filePath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+>>>>>>> 60a7d6513aad1aecfffae84675e544747719d1f6
       "libraryId": "Microsoft.AspNet.WebPages",
       "targetGraphs": [
         "net9.0"
@@ -176,9 +200,15 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0'. This package may not be fully compatible with your project.",
+<<<<<<< HEAD
       "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+=======
+      "projectPath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "warningLevel": 1,
+      "filePath": "F:\\c plus\\iti new\\مشروع\\جديد 333\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+>>>>>>> 60a7d6513aad1aecfffae84675e544747719d1f6
       "libraryId": "Microsoft.Web.Infrastructure",
       "targetGraphs": [
         "net9.0"
