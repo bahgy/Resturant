@@ -1,4 +1,4 @@
-﻿public class EmailSender
+﻿public class EmailSender 
 {
     private readonly IConfiguration _config;
 
@@ -7,27 +7,46 @@
         _config = config;
     }
 
+    /*  public async Task SendEmailAsync(string toEmail, string subject, string message)
+      {
+          var smtpClient = new SmtpClient("smtp.gmail.com")
+          {
+              Port = 587,
+              Credentials = new NetworkCredential(
+                  _config["EmailSettings:Email"],
+                  _config["EmailSettings:Password"]),
+              EnableSsl = true,
+          };
+
+          var mailMessage = new MailMessage
+          {
+              From = new MailAddress(_config["EmailSettings:Email"], "Restaurant App"),
+              Subject = subject,
+              Body = message,
+              IsBodyHtml = true,
+          };
+
+          mailMessage.To.Add(toEmail);
+
+          await smtpClient.SendMailAsync(mailMessage);*/
+
+
+
     public async Task SendEmailAsync(string toEmail, string subject, string message)
     {
-        var smtpClient = new SmtpClient("smtp.gmail.com")
+        var emailSettings = _config.GetSection("EmailSettings");
+        var fromEmail = emailSettings["SenderEmail"];
+        var password = emailSettings["SenderPassword"];
+
+        using var client = new SmtpClient(emailSettings["SmtpServer"], int.Parse(emailSettings["SmtpPort"]))
         {
-            Port = 587,
-            Credentials = new NetworkCredential(
-                _config["EmailSettings:Email"],
-                _config["EmailSettings:Password"]),
-            EnableSsl = true,
+            Credentials = new NetworkCredential(fromEmail, password),
+            EnableSsl = true
         };
 
-        var mailMessage = new MailMessage
-        {
-            From = new MailAddress(_config["EmailSettings:Email"], "Restaurant App"),
-            Subject = subject,
-            Body = message,
-            IsBodyHtml = true,
-        };
+        var mailMessage = new MailMessage(fromEmail, toEmail, subject, message);
+        mailMessage.IsBodyHtml = true;
 
-        mailMessage.To.Add(toEmail);
-
-        await smtpClient.SendMailAsync(mailMessage);
+        await client.SendMailAsync(mailMessage);
     }
 }

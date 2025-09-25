@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5R9YKbwZFGY=",
+  "dgSpecHash": "WH/wpnM5AJk=",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Restaurant.PL.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,11 @@
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\ahmed khaled\\.nuget\\packages\\hangfire\\1.8.21\\hangfire.1.8.21.nupkg.sha512",
+    "C:\\Users\\ahmed khaled\\.nuget\\packages\\hangfire.aspnetcore\\1.8.21\\hangfire.aspnetcore.1.8.21.nupkg.sha512",
+    "C:\\Users\\ahmed khaled\\.nuget\\packages\\hangfire.core\\1.8.21\\hangfire.core.1.8.21.nupkg.sha512",
+    "C:\\Users\\ahmed khaled\\.nuget\\packages\\hangfire.netcore\\1.8.21\\hangfire.netcore.1.8.21.nupkg.sha512",
+    "C:\\Users\\ahmed khaled\\.nuget\\packages\\hangfire.sqlserver\\1.8.21\\hangfire.sqlserver.1.8.21.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\microsoft.aspnet.mvc\\5.3.0\\microsoft.aspnet.mvc.5.3.0.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\microsoft.aspnet.razor\\3.3.0\\microsoft.aspnet.razor.3.3.0.nupkg.sha512",
@@ -96,6 +101,7 @@
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed khaled\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\ahmed khaled\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",

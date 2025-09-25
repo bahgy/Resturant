@@ -8,6 +8,7 @@ using Rsturant.DAL.Repo.Abstraction;
 using Rsturant.DAL.Repo.Impelementation;
 using Hangfire;
 using Hangfire.SqlServer;
+using Castle.Core.Smtp;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddRazorPages();
 
 #region Connection string
-var connectionString = builder.Configuration.GetConnectionString("connection");
+var connectionString = builder.Configuration.GetConnectionString("Hamza");
 builder.Services.AddDbContext<RestaurantDbContext>(options =>
     options.UseSqlServer(connectionString));
 #endregion
@@ -105,7 +106,18 @@ builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IPaymentRepo, PaymentRepo>();
 builder.Services.AddScoped<IPaymentService, PaymentService>();
 
+
+builder.Services.AddScoped<IEmailSender, EmailSender>();
+
+
+
+
 builder.Services.AddAutoMapper(x => x.AddProfile(new DomainProfile()));
+
+
+
+
+builder.Services.AddAutoMapper(typeof(AccountProfile));
 #endregion
 
 //////////////////////////////////////////////////////

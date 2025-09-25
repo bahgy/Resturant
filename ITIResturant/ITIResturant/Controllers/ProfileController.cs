@@ -137,6 +137,29 @@ namespace Restaurant.PL.Controllers
         {
             ViewData["ActiveTab"] = "CurrentBookings";
             return View();
+
+
+
+
+
+
+
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> Update(UpdateProfileVM model)
+            {
+                if (!ModelState.IsValid)
+                    return View("Index", model);
+
+                await _profileService.UpdateProfileAsync(model);
+                TempData["Success"] = "Profile updated successfully!";
+                return RedirectToAction("Index");
+            }
+
+
+
+
+
         }
     }
 }

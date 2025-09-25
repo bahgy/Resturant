@@ -20,6 +20,16 @@ namespace Restaurant.BLL.Mapper
 
             // Customer → RegisterVM
             CreateMap<Customer, RegisterVM>().ReverseMap();
+
+
+
+
+
+            // existing maps
+            CreateMap<Customer, UpdateProfileVM>().ReverseMap();
+
+
+
         }
     }
 }

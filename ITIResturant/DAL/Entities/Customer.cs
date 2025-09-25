@@ -12,5 +12,8 @@ namespace Restaurant.DAL.Entities
         public ICollection<EmailNotification> EmailNotifications { get; set; }
 
         public string? ConfirmationToken { get; set; }  // temporary token
+
+
+        public bool? SendEmailNotification { get; set; } 
     }
 }
