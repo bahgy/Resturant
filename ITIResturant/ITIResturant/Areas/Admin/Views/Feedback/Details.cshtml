@@ -1,0 +1,65 @@
+﻿@using Restaurant.BLL.Model_VM.Feedback
+@model IEnumerable<GetAllFeedbackVM>
+
+@{
+    ViewData["Title"] = "Feedback List";
+    Layout = "_AdminSharedLayout";
+}
+
+<h2 class="mb-4" style="color:#e65100;">All Feedbacks</h2>
+
+<table class="table table-striped table-bordered shadow-sm">
+    <thead style="background-color:#ff9800; color:white;">
+        <tr>
+            <th>Id</th>
+            <th>Comment</th>
+            <th>Rating</th>
+            <th>Submitted Date</th>
+            <th>Customer</th>
+            <th>Order</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @if (Model != null && Model.Any())
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Comment</td>
+                <td>
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        if (i <= item.Rating)
+                        {
+                            <span style="color:#ff9800;">★</span>
+                        }
+                        else
+                        {
+                            <span style="color:#bdbdbd;">☆</span>
+                        }
+                    }
+                </td>
+                <td>@item.SubmittedDate.ToString("yyyy-MM-dd")</td>
+                <td>@item.CustomerName</td>
+                <td>@item.OrderDescription</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" 
+                       class="btn btn-sm fw-bold" style="background-color:#4caf50; color:white;">Details</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" 
+                       class="btn btn-sm fw-bold" style="background-color:#2196f3; color:white;">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" 
+                       class="btn btn-sm fw-bold" style="background-color:#f44336; color:white;">Delete</a>
+                </td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr>
+            <td colspan="7" class="text-center text-muted">No feedbacks available.</td>
+        </tr>
+    }
+    </tbody>
+</table>

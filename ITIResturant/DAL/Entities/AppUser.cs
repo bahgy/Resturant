@@ -22,5 +22,8 @@ namespace Restaurant.DAL.Entities
         public UserTypeEnum UserType { get; set; }
 
         public string? Address { get; set; }
+
+
+        public bool SendEmailNotification { get; set; }
     }
 }

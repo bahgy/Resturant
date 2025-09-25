@@ -13,5 +13,6 @@ namespace Restaurant.BLL.Model_VM.Feedback
         // عرض معلومات إضافية
         public string CustomerName { get; set; }
         public string OrderNumber { get; set; }
+        public object OrderDescription { get; internal set; }
     }
 }
