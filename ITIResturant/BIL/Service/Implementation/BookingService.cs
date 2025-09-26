@@ -31,10 +31,23 @@ namespace Restaurant.BLL.Service.Implementation
                 if (bookingVM.NumberOfGuests > table.Capacity)
                     return (true, $"Number of guests exceeds table capacity ({table.Capacity}).");
 
+                // ✅ التحقق من إن التاريخ والوقت مش في الماضي
+                var bookingDateTime = new DateTime(
+                    bookingVM.BookingDate.Year,
+                    bookingVM.BookingDate.Month,
+                    bookingVM.BookingDate.Day,
+                    bookingVM.StartTime.Hour,
+                    bookingVM.StartTime.Minute,
+                    0
+                );
+
+                if (bookingDateTime < DateTime.Now)
+                    return (true, "You cannot create a booking in the past.");
+
                 // ✅ التحقق من عدم وجود حجز متداخل في نفس اليوم
                 var overlappingBooking = _bookingRepo.GetAll(b =>
                     b.TableId == table.Id &&
-                    b.BookingDate.Date == bookingVM.BookingDate.Date && // 👈 لازم نفس اليوم
+                    b.BookingDate.Date == bookingVM.BookingDate.Date &&
                     (
                         (bookingVM.StartTime >= b.StartTime && bookingVM.StartTime < b.EndTime) ||
                         (bookingVM.EndTime > b.StartTime && bookingVM.EndTime <= b.EndTime) ||
@@ -66,6 +79,7 @@ namespace Restaurant.BLL.Service.Implementation
                 return (true, ex.Message);
             }
         }
+
 
 
         //============================================================
@@ -107,11 +121,24 @@ namespace Restaurant.BLL.Service.Implementation
                 if (editBookingVM.NumberOfGuests > table.Capacity)
                     return (true, $"Number of guests exceeds table capacity ({table.Capacity}).");
 
+                // ✅ التحقق من إن التاريخ والوقت مش في الماضي
+                var bookingDateTime = new DateTime(
+                    editBookingVM.BookingDate.Year,
+                    editBookingVM.BookingDate.Month,
+                    editBookingVM.BookingDate.Day,
+                    editBookingVM.StartTime.Hour,
+                    editBookingVM.StartTime.Minute,
+                    0
+                );
+
+                if (bookingDateTime < DateTime.Now)
+                    return (true, "You cannot set a booking in the past.");
+
                 // ✅ التحقق من عدم وجود حجز متداخل في نفس اليوم باستثناء الحجز الحالي
                 var overlappingBooking = _bookingRepo.GetAll(b =>
                     b.TableId == table.Id &&
-                    b.Id != bookingId && // استثناء الحجز الحالي
-                    b.BookingDate.Date == editBookingVM.BookingDate.Date && // 👈 لازم نفس اليوم
+                    b.Id != bookingId &&
+                    b.BookingDate.Date == editBookingVM.BookingDate.Date &&
                     (
                         (editBookingVM.StartTime >= b.StartTime && editBookingVM.StartTime < b.EndTime) ||
                         (editBookingVM.EndTime > b.StartTime && editBookingVM.EndTime <= b.EndTime) ||

@@ -18,7 +18,8 @@ namespace Restaurant.BLL.Model_VM.Booking
         public string Status { get; set; }
         public string SpecialRequests { get; set; }
 
-        // ✅ Hide from the form, auto set by controller
+
+        //  Hide from the form, auto set by controller
         [HiddenInput(DisplayValue = false)]
         public int CustomerId { get; set; }
 

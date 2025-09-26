@@ -1,5 +1,6 @@
 
 
+using Microsoft.AspNetCore.Localization;
 using Restaurant.BLL.ModelVM.HomeIndexVm;
 
 namespace ITIResturant.Controllers
@@ -28,6 +29,19 @@ namespace ITIResturant.Controllers
 
             return View(vm);
         }
+        //======
+        [HttpGet]
+        public IActionResult SetLanguage(string culture, string returnUrl)
+        {
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+            );
+
+            return LocalRedirect(returnUrl);
+        }
+        //========
 
         public async Task<IActionResult> Menu()
         {

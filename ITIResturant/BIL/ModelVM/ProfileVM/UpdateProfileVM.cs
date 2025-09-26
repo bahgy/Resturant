@@ -24,5 +24,12 @@ namespace Restaurant.BLL.ModelVMProfileVM
         public string? Address { get; set; }
 
 
+
+
+
+        
+        public bool SendEmailNotification { get; set; }
+
+
     }
 }

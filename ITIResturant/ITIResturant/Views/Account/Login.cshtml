@@ -1,11 +1,11 @@
 ﻿@model Restaurant.BLL.ModelVMAccountVM.LoginVM
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = @SharedLocalizer["Login"];
 }
 
 <div class="login-wrapper d-flex justify-content-center align-items-center">
     <div class="login-card shadow-lg animate__animated animate__fadeIn">
-        <h2 class="text-center mb-4 fw-bold text-primary">Welcome Back</h2>
+        <h2 class="text-center mb-4 fw-bold text-primary">@SharedLocalizer["Welcome Back"]</h2>
 
         <form asp-action="Login" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -13,7 +13,7 @@
             <div class="mb-3">
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                    <input asp-for="Email" placeholder="Email" class="form-control" />
+                    <input asp-for="Email" placeholder="@SharedLocalizer["Email"]" class="form-control" />
                 </div>
                 <span asp-validation-for="Email" class="text-danger small"></span>
             </div>
@@ -21,45 +21,45 @@
             <div class="mb-3">
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                    <input asp-for="Password" placeholder="Password" type="password" class="form-control" />
+                    <input asp-for="Password" placeholder="@SharedLocalizer["Password"]" type="password" class="form-control" />
                 </div>
                 <span asp-validation-for="Password" class="text-danger small"></span>
             </div>
 
             <div class="form-check mb-3">
                 <input asp-for="RememberMe" class="form-check-input" />
-                <label asp-for="RememberMe" class="form-check-label">Remember me</label>
+                <label asp-for="RememberMe" class="form-check-label">@SharedLocalizer["Remember me"]</label>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill">Login</button>
+            <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill">@SharedLocalizer["Login"]</button>
         </form>
 
         <hr />
 
         <div class="text-center mt-3">
             <a asp-controller="Account" asp-action="Register" class="btn btn-outline-success w-100 mb-2 rounded-pill">
-                <i class="fas fa-user-plus"></i> Register
+                <i class="fas fa-user-plus"></i> @SharedLocalizer["Register"]
             </a>
             <a asp-controller="Account" asp-action="ForgotPassword" class="btn btn-outline-warning w-100 mb-2 rounded-pill">
-                <i class="fas fa-key"></i> Forgot Password?
+                <i class="fas fa-key"></i> @SharedLocalizer["Forgot Password?"]
             </a>
         </div>
 
         <hr />
 
         <div class="text-center">
-            <p class="fw-semibold text-muted">Or login with</p>
+            <p class="fw-semibold text-muted">@SharedLocalizer["Or login with"]</p>
             <form asp-action="ExternalLogin" method="post" class="mb-2">
                 <input type="hidden" name="provider" value="Google" />
                 <button type="submit" class="btn btn-danger w-100 py-2 rounded-pill">
-                    <i class="fab fa-google"></i> Sign in with Google
+                    <i class="fab fa-google"></i> @SharedLocalizer["Sign in with Google"]
                 </button>
             </form>
 
             <form asp-action="ExternalLogin" method="post">
                 <input type="hidden" name="provider" value="Facebook" />
                 <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill">
-                    <i class="fab fa-facebook-f"></i> Sign in with Facebook
+                    <i class="fab fa-facebook-f"></i> @SharedLocalizer["Sign in with Facebook"]
                 </button>
             </form>
         </div>

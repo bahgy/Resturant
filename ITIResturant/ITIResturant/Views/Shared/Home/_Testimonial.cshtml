@@ -2,7 +2,11 @@
 @model HomeIndexVm
 
 
+<<<<<<< HEAD
 <h2 class="mt-4 text-center">What Our Customers Say</h2>
+=======
+<<h2 class="mt-4 text-center">@SharedLocalizer["What Our Customers Say"]</h2>
+>>>>>>> main
 
 @if (Model.Reviews.Any())
 {
@@ -43,5 +47,5 @@
 }
 else
 {
-    <p class="text-center text-muted mt-3">No reviews yet. Be the first to leave feedback!</p>
+    <p class="text-center text-muted mt-3">@SharedLocalizer["No reviews yet. Be the first to leave feedback!"]</p>
 }
