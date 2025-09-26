@@ -2,13 +2,13 @@
 @model EditBookingVM
 
 @{
-    ViewData["Title"] = "Edit Booking";
+    ViewData["Title"] = @SharedLocalizer["Edit Booking"];
 }
 
 <div class="d-flex justify-content-center mt-4">
     <div class="card shadow-lg rounded-3" style="width: 700px; border:none;">
         <div class="card-header text-center" style="background-color:#D4A762; color:white; font-size:22px; font-weight:bold;">
-            Edit Booking
+            @SharedLocalizer["Edit Booking"]
         </div>
         <div class="card-body p-4" style="background-color:#f9f9f9;">
 
@@ -25,46 +25,44 @@
 
                 <!-- Booking Date -->
                 <div class="col-md-6">
-                    <label asp-for="BookingDate" class="form-label fw-semibold">Reservation Date</label>
+                    <label asp-for="BookingDate" class="form-label fw-semibold">@SharedLocalizer["Reservation Date"]</label>
                     <input type="date" asp-for="BookingDate" class="form-control border-2" />
                     <span class="text-danger" asp-validation-for="BookingDate"></span>
                 </div>
 
                 <!-- Start Time -->
                 <div class="col-md-6">
-                    <label asp-for="StartTime" class="form-label fw-semibold">Reservation Time</label>
+                    <label asp-for="StartTime" class="form-label fw-semibold">@SharedLocalizer["Reservation Time"]</label>
                     <input type="time" asp-for="StartTime" class="form-control border-2" />
                     <span class="text-danger" asp-validation-for="StartTime"></span>
                 </div>
 
-              
-
                 <!-- Number Of Guests -->
                 <div class="col-md-6">
-                    <label asp-for="NumberOfGuests" class="form-label fw-semibold">How many persons?</label>
+                    <label asp-for="NumberOfGuests" class="form-label fw-semibold">@SharedLocalizer["How many persons?"]</label>
                     <input type="number" asp-for="NumberOfGuests" class="form-control border-2" />
                     <span class="text-danger" asp-validation-for="NumberOfGuests"></span>
                 </div>
 
                 <!-- Status -->
                 <div class="col-md-6">
-                    <label asp-for="Status" class="form-label fw-semibold">Status</label>
+                    <label asp-for="Status" class="form-label fw-semibold">@SharedLocalizer["Status"]</label>
                     <input type="text" asp-for="Status" class="form-control border-2" />
                     <span class="text-danger" asp-validation-for="Status"></span>
                 </div>
 
                 <!-- Table Number -->
                 <div class="col-md-6">
-                    <label class="form-label fw-semibold">Table Number</label>
+                    <label class="form-label fw-semibold">@SharedLocalizer["Table Number"]</label>
                     <select asp-for="TableId" asp-items="ViewBag.Tables" class="form-control border-2">
-                        <option value="">-- Select Table --</option>
+                        <option value="">@SharedLocalizer["-- Select Table --"]</option>
                     </select>
                     <span class="text-danger" asp-validation-for="TableId"></span>
                 </div>
 
                 <!-- Special Requests -->
                 <div class="col-12">
-                    <label asp-for="SpecialRequests" class="form-label fw-semibold">Special Requests / Notes</label>
+                    <label asp-for="SpecialRequests" class="form-label fw-semibold">@SharedLocalizer["Special Requests / Notes"]</label>
                     <textarea asp-for="SpecialRequests" class="form-control border-2"></textarea>
                     <span class="text-danger" asp-validation-for="SpecialRequests"></span>
                 </div>
@@ -73,11 +71,11 @@
                 <div class="col-12 text-center mt-3">
                     <button type="submit" class="btn px-5 py-2"
                             style="background-color:#D4A762; color:white; font-weight:bold; border-radius:8px;">
-                        Update
+                        @SharedLocalizer["Update"]
                     </button>
                     <a asp-action="GetAll" class="btn px-4 py-2 ms-2"
                        style="background-color:#6c757d; color:white; font-weight:bold; border-radius:8px;">
-                        Cancel
+                        @SharedLocalizer["Cancel"]
                     </a>
                 </div>
             </form>

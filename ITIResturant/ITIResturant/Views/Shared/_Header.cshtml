@@ -14,23 +14,23 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <!-- Nav links -->
                     <div class="navbar-nav mx-auto">
-                        <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a>
-                        <a asp-controller="Home" asp-action="About" class="nav-item nav-link">About</a>
-                        <a asp-controller="Home" asp-action="Service" class="nav-item nav-link">Services</a>
-                        <a asp-controller="Home" asp-action="Events" class="nav-item nav-link">Events</a>
-                        <a asp-controller="Home" asp-action="Menu" class="nav-item nav-link">Menu</a>
-                        <a asp-controller="Review" asp-action="Index" class="nav-item nav-link">Feedback</a>
+                        <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active"> @SharedLocalizer["Home"]</a>
+                        <a asp-controller="Home" asp-action="About" class="nav-item nav-link">@SharedLocalizer["About"]</a>
+                        <a asp-controller="Home" asp-action="Service" class="nav-item nav-link">@SharedLocalizer["Services"]</a>
+                        <a asp-controller="Home" asp-action="Events" class="nav-item nav-link">@SharedLocalizer["Events"]</a>
+                        <a asp-controller="Home" asp-action="Menu" class="nav-item nav-link">@SharedLocalizer["Menu"]</a>
+                        <a asp-controller="Review" asp-action="Index" class="nav-item nav-link"> @SharedLocalizer["Feedback"]</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">@SharedLocalizer["Pages"]</a>
                             <div class="dropdown-menu bg-light">
 
-                                <a asp-controller="Booking" asp-action="GetAll" class="dropdown-item">Booking</a>
+                                <a asp-controller="Booking" asp-action="GetAll" class="dropdown-item"> @SharedLocalizer["BookNow"]</a>
                                 @* <a asp-controller="Home" asp-action="Testimonial" class="dropdown-item">Testimonial</a> *@
-                                <a asp-controller="Home" asp-action="Team" class="dropdown-item">Our Team</a>
+                                <a asp-controller="Home" asp-action="Team" class="dropdown-item">@SharedLocalizer["team"]</a>
 
                             </div>
                         </div>
-                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contact</a>
+                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">@SharedLocalizer["Contact"]</a>
                     </div>
 
                     <!-- Buttons (collapse into mobile menu) -->
@@ -64,15 +64,15 @@
                         <div class="auth-buttons">
                             @if (!User.Identity.IsAuthenticated)
                             {
-                                <a asp-controller="Account" asp-action="Login" class="btn btn-outline-primary">Login</a>
+                                <a asp-controller="Account" asp-action="Login" class="btn btn-outline-primary">@SharedLocalizer["Login"]</a>
                             }
                             else
                             {
                                 <a asp-controller="Profile" asp-action="Index" class="btn btn-outline-secondary">
-                                    <i class="fas fa-user"></i> Profile
+                                    <i class="fas fa-user"></i> @SharedLocalizer["Profile"]
                                 </a>
                                 <form asp-controller="Account" asp-action="Logout" method="post">
-                                    <button type="submit" class="btn btn-logout">Logout</button>
+                                    <button type="submit" class="btn btn-logout">@SharedLocalizer["Logout"]</button>
                                 </form>
                             }
                         </div>
@@ -80,10 +80,10 @@
                         <!-- Extra buttons -->
                         <div class="extra-buttons">
                             <a asp-controller="Cart" asp-action="Index" class="btn btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i> Cart
+                                <i class="fas fa-shopping-cart"></i>  @SharedLocalizer["Cart"]
                                 <span class="badge bg-primary ms-1" id="cartCount">0</span>
                             </a>
-                            <a asp-controller="Booking" asp-action="Create" class="btn btn-primary">Book Now</a>
+                            <a asp-controller="Booking" asp-action="Create" class="btn btn-primary">@SharedLocalizer["BookNow"]</a>
                         </div>
                     </div>
                 </div>

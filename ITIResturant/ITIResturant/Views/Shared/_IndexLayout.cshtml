@@ -42,6 +42,35 @@
     @RenderSection("Styles", required: false)
 </head>
 <body>
+
+
+
+
+<p class="d-flex justify-content-center align-items-center">
+    <a class="fw-bold px-1 text-decoration-none" 
+       href="@Url.Action("SetLanguage", "Home", new {
+                    culture = "en-US",
+                    returnUrl = Context.Request.Path + Context.Request.QueryString
+                })">
+        English
+    </a>
+    <span class="fw-bold mx-1">|</span>
+    <a class="fw-bold px-1 text-decoration-none" 
+       href="@Url.Action("SetLanguage", "Home", new {
+                    culture = "ar-EG",
+                    returnUrl = Context.Request.Path + Context.Request.QueryString
+                })">
+        العربية
+    </a>
+</p>
+
+
+
+
+
+
+
+
     <!-- Spinner -->
     <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50
         d-flex align-items-center justify-content-center">

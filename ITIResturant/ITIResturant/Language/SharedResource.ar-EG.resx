@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>من نحن</value>
+  </data>
+  <data name="BookNow" xml:space="preserve">
+    <value>احجز الآن</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>السلة</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>الفعاليات</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>الآراء</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>تسجيل الخروج</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>القائمة</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>الصفحات</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+  <data name="The Diner'sClub" xml:space="preserve">
+    <value>ذا داينرز كلوب</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>الخدمات</value>
+  </data>
+  <data name="team" xml:space="preserve">
+    <value>فريقنا</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Welcome to The Diner’s Club" xml:space="preserve">
+    <value>مرحبًا بكم في ذا داينرز كلوب</value>
+  </data>
+  <data name="Book The Diner’s Club For Your Dream Event" xml:space="preserve">
+    <value>احجز ذا داينرز كلوب لحدث أحلامك</value>
+  </data>
+  <data name="Know More" xml:space="preserve">
+    <value>اعرف المزيد</value>
+  </data>
+  <data name="Trusted By 200+ satisfied clients" xml:space="preserve">
+    <value>موثوق من أكثر من 200 عميل راضٍ</value>
+  </data>
+  <data name="Fresh and Fast Food Delivery" xml:space="preserve">
+    <value>توصيل طعام طازج وسريع</value>
+  </data>
+  <data name="Easy Customization Options" xml:space="preserve">
+    <value>خيارات تخصيص سهلة</value>
+  </data>
+  <data name="24/7 Customer Support" xml:space="preserve">
+    <value>دعم عملاء 24/7</value>
+  </data>
+  <data name="Delicious Deals for Delicious Meals" xml:space="preserve">
+    <value>عروض لذيذة لوجبات لذيذة</value>
+  </data>
+  <data name="What We Offer" xml:space="preserve">
+    <value>ما نقدمه</value>
+  </data>
+  <data name="Wedding Services" xml:space="preserve">
+    <value>خدمات حفلات الزفاف</value>
+  </data>
+  <data name="Corporate Catering" xml:space="preserve">
+    <value>خدمات الطعام للشركات</value>
+  </data>
+  <data name="Cocktail Reception" xml:space="preserve">
+    <value>حفلات الكوكتيل</value>
+  </data>
+  <data name="Bento Catering" xml:space="preserve">
+    <value>تقديم وجبات البنتو</value>
+  </data>
+  <data name="Pub Party" xml:space="preserve">
+    <value>حفلات البارات</value>
+  </data>
+  <data name="Home Delivery" xml:space="preserve">
+    <value>توصيل للمنازل</value>
+  </data>
+  <data name="Sit-down Catering" xml:space="preserve">
+    <value>تقديم الطعام على الموائد</value>
+  </data>
+  <data name="Buffet Catering" xml:space="preserve">
+    <value>تقديم بوفيه</value>
+  </data>
+  <data name="Latest Events" xml:space="preserve">
+    <value>اخر الاحداث</value>
+  </data>
+  <data name="Our Social &amp; Professional Events Gallery" xml:space="preserve">
+    <value>معرض فعالياتنا الاجتماعية والمهنية</value>
+  </data>
+  <data name="All Events" xml:space="preserve">
+    <value>كل الفعاليات</value>
+  </data>
+  <data name="Wedding" xml:space="preserve">
+    <value>حفلات الزفاف</value>
+  </data>
+  <data name="Corporate" xml:space="preserve">
+    <value>فعاليات الشركات</value>
+  </data>
+  <data name="Cocktail" xml:space="preserve">
+    <value>حفلات الكوكتيل</value>
+  </data>
+  <data name="Buffet" xml:space="preserve">
+    <value>البوفيه</value>
+  </data>
+  <data name="We have experienced chef Team" xml:space="preserve">
+    <value>لدينا فريق من الطهاة ذوي الخبرة</value>
+  </data>
+  <data name="Decoration Chef" xml:space="preserve">
+    <value>شيف التزيين</value>
+  </data>
+  <data name="Executive Chef" xml:space="preserve">
+    <value>الشيف التنفيذي</value>
+  </data>
+  <data name="Kitchen Porter" xml:space="preserve">
+    <value>مساعد المطبخ</value>
+  </data>
+  <data name="Head Chef" xml:space="preserve">
+    <value>الشيف الرئيسي</value>
+  </data>
+  <data name="What Our Customers Say" xml:space="preserve">
+    <value>ماذا يقول عملاؤنا</value>
+  </data>
+  <data name="No reviews yet. Be the first to leave feedback!" xml:space="preserve">
+    <value>لا توجد مراجعات بعد. كن أول من يترك رأيًا!</value>
+  </data>
+  <data name="Restaurant Reservation Form" xml:space="preserve">
+    <value>نموذج حجز المطعم</value>
+  </data>
+  <data name="Reservation Date" xml:space="preserve">
+    <value>تاريخ الحجز</value>
+  </data>
+  <data name="Reservation Time" xml:space="preserve">
+    <value>وقت الحجز</value>
+  </data>
+  <data name="How many persons?" xml:space="preserve">
+    <value>عدد الأشخاص</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="Table Number" xml:space="preserve">
+    <value>رقم الطاولة</value>
+  </data>
+  <data name="-- Select Table --" xml:space="preserve">
+    <value>-- اختر طاولة --</value>
+  </data>
+  <data name="Special Requests / Notes" xml:space="preserve">
+    <value>ملاحظات / طلبات خاصة</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="Booking" xml:space="preserve">
+    <value>الحجز</value>
+  </data>
+  <data name="All Bookings" xml:space="preserve">
+    <value>كل الحجوزات</value>
+  </data>
+  <data name="Create Booking" xml:space="preserve">
+    <value>إنشاء حجز</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="Edit Booking" xml:space="preserve">
+    <value>تعديل الحجز</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="No bookings found" xml:space="preserve">
+    <value>ليس هناك حجوزات </value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="My Profile" xml:space="preserve">
+    <value>ملفي الشخصي</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>مرحباً</value>
+  </data>
+  <data name="Personal Information" xml:space="preserve">
+    <value>البيانات الشخصية</value>
+  </data>
+  <data name="Order History" xml:space="preserve">
+    <value>سجل الطلبات</value>
+  </data>
+  <data name="Reset Password" xml:space="preserve">
+    <value>إعادة تعيين كلمة المرور</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>حفظ التغييرات</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+  <data name="Get in touch" xml:space="preserve">
+    <value>تواصل معنا</value>
+  </data>
+  <data name="Contact Us For Any Queries!" xml:space="preserve">
+    <value>اتصل بنا لأي استفسارات!</value>
+  </data>
+  <data name="Download Now" xml:space="preserve">
+    <value>حمّل الآن</value>
+  </data>
+  <data name="Your Name" xml:space="preserve">
+    <value>اسمك</value>
+  </data>
+  <data name="Enter Your Email" xml:space="preserve">
+    <value>أدخل بريدك الإلكتروني</value>
+  </data>
+  <data name="Your Message" xml:space="preserve">
+    <value>رسالتك</value>
+  </data>
+  <data name="Submit Now" xml:space="preserve">
+    <value>إرسال الآن</value>
+  </data>
+  <data name="Mail Us" xml:space="preserve">
+    <value>راسلنا</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+  <data name="Our Full Menu" xml:space="preserve">
+    <value>قائمة الطعام الكاملة</value>
+  </data>
+  <data name="Create Account" xml:space="preserve">
+    <value>إنشاء حساب</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="Already have an account?" xml:space="preserve">
+    <value> هل لديك حساب بالفعل؟</value>
+  </data>
+  <data name="Confirm Password" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="Address (Optional)" xml:space="preserve">
+    <value>العنوان (اختياري)</value>
+  </data>
+  <data name="Welcome Back" xml:space="preserve">
+    <value>مرحباً بعودتك</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>تذكرني</value>
+  </data>
+  <data name="Forgot Password?" xml:space="preserve">
+    <value>نسيت كلمة المرور؟</value>
+  </data>
+  <data name="Or login with" xml:space="preserve">
+    <value>أو سجل الدخول باستخدام</value>
+  </data>
+  <data name="Sign in with Google" xml:space="preserve">
+    <value>تسجيل الدخول باستخدام جوجل</value>
+  </data>
+  <data name="Sign in with Facebook" xml:space="preserve">
+    <value>تسجيل الدخول باستخدام فيسبوك</value>
+  </data>
+  <data name="Leave Your Feedback" xml:space="preserve">
+    <value>اترك تقييمك</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>التقييم</value>
+  </data>
+  <data name="Your Comment" xml:space="preserve">
+    <value>تعليقك</value>
+  </data>
+  <data name="Submit Review" xml:space="preserve">
+    <value>إرسال التقييم</value>
+  </data>
+</root>
