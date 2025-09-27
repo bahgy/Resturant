@@ -19,7 +19,6 @@ namespace Restaurant.BLL.Service.Implementation
         {
             try
             {
-                // التحقق من اختيار الطاولة
                 if (!bookingVM.TableId.HasValue)
                     return (true, "Please select a table.");
 
@@ -27,11 +26,9 @@ namespace Restaurant.BLL.Service.Implementation
                 if (table == null || !table.IsActive)
                     return (true, "Selected table does not exist or is inactive.");
 
-                // التحقق من عدد الضيوف
                 if (bookingVM.NumberOfGuests > table.Capacity)
                     return (true, $"Number of guests exceeds table capacity ({table.Capacity}).");
 
-                // ✅ التحقق من إن التاريخ والوقت مش في الماضي
                 var bookingDateTime = new DateTime(
                     bookingVM.BookingDate.Year,
                     bookingVM.BookingDate.Month,
@@ -44,7 +41,6 @@ namespace Restaurant.BLL.Service.Implementation
                 if (bookingDateTime < DateTime.Now)
                     return (true, "You cannot create a booking in the past.");
 
-                // ✅ التحقق من عدم وجود حجز متداخل في نفس اليوم
                 var overlappingBooking = _bookingRepo.GetAll(b =>
                     b.TableId == table.Id &&
                     b.BookingDate.Date == bookingVM.BookingDate.Date &&
@@ -58,7 +54,6 @@ namespace Restaurant.BLL.Service.Implementation
                 if (overlappingBooking)
                     return (true, "This table is already booked for the selected date and time.");
 
-                // إنشاء الحجز
                 var newBooking = new Booking(
                     bookingVM.BookingDate,
                     bookingVM.StartTime,
@@ -109,7 +104,6 @@ namespace Restaurant.BLL.Service.Implementation
                 if (oldBook == null)
                     return (true, "Booking not found");
 
-                // التحقق من اختيار الطاولة
                 if (!editBookingVM.TableId.HasValue)
                     return (true, "Please select a table.");
 
@@ -117,11 +111,9 @@ namespace Restaurant.BLL.Service.Implementation
                 if (table == null || !table.IsActive)
                     return (true, "Selected table does not exist or is inactive.");
 
-                // التحقق من عدد الضيوف
                 if (editBookingVM.NumberOfGuests > table.Capacity)
                     return (true, $"Number of guests exceeds table capacity ({table.Capacity}).");
 
-                // ✅ التحقق من إن التاريخ والوقت مش في الماضي
                 var bookingDateTime = new DateTime(
                     editBookingVM.BookingDate.Year,
                     editBookingVM.BookingDate.Month,
@@ -134,7 +126,6 @@ namespace Restaurant.BLL.Service.Implementation
                 if (bookingDateTime < DateTime.Now)
                     return (true, "You cannot set a booking in the past.");
 
-                // ✅ التحقق من عدم وجود حجز متداخل في نفس اليوم باستثناء الحجز الحالي
                 var overlappingBooking = _bookingRepo.GetAll(b =>
                     b.TableId == table.Id &&
                     b.Id != bookingId &&
@@ -149,7 +140,6 @@ namespace Restaurant.BLL.Service.Implementation
                 if (overlappingBooking)
                     return (true, "This table is already booked for the selected date and time.");
 
-                // إنشاء الحجز الجديد للتعديل
                 var newBook = new Booking(
                     editBookingVM.BookingDate,
                     editBookingVM.StartTime,

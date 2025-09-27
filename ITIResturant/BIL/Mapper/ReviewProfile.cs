@@ -1,9 +1,4 @@
-﻿using Restaurant.BLL.ModelVM.Review;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿global using Restaurant.BLL.ModelVM.Review;
 
 namespace Restaurant.BLL.Mapper
 {

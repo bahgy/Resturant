@@ -11,7 +11,6 @@ namespace Restaurant.BLL.Service.Implementation
             _tableRepo = tableRepo;
         }
 
-        // إنشاء طاولة
         public (bool, string) Create(CreateTableVM tableVM)
         {
             try
@@ -34,7 +33,6 @@ namespace Restaurant.BLL.Service.Implementation
             }
         }
 
-        // تعديل الطاولة
         public (bool, string) Edit(int tableId, EditTableVM tableVM)
         {
             try
@@ -57,25 +55,21 @@ namespace Restaurant.BLL.Service.Implementation
             }
         }
 
-        // حذف الطاولة
         public bool Delete(int tableId)
         {
             return _tableRepo.Delete(tableId);
         }
 
-        // جلب كل الطاولات
         public List<Table> GetAll()
         {
             return _tableRepo.GetAll();
         }
 
-        // جلب طاولة بالـ Id
         public Table GetById(int tableId)
         {
             return _tableRepo.GetById(tableId);
         }
 
-        // جلب كل الطاولات النشطة فقط
         public List<Table> GetAllActiveTables()
         {
             return _tableRepo.GetAll().Where(t => t.IsActive).ToList();

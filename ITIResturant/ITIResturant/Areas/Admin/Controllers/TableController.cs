@@ -11,7 +11,6 @@
             _tableService = tableService;
         }
 
-        // عرض كل الطاولات
         [HttpGet]
         public IActionResult Index()
         {
@@ -25,7 +24,6 @@
             }).ToList());
         }
 
-        // إنشاء طاولة
         [HttpGet]
         public IActionResult Create() => View();
 
@@ -46,7 +44,6 @@
             return RedirectToAction(nameof(Index));
         }
 
-        // تعديل طاولة
         [HttpGet]
         public IActionResult Edit(int id)
         {
@@ -78,7 +75,6 @@
             return RedirectToAction(nameof(Index));
         }
 
-        // حذف طاولة
         [HttpGet]
         public IActionResult Delete(int id)
         {
