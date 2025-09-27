@@ -4,3 +4,121 @@
     ViewData["Title"] = "Manage";
 }
 
+
+<div class="container my-4">
+    <h2 class="mb-4">📊 Admin Dashboard (@DateTime.Now.ToString("MMMM yyyy"))</h2>
+
+    <!-- Quick Filters -->
+    <div class="mb-3">
+        <a asp-action="Index" asp-route-period="today" class="btn btn-sm btn-outline-primary">Today</a>
+        <a asp-action="Index" asp-route-period="week" class="btn btn-sm btn-outline-primary">This Week</a>
+        <a asp-action="Index" asp-route-period="month" class="btn btn-sm btn-outline-primary">This Month</a>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row g-3">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Users</h6>
+                    <h3>@Model.Users</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Products</h6>
+                    <h3>@Model.TotalProducts</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Orders</h6>
+                    <h3>@Model.TotalOrders</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Income</h6>
+                    <h3>@Model.TotalIncome.ToString("C")</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orders Breakdown -->
+    <div class="row g-3 mt-3">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Pending Orders</h6>
+                    <h3>@Model.PendingOrders</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Completed Orders</h6>
+                    <h3>@Model.CompletedOrders</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Avg Order Value</h6>
+                    <h3>@Model.AverageOrderVal.ToString("C")</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Products -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body">
+                    <h5 class="card-title">Top Ordered Products</h5>
+                    <canvas id="topProductsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const topProducts = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.MostOrderedProducts));
+
+        const ctx = document.getElementById('topProductsChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: topProducts.map(p => p.ProductName),
+                datasets: [{
+                    label: 'Quantity Sold',
+                    data: topProducts.map(p => p.Quantity),
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+            }
+        });
+    </script>
+}
