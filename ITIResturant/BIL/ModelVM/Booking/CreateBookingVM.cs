@@ -15,7 +15,7 @@ namespace Restaurant.BLL.Model_VM.Booking
         public DateTime EndTime { get; set; }
 
         public int NumberOfGuests { get; set; }
-        public string Status { get; set; }
+        public string Status { get; set; } = "Pending";
         public string SpecialRequests { get; set; }
 
 

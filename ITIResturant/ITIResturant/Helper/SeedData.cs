@@ -8,7 +8,7 @@
     var userManager = serviceProvider.GetRequiredService<UserManager<AppUser>>();
 
     // Roles
-    string[] roles = { "Admin", "Customer" };
+    string[] roles = { "Admin", "Customer", "Delivery" };
     foreach (var role in roles)
     {
         if (!await roleManager.RoleExistsAsync(role))

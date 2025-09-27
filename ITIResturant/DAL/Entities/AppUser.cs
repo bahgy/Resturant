@@ -1,5 +1,7 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Restaurant.DAL.Entities
 {
     public abstract class AppUser : IdentityUser<int>
@@ -25,5 +27,9 @@ namespace Restaurant.DAL.Entities
 
 
         public bool SendEmailNotification { get; set; }
+
+        public virtual ICollection<Message> SentMessages { get; set; } = new List<Message>();
+
+        public virtual ICollection<Message> ReciveMessages { get; set; } = new List<Message>();
     }
 }

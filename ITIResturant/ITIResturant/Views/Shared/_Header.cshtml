@@ -27,7 +27,19 @@
                                 <a asp-controller="Booking" asp-action="GetAll" class="dropdown-item"> @SharedLocalizer["BookNow"]</a>
                                 @* <a asp-controller="Home" asp-action="Testimonial" class="dropdown-item">Testimonial</a> *@
                                 <a asp-controller="Home" asp-action="Team" class="dropdown-item">@SharedLocalizer["team"]</a>
-
+                                @if (User.IsInRole("Customer"))
+                                {
+                                    <a asp-controller="CustomerChat" asp-action="Index" class="dropdown-item">
+                                        Chat with Delivery
+                                    </a>
+                                }
+                                else if (User.IsInRole("Delivery"))
+                                {
+                                    <a asp-controller="DeliveryChat" asp-action="Index" class="dropdown-item">
+                                        Chat with Customers
+                                    </a>
+                                }
+                                <a asp-controller="CustomerChat" asp-action="Chat" >Chat with delivery</a>
                             </div>
                         </div>
                         <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">@SharedLocalizer["Contact"]</a>

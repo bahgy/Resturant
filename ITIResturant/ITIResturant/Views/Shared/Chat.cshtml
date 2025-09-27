@@ -1,0 +1,91 @@
+﻿@model Restaurant.BLL.ModelVM.ChatVM.ChatVM
+
+@{
+    ViewData["Title"] = "Chat with " + Model.RecieverUserName;
+}
+
+<h2>Chat with @Model.RecieverUserName</h2>
+
+<div id="chat-box" class="chat-box border rounded p-3 mb-3" style="height:400px; overflow-y:scroll;">
+    @if (Model == null || Model.Messages == null || !Model.Messages.Any())
+    {
+        <p class="text-muted">No messages yet. Start the conversation!</p>
+    }
+    else
+    {
+        @foreach (var msg in Model.Messages)
+        {
+            <div class="mb-2 @(msg.IsCurrentUserSentMessage ? "text-end" : "text-start")">
+                <div class="p-2 rounded @(msg.IsCurrentUserSentMessage ? "bg-primary text-white" : "bg-light")"
+                     style="display:inline-block; max-width:70%;">
+                    <p class="mb-1">@msg.Text</p>
+                    <small class="text-muted">@msg.Date @msg.time</small>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+<div class="d-flex">
+    <input type="hidden" id="receiverId" value="@Model.RecieverId" />
+    <input type="hidden" id="orderId" value="@Model.OrderId" /> <!-- link message to order -->
+    <input type="text" id="messageInput" class="form-control me-2" placeholder="Type a message..." required />
+    <button id="sendButton" class="btn btn-success">Send</button>
+</div>
+
+@section Scripts {
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/chatHub")
+            .build();
+
+        function scrollChat() {
+            const chatBox = document.getElementById("chat-box");
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        connection.on("ReceiveMessage", function (message, date, time, senderId) {
+            const currentUserId = "@Model.CurrentUserId";
+            const isCurrentUser = senderId == currentUserId;
+
+            const msgDiv = document.createElement("div");
+            msgDiv.className = "mb-2 " + (isCurrentUser ? "text-end" : "text-start");
+
+            const innerDiv = document.createElement("div");
+            innerDiv.className = "p-2 rounded " + (isCurrentUser ? "bg-primary text-white" : "bg-light");
+            innerDiv.style.display = "inline-block";
+            innerDiv.style.maxWidth = "70%";
+
+            innerDiv.innerHTML = `<p class="mb-1">${message}</p>
+                                  <small class="text-muted">${date} ${time}</small>`;
+
+            msgDiv.appendChild(innerDiv);
+            document.getElementById("chat-box").appendChild(msgDiv);
+
+            scrollChat();
+        });
+
+        let connectionStarted = false;
+        connection.start().then(() => {
+            console.log("Connected to ChatHub");
+            connectionStarted = true;
+            scrollChat();
+        }).catch(err => console.error(err.toString()));
+
+        document.getElementById("sendButton").addEventListener("click", function (e) {
+            e.preventDefault();
+            if (!connectionStarted) return alert("Not connected yet!");
+
+            const receiverId = document.getElementById("receiverId").value;
+            const orderId = document.getElementById("orderId").value;
+            const message = document.getElementById("messageInput").value.trim();
+
+            if (message) {
+                connection.invoke("SendMessage", parseInt(receiverId), message, parseInt(orderId))
+                    .catch(err => console.error(err.toString()));
+                document.getElementById("messageInput").value = "";
+            }
+        });
+    </script>
+}

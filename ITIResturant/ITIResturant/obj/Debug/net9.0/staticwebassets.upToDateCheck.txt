@@ -1,82 +1,82 @@
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\js\Profile.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\owlcarousel\owl.carousel.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.min.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\additional-methods.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\js\site.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\css\search.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\css\bootstrap.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\easing\easing.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\LICENSE.txt
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\css\Adminstyle.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\counterup\counterup.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\wow\wow.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\waypoints\waypoints.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\css\site.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\favicon.ico
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\animate\animate.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\LICENSE.md
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\wow\wow.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\js\search.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\lightbox\js\lightbox.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\owlcarousel\owl.carousel.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\js\main.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\animate\animate.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\lightbox\css\lightbox.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\css\Profile.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\css\style.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\easing\easing.min.js
-F:\c plus\iti new\مشروع\جديد 333\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\js\Profile.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\owlcarousel\owl.carousel.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.min.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\js\site.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\css\search.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\css\bootstrap.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\easing\easing.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\css\Adminstyle.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\counterup\counterup.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\wow\wow.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\waypoints\waypoints.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\css\site.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\favicon.ico
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\animate\animate.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\wow\wow.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\js\search.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\lightbox\js\lightbox.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\owlcarousel\owl.carousel.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\js\main.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\animate\animate.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\lightbox\css\lightbox.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\css\Profile.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\css\style.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\easing\easing.min.js
+C:\Users\User\OneDrive\Desktop\Resturant\ITIResturant\ITIResturant\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\css\Adminstyle.css
 wwwroot\css\bootstrap.min.css
 wwwroot\css\Profile.css
@@ -87,25 +87,34 @@ wwwroot\favicon.ico
 wwwroot\Files\06c36896-3ee4-41d8-b891-273e85b02813menu-04.jpg
 wwwroot\Files\1651e4e6-6146-47f6-9358-930cf88dc4d3@9santt.jpg
 wwwroot\Files\24dca7db-821e-4346-a5a9-83470a79913emenu-02.jpg
+wwwroot\Files\320c1574-aed6-48ca-9254-f7791a7c64efmenu-02.jpg
 wwwroot\Files\3e00ec27-da65-423d-9d2a-1f9b51989e03@9santt.jpg
 wwwroot\Files\3f72da17-65ae-48d2-a0e0-95a77f1807a9@9santt.jpg
 wwwroot\Files\4203e0be-4f9b-4ea2-b2d9-1ad6f59f6c29download (1).jpg
+wwwroot\Files\4697f685-d26d-4dec-9a70-1a94ca2b3c92menu-10.jpg
 wwwroot\Files\4aadadb2-5061-483e-a884-c757fe558e82@9santt.jpg
 wwwroot\Files\52f48c1c-1775-4b37-8b0f-6d456bf84b47@9santt.jpg
+wwwroot\Files\535d003e-8318-4e10-956f-e6b593839344menu-02.jpg
 wwwroot\Files\55d52ac5-9def-4a3b-ac58-27acb8db631d@9santt.jpg
 wwwroot\Files\569648ef-0138-4550-be49-745ab82a8c4e@9santt.jpg
 wwwroot\Files\5a067979-4350-4581-a358-9056285cc7ebdownload.jpg
 wwwroot\Files\5a83946f-3f99-4b43-8b46-3e51f3d411ccimages (1).jpg
 wwwroot\Files\649c6ee3-a38a-46d5-a63c-9d7083bca1a3menu-04.jpg
 wwwroot\Files\661960b3-6ee0-4d9c-b986-796b3c02c8c7download.jpg
+wwwroot\Files\6ce31d1f-f7e9-4b4a-a4ca-6aa45ba6c2e1menu-02.jpg
 wwwroot\Files\758ba004-86bb-41ad-ade4-29d7ab7394dfdownload.jpg
 wwwroot\Files\79f2b2cf-3bc8-43b3-808a-e4536a97b086@9santt.jpg
 wwwroot\Files\7bcde945-6710-494a-b2f6-5531ba46d5b0download1.jpg
 wwwroot\Files\9054788b-cfb9-41b8-ae45-68f81df7676c@9santt.jpg
+wwwroot\Files\91d3dd05-d4c1-4be1-bc77-f7f5d6202e3bmenu-07.jpg
 wwwroot\Files\91dd2d8f-20f5-4a58-94ac-4b41fb9c5118download (2).jpg
 wwwroot\Files\984751c9-48b4-4a76-9dd1-17e0b1af8d98@9santt.jpg
 wwwroot\Files\9dc0c704-4c73-460a-95a4-9ba98c892e34event-1.jpg
 wwwroot\Files\9e4c27a6-f953-47e8-9203-e4bc5bc3ab98download (1).jpg
+wwwroot\Files\a8434a6e-33f6-40f4-8fb2-4e16140bb48bmenu-08.jpg
+wwwroot\Files\ac3421d6-4a04-4180-8c15-c49efcd488f5menu-02.jpg
+wwwroot\Files\ae3a3344-45d0-4e90-9b28-2d2c5cbb6053menu-01.jpg
+wwwroot\Files\aec143f0-3329-4dec-ba86-5d16b0a566c0menu-07.jpg
 wwwroot\Files\cec84035-ee44-4851-b977-822019ce293bdownload (1).jpg
 wwwroot\Files\dcd3c4ed-89bb-4834-a099-6dd624c6702fdownload1.jpg
 wwwroot\Files\fbb710a3-2f50-4ea8-88d9-d5121744a32emenu-04.jpg

@@ -17,7 +17,6 @@ global using Restaurant.BLL.Model_VM.Table;
 global using System.Diagnostics;
 global using Restaurant.PL.Models;
 global using Restaurant.BLL.ModelVMProfileVM;
-global using Restaurant.BLL.Model_VM.Feedback;
 global using Microsoft.AspNetCore.Mvc.Rendering;
 global using Restaurant.BLL.Model_VM.Booking;
 global using Restaurant.BLL.ModelVMAccountVM;
