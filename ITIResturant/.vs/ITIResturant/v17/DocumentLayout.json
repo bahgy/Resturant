@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\",
   "Documents": [
     {
@@ -552,6 +553,65 @@
     {
       "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\areas\\admin\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\areas\\admin\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\areas\\admin\\views\\emailnotifications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\areas\\admin\\views\\emailnotifications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\areas\\admin\\controllers\\emailnotificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\areas\\admin\\controllers\\emailnotificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\controllers\\emailnotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\controllers\\emailnotificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\bil\\service\\implementation\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\service\\implementation\\profileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\bil\\service\\abstraction\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\service\\abstraction\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\bil\\service\\abstraction\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\service\\abstraction\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\Restaurant.DAL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\dal\\repo\\implementation\\emailnotificationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\Restaurant.DAL.csproj|solutionrelative:dal\\repo\\implementation\\emailnotificationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\bil\\helper\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\helper\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\Restaurant.DAL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\dal\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3140AEAF-6EDC-4927-8E1E-C8FF6E968C87}|DAL\\Restaurant.DAL.csproj|solutionrelative:dal\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\bil\\modelvm\\profilevm\\updateprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\modelvm\\profilevm\\updateprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\ahmed khaled\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> origin
     }
   ],
   "DocumentGroupContainers": [
@@ -561,6 +621,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 7,
           "Children": [
             {
@@ -601,10 +662,50 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-27T02:29:00.59Z",
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IEmailService.cs",
+              "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IEmailService.cs",
+              "RelativeToolTip": "BIL\\Service\\Abstraction\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:28:15.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
+              "RelativeDocumentMoniker": "ITIResturant\\appsettings.json",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
+              "RelativeToolTip": "ITIResturant\\appsettings.json",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-25T15:13:45.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\ProfileService.cs",
+              "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\ProfileService.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\ProfileService.cs",
+              "RelativeToolTip": "BIL\\Service\\Implementation\\ProfileService.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAAHkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:39:35.153Z"
+>>>>>>> origin
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+<<<<<<< HEAD
               "Title": "PaymentFormWithOrderDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Payment\\PaymentFormWithOrderDetails.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Payment\\PaymentFormWithOrderDetails.cshtml",
@@ -653,10 +754,45 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-27T04:50:10.682Z",
               "EditorCaption": ""
+=======
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Program.cs",
+              "RelativeDocumentMoniker": "ITIResturant\\Program.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Program.cs",
+              "RelativeToolTip": "ITIResturant\\Program.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAAG0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:36:06.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailNotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\EmailNotificationController.cs",
+              "RelativeDocumentMoniker": "ITIResturant\\Controllers\\EmailNotificationController.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\EmailNotificationController.cs",
+              "RelativeToolTip": "ITIResturant\\Controllers\\EmailNotificationController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:40:34.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmailNotificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\EmailNotificationsController.cs",
+              "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\EmailNotificationsController.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\EmailNotificationsController.cs",
+              "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Controllers\\EmailNotificationsController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwCIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:10:18.866Z"
+>>>>>>> origin
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
@@ -704,11 +840,22 @@
               "ViewState": "AgIAACoAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-27T05:45:57.234Z",
+=======
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\EmailNotifications\\Index.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Views\\EmailNotifications\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\EmailNotifications\\Index.cshtml",
+              "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Views\\EmailNotifications\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T14:48:13.103Z",
+>>>>>>> origin
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+<<<<<<< HEAD
               "Title": "_Header.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\_Header.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Shared\\_Header.cshtml",
@@ -2319,6 +2466,88 @@
               "ViewState": "AgIAACoAAAAAAAAAAAAAADYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-26T14:09:35.295Z"
+=======
+              "Title": "IProfileService.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IProfileService.cs",
+              "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IProfileService.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IProfileService.cs",
+              "RelativeToolTip": "BIL\\Service\\Abstraction\\IProfileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:29:07.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailNotificationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\EmailNotificationRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\EmailNotificationRepo.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\EmailNotificationRepo.cs",
+              "RelativeToolTip": "DAL\\Repo\\Implementation\\EmailNotificationRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T15:31:12.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Helper\\EmailSender.cs",
+              "RelativeDocumentMoniker": "BIL\\Helper\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Helper\\EmailSender.cs",
+              "RelativeToolTip": "BIL\\Helper\\EmailSender.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:50:16.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "ITIResturant\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "ITIResturant\\Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAAAJQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:38:52.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "DAL\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Customer.cs",
+              "RelativeToolTip": "DAL\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:34:22.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "ITIResturant\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-25T14:35:44.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UpdateProfileVM.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\ProfileVM\\UpdateProfileVM.cs",
+              "RelativeDocumentMoniker": "BIL\\ModelVM\\ProfileVM\\UpdateProfileVM.cs",
+              "ToolTip": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\ProfileVM\\UpdateProfileVM.cs",
+              "RelativeToolTip": "BIL\\ModelVM\\ProfileVM\\UpdateProfileVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T14:34:55.287Z"
+>>>>>>> origin
             }
           ]
         }

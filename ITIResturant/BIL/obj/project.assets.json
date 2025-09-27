@@ -6755,23 +6755,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\User\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\ahmed khaled\\.nuget\\packages\\": {},
+>>>>>>> origin
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "projectName": "Restaurant.BLL",
       "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "projectName": "Restaurant.BLL",
+      "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Restaurant.BLL.csproj",
+      "packagesPath": "C:\\Users\\ahmed khaled\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\obj\\",
+>>>>>>> origin
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\ahmed khaled\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> origin
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6786,8 +6802,13 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj": {
               "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj"
+=======
+            "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj": {
+              "projectPath": "C:\\Users\\ahmed khaled\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Restaurant.DAL.csproj"
+>>>>>>> origin
             }
           }
         }
