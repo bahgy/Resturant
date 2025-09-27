@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\areas\\admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\bil\\mapper\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\mapper\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -674,10 +682,6 @@
       "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\service\\abstraction\\imenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{84A3EC04-1193-4E0F-9628-C576F11D7AAA}|ITIResturant\\Restaurant.PL.csproj|solutionrelative:itiresturant\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|c:\\users\\user\\onedrive\\desktop\\resturant\\itiresturant\\bil\\modelvm\\profilevm\\updateprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C2B3F91-A425-4D5F-BC01-F474C0C5510A}|BIL\\Restaurant.BLL.csproj|solutionrelative:bil\\modelvm\\profilevm\\updateprofilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -737,24 +741,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAA8wDQAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:08:59.096Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-27T14:15:20.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\UserService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\UserService.cs",
@@ -762,12 +766,11 @@
               "RelativeToolTip": "BIL\\Service\\Implementation\\UserService.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:25:41.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:25:41.207Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CustomerChatController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\CustomerChatController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\CustomerChatController.cs",
@@ -775,12 +778,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\CustomerChatController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T06:50:57.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T06:50:57.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DeliveryChatController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\DeliveryChatController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\DeliveryChatController.cs",
@@ -788,12 +790,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\DeliveryChatController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:26:21.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:26:21.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ReviewController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\ReviewController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\ReviewController.cs",
@@ -801,12 +802,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\ReviewController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:41:32.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:41:32.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UserVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\UserVM\\UserVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\UserVM\\UserVM.cs",
@@ -814,12 +814,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\UserVM\\UserVM.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAIBBwBMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:07:42.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:07:42.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PaymentRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\PaymentRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\PaymentRepo.cs",
@@ -827,25 +826,49 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\PaymentRepo.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAqwA0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:57:39.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T20:57:39.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\UserProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\UserProfile.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\UserProfile.cs",
               "RelativeToolTip": "BIL\\Mapper\\UserProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-27T02:13:36.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
+              "RelativeDocumentMoniker": "ITIResturant\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
+              "RelativeToolTip": "ITIResturant\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-26T14:07:30.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAA8wDQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T02:08:59.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\AuthService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\AuthService.cs",
@@ -853,12 +876,11 @@
               "RelativeToolTip": "BIL\\Service\\Implementation\\AuthService.cs",
               "ViewState": "AgIAAP0AAAAAAAAAAAA1wAYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:49:07.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:49:07.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IUserService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IUserService.cs",
@@ -866,12 +888,11 @@
               "RelativeToolTip": "BIL\\Service\\Abstraction\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:34:32.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:34:32.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\AccountController.cs",
@@ -879,12 +900,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAEsBAAAAAAAAAAAAAHoBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:47:18.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:47:18.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ProfileController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\ProfileController.cs",
@@ -892,12 +912,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\ProfileController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:41:35.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:41:35.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\CartController.cs",
@@ -905,12 +924,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\CartController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:25:55.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:25:55.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "BookingController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\BookingController.cs",
@@ -918,12 +936,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\BookingController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:12:11.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T20:12:11.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ErrorController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\ErrorController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\ErrorController.cs",
@@ -931,12 +948,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\ErrorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:25:57.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:25:57.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\HomeController.cs",
@@ -944,12 +960,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:36:04.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:36:04.71Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\OrderController.cs",
@@ -957,12 +972,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\OrderController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:35:43.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:35:43.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Controllers\\PaymentController.cs",
@@ -970,12 +984,11 @@
               "RelativeToolTip": "ITIResturant\\Controllers\\PaymentController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:29:12.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:29:12.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "UserRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\UserRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\UserRepo.cs",
@@ -983,12 +996,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\UserRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:08:47.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:08:47.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "TableRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\TableRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\TableRepo.cs",
@@ -996,12 +1008,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\TableRepo.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA9wAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:09:20.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:09:20.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "ShoppingCartItemRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\ShoppingCartItemRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\ShoppingCartItemRepo.cs",
@@ -1009,12 +1020,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\ShoppingCartItemRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T00:58:15.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T00:58:15.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "ReviewRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\ReviewRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\ReviewRepo.cs",
@@ -1022,12 +1032,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\ReviewRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:15:21.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:15:21.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "PromoCodeRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\PromoCodeRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\PromoCodeRepo.cs",
@@ -1035,12 +1044,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\PromoCodeRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T05:28:27.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T05:28:27.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ProductRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\ProductRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\ProductRepo.cs",
@@ -1048,12 +1056,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\ProductRepo.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAA2wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:15:08.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:15:08.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "OrderRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\OrderRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\OrderRepo.cs",
@@ -1061,12 +1068,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\OrderRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:01:56.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:01:56.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "OrderItemRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\OrderItemRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\OrderItemRepo.cs",
@@ -1074,12 +1080,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\OrderItemRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:01:57.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:01:57.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "MenuRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\MenuRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\MenuRepo.cs",
@@ -1087,12 +1092,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\MenuRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:14:48.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:14:48.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "GeniricRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\GeniricRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\GeniricRepo.cs",
@@ -1100,12 +1104,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\GeniricRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:01:58.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:01:58.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "EmailNotificationRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\EmailNotificationRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\EmailNotificationRepo.cs",
@@ -1113,12 +1116,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\EmailNotificationRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:57:36.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T20:57:36.162Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "DeliveryRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\DeliveryRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\DeliveryRepo.cs",
@@ -1126,12 +1128,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\DeliveryRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:14:02.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:14:02.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "CustomerRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\CustomerRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\CustomerRepo.cs",
@@ -1139,12 +1140,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\CustomerRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:47:51.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:47:51.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "AdminRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\AdminRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\AdminRepo.cs",
@@ -1152,12 +1152,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\AdminRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T00:58:08.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T00:58:08.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "BookingRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\BookingRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\BookingRepo.cs",
@@ -1165,12 +1164,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\BookingRepo.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAqwEAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T04:49:59.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:49:59.269Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "CartRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\CartRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\CartRepo.cs",
@@ -1178,12 +1176,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\CartRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T00:09:41.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T00:09:41.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "ChatRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Implementation\\ChatRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Implementation\\ChatRepo.cs",
@@ -1191,12 +1188,11 @@
               "RelativeToolTip": "DAL\\Repo\\Implementation\\ChatRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:57.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:57.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "IReviewRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IReviewRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IReviewRepo.cs",
@@ -1204,12 +1200,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IReviewRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:40.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:40.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "IPaymentRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IPaymentRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IPaymentRepo.cs",
@@ -1217,12 +1212,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IPaymentRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:34.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:34.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "IOrderRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IOrderRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IOrderRepo.cs",
@@ -1230,12 +1224,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IOrderRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T01:42:53.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T01:42:53.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "IOrderItemRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IOrderItemRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IOrderItemRepo.cs",
@@ -1243,12 +1236,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IOrderItemRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T01:02:47.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T01:02:47.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "IMenuRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IMenuRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IMenuRepo.cs",
@@ -1256,12 +1248,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IMenuRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T01:02:36.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T01:02:36.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "IGenericRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IGenericRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IGenericRepo.cs",
@@ -1269,12 +1260,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IGenericRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T00:57:01.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T00:57:01.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "IEmailNotificationRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IEmailNotificationRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IEmailNotificationRepo.cs",
@@ -1282,12 +1272,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IEmailNotificationRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:08.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:08.528Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "IDeliveryRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IDeliveryRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IDeliveryRepo.cs",
@@ -1295,12 +1284,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IDeliveryRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:05.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:05.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "IChatRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IChatRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IChatRepo.cs",
@@ -1308,12 +1296,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IChatRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:01.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:01.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "PromoCode.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\PromoCode.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\PromoCode.cs",
@@ -1321,12 +1308,11 @@
               "RelativeToolTip": "DAL\\Entities\\PromoCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:46.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:46.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Product.cs",
@@ -1334,12 +1320,11 @@
               "RelativeToolTip": "DAL\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:44.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:44.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Payment.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Payment.cs",
@@ -1347,12 +1332,11 @@
               "RelativeToolTip": "DAL\\Entities\\Payment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:41.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:41.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\OrderItem.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\OrderItem.cs",
@@ -1360,12 +1344,11 @@
               "RelativeToolTip": "DAL\\Entities\\OrderItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:39:32.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:39:32.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Order.cs",
@@ -1373,12 +1356,11 @@
               "RelativeToolTip": "DAL\\Entities\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAywAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:39:31.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:39:31.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "Massage.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Massage.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Massage.cs",
@@ -1386,12 +1368,11 @@
               "RelativeToolTip": "DAL\\Entities\\Massage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:35.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:35.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Category.cs",
@@ -1399,12 +1380,11 @@
               "RelativeToolTip": "DAL\\Entities\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:39:29.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:39:29.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "Delivery.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Delivery.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Delivery.cs",
@@ -1412,12 +1392,11 @@
               "RelativeToolTip": "DAL\\Entities\\Delivery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:30.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:30.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Customer.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Customer.cs",
@@ -1425,12 +1404,11 @@
               "RelativeToolTip": "DAL\\Entities\\Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:20:59.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:20:59.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "EmailNotification.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\EmailNotification.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\EmailNotification.cs",
@@ -1438,12 +1416,11 @@
               "RelativeToolTip": "DAL\\Entities\\EmailNotification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:39:28.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:39:28.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Cart.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Cart.cs",
@@ -1451,12 +1428,11 @@
               "RelativeToolTip": "DAL\\Entities\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:40:01.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:40:01.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "Booking.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Booking.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Booking.cs",
@@ -1464,12 +1440,11 @@
               "RelativeToolTip": "DAL\\Entities\\Booking.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T04:49:15.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:49:15.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\AppUser.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\AppUser.cs",
@@ -1477,12 +1452,11 @@
               "RelativeToolTip": "DAL\\Entities\\AppUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:21:42.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:21:42.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Admin.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Admin.cs",
@@ -1490,12 +1464,11 @@
               "RelativeToolTip": "DAL\\Entities\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:15.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:15.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "global.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Common\\global.cs",
               "RelativeDocumentMoniker": "DAL\\Common\\global.cs",
@@ -1503,12 +1476,11 @@
               "RelativeToolTip": "DAL\\Common\\global.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:14:34.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:14:34.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "BookingService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\BookingService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\BookingService.cs",
@@ -1516,12 +1488,11 @@
               "RelativeToolTip": "BIL\\Service\\Implementation\\BookingService.cs",
               "ViewState": "AgIAAIgAAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T04:45:24.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:45:24.38Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "EditBookingVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\Booking\\EditBookingVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\Booking\\EditBookingVM.cs",
@@ -1529,12 +1500,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\Booking\\EditBookingVM.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwBAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T04:50:20.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:50:20.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "GetAllBookingVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\Booking\\GetAllBookingVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\Booking\\GetAllBookingVM.cs",
@@ -1542,12 +1512,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\Booking\\GetAllBookingVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T04:50:28.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:50:28.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "CreateBookingVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\Booking\\CreateBookingVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\Booking\\CreateBookingVM.cs",
@@ -1555,12 +1524,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\Booking\\CreateBookingVM.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T04:50:10.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:50:10.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "ForgotPasswordVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\AccountVM\\ForgotPasswordVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\AccountVM\\ForgotPasswordVM.cs",
@@ -1568,12 +1536,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\AccountVM\\ForgotPasswordVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:16:59.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:16:59.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "ReviewProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\ReviewProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\ReviewProfile.cs",
@@ -1581,12 +1548,11 @@
               "RelativeToolTip": "BIL\\Mapper\\ReviewProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:13:49.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:13:49.207Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "ProductProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\ProductProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\ProductProfile.cs",
@@ -1594,12 +1560,11 @@
               "RelativeToolTip": "BIL\\Mapper\\ProductProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:13:50.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:13:50.535Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "PromoCodeProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\PromoCodeProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\PromoCodeProfile.cs",
@@ -1607,12 +1572,11 @@
               "RelativeToolTip": "BIL\\Mapper\\PromoCodeProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:13:50.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:13:50.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "PaymentProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\PaymentProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\PaymentProfile.cs",
@@ -1620,12 +1584,11 @@
               "RelativeToolTip": "BIL\\Mapper\\PaymentProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:13:51.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:13:51.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "OrderProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\OrderProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\OrderProfile.cs",
@@ -1633,12 +1596,11 @@
               "RelativeToolTip": "BIL\\Mapper\\OrderProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:17:50.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T20:17:50.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "DomainProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\DomainProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\DomainProfile.cs",
@@ -1646,12 +1608,11 @@
               "RelativeToolTip": "BIL\\Mapper\\DomainProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:13:52.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:13:52.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "CustomerProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\CustomerProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\CustomerProfile.cs",
@@ -1659,12 +1620,11 @@
               "RelativeToolTip": "BIL\\Mapper\\CustomerProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T00:36:46.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T00:36:46.782Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 73,
               "Title": "CategoryProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\CategoryProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\CategoryProfile.cs",
@@ -1672,12 +1632,11 @@
               "RelativeToolTip": "BIL\\Mapper\\CategoryProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T04:50:46.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:50:46.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 74,
               "Title": "CartProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\CartProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\CartProfile.cs",
@@ -1685,12 +1644,11 @@
               "RelativeToolTip": "BIL\\Mapper\\CartProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T04:50:46.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:50:46.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 75,
               "Title": "BookingProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\BookingProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\BookingProfile.cs",
@@ -1698,12 +1656,11 @@
               "RelativeToolTip": "BIL\\Mapper\\BookingProfile.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:05:49.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:05:49.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 76,
               "Title": "AccountProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Mapper\\AccountProfile.cs",
               "RelativeDocumentMoniker": "BIL\\Mapper\\AccountProfile.cs",
@@ -1711,12 +1668,11 @@
               "RelativeToolTip": "BIL\\Mapper\\AccountProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:40:48.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:40:48.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 77,
               "Title": "UploadImage.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Helper\\UploadImage.cs",
               "RelativeDocumentMoniker": "BIL\\Helper\\UploadImage.cs",
@@ -1724,12 +1680,11 @@
               "RelativeToolTip": "BIL\\Helper\\UploadImage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:40:40.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:40:40.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 78,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Helper\\EmailSender.cs",
               "RelativeDocumentMoniker": "BIL\\Helper\\EmailSender.cs",
@@ -1737,12 +1692,11 @@
               "RelativeToolTip": "BIL\\Helper\\EmailSender.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:40:34.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:40:34.316Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 79,
               "Title": "global.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Common\\global.cs",
               "RelativeDocumentMoniker": "BIL\\Common\\global.cs",
@@ -1750,12 +1704,11 @@
               "RelativeToolTip": "BIL\\Common\\global.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAWwB0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:40:30.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:40:30.699Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 80,
               "Title": "TableService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\TableService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\TableService.cs",
@@ -1763,12 +1716,11 @@
               "RelativeToolTip": "BIL\\Service\\Implementation\\TableService.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAA6wEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:07:39.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:07:39.067Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "UserTypeEnum.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Enum\\UserTypeEnum.cs",
               "RelativeDocumentMoniker": "DAL\\Enum\\UserTypeEnum.cs",
@@ -1776,12 +1728,11 @@
               "RelativeToolTip": "DAL\\Enum\\UserTypeEnum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:24:50.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:24:50.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 82,
               "Title": "IUserRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IUserRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IUserRepo.cs",
@@ -1789,12 +1740,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IUserRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:45.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:45.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 83,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IAuthService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IAuthService.cs",
@@ -1802,12 +1752,11 @@
               "RelativeToolTip": "BIL\\Service\\Abstraction\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:17:45.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:17:45.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 84,
               "Title": "AdminDashboardVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\AdminVM\\AdminDashboardVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\AdminVM\\AdminDashboardVM.cs",
@@ -1815,12 +1764,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\AdminVM\\AdminDashboardVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:17:06.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:17:06.435Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 85,
               "Title": "ResetPasswordVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\AccountVM\\ResetPasswordVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\AccountVM\\ResetPasswordVM.cs",
@@ -1828,12 +1776,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\AccountVM\\ResetPasswordVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:17:04.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:17:04.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\AccountVM\\RegisterVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\AccountVM\\RegisterVM.cs",
@@ -1841,12 +1788,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\AccountVM\\RegisterVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:17:02.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:17:02.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 87,
               "Title": "LoginVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\AccountVM\\LoginVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\AccountVM\\LoginVM.cs",
@@ -1854,12 +1800,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\AccountVM\\LoginVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:17:00.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:17:00.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 88,
               "Title": "ITableRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\ITableRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\ITableRepo.cs",
@@ -1867,12 +1812,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\ITableRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:08:54.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:08:54.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 89,
               "Title": "IPromoCodeRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IPromoCodeRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IPromoCodeRepo.cs",
@@ -1880,12 +1824,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IPromoCodeRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:38.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:38.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 90,
               "Title": "IProductRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IProductRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IProductRepo.cs",
@@ -1893,12 +1836,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IProductRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:13:37.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:13:37.209Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "IBookingRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IBookingRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IBookingRepo.cs",
@@ -1906,12 +1848,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IBookingRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:08:54.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T20:08:54.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "Table.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Table.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Table.cs",
@@ -1919,12 +1860,11 @@
               "RelativeToolTip": "DAL\\Entities\\Table.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:52.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:52.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 96,
               "Title": "ShopingCartItem.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\ShopingCartItem.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\ShopingCartItem.cs",
@@ -1932,12 +1872,11 @@
               "RelativeToolTip": "DAL\\Entities\\ShopingCartItem.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:49.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:49.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 97,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Entities\\Review.cs",
               "RelativeDocumentMoniker": "DAL\\Entities\\Review.cs",
@@ -1945,12 +1884,11 @@
               "RelativeToolTip": "DAL\\Entities\\Review.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:12:47.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:12:47.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "IAdminRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\IAdminRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\IAdminRepo.cs",
@@ -1958,12 +1896,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\IAdminRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:03:21.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T20:03:21.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "ICustomerRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\ICustomerRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\ICustomerRepo.cs",
@@ -1971,12 +1908,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\ICustomerRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T00:56:59.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T00:56:59.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "ICartRepo.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Repo\\Abstraction\\ICartRepo.cs",
               "RelativeDocumentMoniker": "DAL\\Repo\\Abstraction\\ICartRepo.cs",
@@ -1984,12 +1920,11 @@
               "RelativeToolTip": "DAL\\Repo\\Abstraction\\ICartRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T20:08:55.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T20:08:55.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 98,
               "Title": "GetAll.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\GetAll.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\GetAll.cshtml",
@@ -1997,12 +1932,11 @@
               "RelativeToolTip": "ITIResturant\\Views\\Booking\\GetAll.cshtml",
               "ViewState": "AgIAAHIAAAAAAAAAAAAAAFEAAACPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T05:46:03.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T05:46:03.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 99,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Edit.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\Edit.cshtml",
@@ -2010,12 +1944,11 @@
               "RelativeToolTip": "ITIResturant\\Views\\Booking\\Edit.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T05:45:57.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T05:45:57.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 100,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Booking\\Create.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Booking\\Create.cshtml",
@@ -2023,12 +1956,11 @@
               "RelativeToolTip": "ITIResturant\\Views\\Booking\\Create.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAA7wE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T04:51:17.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T04:51:17.111Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 101,
               "Title": "HangfireAuthorizationFilter.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Filters\\HangfireAuthorizationFilter.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Filters\\HangfireAuthorizationFilter.cs",
@@ -2036,12 +1968,11 @@
               "RelativeToolTip": "ITIResturant\\Filters\\HangfireAuthorizationFilter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:45:51.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:45:51.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 102,
               "Title": "ValidateUserExistsFilter.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Filters\\ValidateUserExistsFilter.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Filters\\ValidateUserExistsFilter.cs",
@@ -2049,12 +1980,11 @@
               "RelativeToolTip": "ITIResturant\\Filters\\ValidateUserExistsFilter.cs",
               "ViewState": "AgIAABEAAAAAAAAAAIA1wCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T02:45:54.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T02:45:54.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 103,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\Bookings\\Index.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Views\\Bookings\\Index.cshtml",
@@ -2062,12 +1992,11 @@
               "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Views\\Bookings\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T14:09:35.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:09:35.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 104,
               "Title": "TableController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\TableController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\TableController.cs",
@@ -2075,12 +2004,11 @@
               "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Controllers\\TableController.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAA5wEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:10:30.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:10:30.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 105,
               "Title": "PromoCodeController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\PromoCodeController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\PromoCodeController.cs",
@@ -2088,12 +2016,11 @@
               "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Controllers\\PromoCodeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:10:30.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:10:30.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 106,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\ProductsController.cs",
@@ -2101,12 +2028,11 @@
               "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:10:29.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:10:29.763Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 109,
               "Title": "Global.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Common\\Global.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Common\\Global.cs",
@@ -2114,12 +2040,11 @@
               "RelativeToolTip": "ITIResturant\\Common\\Global.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAWwBMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T17:07:25.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:07:25.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 110,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\chatHub\\ChatHub.cs",
               "RelativeDocumentMoniker": "ITIResturant\\chatHub\\ChatHub.cs",
@@ -2127,12 +2052,11 @@
               "RelativeToolTip": "ITIResturant\\chatHub\\ChatHub.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:09:38.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:09:38.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 108,
               "Title": "BookingsController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\BookingsController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\BookingsController.cs",
@@ -2140,12 +2064,11 @@
               "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Controllers\\BookingsController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:39:15.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:39:15.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 107,
               "Title": "EmailNotificationsController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\EmailNotificationsController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\EmailNotificationsController.cs",
@@ -2153,12 +2076,11 @@
               "RelativeToolTip": "ITIResturant\\Areas\\Admin\\Controllers\\EmailNotificationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:08:54.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:08:54.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 111,
               "Title": "BookingStatus.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Enum\\BookingStatus.cs",
               "RelativeDocumentMoniker": "DAL\\Enum\\BookingStatus.cs",
@@ -2166,12 +2088,11 @@
               "RelativeToolTip": "DAL\\Enum\\BookingStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:08:38.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:08:38.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 113,
               "Title": "IBookingService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IBookingService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IBookingService.cs",
@@ -2179,12 +2100,11 @@
               "RelativeToolTip": "BIL\\Service\\Abstraction\\IBookingService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:42:15.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:42:15.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 114,
               "Title": "TableVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\Table\\TableVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\Table\\TableVM.cs",
@@ -2192,12 +2112,11 @@
               "RelativeToolTip": "BIL\\ModelVM\\Table\\TableVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:06:17.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:06:17.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 112,
               "Title": "RequiredIfHasPasswordAttribute.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Validation\\RequiredIfHasPasswordAttribute.cs",
               "RelativeDocumentMoniker": "BIL\\Validation\\RequiredIfHasPasswordAttribute.cs",
@@ -2205,12 +2124,11 @@
               "RelativeToolTip": "BIL\\Validation\\RequiredIfHasPasswordAttribute.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAIwAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T18:04:30.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T18:04:30.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 115,
               "Title": "AppUserIdProvider.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\AppUserIdProvider.cs",
               "RelativeDocumentMoniker": "ITIResturant\\AppUserIdProvider.cs",
@@ -2218,12 +2136,11 @@
               "RelativeToolTip": "ITIResturant\\AppUserIdProvider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:05:30.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:05:30.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 116,
               "Title": "NameUserIdProvider.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\NameUserIdProvider.cs",
               "RelativeDocumentMoniker": "ITIResturant\\NameUserIdProvider.cs",
@@ -2231,12 +2148,11 @@
               "RelativeToolTip": "ITIResturant\\NameUserIdProvider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:05:30.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:05:30.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 117,
               "Title": "_Team.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\Home\\_Team.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Shared\\Home\\_Team.cshtml",
@@ -2244,12 +2160,11 @@
               "RelativeToolTip": "ITIResturant\\Views\\Shared\\Home\\_Team.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T12:44:22.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T12:44:22.508Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 123,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Payment\\Checkout.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Payment\\Checkout.cshtml",
@@ -2261,7 +2176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 121,
               "Title": "Success.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Payment\\Success.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Payment\\Success.cshtml",
@@ -2273,7 +2188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 122,
               "Title": "PaymentFormWithOrderDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Payment\\PaymentFormWithOrderDetails.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Payment\\PaymentFormWithOrderDetails.cshtml",
@@ -2285,7 +2200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 120,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Cart\\Index.cshtml",
@@ -2297,7 +2212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 118,
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
@@ -2309,7 +2224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 119,
               "Title": "OrderHistory.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Order\\OrderHistory.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Order\\OrderHistory.cshtml",
@@ -2321,7 +2236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 124,
               "Title": "_Header.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\_Header.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Shared\\_Header.cshtml",
@@ -2333,7 +2248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 125,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\CartService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\CartService.cs",
@@ -2345,7 +2260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 126,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IOrderService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IOrderService.cs",
@@ -2357,7 +2272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 127,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\OrderService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\OrderService.cs",
@@ -2369,7 +2284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 128,
               "Title": "main.js",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\wwwroot\\js\\main.js",
               "RelativeDocumentMoniker": "ITIResturant\\wwwroot\\js\\main.js",
@@ -2381,7 +2296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 129,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\ICartService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\ICartService.cs",
@@ -2393,7 +2308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 130,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Program.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Program.cs",
@@ -2405,7 +2320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 131,
               "Title": "DiscountType.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Enum\\DiscountType.cs",
               "RelativeDocumentMoniker": "DAL\\Enum\\DiscountType.cs",
@@ -2417,7 +2332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 132,
               "Title": "ReviewCreateVm.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\Review\\ReviewCreateVm.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\Review\\ReviewCreateVm.cs",
@@ -2429,7 +2344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 134,
               "Title": "CreatePromoCodeVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\PromoCode\\CreatePromoCodeVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\PromoCode\\CreatePromoCodeVM.cs",
@@ -2441,7 +2356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 135,
               "Title": "MenuVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\MenuVM\\MenuVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\MenuVM\\MenuVM.cs",
@@ -2453,7 +2368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 136,
               "Title": "UpdatePromoCodeVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\PromoCode\\UpdatePromoCodeVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\PromoCode\\UpdatePromoCodeVM.cs",
@@ -2465,7 +2380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 133,
               "Title": "PromoCodeValidationVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\PromoCode\\PromoCodeValidationVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\PromoCode\\PromoCodeValidationVM.cs",
@@ -2477,7 +2392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 137,
               "Title": "GenericService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\GenericService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\GenericService.cs",
@@ -2489,7 +2404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 138,
               "Title": "RestaurantDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Database\\RestaurantDbContext.cs",
               "RelativeDocumentMoniker": "DAL\\Database\\RestaurantDbContext.cs",
@@ -2501,7 +2416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 139,
               "Title": "CreateOrderVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\Order\\CreateOrderVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\Order\\CreateOrderVM.cs",
@@ -2513,7 +2428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 140,
               "Title": "OrderVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\Order\\OrderVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\Order\\OrderVM.cs",
@@ -2525,7 +2440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 141,
               "Title": "SeedData.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Helper\\SeedData.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Helper\\SeedData.cs",
@@ -2537,7 +2452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 142,
               "Title": "ReviewService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\ReviewService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\ReviewService.cs",
@@ -2549,7 +2464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 143,
               "Title": "MenuService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\MenuService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\MenuService.cs",
@@ -2561,7 +2476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 145,
               "Title": "_IndexLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\_IndexLayout.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Shared\\_IndexLayout.cshtml",
@@ -2573,7 +2488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 147,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\Users\\Create.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Views\\Users\\Create.cshtml",
@@ -2585,7 +2500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 144,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\PaymentService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\PaymentService.cs",
@@ -2597,7 +2512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 146,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
@@ -2609,7 +2524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 148,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\Users\\Delete.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Views\\Users\\Delete.cshtml",
@@ -2621,7 +2536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 149,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\CategoriesController.cs",
@@ -2633,7 +2548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 181,
+              "DocumentIndex": 182,
               "Title": "20250927020021_start.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Migrations\\20250927020021_start.cs",
               "RelativeDocumentMoniker": "DAL\\Migrations\\20250927020021_start.cs",
@@ -2645,7 +2560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 150,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Controllers\\AdminController.cs",
@@ -2657,7 +2572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 152,
               "Title": "20250927012854_start.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Migrations\\20250927012854_start.cs",
               "RelativeDocumentMoniker": "DAL\\Migrations\\20250927012854_start.cs",
@@ -2669,7 +2584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 151,
               "Title": "20250927013602_start.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Migrations\\20250927013602_start.cs",
               "RelativeDocumentMoniker": "DAL\\Migrations\\20250927013602_start.cs",
@@ -2681,7 +2596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 153,
               "Title": "20250927010810_addthings.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Migrations\\20250927010810_addthings.cs",
               "RelativeDocumentMoniker": "DAL\\Migrations\\20250927010810_addthings.cs",
@@ -2693,7 +2608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 154,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\CustomerService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\CustomerService.cs",
@@ -2705,7 +2620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 156,
               "Title": "PaymentMethod.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Enum\\PaymentMethod.cs",
               "RelativeDocumentMoniker": "DAL\\Enum\\PaymentMethod.cs",
@@ -2717,7 +2632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 155,
               "Title": "OrderStatus.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Enum\\OrderStatus.cs",
               "RelativeDocumentMoniker": "DAL\\Enum\\OrderStatus.cs",
@@ -2729,7 +2644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 157,
               "Title": "PaymentStatus.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Enum\\PaymentStatus.cs",
               "RelativeDocumentMoniker": "DAL\\Enum\\PaymentStatus.cs",
@@ -2741,7 +2656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 158,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -2753,7 +2668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 159,
               "Title": "20250926200538_testError.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Migrations\\20250926200538_testError.cs",
               "RelativeDocumentMoniker": "DAL\\Migrations\\20250926200538_testError.cs",
@@ -2765,7 +2680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 162,
               "Title": "IPromoCodeService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IPromoCodeService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IPromoCodeService.cs",
@@ -2777,7 +2692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 161,
               "Title": "IPaymentService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IPaymentService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IPaymentService.cs",
@@ -2789,7 +2704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 160,
               "Title": "ICustomerService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\ICustomerService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\ICustomerService.cs",
@@ -2801,7 +2716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 163,
               "Title": "20250926194153_deliveryEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Migrations\\20250926194153_deliveryEntity.cs",
               "RelativeDocumentMoniker": "DAL\\Migrations\\20250926194153_deliveryEntity.cs",
@@ -2813,7 +2728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 164,
               "Title": "20250926192935_chatServiceAdded.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\DAL\\Migrations\\20250926192935_chatServiceAdded.cs",
               "RelativeDocumentMoniker": "DAL\\Migrations\\20250926192935_chatServiceAdded.cs",
@@ -2825,7 +2740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 165,
               "Title": "CartItemVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\CartVM\\CartItemVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\CartVM\\CartItemVM.cs",
@@ -2837,7 +2752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
+              "DocumentIndex": 166,
               "Title": "IReviewService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IReviewService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IReviewService.cs",
@@ -2849,7 +2764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 167,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IProductService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IProductService.cs",
@@ -2861,7 +2776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 167,
+              "DocumentIndex": 169,
               "Title": "IMenuService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IMenuService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IMenuService.cs",
@@ -2873,7 +2788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
+              "DocumentIndex": 168,
               "Title": "IOrderItemService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IOrderItemService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IOrderItemService.cs",
@@ -2885,19 +2800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 168,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
-              "RelativeDocumentMoniker": "ITIResturant\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\appsettings.json",
-              "RelativeToolTip": "ITIResturant\\appsettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-26T14:07:30.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 170,
               "Title": "UpdateProfileVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\ProfileVM\\UpdateProfileVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\ProfileVM\\UpdateProfileVM.cs",
@@ -2909,7 +2812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 170,
+              "DocumentIndex": 171,
               "Title": "ResetPasswordVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\ProfileVM\\ResetPasswordVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\ProfileVM\\ResetPasswordVM.cs",
@@ -2921,7 +2824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 171,
+              "DocumentIndex": 172,
               "Title": "EmailNotificationService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\EmailNotificationService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\EmailNotificationService.cs",
@@ -2933,7 +2836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 172,
+              "DocumentIndex": 173,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Implementation\\EmailService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Implementation\\EmailService.cs",
@@ -2945,7 +2848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 173,
+              "DocumentIndex": 174,
               "Title": "Restaurant.PL.csproj",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Restaurant.PL.csproj",
               "RelativeDocumentMoniker": "ITIResturant\\Restaurant.PL.csproj",
@@ -2957,7 +2860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 176,
+              "DocumentIndex": 177,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\ICategoryService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\ICategoryService.cs",
@@ -2969,7 +2872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 175,
+              "DocumentIndex": 176,
               "Title": "IEmailNotificationService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IEmailNotificationService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IEmailNotificationService.cs",
@@ -2981,7 +2884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 174,
+              "DocumentIndex": 175,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Service\\Abstraction\\IEmailService.cs",
               "RelativeDocumentMoniker": "BIL\\Service\\Abstraction\\IEmailService.cs",
@@ -2993,7 +2896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 177,
+              "DocumentIndex": 178,
               "Title": "PromoCodeVM.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\ModelVM\\PromoCode\\PromoCodeVM.cs",
               "RelativeDocumentMoniker": "BIL\\ModelVM\\PromoCode\\PromoCodeVM.cs",
@@ -3005,7 +2908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 178,
+              "DocumentIndex": 179,
               "Title": "UserNameHelper.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\BIL\\Helper\\UserNameHelper.cs",
               "RelativeDocumentMoniker": "BIL\\Helper\\UserNameHelper.cs",
@@ -3017,7 +2920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 179,
+              "DocumentIndex": 180,
               "Title": "_Testimonial.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Shared\\Home\\_Testimonial.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Shared\\Home\\_Testimonial.cshtml",
@@ -3029,7 +2932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 180,
+              "DocumentIndex": 181,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Resturant\\ITIResturant\\ITIResturant\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ITIResturant\\Views\\Home\\Index.cshtml",
