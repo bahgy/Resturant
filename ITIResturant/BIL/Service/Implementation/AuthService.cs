@@ -44,10 +44,13 @@ namespace Restaurant.BLL.Service.Implementation
                         PhoneNumber = model.PhoneNumber,
                         Address = model.Address,
                         UserType = UserTypeEnum.Customer,
+
                     };
                 }
 
                 var result = await _userManager.CreateAsync(user, model.Password);
+
+                await _userManager.AddToRoleAsync(user, model.IsAdmin ? "Admin" : "Customer");
                 return (false, result, string.Empty);
             }
             catch (Exception ex)
@@ -257,6 +260,8 @@ namespace Restaurant.BLL.Service.Implementation
                 };
 
                 var result = await _userManager.CreateAsync(user);
+                await _userManager.AddToRoleAsync(user, "Customer");
+
                 return result.Succeeded ?
                     (false, user, string.Empty) :
                     (true, null, string.Join(", ", result.Errors.Select(e => e.Description)));

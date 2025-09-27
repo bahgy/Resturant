@@ -34,10 +34,10 @@ public class UserService : IUserService
         if (await _userManager.FindByEmailAsync(userVm.Email) != null)
             return (true, "Email already exists", null);
 
-        if (userVm.UserType == "Admin")
+        if (userVm.UserType.ToString() == "Admin")
             return (true, "Cannot create Admin user", null);
 
-        AppUser user = userVm.UserType switch
+        AppUser user = userVm.UserType.ToString() switch
         {
             "Delivery" => _mapper.Map<Delivery>(userVm),
             _ => _mapper.Map<Customer>(userVm)
@@ -47,7 +47,7 @@ public class UserService : IUserService
         if (!result.Succeeded)
             return (true, string.Join(", ", result.Errors.Select(e => e.Description)), null);
 
-        await _userManager.AddToRoleAsync(user, userVm.UserType);
+        await _userManager.AddToRoleAsync(user, userVm.UserType.ToString());
 
         var newVm = _mapper.Map<UserVM>(user);
         return (false, null, newVm);
@@ -59,17 +59,38 @@ public class UserService : IUserService
         var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == userVm.Id);
         if (user == null)
             return (true, "User not found", null);
-        // if any user exist with the same email added
+
+        // check if email already exists for another user
         if (await _userManager.FindByEmailAsync(userVm.Email) is AppUser existingUser && existingUser.Id != userVm.Id)
             return (true, "Email already exists", null);
+
+        // map changes
         _mapper.Map(userVm, user);
+
+        // 🔹 keep UserType in sync with selected role
+        user.UserType = userVm.UserType ?? UserTypeEnum.Customer;
+
+
+        // update user in DB
         var result = await _userManager.UpdateAsync(user);
         if (!result.Succeeded)
             return (true, string.Join(", ", result.Errors.Select(e => e.Description)), null);
 
+        // 🔹 remove old roles
+        var currentRoles = await _userManager.GetRolesAsync(user);
+        if (currentRoles.Any())
+        {
+            await _userManager.RemoveFromRolesAsync(user, currentRoles);
+        }
+
+        // 🔹 add the new role chosen by admin
+        await _userManager.AddToRoleAsync(user, userVm.UserType.ToString());
+
+        // prepare updated VM
         var updatedVm = _mapper.Map<UserVM>(user);
         return (false, null, updatedVm);
     }
+
 
     public async Task<(bool hasError, string? message, bool isDeleted)> DeleteUserAsync(int id)
     {

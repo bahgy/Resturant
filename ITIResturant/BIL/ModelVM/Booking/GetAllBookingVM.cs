@@ -11,6 +11,6 @@ namespace Restaurant.BLL.Model_VM.Booking
         public string Status { get; set; }
         public string SpecialRequests { get; set; }
         public int CustomerId { get; set; }
-        public int TableId { get; set; } // صححت من TableNumber إلى TableId
+        public int TableId { get; set; } 
     }
 }

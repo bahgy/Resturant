@@ -43,21 +43,19 @@ namespace RestoPL.Controllers
                     return View(bookingVM);
                 }
 
-                // ✅ اربط اليوزر الحالي
                 bookingVM.CustomerId = user.Id;
 
-                // ✅ احسب EndTime أوتوماتيك (بعد ساعتين من StartTime)
                 bookingVM.EndTime = bookingVM.StartTime.Add(TimeSpan.FromHours(2));
 
 
                 var result = _bookingService.Create(bookingVM);
-                if (!result.Item1) // false معناها العملية نجحت
+                if (!result.Item1) 
                 {
                     TempData["SuccessMessage"] = "Booking created successfully 🎉";
                     return RedirectToAction("GetAll");
                 }
 
-                ViewBag.error = result.Item2; // في مشكلة
+                ViewBag.error = result.Item2; 
             }
 
             ViewBag.Tables = new SelectList(_tableService.GetAllActiveTables(), "Id", "TableNumber");
@@ -71,7 +69,7 @@ namespace RestoPL.Controllers
         public IActionResult Edit(int id)
         {
             var result = _bookingService.GetById(id);
-            if (result.Item1) // لو حصل خطأ
+            if (result.Item1) 
             {
                 ViewBag.error = result.Item2;
                 return RedirectToAction("GetAll");
@@ -93,10 +91,8 @@ public async Task<IActionResult> Edit(int id, EditBookingVM editBookingVM)
             return View(editBookingVM);
         }
 
-        // ✅ اربط الـ CustomerId تلقائي
         editBookingVM.CustomerId = user.Id;
 
-        // ✅ احسب EndTime أوتوماتيك بعد ساعتين من StartTime
         editBookingVM.EndTime = editBookingVM.StartTime.Add(TimeSpan.FromHours(2));
 
 
@@ -120,7 +116,6 @@ public async Task<IActionResult> Edit(int id, EditBookingVM editBookingVM)
             if (user == null)
                 return Unauthorized();
 
-            // رجع الحجوزات الخاصة باليوزر فقط
             var result = _bookingService.GetByCustomerId(user.Id);
 
             if (!result.Item1)

@@ -24,7 +24,7 @@ namespace Restaurant.BLL.Mapper
             // UserVM → AppUser
             CreateMap<UserVM, AppUser>()
                 .ForMember(dest => dest.UserType,
-                           opt => opt.MapFrom(src => Enum.Parse<UserTypeEnum>(src.UserType)))
+                           opt => opt.MapFrom(src => Enum.Parse<UserTypeEnum>(src.UserType.ToString())))
                 .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.UserName))
 
                 .ForMember(dest => dest.EmailConfirmed, opt => opt.Ignore());

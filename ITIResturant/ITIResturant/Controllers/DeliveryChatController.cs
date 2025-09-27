@@ -3,7 +3,7 @@ using Restaurant.BLL.ModelVM.ChatVM;
 
 namespace Restaurant.PL.Controllers
     {
-    [Authorize(Roles ="Delivery")]
+    [Authorize(Roles = "Delivery")]
     [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class DeliveryChatController : Controller
         {
