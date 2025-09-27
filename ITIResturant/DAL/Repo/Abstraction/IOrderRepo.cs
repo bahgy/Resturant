@@ -14,5 +14,7 @@ namespace Restaurant.DAL.Repo.Abstraction
         Task<bool> ExistsAsync(int id);
         Task<bool> UpdateOrderStatusAsync(int orderId, OrderStatus status);
         Task<bool> UpdatePaymentStateAsync(int orderId, PaymentStatus paymentState);
+        Task<bool> AssignDeliveryAsync(int orderId, int deliveryId);
+
     }
 }

@@ -20,7 +20,6 @@ global using Restaurant.BLL.ModelVMOrder;
 global using Restaurant.BLL.ModelVMPromoCode;
 global using Restaurant.BLL.Model_VM.Booking;
 global using Restaurant.BLL.Model_VM.EmailNotification;
-global using Restaurant.BLL.Model_VM.Feedback;
 global using Restaurant.BLL.Model_VM.Table;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.AspNetCore.Http;

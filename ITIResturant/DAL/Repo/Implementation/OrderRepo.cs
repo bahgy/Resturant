@@ -18,7 +18,6 @@ namespace Restaurant.DAL.Repo.Implementation
                 .Include(o => o.Customer)
                 .Include(o => o.OrderItems)
                 .ThenInclude(oi => oi.Product)
-                .Include(o => o.Feedbacks)
                 .FirstOrDefaultAsync(o => o.Id == id);
         }
 
@@ -137,6 +136,18 @@ namespace Restaurant.DAL.Repo.Implementation
             {
                 return false;
             }
+        }
+
+        public async Task<bool> AssignDeliveryAsync(int orderId, int deliveryId)
+        {
+            var order = await _context.Orders.FirstOrDefaultAsync(o => o.Id == orderId);
+            if (order == null)
+                return false;
+
+            order.DeliveryId = deliveryId;
+
+            _context.Orders.Update(order);
+            return await _context.SaveChangesAsync() > 0;
         }
     }
 }

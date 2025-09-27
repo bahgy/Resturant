@@ -37,11 +37,17 @@ public class UserService : IUserService
         if (userVm.UserType == "Admin")
             return (true, "Cannot create Admin user", null);
 
-        var user = _mapper.Map<Customer>(userVm);
+        AppUser user = userVm.UserType switch
+        {
+            "Delivery" => _mapper.Map<Delivery>(userVm),
+            _ => _mapper.Map<Customer>(userVm)
+        };
 
         var result = await _userManager.CreateAsync(user, userVm.Password);
         if (!result.Succeeded)
             return (true, string.Join(", ", result.Errors.Select(e => e.Description)), null);
+
+        await _userManager.AddToRoleAsync(user, userVm.UserType);
 
         var newVm = _mapper.Map<UserVM>(user);
         return (false, null, newVm);
@@ -82,12 +88,28 @@ public class UserService : IUserService
     {
         if (user == null) return null;
 
+        // check if role is Customer
+        if (!user.IsInRole("Customer"))
+            return null;
+
         var customerIdClaim = user.FindFirst(ClaimTypes.NameIdentifier);
         if (customerIdClaim != null && int.TryParse(customerIdClaim.Value, out int customerId))
-        {
             return customerId;
-        }
 
+        return null;
+    }
+
+    public int? GetCurrentDeliveryId(ClaimsPrincipal user)
+    {
+        if (user == null) return null;
+
+        // check if logged in and role is Delivery
+        if (user.IsInRole("Delivery"))
+        {
+            var idClaim = user.FindFirst(ClaimTypes.NameIdentifier);
+            if (idClaim != null && int.TryParse(idClaim.Value, out int deliveryId))
+                return deliveryId;
+        }
         return null;
     }
 }

@@ -8,4 +8,5 @@ public interface IUserService
     Task<(bool hasError, string? message, UserVM? user)> UpdateUserAsync(UserVM user);
     Task<(bool hasError, string? message, bool isDeleted)> DeleteUserAsync(int id);
     int? GetCurrentCustomerId(ClaimsPrincipal user);
+    int? GetCurrentDeliveryId(ClaimsPrincipal user); 
 }

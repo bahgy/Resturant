@@ -3,7 +3,7 @@
 using Microsoft.AspNetCore.Localization;
 using Restaurant.BLL.ModelVM.HomeIndexVm;
 
-namespace ITIResturant.Controllers
+namespace Restaurant.PL.Controllers
 {
     public class HomeController : Controller
     {
