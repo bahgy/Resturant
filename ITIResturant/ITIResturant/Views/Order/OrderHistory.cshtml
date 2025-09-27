@@ -20,6 +20,14 @@
                 <div>
                     <span class="fw-bold">Total:</span>  @order.TotalAmount.ToString("C")
                 </div>
+                @if (order.DeliveryId != null)
+                {
+                    <a asp-controller="CustomerChat" asp-action="Chat" asp-route-orderId="@order.Id">Chat with delivery</a>
+                }
+                else
+                {
+                    <span class="text-muted">No delivery assigned yet</span>
+                }
             </div>
             <div class="card-body">
                 <p><strong>Payment:</strong> @order.PaymentMethod</p>

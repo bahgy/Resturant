@@ -4,7 +4,7 @@ using Restaurant.DAL.Entities;
 
 namespace RestoPL.Controllers
 {
-    [Authorize]
+    [Authorize(Roles =("Customer"))]
     [ServiceFilter(typeof(ValidateUserExistsFilter))]
     public class BookingController : Controller
     {
@@ -33,6 +33,7 @@ namespace RestoPL.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateBookingVM bookingVM)
         {
+            bookingVM.Status = "Pending"; 
             if (ModelState.IsValid)
             {
                 var user = await _userManager.GetUserAsync(User);

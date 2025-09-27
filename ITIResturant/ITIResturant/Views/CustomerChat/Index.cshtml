@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Restaurant.BLL.ModelVM.ChatVM.MessageUserListVM>
+
+@{
+    ViewData["Title"] = "Chats";
+}
+
+<h2>Chats</h2>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+@if (!Model.Any())
+{
+    <p>No deliveries available to chat with.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var user in Model)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <strong>@user.Username</strong><br />
+                    <small>@user.LastMessage</small>
+                </div>
+                <a asp-action="Chat" asp-route-orderId="@user.OrderId" class="btn btn-primary btn-sm">Open Chat</a>
+            </li>
+        }
+    </ul>
+}

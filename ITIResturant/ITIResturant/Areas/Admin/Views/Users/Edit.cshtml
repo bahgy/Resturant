@@ -49,13 +49,33 @@
         <input asp-for="PhoneNumber" class="form-control" />
         <span asp-validation-for="PhoneNumber" class="text-danger"></span>
     </div>
-
     <div class="form-group mb-3">
         <label asp-for="UserType" class="control-label"></label>
-        <select asp-for="UserType" class="form-control">
+        <select asp-for="UserType" class="form-control" id="UserType">
             <option value="Customer">Customer</option>
+            <option value="Delivery">Delivery</option>
         </select>
         <span asp-validation-for="UserType" class="text-danger"></span>
+    </div>
+    <!-- Extra fields for Delivery -->
+    <div id="deliveryFields" style="display:none;">
+        <div class="form-group mb-3">
+            <label asp-for="VehicleType" class="control-label"></label>
+            <input asp-for="VehicleType" class="form-control" />
+            <span asp-validation-for="VehicleType" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="VehicleNumber" class="control-label"></label>
+            <input asp-for="VehicleNumber" class="form-control" />
+            <span asp-validation-for="VehicleNumber" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="LicenseNumber" class="control-label"></label>
+            <input asp-for="LicenseNumber" class="form-control" />
+            <span asp-validation-for="LicenseNumber" class="text-danger"></span>
+        </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Edit</button>
@@ -64,4 +84,14 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById("UserType").addEventListener("change", function () {
+            var deliveryFields = document.getElementById("deliveryFields");
+            if (this.value === "Delivery") {
+                deliveryFields.style.display = "block";
+            } else {
+                deliveryFields.style.display = "none";
+            }
+        });
+    </script>
 }

@@ -1,5 +1,4 @@
-﻿
-namespace Restaurant.BLL.Service.Abstraction
+﻿namespace Restaurant.BLL.Service.Abstraction
 {
     public interface IOrderService
     {
@@ -14,5 +13,7 @@ namespace Restaurant.BLL.Service.Abstraction
         Task<(bool IsError, string ErrorMessage, bool Data)> UpdatePaymentStateAsync(int orderId, PaymentStatus paymentState);
         Task<(bool IsError, string ErrorMessage, bool Data)> ApplyPromoCodeAsync(int orderId, string promoCode);
         Task<(bool IsError, string ErrorMessage, bool Data)> RemovePromoCodeAsync(int orderId);
+        Task AssignRandomDeliveryToOrder(int orderId);
+
     }
 }

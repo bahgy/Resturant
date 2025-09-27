@@ -1,5 +1,4 @@
-﻿
-namespace Restaurant.BLL.ModelVMOrder
+﻿namespace Restaurant.BLL.ModelVMOrder
 {
     public class OrderVM
     {
@@ -23,13 +22,18 @@ namespace Restaurant.BLL.ModelVMOrder
         public PaymentStatus PaymentState { get; set; }
         public int CustomerId { get; set; }
 
-        // Updated customer properties
+        // Customer Info
         public string CustomerName { get; set; }
         public string CustomerEmail { get; set; }
         public string CustomerPhone { get; set; }
-
         public string DelivryAddress { get; set; }
 
+        // Delivery Info
+        public int? DeliveryId { get; set; }              // NEW
+        public string? DeliveryName { get; set; }         // optional
+        public string? DeliveryPhone { get; set; }        // optional
+
+        // Promo
         public int? PromoCodeId { get; set; }
         public string PromoCode { get; set; }
         public string PromoCodeDescription { get; set; }

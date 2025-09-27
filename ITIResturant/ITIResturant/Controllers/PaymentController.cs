@@ -7,7 +7,7 @@ using Restaurant.DAL.Enum;
 using Resturant.BLL.ModelVM.PaymentVM;
 using Resturant.BLL.Service.Abstraction;
 
-namespace ResturantProject.Controllers
+namespace Restaurant.PL.Controllers
 {
     [Authorize]
     [ServiceFilter(typeof(ValidateUserExistsFilter))]

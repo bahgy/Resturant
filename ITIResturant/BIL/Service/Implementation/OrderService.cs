@@ -14,19 +14,22 @@ namespace Restaurant.BLL.Service.Implementation
         private readonly ICustomerRepo _customerRepository;
         private readonly IPromoCodeService _promoCodeService;
         private readonly IMapper _mapper;
+        private readonly IDeliveryRepo _deliveryRepo;
 
         public OrderService(
             IOrderRepo orderRepository,
             IOrderItemRepo orderItemRepository,
             ICustomerRepo customerRepository,
             IPromoCodeService promoCodeService,
-            IMapper mapper)
+            IMapper mapper,
+            IDeliveryRepo deliveryRepo)
         {
             _orderRepository = orderRepository;
             _orderItemRepository = orderItemRepository;
             _customerRepository = customerRepository;
             _promoCodeService = promoCodeService;
             _mapper = mapper;
+            _deliveryRepo = deliveryRepo;
         }
 
         public async Task<(bool IsError, string ErrorMessage, OrderVM Data)> GetByIdAsync(int id)
@@ -97,7 +100,9 @@ namespace Restaurant.BLL.Service.Implementation
             if (!created)
                 return (true, "Failed to create order", null);
 
-
+            // Assign delivery immediately
+            await AssignRandomDeliveryToOrder(order.Id);
+            // check if no delivery availible
             var createdOrder = await _orderRepository.GetByIdAsync(order.Id);
 
             // Schedule background job: after 3 min -> mark as Delivered
@@ -106,7 +111,7 @@ namespace Restaurant.BLL.Service.Implementation
                 {
                     OrderId = createdOrder.Id,
                     Status = OrderStatus.Delivered
-                }), TimeSpan.FromSeconds(30));
+                }), TimeSpan.FromMinutes(3));
 
             return (false, string.Empty, _mapper.Map<OrderVM>(createdOrder));
         }
@@ -241,6 +246,21 @@ namespace Restaurant.BLL.Service.Implementation
                 return (true, "Order not found", 0);
 
             return (false, string.Empty, order.TotalAmount - order.DiscountAmount);
+        }
+        public async Task AssignRandomDeliveryToOrder(int orderId)
+        {
+            var order = await _orderRepository.GetByIdAsync(orderId);
+            if (order == null || order.DeliveryId != null) return;
+
+            var deliveries = await _deliveryRepo.GetAllAsync();
+            if (!deliveries.Any()) return;
+
+            // Pick random delivery
+            var random = new Random();
+            var candidate = deliveries.ElementAt(random.Next(deliveries.Count()));
+
+            // Assign and save
+            await _orderRepository.AssignDeliveryAsync(orderId, candidate.Id);
         }
     }
 }

@@ -24,6 +24,7 @@ namespace Restaurant.BLL.Mapper
                 .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.DefaultDeliveryAddress))
                 .ForMember(dest => dest.UserType, opt => opt.MapFrom(_ => "Customer"))
                 .ReverseMap();
+            CreateMap<UserVM, Delivery>().ReverseMap();
         }
     }
 }

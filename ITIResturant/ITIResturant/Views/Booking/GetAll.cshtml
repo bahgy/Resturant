@@ -79,7 +79,7 @@
                             <div class="d-flex justify-content-between border-bottom py-2">
                                 <span class="text-muted"><i class="bi bi-flag me-2 text-warning"></i> Status</span>
                                 <span class="fw-semibold
-                                            @(booking.Status == "Confirmed" ? "text-success" : booking.Status == "Pending" ? "text-warning" : "text-danger")">
+                                                            @(booking.Status.ToString() == "Completed" || booking.Status.ToString() == "Booked" ? "text-success" : booking.Status.ToString() == "Cancelled" ? "text-warning" : "text-danger")">
                                     @booking.Status
                                 </span>
                             </div>
